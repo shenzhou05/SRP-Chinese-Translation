@@ -1,4 +1,5 @@
 # Scriptable Render Pipeline
+![](https://blogs.unity3d.com/wp-content/uploads/2018/01/image5_rs.png)
 ## What is the Scriptable Render Pipeline (SRP)
 
 The SRP is a new Unity feature that has been designed to give artists and developers full control over the Unity rendering pipeline, giving them the tools they need to create modern, high-fidelity graphics in Unity. 
