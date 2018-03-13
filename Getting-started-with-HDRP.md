@@ -17,6 +17,39 @@ After you have installed HDRP from the Package Manager UI you must add the HDRP 
 
 Navigate to Edit > Settings > Graphics Settings, then Assign the HDRP Asset to the Scriptable Render Pipeline field by dragging in the HDRP Asset, or using the radio button to select the Asset from the popup window. 
 
+## Building from source code
+
+The latest version of the Scriptable Render Pipeline (SRP) repo can be found at the following link: https://github.com/Unity-Technologies/ScriptableRenderPipeline
+
+### Github Desktop or Git command line tools
+
+#### Cloning the repo using the GitHub Desktop App: 
+Open the GitHub Desktop App and click Clone a Repository. 
+
+Click the URL tab in the Clone a Repository window
+Enter the following URL: https://github.com/Unity-Technologies/ScriptableRenderPipeline
+Click the Choose… button to navigate to your project’s Asset folder. 
+Click the Clone button. 
+
+After the repo has been cloned you must run the following console commands from the ScriptableRenderPipeline folder:
+`git checkout Unity-2018.1.0b2 (or the latest tag)`
+`git submodule update --init --recursive --remote`
+
+#### Cloning the repo using Git console commands:
+Enter the following commands in your console application of choice:  
+`cd <Path to your Unity project>/Assets`
+`git clone https://github.com/Unity-Technologies/ScriptableRenderPipeline`
+`cd ScriptableRenderPipeline`
+`git checkout Unity-2018.1.0b2 (or the latest tag)`
+`git submodule update --init --recursive --remote`
+
+Once you have cloned the repo, re-open your project and follow the below instructions: 
+
+Navigate to Edit > Project Settings > Graphics and add the HDRenderPipelineAsset Asset to the Render Pipeline Settings field. 
+
+Create a copy of the HDRenderPipelineAsset and store it outside of the Scriptable Render Pipeline folder. This ensures that your HDRP settings are not lost when merging new changes from the SRP repo. 
+HDRP will be ready to use in your project after following the above instructions.
+
 ## Upgrading Shaders
 
 The built-in Unity shaders are incompatible with Scriptable Render Pipelines, as such, any preexisting Shaders in your project must be updated to work with the HDRP.
