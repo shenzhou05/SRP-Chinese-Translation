@@ -4,12 +4,12 @@ This page details the initial setup of a project using the High Definition Rende
 ## Setting up a new Project
 
 ### Using Unity Hub
-To set up a new HDRP project using Unity Hub, click the New button, then select High Definition - Preview from the Template dropdown box. After clicking Create Project, Unity will automatically create a Project with the High Definition Render Pipeline package installed. 
+To set up a new HDRP project using Unity Hub, click the New button, then select High Definition - Preview from the Template drop-down box. After clicking Create Project, Unity will automatically create a Project with the High Definition Render Pipeline package installed. 
 
-## Upgrading an existing Project
+## Upgrading an Existing Project
 To upgrade an existing Project, you must first download the High Definition Render Pipeline using the Package Manager UI. 
 
-Navigate to Window > Package Manager to open the Package Manager UI. Then click the All button to open the packages list. 
+Navigate to **Window > Package Manager** to open the Package Manager UI. Then click the All button to open the packages list. 
 
 Left click on Render-pipelines.high-definition  to select it, then click the Install button to add HDRP to your project. 
 
@@ -32,15 +32,21 @@ Click the Choose… button to navigate to your project’s Asset folder.
 Click the Clone button. 
 
 After the repo has been cloned you must run the following console commands from the ScriptableRenderPipeline folder:
+
 `git checkout Unity-2018.1.0b2 (or the latest tag)`
+
 `git submodule update --init --recursive --remote`
 
 #### Cloning the repo using Git console commands:
 Enter the following commands in your console application of choice:  
 `cd <Path to your Unity project>/Assets`
+
 `git clone https://github.com/Unity-Technologies/ScriptableRenderPipeline`
+
 `cd ScriptableRenderPipeline`
+
 `git checkout Unity-2018.1.0b2 (or the latest tag)`
+
 `git submodule update --init --recursive --remote`
 
 Once you have cloned the repo, re-open your project and follow the below instructions: 
