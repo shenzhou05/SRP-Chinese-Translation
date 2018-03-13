@@ -45,7 +45,7 @@ Enter the following commands in your console application of choice:
 
 Once you have cloned the repo, re-open your project and follow the below instructions: 
 
-Navigate to Edit > Project Settings > Graphics and add the HDRenderPipelineAsset Asset to the Render Pipeline Settings field. 
+Navigate to **Edit > Project Settings > Graphics** and add the HDRenderPipelineAsset Asset to the Render Pipeline Settings field. 
 
 Create a copy of the HDRenderPipelineAsset and store it outside of the Scriptable Render Pipeline folder. This ensures that your HDRP settings are not lost when merging new changes from the SRP repo. 
 HDRP will be ready to use in your project after following the above instructions.
@@ -54,4 +54,4 @@ HDRP will be ready to use in your project after following the above instructions
 
 The built-in Unity shaders are incompatible with Scriptable Render Pipelines, as such, any preexisting Shaders in your project must be updated to work with the HDRP.
 
-Navigate to Edit > Render Pipelines > HDRP > Upgrade > Upgrade shaders to run the automatic upgrade script. This script with automatically update all preexisting shaders in your project to the new HDRP shaders. 
+Navigate to **Edit > Render Pipelines > Upgrade Project Materials to High Definition Materials** to run the automatic upgrade script. This script with automatically update all preexisting shaders in your project to the new HDRP shaders. 
