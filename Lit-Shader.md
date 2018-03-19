@@ -6,8 +6,7 @@ The lit shader is the default shader when using HDRenderPipeline (HDRP). This sh
 
 In HDRP, when a new material is created it is by default a lit shader.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/
-/Images/LitShader1.png)
+![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader1.png)
 
 ![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader2.png)
 
