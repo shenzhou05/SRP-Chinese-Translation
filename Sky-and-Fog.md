@@ -6,7 +6,7 @@ We also provide the necessary tools to offer consistent baking of lightmaps and 
 
 The Sky Framework used by HDRP is also designed in a way that it is easy for users to write their own custom sky and use it in their project with minimal effort.
 
-As part of the Volume framework, all local settings components described below are actually VolumeComponents which need to be added to a VolumeCcomponent on a regular GameObject. As such, all their parameters can be interpolated between different volumes.
+As part of the Volume framework, all local settings components described below are actually VolumeComponents which need to be added to a VolumeComponent on a regular GameObject. As such, all their parameters can be interpolated between different volumes.
 
 # Setting up the Sky
 
