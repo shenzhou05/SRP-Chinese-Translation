@@ -18,7 +18,7 @@ Settings are split between global settings which are per project/platform and lo
 
 Global settings for the sky are in the HDRenderPipeline configuration asset:
 
-![](/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog1.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog1.png)
 
 __Sky Reflection Size__
 
@@ -42,7 +42,7 @@ __Procedural Sky__
 
 This sky is similar to the procedural sky provided with the built-in Unity Render Pipelines. 
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog2.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog2.png)
 
 | Property| Function |
 |:---|:---| 
@@ -66,7 +66,7 @@ __HDRI Sky__
 
 Simple sky represented by a cubemap texture.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog3.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog3.png)
 
 | Property| Function |
 |:---|:---| 
@@ -88,7 +88,7 @@ In HDRP the sky is completely controlled by the volume system. It means that in 
 
 Instead the sky used for baking is set explicitly by the user through the Baking Sky component.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog4.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog4.png)
 
 User should select a volume profile which contains the sky intended to be used for baking and then choose the right type (in case the profile contains different kinds of skies). If the component is added to a game object that already has a Volume, the profile property will be automatically populated with the corresponding profile asset.
 
@@ -110,7 +110,7 @@ __Linear Fog__
 
 Density will increase linearly with view distance and world space height depending on the provided parameters.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog5.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog5.png)
 
 | Property| Function |
 |:---|:---| 
@@ -133,7 +133,7 @@ __Exponential Fog__
 
 Density will increase exponentially with view distance and world space height depending on the provided parameters.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog6.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog6.png)
 
 | Property| Function |
 |:---|:---| 
@@ -155,7 +155,7 @@ Density will increase exponentially with view distance and world space height de
 
 Once the proper components have been setup, users need to specify what kind of sky and fog should be used for rendering. This is done through the Visual Environment component.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog7.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog7.png)
 
 | Property| Function |
 |:---|:---| 
@@ -166,7 +166,7 @@ Once the proper components have been setup, users need to specify what kind of s
 
 To help setting things up more easily, users can use the contextual menu to directly create a game object named "Scene Settings" and go from there. This game object is already setup with a default procedural sky and exponential fog inside a global Volume (it also contains default shadow settings).
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog8.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog8.png)
 
 # Writing Custom Sky Renderers
 
