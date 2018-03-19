@@ -6,9 +6,9 @@ The lit shader is the default shader when using HDRenderPipeline (HDRP). This sh
 
 In HDRP, when a new material is created it is by default a lit shader.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader1.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader1.png)
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader2.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader2.png)
 
 ## How to set a Lit Shader?
 
@@ -16,19 +16,19 @@ In HDRP, when a new material is created it is by default a lit shader.
 
 __Surface type:__
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader3.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader3.png)
 
 Surface can be set as Opaque or Transparent. Transparent is an alpha blend and it is more costly.
 
 __Alpha Cutoff:__
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader4.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader4.png)
 
 This check box enable the alpha cutoff to use an alpha test. The handle set the value of the test. All the values under the handle value is totally transparent and the values equal or above the handle value is opaque.
 
 __Double sided:__
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader5.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader5.png)
 
 This option allows the double side. The faces are rendered on the two sides. The normal mode manages the normal behaviour on the backfaces. By default the mode is mirror.
 
@@ -121,7 +121,7 @@ Set on X/Y offset for the UV.
 
 The detail map is a composited map used to add micro details into the material. The detail map visibility is managed by the blue channel of the Mask map.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader6.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader6.png)
 
 __Detail map:__
 
@@ -198,7 +198,7 @@ This option used the bent normal assign in the bent normal slot to do a specular
 
 ### Subsurface scattering
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader7.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader7.png)
 
 __Enable transmission: __
 
@@ -206,7 +206,7 @@ On/off the transmission effect. The transmission is managed by a profile and a t
 
 __Specific subsurface settings:__
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader8.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader8.png)
 
 Diffusion profile:
 
@@ -222,7 +222,7 @@ This map uses the red channel to set the thickness inside the range set in the p
 
 __The profile:__
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader9.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader9.png)
 
 * Name: Name of the profile
 
@@ -250,11 +250,11 @@ Thickness remap: This setting allows to remap the thickness without to change th
 
 Profile preview: Shows the fraction of lights scattered from the source located in the center.The distance to the boundary of the image corresponds to the max radius. Display is not HDR, so the intensity of pixels around the center may be clipped.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader10.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader10.png)
 
 Transmission preview: Shows the fraction of light passing through the object for thickness values from the remap. Can be viewed as a cross section of a slab of material illuminated by white light from the left.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader11.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader11.png)
 
 ### Anisotropy
 
@@ -262,11 +262,11 @@ Anisotropic materials don’t have an uniform specular shape.
 
 Real anisotropy example:
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader12.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader12.png)
 
  Anisotropy is used to deform the specular shape on an axe.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader13.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader13.png)
 
 __Tangent map: __
 
@@ -276,7 +276,7 @@ __Anisotropy:__
 
 This handle modulate the intensity of the anisotropic effect and modify the shape orientation, horizontally or vertically, coming from the tangent map.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader14.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader14.png)
 
 __Anisotropy map:__
 
@@ -286,9 +286,9 @@ This map uses the red channel to modulate the anisotropic effect intensity.
 
 The iridescence (Thin-film interference) is a natural phenomenon in which lightwaves reflected by the upper and lower boundaries of a thin film interfere with one another, either enhancing or reducing the reflected[ ](https://en.wikipedia.org/wiki/Reflected_light)light. 
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader15.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader15.png)
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader16.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader16.png)
 
 __Iridescence Mask:__
 
@@ -298,7 +298,7 @@ __Iridescence Layer thickness map:__
 
 If no map is assigned, by default the value is 1. The iridescence gradient color is linked to the thickness. When the thickness change the gradient color change too. The handle modulate the thickness also and it is multiplied when a map is assigned.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader17.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader17.png)
 
 FYI: If the base color is white no iridescence can be visible. For a white base color no lighting enter the matter. All the lighting is reflected to produce a pure white color, so no iridescence can be produce.
 
@@ -306,7 +306,7 @@ FYI: If the base color is white no iridescence can be visible. For a white base 
 
 When the specular color shader type is chosen, the specular color is defined by a dedicated map not anymore by the albedo value.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader18.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader18.png)
 
 __Specular color:__
 
@@ -320,9 +320,9 @@ Uniform color used for the specular. It is multiply by the Specular color map.
 
 The translucency is the transmission of a part of light across the matter.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader19.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader19.png)
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader20.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader20.png)
 
 The translucency is manage by a profile and a thickness map like for the subsurface scattering.
 
@@ -330,21 +330,21 @@ The translucency is manage by a profile and a thickness map like for the subsurf
 
 From a lit shader, use the shader rollout menu to choose the LayeredLitTessellation shader.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader21.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader21.png)
 
 In case of lit shader tessellation only standard, subsurface scattering and translucent types are available.
 
 __Displacement mode:__
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader22.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader22.png)
 
 None: No displacement is applied. The tessellation is used only to smooth the surface.
 
 Tessellation displacement: A height map (red channel) is used in the inputs to displace the mesh vertices.
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader23.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader23.png)
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader24.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader24.png)
 
 * Lock with object scale: the height map appearance doesn’t change when the object is scaled.
 
@@ -352,7 +352,7 @@ Tessellation displacement: A height map (red channel) is used in the inputs to d
 
 __Tessellations options:__
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader25.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader25.png)
 
 Tessellation mode:
 
@@ -382,7 +382,7 @@ Two parametrizations are available.
 
 Min/Max:
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader26.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader26.png)
 
 In this mode the base of the height map is linked to the base of the mesh. It is used if the height map has uniform values on the map.
 
@@ -394,7 +394,7 @@ Offset: Can up and down the height map without modify the min/max values.
 
 Amplitude:
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader27.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/LitShader27.png)
 
 Amplitude mode is more used in case of height map with a dedicated center. In this case the height map uses often none uniform values. In case of non uniform values a range of the map is not used to store values, it is clamped in positive or negative.
 
