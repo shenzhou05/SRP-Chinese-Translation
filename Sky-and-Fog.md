@@ -1,12 +1,12 @@
 Sky and Fog
 
-In HDRP, sky and fog are setup via the interpolation volume framework (link to Volume doc?). The goal is for the user to be able to dynamically change the look of the sky and fog depending on the camera position.
+In HDRP, sky and fog are setup via the interpolation volume framework. The goal is for the user to be able to dynamically change the look of the sky and fog depending on the camera position.
 
 We also provide the necessary tools to offer consistent baking of lightmaps and probes.
 
 The Sky Framework used by HDRP is also designed in a way that it is easy for users to write their own custom sky and use it in their project with minimal effort.
 
-As part of the Volume framework, all local settings components described below are actually *VolumeComponents* which need to be added to a *Volume *component on a regular *GameObject. *As such, all their parameters can be interpolated between different volumes.
+As part of the Volume framework, all local settings components described below are actually VolumeComponents which need to be added to a VolumeCcomponent on a regular GameObject. As such, all their parameters can be interpolated between different volumes.
 
 # Setting up the Sky
 
@@ -28,7 +28,7 @@ __Sky Lighting Override Mask__
 
 In some cases, users may want to dissociate lighting environment from what is rendered in the background (a typical example is to have a very dark sky at night but have a brighter lighting so that the player can still see).
 
-In order to achieve this, users can define the sky lighting override mask which is a Layer mask. If any volumes are present in this layer then environment lighting will use these volumes instead of those from the main camera. If this mask is set to *Nothing *or if there are no volume in this mask then lighting will come from volumes setup in the main camera volume layer mask.
+In order to achieve this, users can define the sky lighting override mask which is a Layer mask. If any volumes are present in this layer then environment lighting will use these volumes instead of those from the main camera. If this mask is set to **Nothing**or if there are no volume in this mask then lighting will come from volumes setup in the main camera volume layer mask.
 
 In practice this means that user can define two sets of masks, one for the visual sky and the other for the lighting. Both sets of volume will then be interpolated independently from each other.
 
