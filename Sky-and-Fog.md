@@ -18,7 +18,7 @@ Settings are split between global settings which are per project/platform and lo
 
 Global settings for the sky are in the HDRenderPipeline configuration asset:
 
-![](ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog1.png)
+![](/ScriptableRenderPipeline/HDRenderPipeline/Documentation/Images/SkyAndFog1.png)
 
 __Sky Reflection Size__
 
