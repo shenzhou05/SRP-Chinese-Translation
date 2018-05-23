@@ -4,14 +4,6 @@ The Lightweight Pipeline is a Scriptable Render Pipeline available with Unity 20
 
 The pipeline supports at most 8 lights per-object and only supports a subset of vanilla Unity  rendering features. A feature comparison table of Lightweight Pipeline vs stock Unity pipeline can be found [here](https://docs.google.com/document/d/1MgoycUhS9xQKXxbTy1yHt7OCByI10rds3TyRBCSlFmg/).
 
-## Lightweight Sample Project
-
-We are providing a Lightweight Pipeline sample project that can be downloaded [here](https://drive.google.com/file/d/1i0GlWYO0SRwauqu3U2rKoUAPO8BOFXw8/). The project is already setup to render properly Lightweight Pipeline so you can easily experiment developing with the Lightweight Pipeline workflow. It comes with a modified nightmares sample scene. 
-
-![](images/LightweightGettingStarted1.png)
-
-Nightmares modified scene rendering with Lightweight Pipeline
-
 ## How to use Lightweight Pipeline
 
 The Lightweight Pipeline does not work with the Unity stock lit shaders. We have developed a new set of Standard shaders that are located under Lightweight Pipeline group in the material’s shader selection dropdown.
