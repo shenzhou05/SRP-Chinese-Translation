@@ -1,0 +1,5 @@
+## Description
+
+The **Sub-graph Asset** is a new **Asset** type introduced with the [Shader Graph](https://github.com/Unity-Technologies/ShaderGraph/wiki/Shader-Graph). A **Sub-graph Asset** defines a [Sub-graph](https://github.com/Unity-Technologies/ShaderGraph/wiki/Sub-graph). This is different to a [Shader Graph](https://github.com/Unity-Technologies/ShaderGraph/wiki/Shader-Graph). You can create a **Sub-graph Asset** from the [Project Window](https://docs.unity3d.com/Manual/ProjectView.html) from the **Create** menu via **Sub Graph** in the **Shader** sub-menu.
+
+You can open the [Shader Graph Window](https://github.com/Unity-Technologies/ShaderGraph/wiki/Shader-Graph-Window) by double clicking a **Sub-graph Asset** or by clicking **Open Shader Editor** in the [Inspector](https://docs.unity3d.com/Manual/UsingTheInspector.html) when the **Sub-graph Asset** is selected.
