@@ -33,50 +33,60 @@
 
 <details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Getting-Started">Getting Started</a>
 </summary>
+<ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Custom-Nodes-With-CodeFunctionNode">Custom Nodes with CodeFunctionNode</a><br>
 </details>
+</ul>
 
 [//]: # (SHADER GRAPH)
 
 <details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shader-Graph">Shader Graph</a>
 </summary>
+<ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shader-Graph-Window">Shader Graph Window</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Blackboard">Blackboard</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Master-Preview">Master Preview</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Create-Node-Menu">Create Node Menu</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shader-Graph-Asset">Shader Graph Asset</a><br>
 </details>
+</ul>
 
 [//]: # (SUB-GRAPH)
 
 <details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Sub-graph">Sub-graph</a>
 </summary>
+<ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Sub-graph-Asset">Sub-graph Asset</a><br>
 </details>
+</ul>
 
 [//]: # (NODE)
 
 <details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Node">Node</a>
 </summary>
+<ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Port">Port</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Edge">Edge</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Master-Node">Master Node</a><br>
 </details>
+</ul>
 
 [//]: # (DATA)
 
 <details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Data">Data</a>
 </summary>
+<ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Property-Types">Property Types</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Data-Types">Data Types</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Port-Bindings">Port Bindings</a><br>
 </details>
+</ul>
 
 [//]: # (NODE LIBRARY)
 
 <details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Node-Library">Node Library</a>
 </summary>
-
+<ul>
 <details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Artistic-Nodes">Artistic</a></summary>
 <details><summary>Adjustment</summary>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Channel-Mixer-Node">Channel Mixer</a><br>
@@ -295,8 +305,10 @@
 </details>
 
 </details>
+</ul>
 
 [//]: # (SCRIPTING API)
+
 
 <details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Scripting-API">Scripting API</a>
 </summary>
@@ -308,3 +320,4 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/GetFunctionToConvert">GetFunctionToConvert</a><br>
 </details>
 </details>
+</ul><ul>
