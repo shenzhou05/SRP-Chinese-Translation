@@ -184,7 +184,7 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/White-Balance-Node">White Balance</a><br>
 </ul>
 </details>
-</ul>
+
 <details><summary>Blend</summary>
 <ul><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Blend-Node">Blend</a><br>
 </ul></details>
@@ -196,14 +196,15 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Color-Mask-Node">Color Mask</a><br></ul>
 </details>
 <details><summary>Normal</summary>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Normal-Blend-Node">Normal Blend</a><br>
+<ul><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Normal-Blend-Node">Normal Blend</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Normal-Create-Node">Normal Create</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Normal-Strength-Node">Normal Strength</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Normal-Unpack-Node">Normal Unpack</a><br>
-</details>
+</ul></details>
 <details><summary>Utility</summary>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Colorspace-Conversion-Node">Colorspace Conversion</a><br>
-</details>
+<ul><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Colorspace-Conversion-Node">Colorspace Conversion</a><br>
+</ul></details>
+</ul>
 </details>
 
 
@@ -218,6 +219,7 @@
 </details>
 
 <details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Input-Nodes">Input</a></summary>
+<ul>
 <details><summary>Basic</summary>
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Boolean-Node">Boolean</a><br>
@@ -270,6 +272,7 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Sampler-State-Node">Sampler State</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Texture-2D-Asset-Node">Texture 2D Asset</a><br></ul>
 </details>
+</ul>
 </details>
 
 <details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Master-Nodes">Master</a></summary>
