@@ -25,7 +25,7 @@
 
 <details>
 <summary>
-<a href=>Materials</a>
+<a>Materials</a>
 </summary>
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/lit-shader">Lit Shader</a><br>
@@ -41,7 +41,7 @@
 
 <details>
 <summary>
-<a href=>Advanced Materials</a>
+<a>Advanced Materials</a>
 </summary>
 <ul>
 <a>Tessellation / Vertex displacement</a><br>
@@ -53,7 +53,7 @@
 
 <details>
 <summary>
-<a href=>Lighting</a>
+<a>Lighting</a>
 </summary>
 <ul>
 <a>Creating HDRP Lights</a><br>
@@ -80,7 +80,7 @@
 
 <details>
 <summary>
-<a href=>Lighting Model Configuration</a>
+<a>Lighting Model Configuration</a>
 </summary>
 <ul>
 <a>Clear Coat</a><br>
@@ -92,7 +92,7 @@
 
 <details>
 <summary>
-<a href=>Cameras</a>
+<a>Cameras</a>
 </summary>
 <ul>
 <a>Physically-based Camera</a><br>
@@ -104,7 +104,7 @@
 
 <details>
 <summary>
-<a href=>Advanced topics</a>
+<a>Advanced topics</a>
 </summary>
 <ul>
 <a>Layered Shader</a><br>
