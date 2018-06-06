@@ -15,13 +15,12 @@ After clicking Create Project, Unity will automatically create a Project with th
 ## Upgrading an Existing Project
 To upgrade an existing Project, you must first download the High Definition Render Pipeline using the Package Manager UI. 
 
-Navigate to **Window > Package Manager** to open the Package Manager UI. Then click the All button to open the packages list. 
-
-Left click on Render-pipelines.high-definition  to select it, then click the Install button to add HDRP to your project. 
+1. Navigate to **Window > Package Manager** to open the Package Manager UI. Then click the All button to open the packages list. 
+2. Left click on Render-pipelines.high-definition  to select it, then click the Install button to add HDRP to your project. 
 
 After you have installed HDRP from the Package Manager UI you must add the HDRP  Asset to the Scriptable Render Pipeline Graphics settings field. 
 
-Navigate to Edit > Settings > Graphics Settings, then Assign the HDRP Asset to the Scriptable Render Pipeline field by dragging in the HDRP Asset, or using the radio button to select the Asset from the popup window. 
+3. Navigate to Edit > Settings > Graphics Settings, then Assign the HDRP Asset to the Scriptable Render Pipeline field by dragging in the HDRP Asset, or using the radio button to select the Asset from the popup window. 
 
 ## Building from source code
 
