@@ -28,7 +28,7 @@
 <a href=>Materials</a>
 </summary>
 <ul>
-<a>Lit Shader</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/lit-shader">Lit Shader</a><br>
 <a>Unlit Shader</a><br>
 <a>Roughness</a><br>
 <a>Normal maps</a><br>
@@ -72,7 +72,7 @@
 <a>Reflection Probes</a><br>
 <a>Planar Probes</a><br>
 <a>SSR</a><br>
-<a>Sky and Fog</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/sky-and-fog">Sky and Fog</a><br>
 <a>Global Shadow Settings</a><br>
 <a>Global Illumination</a><br>
 </ul>
@@ -132,7 +132,7 @@
 </summary>
 <ul><br>
 
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Getting-Started">Getting Started</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Getting-Started-with-Shader-Graph">Getting Started</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Custom-Nodes-With-CodeFunctionNode">Custom Nodes with CodeFunctionNode</a><br>
 
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shader-Graph-Window">Shader Graph Window</a><br>
