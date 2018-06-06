@@ -80,7 +80,7 @@
 
 <details>
 <summary>
-<a>Lighting Model Configuration</a>
+<a>Lighting Model Config</a>
 </summary>
 <ul>
 <a>Clear Coat</a><br>
