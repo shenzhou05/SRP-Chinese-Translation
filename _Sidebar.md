@@ -132,14 +132,17 @@
 </summary>
 <ul><br>
 
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Getting-Started-with-Shader-Graph">Getting Started</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Custom-Nodes-With-CodeFunctionNode">Custom Nodes with CodeFunctionNode</a><br>
-
+<details><summary>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Getting-Started-with-Shader-Graph">Getting Started</a><br></summary>
+<ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shader-Graph-Window">Shader Graph Window</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Blackboard">Blackboard</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Master-Preview">Master Preview</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Create-Node-Menu">Create Node Menu</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shader-Graph-Asset">Shader Graph Asset</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shader-Graph-Asset">Shader Graph Asset</a><br><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Custom-Nodes-With-CodeFunctionNode">Custom Nodes with CodeFunctionNode</a></ul>
+</details>
+
+
 
 [//]: # "SUB-GRAPH"
 
@@ -361,7 +364,8 @@
 </ul></details>
 
 <details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Procedural-Nodes">Procedural</a></summary>
-<ul><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Checkerboard-Node">Checkerboard</a></ul><br>
+<ul><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Checkerboard-Node">Checkerboard</a></ul>
+
 <details><summary>Noise</summary>
 <ul><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Gradient-Noise-Node">Gradient Noise</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Simple-Noise-Node">Simple Noise</a><br>
