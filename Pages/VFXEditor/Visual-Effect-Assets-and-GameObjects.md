@@ -4,7 +4,7 @@ The new Visual Effect pipeline relies on templates stored in the Asset Database 
 
 Visual Effect Graphs can be created using the Create Asset Menu, under Visual Effects Category.
 
-![](C:\Unity\VFX Help\img\create-asset.gif)
+![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/create-asset.gif)
 
 These assets contains all the necessary data (Graph and Shaders) to run an effect completely. These assets are compiled by the Content pipeline to generate necessary nested shaders and compute shaders.
 
@@ -35,7 +35,7 @@ Shaders can be debug by clicking the show button next to its name in the Asset I
 
 The Visual Effect Graphs can be played in Scenes by Visual Effect Components, they come pre-configured on GameObjects that can be created using the `Create > Visual Effects > Visual Effect` menu. 
 
-![](C:\Unity\VFX Help\img\create-go.gif)
+![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/create-go.gif)
 
 > If an effect is selected in the project view during the creation process, It will be automatically assigned to the component template. 
 
@@ -47,7 +47,7 @@ The Visual Effect Component contains basic controls to configure an instance of 
 
 
 
-![](C:\Unity\VFX Help\img\component.png)
+![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/component.png)
 
 * **Asset Template** : the Visual effect graph asset used as template for this instance. Use the Edit button to open this template in the Visual Effect Graph window.
 * **Random Seed** : A fixed random seed so the effect random becomes unique to this seed.

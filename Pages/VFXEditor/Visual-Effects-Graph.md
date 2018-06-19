@@ -1,8 +1,6 @@
-# The Visual Effect Graph
-
 When opening a Visual Effect Asset, the Visual Effect Graph window opens and displays the contents of the asset. This window enables editing the default behaviour of this template. Expose parameters and events, and also attach to instances in scene to debug and preview the effect.
 
-![](C:\Unity\VFX Help\img\graphWindow.PNG)
+![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/graphWindow.PNG)
 
 
 
@@ -64,7 +62,7 @@ On top of the graph area is a toolbar where you can access various actions:
 
 ## Blackboard Panel
 
-![](C:\Unity\VFX Help\img\blackboard.PNG)
+![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/blackboard.PNG)
 
 The blackboard panel enables the creation and the setup of the parameter interface. Every parameter can be created here, setup with default values, reordered and categorized using this panel.
 
@@ -72,7 +70,7 @@ Use the + button to add a category or a new entry of a specific type.
 
 ## Component Board Panel
 
-![](C:\Unity\VFX Help\img\componentboard.PNG)
+![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/componentboard.PNG)
 
 The Component board is used to attach the current graph to a component in the scene so the preview can be made on this particular instance.
 

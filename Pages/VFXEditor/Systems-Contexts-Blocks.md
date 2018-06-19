@@ -1,12 +1,10 @@
-# Systems, Contexts and Blocks
-
 The visual effects system relies on a modular flow design where processing is described through states. Systems are composed by chaining states which contains dedicated behavior. Each state type has its own specific properties and using a behavior block in one state or another can be used to achieve different results.
 
 ## Systems
 
 Systems are generally composed of a **top-to-bottom chain of contexts** that follows this order : 
 
-![](C:\Unity\VFX Help\img\system-contexts.png)
+![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/system-contexts.png)
 
 ## Contexts
 
@@ -16,7 +14,7 @@ Event contexts are flow inputs that will turn on and off the spawn of particles,
 
 Events can also have any custom name defined as a string, and thus can be invoked by the `SendEvent()` method of the Visual Effects component.
 
-![](C:\Unity\VFX Help\img\events.PNG)
+![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/events.PNG)
 
 ### Spawn
 
@@ -24,7 +22,7 @@ Spawn and events contexts are triggered by **SpawnEvent** data types and can be 
 
 Spawn Contexts have two inputs : **Start** and **Stop**. These are implicitly bound to the `OnPlay` and `OnStop` events, which means that the spawning machine will start spawning when some SpawnEvent hits the start flow input, and shutdown when another SpawnEvent hits the stop flow Input.
 
-![](C:\Unity\VFX Help\img\implicit-events-spawner.PNG)
+![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/implicit-events-spawner.PNG)
 
 Every time the Start input is hit by a SpawnEvent, the Spawn context internal time resets to zero, and spawn resets. So if a Single burst happens at T=0s it will be triggered every frame a spawn event hits the start input.
 
