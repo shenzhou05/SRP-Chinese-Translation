@@ -1,6 +1,8 @@
 ## Description
 
-Provides access to the Scene's **Ambient** color values. When Environment Lighting Source is set to **Gradient** [Ports](https://github.com/Unity-Technologies/ShaderGraph/wiki/Port) **Color/Sky**, **Equator** and **Ground** return the values **Sky Color**, **Equator Color** and **Ground Color** respectively. When Environment Lighting Source is set to **Color** [Port](https://github.com/Unity-Technologies/ShaderGraph/wiki/Port) **Color/Sky** returns the value **Ambient Color**. [Ports](https://github.com/Unity-Technologies/ShaderGraph/wiki/Port) **Equator** and **Ground** return zero.
+Provides access to the Scene's **Ambient** color values. When Environment Lighting Source is set to **Gradient** [Port](https://github.com/Unity-Technologies/ShaderGraph/wiki/Port) **Color/Sky** returns the value **Sky Color**. When Environment Lighting Source is set to **Color** [Port](https://github.com/Unity-Technologies/ShaderGraph/wiki/Port) **Color/Sky** returns the value **Ambient Color**. [Ports](https://github.com/Unity-Technologies/ShaderGraph/wiki/Port) **Equator** and **Ground** always return the values **Equator Color** and **Ground Color** regardless of the current Environment Lighting Source.
+
+Note: Values of this [Node](https://github.com/Unity-Technologies/ShaderGraph/wiki/Node) are only updated when entering Play mode or saving the current Scene/Project.
 
 ## Ports
 
