@@ -1,5 +1,3 @@
-# Assets and Game Objects
-
 The new Visual Effect pipeline relies on templates stored in the Asset Database and used by Scene Components. Every template can be used in any number of instances and have its configuration customized per-instance.
 
 ## Visual Effect Graph (Asset)
