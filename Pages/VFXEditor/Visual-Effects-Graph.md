@@ -66,7 +66,11 @@ On top of the graph area is a toolbar where you can access various actions:
 
 The blackboard panel enables the creation and the setup of the parameter interface. Every parameter can be created here, setup with default values, reordered and categorized using this panel.
 
-Use the + button to add a category or a new entry of a specific type.
+* Use the + button to add a category or a new entry of a specific type.
+* Use the exposed checkbox to make this parameter visible to to the component
+* Delete key deletes a parameter
+* You can reorder parameters and move them to Categories by dragging them around.
+* To create a parameter operator, simply drag the parameter label to the graph to create it.
 
 ## Component Board Panel
 
@@ -74,4 +78,17 @@ Use the + button to add a category or a new entry of a specific type.
 
 The Component board is used to attach the current graph to a component in the scene so the preview can be made on this particular instance.
 
-(TBD Detail controls.)
+#### Attachment to Running instance
+
+To attach the component board to a particular instance in scene, just select the effect in the hierarchy, then click the Attach button of the component board. The instance will attach and you will be able to access play controls, event preview and editing widgets.
+
+* Play controls are the same as the component play controls:
+  * Stop sends the Stop() event to trigger the shutdown of the effect, while terminating simulation. 
+  * Play/Pause toggles the simulation and spawn
+  * Frame advance lets you advance only one frame of simulation
+  * Reset clears out buffers and sends the Play() event
+  * Preview Play Rate can also be adjusted from 1% to 4000%
+* Events can be sent to this instance
+  * OnPlay and OnStop (corresponding to `Play()` and `Stop()` from the API)
+  * Any custom named event can also be sent, and renamed using this panel.
+

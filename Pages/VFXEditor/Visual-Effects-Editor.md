@@ -21,15 +21,12 @@ This section covers the different aspects of the Visual Effects, its philosophy 
 * [Attributes, Properties and Settings](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-Attributes-Properties-and-Settings)
 * [Parameters and Events](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-Parameters-and-Events)
 * [Utilities and DCC Tools](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-Utilities-and-DCC-Tools)
-* [C# Component API](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-CSharp-API)
 * [(Experimental) Extending the Editor](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-Extending-The-Editor)
 
 ## Reference
 
 * [Context Reference](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-Contexts)
-
 * [Block Library Reference](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-Blocks)
-
 * [Operators reference](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-Operators)
+* [C# Component API](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-CSharp-API)
 
-  

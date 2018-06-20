@@ -31,7 +31,7 @@ You can preview a Visual Effect in its default state by using the Inspector prev
 
 Shaders can be debug by clicking the show button next to its name in the Asset Inspector
 
-## Visual Effect (Component)
+## Visual Effect (GameObject and Component)
 
 The Visual Effect Graphs can be played in Scenes by Visual Effect Components, they come pre-configured on GameObjects that can be created using the `Create > Visual Effects > Visual Effect` menu. 
 

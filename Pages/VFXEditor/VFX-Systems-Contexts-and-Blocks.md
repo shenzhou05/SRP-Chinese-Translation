@@ -16,6 +16,20 @@ Events can also have any custom name defined as a string, and thus can be invoke
 
 ![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/events.PNG)
 
+
+
+### GPU Event
+
+GPU Events are triggered by systems upon certain conditions and can be caught by other systems to spawn new particles. 
+
+A system that triggers a GPU Event will output a GPU Event data that can be connected to the GPU Event Context.
+
+![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/gpu-events.PNG)
+
+Event data can be accessed in the child system by reading **Source Attributes** or using the **Inherit Source (attribute)** node
+
+
+
 ### Spawn
 
 Spawn and events contexts are triggered by **SpawnEvent** data types and can be chained to synchronize themselves. **SpawnEvent**s can be considered as messages containing a **spawn order** with a **spawn count** , and a **state payload**.

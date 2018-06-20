@@ -50,6 +50,21 @@ Attributes **written exclusively in output** are **not stored** either.
 - **OldPosition** (float3) : Container for old position, is not automatically set but can be used to store previous particle position
 - **texIndex** (float) : animation progress used for flipbooks. Can be updated using the **flipbook player** update block
 
+### Attribute Location
+
+Attributes can be referred to from their location. Depending on the location you can access attributes from the current simulation or attributes from events.
+
+#### Current Location
+
+Current Location is the default for the Attribute Operator, it will try to fetch the value from the current simulation. If the attribute is not used, it will be marked as read and its default value will be returned
+
+#### Source Location
+
+Source refers to the event that triggered the spawn of new particles. As such, Source attributes are only available in Intialize contexts. In this context, source attribute can refer to :
+
+* SpawnEvent attribute set in spawn context, or directly sent with an event with the `SendEvent()` component API.
+* Some attribute from a system that triggered a GPU Event.
+
 ## Properties & Settings
 
 Properties and settings are the user-side elements that help configure contexts, blocks and operators. Properties are connectable using the graph while settings are just static UI elements that will trigger more static behavior.
