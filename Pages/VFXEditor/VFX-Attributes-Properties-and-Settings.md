@@ -1,38 +1,35 @@
-# Attributes, Properties and Settings
-
-
-
 ## Attributes
 
-Attributes are the properties of every element of a simulation. For particles, attributes will describe how every behaves during its simulation.
+Attributes are the properties of every element of a simulation. For particles, attributes describes how each particle behaves during its simulation.
 
 #### Reading and Writing attributes
 
-Depending on the nodeblock you use and its configuration (see Settings) the system will require reading or writing attributes. If the context does not already require this attribute, it will be automatically required. 
+Depending on the block you use. its configuration, and optionally operators connected to it, the system will require reading or writing attributes. If the context does not already require this attribute, it will be automatically required. 
 
-If a nodeblock tries to read the value of an attribute that has not been set, it will read its default value instead.
+> **Default Value :** If a block or an operator attempts to read the value of an attribute that has not been set, it will read its default value instead.
+>
 
 #### Storing Attributes
 
-Attributes are not automatically stored as long as they are used in the simulation. The storage of attributes enable these to persist across time and be integrated into the simulation. For instance, particle position, if it depends on a velocity.
+Attributes are not automatically stored as long as they are used in the simulation. The storage of attributes enable these to persist across time and be integrated into the simulation. For instance, particle position, if it depends on a velocity. 
 
-General rule : Attributes written in initialize and/or update and read in update / output will result in being stored. 
+<u>The attribute storage depends on the following:</u>
 
-Attributes **read and written exclusively in initialize or update** but not read afterwards are **not stored.**
+* Attributes written in initialize and/or update and read in update / output will result in being stored. 
+* Attributes **read and written exclusively in initialize or update** but not read afterwards are **not stored.**
+* Attributes **written exclusively in output** are **not stored** either.
 
-Attributes **written exclusively in output** are **not stored** either.
+#### Optimizing Attributes
 
-> **Optimizing attributes:**
->
-> There are some requirements for an attribute to be stored, and the graph compiler tries to store as few attributes as required, however the system will store an attribute if you use it under the right conditions, even if a more optimal solution exits. Also, memory gain has a performance tradeoff you can control by choosing where to compute and whether to store attributes or not.
->
+There are some requirements for an attribute to be stored, and the graph compiler tries to store as few attributes as required, however the system will store an attribute if you use it under the right conditions, even if a more optimal solution exits. Also, memory gain has a performance tradeoff you can control by choosing where to compute and whether to store attributes or not.
+
 > *For example:* In a mesh particle system, writing color and alpha (over life) in update will result in color and alpha being stored. As color and alpha are read by the particle mesh output to set color to particles.
 >
 > Using the Color and Alpha over Life in output will result in these two attributes being **not stored**, but instead Age and Lifetime attributes shall become part of the stored attributes (if they were not already). This helps using 2 floats instead of 4, per particle.
 >
 > In this case, The tradeoff for this memory gain is, the color over life will be computed, not for every particle, but for every vertex of every mesh particle. Which could result in degraded performance if too many vertices are present for each particle.
 
-#### Commonly used Attributes:
+#### Commonly used Attributes
 
 * **Position** (float3) : Position of the particle
 * **Velocity** (float3) : Velocity vector of the particle
@@ -56,7 +53,7 @@ Attributes can be referred to from their location. Depending on the location you
 
 #### Current Location
 
-Current Location is the default for the Attribute Operator, it will try to fetch the value from the current simulation. If the attribute is not used, it will be marked as read and its default value will be returned
+Current Location is the default for the Attribute Operator, it will try to fetch the value from the current simulation. If the attribute is not used, it will be marked as read and its default value will be returned.
 
 #### Source Location
 
