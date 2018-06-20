@@ -1,3 +1,9 @@
+> # WARNING
+>
+> This documentation refers to features that are not currently available in unity, and that are under continuous development. This section is a early, incomplete, work-in progress and, as such, contents and features described here are highly likely subject to change.
+
+
+
 ![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/vfxeditor-title.png)
 
 Welcome to the documentation page of the Visual Effects Editor (VFX Editor). Here you will be able to access a variety of topics to be start working with the new Unity Visual Effects toolchain.
