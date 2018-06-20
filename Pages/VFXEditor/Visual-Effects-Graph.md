@@ -74,4 +74,4 @@ Use the + button to add a category or a new entry of a specific type.
 
 The Component board is used to attach the current graph to a component in the scene so the preview can be made on this particular instance.
 
-TBD Detail controls.
+(TBD Detail controls.)

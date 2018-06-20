@@ -1,4 +1,4 @@
-The visual effects system relies on a modular flow design where processing is described through states. Systems are composed by chaining states which contains dedicated behavior. Each state type has its own specific properties and using a behavior block in one state or another can be used to achieve different results.
+The visual effects system relies on a modular flow design where processing is described through states. **Systems** are composed by chaining **Contexts** which contains dedicated behavior **Blocks**. Every context type has its own specific properties and using a block in one state or another can be used to achieve different results.
 
 ## Systems
 
@@ -81,3 +81,28 @@ Depending on the output context you use, settings are subject to change. See the
 
 ## Blocks
 
+Blocks are one of the modular processing power of the visual effect editor : they are small chunks of features that can be added to contexts to process a specific task. They are held in a library that can be extended by writing new blocks.
+
+#### Manipulating Blocks
+
+![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/block-create-move-delete.gif)
+
+* Blocks can be **added** to a context by right clicking the context then selecting `Create Block` from the menu or pressing the Spacebar while having the cursor over the context.
+* The block **creation** menu can be navigated through categories and/or filtered using the search field.
+* Blocks can be **dragged** and **reordered** among one context, or **dragged to another compatible context**.
+* Blocks can be **duplicated**, **copied**, **pasted** and **deleted**.
+
+#### Block overview
+
+Blocks are composed of a **Header**, a **Settings** area and a **property** area.
+
+![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/block.png)
+
+* **Header** is the area where you can click to drag around the block. It contains the following:
+  * Block title (corresponding to the current configuration)
+  * Toggle checkbox to disable the block.
+  * UI Collapse button
+* **Settings** area is where you can staticly configure the block. *(please note that not all settings are necessarily in this area, some can be accessible in the inspector)*
+* **Properties** area is where you can enter values or connect operators to configure the block's values.
+
+There is a large number of blocks you can add and a even larger amount of combinations you can achieve using these. For more details about blocks and the library contents : see the [Blocks]() section of the help.

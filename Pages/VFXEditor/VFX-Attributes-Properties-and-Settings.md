@@ -54,7 +54,7 @@ Attributes **written exclusively in output** are **not stored** either.
 
 Properties and settings are the user-side elements that help configure contexts, blocks and operators. Properties are connectable using the graph while settings are just static UI elements that will trigger more static behavior.
 
-![](C:\Unity\VFX Help\img\settings-properties.png)
+![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/settings-properties.png)
 
 While properties are always exposed to the graph, some settings can be present in the graph, and some other (less used) can be present in the inspector, and be accessed while the element is selected in the graph.
 
@@ -98,7 +98,7 @@ Spaces also convey the type of transformation : **position**, **direction** or *
 
 Some types used in the VFX Editor are composed from other types : for instance the AABox (Axis-Aligned Box) type is a Spaceable Box that aligns to XYZ axes and cannot be rotated. This box is defined by a center position and a size.
 
-![](C:\Unity\VFX Help\img\expand-types.gif)
+![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/expand-types.gif)
 
 While using types, you can press the + next to the connector to expand the field and access sub-elements. It is a convenient way to connect sub-properties if you do not require to connect a full type.
 
