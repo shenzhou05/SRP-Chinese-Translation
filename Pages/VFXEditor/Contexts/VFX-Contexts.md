@@ -83,25 +83,43 @@ Output contexts take, every frame, the simulation data and will render it accord
 
 An Initialize or update block **can be connected to multiple outputs at once**. The simulation data will be shared across these output contexts.
 
-#### Settings
+#### Common Settings
 
-Depending on the output context you use, settings are subject to change. See the following for more specific information.
+Depending on the output context you use, settings are subject to change. See the following for more specific information. Here is a list of commonly used settings (not necessarily used by all output contexts):
+
+| Name (Type)              | Description                                                  |
+| ------------------------ | ------------------------------------------------------------ |
+| Blend Mode (Enum)        | <u>How the particle will render:</u> <br />**- Opaque** is non-blended and will ignore the alpha channel<br />**- Masked** is non-blended and will use a Alpha threshold setting to perform pixel culling<br />**- Alpha** uses standard Alpha blending<br />**- Additive** uses additive blending, (alpha is multiplied by color before blending)<br />**- AlphaPremultiplied** uses Pre-Multiplied alpha blending so both additive and alpha blending can be achieved, |
+| UV Mode (Enum)           | <u>How the UVs will be processed:</u><br />**- Simple**  does no modification to UVs<br />**- Flipbook** uses a uint2 *FlipbookSize* property to define rows and columns, and uses the texIndex attribute to select a cell into the flipbook<br />**- FlipbookBlend** is the same as Flipbook but instead blends between two cells depending on the fractional part of the texIndex attribute<br />**- ScaleAndBias** uses two input properties *UVScale* and *UVBias* to perform tiling and offset to UVs (useful to scroll patterns) |
+| Use Soft Particle (Bool) | Enables testing particle depth vs scene depth for blended particles : adds a *SoftParticleFadeDistance* input property to control the fade distance to the next opaque pixel. |
+| Cull Mode (Enum)         | Selects the Cull Mode render state : Default, Front, Back, Off (Two-sided) |
+| Z Write Mode (Enum)      | Selects whether particles write their own depth : Default, Off, On |
+| Z Test Mode (Enum)       | Select whether particles will clip depending on scene depth: Default, Less, LEqual, Greater, GEqual, Equal, NotEqual, Always<br />As default particles will clip if their depth is Less or equal, using modes Greater or GEqual permits rendering particles only behind opaque geometry, or Always to never clip the particles behind opaque geometry |
+| Sort Priority (int)      | Orders this output compared to other outputs in the system   |
+| Sort (Enum)              | Performs per-particle Sorting (Auto detects if blend mode requires sorting) Sorting |
+| Indirect Draw (Bool)     | Performs an indirect draw call                               |
+| Cast Shadows (Bool)      | Whether the particles will cast shadows                      |
+| Pre-Refraction (Bool)    | Whether the particles will be rendered into the Pre-Refraction render queue of the HD Render Pipeline (useful to refract particles behind glass) |
+
+
 
 ### Quad Output
 
-Outputs a textured quad per-particle
+Outputs a textured quad per-particle. By default, the quad is not aligned to anything and will require the **Orient** block to perform camera facing (or any other sort of alignment: velocity, axis rotation, fixed, etc.)
+
+These particles are textured and output color with the following formula : `tex2D(_MainTexture,uv) * float4(color,alpha)` 
 
 ### Mesh Output
 
-Outputs a textured mesh per-particle
+Outputs a textured mesh per-particle. These particles are textured and output color with the following formula : `tex2D(_MainTexture,uv) * float4(color,alpha)` 
 
 ### Sphere Output
 
-Ouputs a billboarded Sphere with corrected depth per-particle
+Ouputs a billboarded Sphere with corrected depth per-particle. These particles are not textured but insteads uses a color to render.
 
 ### Cube Output
 
-Outputs a textured cube per particle
+Outputs a textured cube per particle : Cubes are textured  and output color with the following formula : `tex2D(_MainTexture,uv) * float4(color,alpha)` 
 
 ### Point Output
 
