@@ -4,7 +4,7 @@
 
 
 
-![](https://raw.githubusercontent.com/wiki/Unity-Technologies/ScriptableRenderPipeline/Pages/VFXEditor/img/vfxeditor-title.png)
+![](Pages/VFXEditor/img/vfxeditor-title.png)
 
 Welcome to the documentation page of the Visual Effects Editor (VFX Editor). Here you will be able to access a variety of topics to be start working with the new Unity Visual Effects toolchain.
 
@@ -21,18 +21,18 @@ The visual effects editor comes along with the HD ScriptableRenderPipeline  and 
 
 This section covers the different aspects of the Visual Effects, its philosophy and the main concepts you will encounter while working with the graph, and the game objects.
 
-* [Assets and Game Objects](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Visual-Effect-Assets-and-GameObjects)
-* [The Visual Effect Graph](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Visual-Effects-Graph)
-* [Systems, Contexts and Blocks](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-Systems-Contexts-and-Blocks)
-* [Attributes, Properties and Settings](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-Attributes-Properties-and-Settings)
-* [Parameters and Events](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-Parameters-and-Events)
-* [Utilities and DCC Tools](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-Utilities-and-DCC-Tools)
-* [(Experimental) Extending the Editor](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-Extending-The-Editor)
+* [Assets and Game Objects](Visual-Effect-Assets-and-GameObjects)
+* [The Visual Effect Graph](Visual-Effects-Graph)
+* [Systems, Contexts and Blocks](VFX-Systems-Contexts-and-Blocks)
+* [Attributes, Properties and Settings](VFX-Attributes-Properties-and-Settings)
+* [Parameters and Events](VFX-Parameters-and-Events)
+* [Utilities and DCC Tools](VFX-Utilities-and-DCC-Tools)
+* [(Experimental) Extending the Editor](VFX-Extending-The-Editor)
 
 ## Reference
 
-* [Context Reference](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-Contexts)
-* [Block Library Reference](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-Blocks)
-* [Operators reference](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-Operators)
-* [C# Component API](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VFX-CSharp-API)
+* [Context Reference](VFX-Contexts)
+* [Block Library Reference](VFX-Blocks)
+* [Operators reference](VFX-Operators)
+* [C# Component API](VFX-CSharp-API)
 
