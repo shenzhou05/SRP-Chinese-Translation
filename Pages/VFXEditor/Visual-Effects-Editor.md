@@ -26,8 +26,6 @@ This section covers the different aspects of the Visual Effects, its philosophy 
 * [Systems, Contexts and Blocks](VFX-Systems-Contexts-and-Blocks)
 * [Attributes, Properties and Settings](VFX-Attributes-Properties-and-Settings)
 * [Parameters and Events](VFX-Parameters-and-Events)
-* [Utilities and DCC Tools](VFX-Utilities-and-DCC-Tools)
-* [(Experimental) Extending the Editor](VFX-Extending-The-Editor)
 
 ## Reference
 
