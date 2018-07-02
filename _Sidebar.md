@@ -488,3 +488,20 @@
 </ul>
 </details>
 
+[//]: # "VFX"
+<details>
+<summary>
+<a href=" ">VFX Editor</a>
+</summary>
+
+<ul>
+<details>
+<summary>
+<a>Placeholder</a>
+</summary>
+<ul>
+<a>Placeholder</a><br>
+<a>Placeholder</a><br>      
+</ul>
+</details>
+</ul>
