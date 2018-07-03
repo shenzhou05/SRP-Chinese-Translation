@@ -28,3 +28,4 @@ public class BasicPipeInstance : RenderPipeline
 }
 ```
 
+More details about what can be achieved via the context can be found here: https://docs.unity3d.com/ScriptReference/Experimental.Rendering.ScriptableRenderContext.html
