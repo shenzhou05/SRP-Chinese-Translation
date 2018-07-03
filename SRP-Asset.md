@@ -1,4 +1,5 @@
-```[ExecuteInEditMode]
+```C#
+[ExecuteInEditMode]
 public class BasicAssetPipe : RenderPipelineAsset
 {
     public Color clearColor = Color.green;
