@@ -17,9 +17,9 @@
 <a>Creating a Simple SRP</a>
 </summary>
 <ul>
-<a>The SRP Asset</a><br>
-<a>The SRP Instance</a><br>
-<a>The Render Pipeline Context</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Asset">The SRP Asset</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Instance">The SRP Instance</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Context">The Render Pipeline Context</a><br>
 <a>Figuring out what to draw</a><br>
 <a>Drawing</a><br>
 </ul>
