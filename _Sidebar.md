@@ -2,6 +2,45 @@
 
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/">Home</a>
 
+[//]: # "Core SRP"
+<details>
+<summary>
+Core SRP
+</summary>
+
+<ul>
+<a>What is a Render Pipeline</a><br>
+<a>What is a Scriptable Render Pipeline</a><br>
+
+<details>
+<summary>
+<a>Creating a Simple SRP</a>
+</summary>
+<ul>
+<a>The SRP Asset</a><br>
+<a>The SRP Instance</a><br>
+<a>The Render Pipeline Context</a><br>
+<a>Figuring out what to draw</a><br>
+<a>Drawing</a><br>
+</ul>
+</details>
+
+<details>
+<summary>
+<a>Advanced SRP</a>
+</summary>
+<ul>
+<a>Culling</a><br>
+<a>Sorting</a><br>
+<a>Filtering</a><br>
+<a>Drawing</a><br>
+<a>Editor Integration</a><br>
+</ul>
+</details>
+
+</ul>
+</details>
+
 [//]: # "HDRP"
 <details>
 <summary>
