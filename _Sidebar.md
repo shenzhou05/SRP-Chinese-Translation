@@ -20,13 +20,9 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Asset">The SRP Asset</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Instance">The SRP Instance</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Context">The Render Pipeline Context</a><br>
-<a>Figuring out what to draw</a><br>
-<a>Drawing</a><br>
-<a>Culling</a><br>
-<a>Sorting</a><br>
-<a>Filtering</a><br>
-<a>Drawing</a><br>
-<a>Editor Integration</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Culling">Culling</a>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Drawing">Drawing</a>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Editor">Editor Integration</a>
 </ul>
 </details>
 
