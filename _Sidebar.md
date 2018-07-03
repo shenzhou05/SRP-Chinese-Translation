@@ -14,7 +14,7 @@
 
 <details>
 <summary>
-<a>Creating a Simple SRP</a>
+<a>Rendering with SRP API</a>
 </summary>
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Asset">The SRP Asset</a><br>
@@ -22,14 +22,6 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Context">The Render Pipeline Context</a><br>
 <a>Figuring out what to draw</a><br>
 <a>Drawing</a><br>
-</ul>
-</details>
-
-<details>
-<summary>
-<a>Advanced SRP</a>
-</summary>
-<ul>
 <a>Culling</a><br>
 <a>Sorting</a><br>
 <a>Filtering</a><br>
