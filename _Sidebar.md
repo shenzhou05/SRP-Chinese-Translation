@@ -9,9 +9,8 @@ Core SRP
 </summary>
 
 <ul>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/What-is-a-Render-Pipeline">What is a Render Pipeline</a>
-<a>What is a Scriptable Render Pipeline</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/What-is-a-Scriptable-Render-Pipeline">What is a Scriptable Render Pipeline</a>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/What-is-a-Render-Pipeline">What is a Render Pipeline</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/What-is-a-Scriptable-Render-Pipeline">What is a Scriptable Render Pipeline</a><br>
 
 <details>
 <summary>
