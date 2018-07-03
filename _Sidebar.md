@@ -5,7 +5,7 @@
 [//]: # "Core SRP"
 <details>
 <summary>
-Core SRP
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Core-SRP">SRP Core</a><br>
 </summary>
 
 <ul>
