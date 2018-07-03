@@ -1,5 +1,7 @@
 # The Render Pipeline Context
-SRP renders using the concept of delayed execution. As a user you build up a list of commands and then execute them. The object that you use to build up these commands is called the ‘ScriptableRenderContext’. When you have populated the context with operations, then you can call ‘Submit’ to submit all the queued up draw calls.
+SRP renders using the concept of delayed execution. As a user you build up a list of commands and then execute them. The object that you use to build up these commands is called the `ScriptableRenderContext` and is passed as an argument to the Render function.
+
+When you have populated the context with operations, then you can call ‘Submit’ to submit all the queued up rendering calls. These calls will generally be a combination of `CommandBuffer` executions as well as SRP specific draw commands.
 
 An example of this is clearing a render target using a command buffer that is executed by the render context:
 
