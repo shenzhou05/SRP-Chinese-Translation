@@ -158,60 +158,36 @@
 <ul>
 
 <details><summary><a>Getting Started</a></summary>
-<ul>
-<details><summary><a>Why should you use LWRP</a></summary>
-<ul>
-<a>Pipeline Features</a>
-<a>Platforms Supported</a>
-</ul>
+<a>Getting LWRP in a new project</a><br>
+<a>Updating to Latest Package via Packman</a><br>
+<a>How do I activate LWRP</a><br>
+<a>Getting Experimental version from Github</a><br>
+<a>How do I activate LWRP</a><br>
+<a>Upgrading to LWRP</a>
 </details>
-<details><summary><a>How to get LWRP</a></summary>
-<ul>
-<a>LWRP Template</a><br>
-<details><summary><a>Updating to Latest Package via Packman</a><br></summary>
-<ul><a>How do I activate LWRP</a><br></ul></details>
-<details><summary><a>Getting Experimental version from Github</a><br></summary>
-<ul><a>How do I activate LWRP</a></ul></details>
-</ul></details>
-</details>
-<a>Upgrading to LWRP</a><br>
-<a>The Lightweight Render Pipeline Asset</a>
-<details><summary><a>Materials</a><br></summary>
-<ul>
+<details><summary><a>What's inside the LWRP?</a></summary>
+<a>The LWRP Asset</a><br>
+<a>Materials</a><br>
+<a>Lighting</a><br>
+<a>Camera</a><br>
+<details><summary><a>Shader library</a></summary>
+<ul><a>Shader API</a><br>
+<a>Core LWRP Shader API</a><br>
+<a>Shader Stripping</a><br>
 <a>Physically Based Shader</a><br>
+<a>Shader Built-in vars</a><br>
 <a>Simple Lighting Shader</a><br>
 <a>Particle Shader</a><br>
 <a>Particles Simple Lit</a><br>
 <a>Particles Unlit</a><br>
 <a>Unlit</a><br>
+</details>
+<details><summary><a>Deep features</a></summary>
 <a>Terrain</a>
-</ul>
+</details>
+<details><summary><a>Integration with Shader Graph</a></summary>
 </details>
 
-<details><summary><a>Lighting</a><br></summary>
-<ul>
-<a>Light Types</a></ul></details>
-
-<a>Shader API</a><br>
-<a>SRP Shader Library</a><br>
-<a>Core LWRP Shader API</a><br>
-<a>Shader Built-in vars</a><br>
-<a>Light Classification and Abstraction</a><br>
-<a>Shader Stripping</a><br>
-<a>Integration with ShaderGraph</a>
-
-<details><summary><a>Cameras</a><br></summary>
-<ul>
-<a>Camera Overrides</a>
-</ul>
-</details>
-
-
-<details><summary><a>Debugging</a><br></summary>
-<ul>
-<a>Debug Window</a>
-</ul>
-</details>
 
 </ul>
 </details>
