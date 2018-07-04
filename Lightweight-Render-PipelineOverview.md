@@ -12,6 +12,8 @@ The LWRP is supported on the following platforms:
 * Nintendo Switch
 * All current VR platforms
 
-**Note:** The Lightweight Render Pipeline is available via two templates: LWRP and LWRP-VR. The  LWRP-VR comes with pre-enabled settings specifically for VR. The documentation for both render pipelines is the same. For any questions regarding LWRP-VR, see the LWRP documentation.
+The Lightweight Render Pipeline is available via two templates: LWRP and LWRP-VR. The  LWRP-VR comes with pre-enabled settings specifically for VR. The documentation for both render pipelines is the same. For any questions regarding LWRP-VR, see the LWRP documentation.
 
 **Note:**  Built-in and custom Lit Shaders do not work with the Lightweight Render Pipeline. Instead, LWRP has a new set of standard shaders. If you upgrade a current Project to LWRP, you can upgrade built-in shaders to the new ones.
+
+**Note:** Projects made using LWRP are not compatible with the High Definition Render Pipeline or the built-in Unity rendering pipeline. Before you start development, you must decide which render pipeline to use in your Project. 
