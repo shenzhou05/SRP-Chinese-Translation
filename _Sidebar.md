@@ -153,49 +153,64 @@
 
 [//]: # "LWRP"
 
-<details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Lightweight-Render-PipelineOverview">Lightweight Render Pipeline</a>
+<details>
+    <summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Lightweight-Render-PipelineOverview">Lightweight Render Pipeline</a>
 </summary>
-<ul>
-
-<details><summary><a>Getting Started</a></summary>
-<a>Getting LWRP in a new project</a><br>
-<a>Updating to Latest Package via Packman</a><br>
-<a>How do I activate LWRP</a><br>
-<a>Getting Experimental version from Github</a><br>
-<a>How do I activate LWRP</a><br>
-<a>Upgrading to LWRP</a>
-</details>
-<details><summary><a>What's inside the LWRP?</a></summary>
-<a>The LWRP Asset</a><br>
-<a>Materials</a><br>
-<a>Lighting</a><br>
-<a>Camera</a><br>
-<details><summary><a>Shader library</a></summary>
-<ul><a>Shader API</a><br>
-<a>Core LWRP Shader API</a><br>
-<a>Shader Stripping</a><br>
-<a>Physically Based Shader</a><br>
-<a>Shader Built-in vars</a><br>
-<a>Simple Lighting Shader</a><br>
-<a>Particle Shader</a><br>
-<a>Particles Simple Lit</a><br>
-<a>Particles Unlit</a><br>
-<a>Unlit</a><br>
-</details>
-<details><summary><a>Deep features</a></summary>
-<a>Terrain</a>
-</details>
-<details><summary><a>Integration with Shader Graph</a></summary>
-</details>
-
-
-</ul>
-</details>
+    <ul><details>
+        <summary><a>Getting Started</a></summary>
+        <ul>
+        <a>Getting LWRP in a new project</a><br>
+        <a>Updating to Latest Package via Packman</a><br>
+        <a>How do I activate LWRP</a><br>
+        <a>Getting Experimental version from Github</a><br>
+        <a>How do I activate LWRP</a><br>
+        <a>Upgrading to LWRP</a>
+        </ul>
+    </details>
+    <details>
+        <summary><a>What's inside the LWRP?</a></summary>
+        <ul>
+        <a>The LWRP Asset</a><br>
+        <a>Materials</a><br>
+        <a>Lighting</a><br>
+        <a>Camera</a><br>
+        </ul>
+    </details>
+    <details>
+        <summary><a>Shader library</a></summary>
+        <ul>
+        <a>Shader API</a><br>
+        <a>Core LWRP Shader API</a><br>
+        <a>Shader Stripping</a><br>
+        <a>Physically Based Shader</a><br>
+        <a>Shader Built-in vars</a><br>
+        <a>Simple Lighting Shader</a><br>
+        <a>Particle Shader</a><br>
+        <a>Particles Simple Lit</a><br>
+        <a>Particles Unlit</a><br>
+        <a>Unlit</a><br>
+        </ul>
+    </details>
+    <details>
+        <summary><a>Deep features</a></summary>
+        <ul>
+        <a>Terrain</a>
+        </ul>
+    </details>
+    <details>
+        <summary><a>Integration with Shader Graph</a></summary>
+        <ul>
+        <a>How to Shader Graph 1-1 with LW</a>
+        </ul>
+    </details>
+    
+ </ul></details>
 
 
 [//]: # "SHADER GRAPH"
 
-<details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shader-Graph">Shader Graph</a>
+<details>
+<summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shader-Graph">Shader Graph</a>
 </summary>
 <ul>
 
