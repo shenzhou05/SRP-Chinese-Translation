@@ -159,12 +159,9 @@
     <ul><details>
         <summary><a>Getting Started</a></summary>
         <ul>
-        <a>Getting LWRP in a new project</a><br>
-        <a>Updating to Latest Package via Packman</a><br>
-        <a>How do I activate LWRP</a><br>
-        <a>Getting Experimental version from Github</a><br>
-        <a>How do I activate LWRP</a><br>
-        <a>Upgrading to LWRP</a>
+        <a>Using LWRP in a new Project</a><br>
+        <a>Installing LWRP into an existing Project</a><br>
+        <a>Configuring and using LWRP</a><br>
         </ul>
     </details>
     <details>
@@ -172,6 +169,12 @@
         <ul>
         <a>The LWRP Asset</a><br>
         <a>Materials</a><br>
+            <ul>
+            <a>Lightweight-Default</a><br>
+            <a>Lightweight-DefaultParticle</a><br>
+            <a>Lightweight-DefaultTerrain</a><br>
+            <a>Lightweight-StandardSimpleLighting</a><br>
+            </ul>
         <a>Lighting</a><br>
         <a>Camera</a><br>
         </ul>
@@ -180,21 +183,22 @@
         <summary><a>Shader library</a></summary>
         <ul>
         <a>Shader API</a><br>
-        <a>Core LWRP Shader API</a><br>
+        <a>Core LWRP Shader API</a><br><a>Standard (Physically based)</a><br>
+        <a>Standard (Simple lighting)</a><br>
+        <a>Standard Unlit</a><br> 
+        <a>Particles/Standard (Physically based)</a><br> 
+        <a>Particles/Standard (Simple lighting)</a><br>
+        <a>Particles/Standard Unlit</a><br>  
+        <a>Terrain/Standard terrain</a><br>           
         <a>Shader Stripping</a><br>
-        <a>Physically Based Shader</a><br>
         <a>Shader Built-in vars</a><br>
-        <a>Simple Lighting Shader</a><br>
-        <a>Particle Shader</a><br>
-        <a>Particles Simple Lit</a><br>
-        <a>Particles Unlit</a><br>
-        <a>Unlit</a><br>
         </ul>
     </details>
     <details>
         <summary><a>Deep features</a></summary>
         <ul>
-        <a>Terrain</a>
+        <a>LightweightPipelineEditorResources</a><br>
+        <a>LightweightPipelineResource</a><br>
         </ul>
     </details>
     <details>
