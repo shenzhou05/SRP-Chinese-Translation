@@ -32,7 +32,7 @@
 [//]: # "HDRP"
 <details>
 <summary>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/High-Definition-Render-Pipeline-overview">High-Definition Render Pipeline</a>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/High-Definition-Render-Pipeline-overview">High Definition Render Pipeline</a>
 </summary>
 
 <ul>
