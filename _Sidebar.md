@@ -159,7 +159,7 @@
     <ul><details>
         <summary><a>Getting Started</a></summary>
         <ul>
-        <a>Using LWRP in a new Project</a><br>
+        <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Using-LWRP-in-a-new-Project">Using LWRP in a new Project</a><br>
         <a>Installing LWRP into an existing Project</a><br>
         <a>Configuring and using LWRP</a><br>
         </ul>
