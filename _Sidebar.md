@@ -154,7 +154,7 @@
 [//]: # "LWRP"
 
 <details>
-    <summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Lightweight-Render-PipelineOverview">Lightweight Render Pipeline</a>
+    <summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Lightweight-Render-Pipeline Overview">Lightweight Render Pipeline</a>
 </summary>
     <ul><details>
         <summary><a>Getting Started</a></summary>
