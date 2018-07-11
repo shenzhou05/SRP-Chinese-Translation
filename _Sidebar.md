@@ -167,14 +167,8 @@
     <details>
         <summary><a>What's inside the LWRP?</a></summary>
         <ul>
+        <a>LWRP flowchart</a><br>
         <a>The LWRP Asset</a><br>
-        <a>Materials</a><br>
-            <ul>
-            <a>Lightweight-Default</a><br>
-            <a>Lightweight-DefaultParticle</a><br>
-            <a>Lightweight-DefaultTerrain</a><br>
-            <a>Lightweight-StandardSimpleLighting</a><br>
-            </ul>
         <a>Lighting</a><br>
         <a>Camera</a><br>
         </ul>
@@ -182,8 +176,15 @@
     <details>
         <summary><a>Shader library</a></summary>
         <ul>
-        <a>Shader API</a><br>
-        <a>Core LWRP Shader API</a><br><a>Standard (Physically based)</a><br>
+        <a>Shader Built-in vars</a><br>
+        <a>Core LWRP Shader API</a><br>
+        <a>Custom Shader Examples</a><br>
+        </ul>
+    </details>
+    <details>
+        <summary><a>Built-in shaders</a></summary>
+        <ul>
+        <a>Standard (Physically based)</a><br>
         <a>Standard (Simple lighting)</a><br>
         <a>Standard Unlit</a><br> 
         <a>Particles/Standard (Physically based)</a><br> 
@@ -191,14 +192,6 @@
         <a>Particles/Standard Unlit</a><br>  
         <a>Terrain/Standard terrain</a><br>           
         <a>Shader Stripping</a><br>
-        <a>Shader Built-in vars</a><br>
-        </ul>
-    </details>
-    <details>
-        <summary><a>Deep features</a></summary>
-        <ul>
-        <a>LightweightPipelineEditorResources</a><br>
-        <a>LightweightPipelineResource</a><br>
         </ul>
     </details>
     <details>
