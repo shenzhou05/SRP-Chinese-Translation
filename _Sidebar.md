@@ -157,7 +157,7 @@
     <summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Lightweight-Render-Pipeline Overview">Lightweight Render Pipeline</a>
 </summary>
     <ul><details>
-        <summary><a>Getting Started</a></summary>
+        <summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Getting-started-with-LWRP">Getting Started</a></summary>
         <ul>
         <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Using-LWRP-in-a-new-Project">Using LWRP in a new Project</a><br>
         <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Installing-LWRP-into-an-existing-Project">Installing LWRP into an existing Project</a><br>
