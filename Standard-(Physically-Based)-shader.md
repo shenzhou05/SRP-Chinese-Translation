@@ -46,7 +46,7 @@ __Albedo__ | This is the color of the surface, also known as the diffuse map. Yo
 __Metallic / Specular__ | This setting shows a map input for your chosen __Workflow Mode__ under __Render Properties__.  For a Metallic map, a slider appears, and for a Specular map, a color input appears. __Smoothness__ controls the spread of highlights and/or reflections on the surface. Under __Source__, you can control where to sample smoothness map from. By default, Source uses the Alpha channel for either map. You can also set it to the Albedo Alpha channel.
 __Normal Map__ | Here, you can assign a tangent space normal map. The float value next to the setting is a multiplier for the __Normal Maps__ effect.
 __Occlusion__ | Indicates the occlusion map that simulates shadowing of ambient light. If you’re using the Metallic workflow, you can also use the Metallic map, if the Occlusion is packed into the G channel.
-__Emission__ | Enable this to be able to create a surface that emits light. When enabled, the settings  _Texture map_ and _HDR color_ appear. If you do not enable this, emission will be considered as black, and Unity skips calculating emission. 
+__Emission__ | Enable this to be able to create a surface that emits light. When enabled, the settings  __Texture map__ and __HDR color__ appear. If you do not enable this, emission will be considered as black, and Unity skips calculating emission. 
 
 ### Rendering Options
 
