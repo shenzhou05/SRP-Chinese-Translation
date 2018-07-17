@@ -1,5 +1,3 @@
-# Standard (Physically Based) shader #
-
 The Standard (Physically based) shader lets you render “real-world” surfaces. You can render stone, wood, glass, plastic, or metals in photo-realistic quality. The shader works across different lighting conditions.
 
 This shader follows standard rules for Physically Based Rendering (PBR). The shader uses a simplified GGX shading model. 
