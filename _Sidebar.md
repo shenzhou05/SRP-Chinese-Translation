@@ -184,7 +184,7 @@
     <details>
         <summary><a>Built-in shaders</a></summary>
         <ul>
-        <a>Standard (Physically based)</a><br>
+        <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Standard-(Physically-Based)-shader">Standard (Physically based)</a><br>
         <a>Standard (Simple lighting)</a><br>
         <a>Standard Unlit</a><br> 
         <a>Particles/Standard (Physically based)</a><br> 
