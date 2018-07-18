@@ -45,8 +45,19 @@ __Metallic / Specular__ | This setting shows a map input for your chosen __Workf
 __Normal Map__ | Here, you can assign a tangent space normal map. The float value next to the setting is a multiplier for the __Normal Maps__ effect.
 __Occlusion__ | Indicates the occlusion map that simulates shadowing of ambient light. If you’re using the Metallic workflow, you can also use the Metallic map, if the Occlusion is packed into the G channel.
 __Emission__ | Enable this to be able to create a surface that emits light. When enabled, the settings  __Texture map__ and __HDR color__ appear. If you do not enable this, emission will be considered as black, and Unity skips calculating emission. 
+__Tiling__ | The 2D scale value for your texture. This is a multiplier value. Set a high value to make the texture repeat across your mesh. Set a low value to stretch the texture. 1 is the default value, which denotes no scaling. 
+__Offset__ | The 2D offset of your texture.  To adjust the map position on your mesh, move the texture across the U or V axes.
+__Specular Highlights__ | Enable this to allow shaders to have highlights from direct lights, for example Directional, Point, and Spot lights. Disable this to leave out these light calculations.
+__Reflections__ | Enable this to use sampling of reflections. Sampling uses the nearest Reflection Probe, or, if you have set one, the Lighting Probe from Lighting Settings. Disabling sampling saves on calculations, but also means that you have no reflections.
 
 ### Rendering Options
+
+The __Rendering Options__ settings affect “behind-the-scenes” rendering. They do not have a visible affect on your surface, but on underlying calculations.
+
+Property | Description
+---|---
+__GPU Instancing__ | Enable this to allow meshes with the same geometry and material/shader to be rendered in one batch. To be rendered in one batch, if they can.
+__Double Sided Global Illumination__ | Enable this to make the surface act double-sided during lightmapping. 
 
 
 
