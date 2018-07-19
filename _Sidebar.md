@@ -14,7 +14,7 @@
 
 <details>
 <summary>
-<a>Rendering with SRP API</a>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Overview">Rendering with SRP API</a>
 </summary>
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Asset">The SRP Asset</a><br>
