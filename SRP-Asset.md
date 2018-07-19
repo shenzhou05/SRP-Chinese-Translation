@@ -1,7 +1,3 @@
-When working with an SRP there are two main classes that you need to create.
-* An asset class that represents the SRP and it's settings
-* A pipeline class that performs the rendering. 
-
 The asset contains the interface that users use when configuring a pipeline, when Unity performs rendering for the first time it will call `InternalCreatePipeline` on the pipeline. 
 
 The render pipeline asset is a ScriptableObject and if you wish to use this pipeline for rendering you need to create one in your project. These can be created just like any other ScriptableObject. When the asset is created it can be set in the Graphics Settings for the project.
