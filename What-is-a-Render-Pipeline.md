@@ -1,4 +1,3 @@
-What is a Render Pipeline
 “Render Pipeline” is an umbrella term for a number of techniques used to get objects onto the screen. It encompasses, at a very high level:
 * Culling
 * Rendering Objects
@@ -9,4 +8,4 @@ In addition to these high level concepts each responsibility can be broken down 
 * Single-pass - one pass per object
 * Deferred - Render surface properties to a g-buffer, perform screen space lighting
 
-When writing a custom SRP, these are the kind of decisions that you need to make. Each technique has a number of trade offs that you should consider.
+When writing a custom SRP, these are the kind of decisions that you need to make. Each technique has a number of trade offs that you should consider and no one technique is perfect for a given project. 
