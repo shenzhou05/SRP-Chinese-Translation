@@ -11,3 +11,5 @@ Traditionally with Unity we have provided a number of built in pipelines that ca
 
 ## The Solution
 The SRP API is designed to resolve the problems described above. What it does it change rendering from being a black-box inbuilt concept to being a user controlled per project scriptable concept. Using the SRP api it's possible to have fine grain customisable control of how rendering is performed, form the low level to the high level. 
+
+So how does it work? [Click here](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Asset) to find out!
