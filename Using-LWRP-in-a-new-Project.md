@@ -6,3 +6,5 @@ To create a Project using Templates:
 2. Click __Create Project__. Unity automatically creates a new Project for you, complete with all the LWRP functions.
 
 For more information on using Templates, see [Project Templates](https://docs.unity3d.com/Manual/ProjectTemplates.html) in the Unity Manual.
+
+**Note:** Before you can start using LWRP, you must configure it by creating a Scriptable Render Pipeline Asset and changing your Graphics settings. To learn how, see [Configuring LWRP for use](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Configuring-LWRP-for-use).
