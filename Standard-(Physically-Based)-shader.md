@@ -17,6 +17,8 @@ Render Properties
 Surface Properties
 Rendering Options.
 
+![Standard (Physically Based) inspector](https://raw.githubusercontent.com/Unity-Technologies/SRPDocContent/master/LWRP/Images/Inspectors/Shaders/StdPhysicallyBased.png)
+
 ### Render Properties ##
 
 The __Render Properties__ control how the material is rendered on a screen. 
