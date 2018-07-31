@@ -83,19 +83,10 @@
 <a>Lighting</a>
 </summary>
 <ul>
+<a>HDRP Light Inpector</a><br>
 <a>Creating HDRP Lights</a><br>
 <a>Physical Light Units</a>
-<details>
-<summary><a>Light Types</a></summary>
-<ul>
-<a>Spot</a><br>          
-<a>Directional</a><br>          
-<a>Point</a><br>          
-<a>Rectangle</a><br>          
-<a>Line</a><br>          
 <a>Image-based lighting</a><br>
-</ul>         
-</details>
 <a>Reflection Probes</a><br>
 <a>Planar Probes</a><br>
 <a>SSR</a><br>
