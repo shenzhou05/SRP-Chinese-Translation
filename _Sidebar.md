@@ -42,7 +42,7 @@
 </summary>
 <ul>
 <a>Upgrading to HDRP</a><br>
-<a>The HDRP Asset</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Asset">The HDRP Asset</a><br>
 <a>HD Render Pipeline Resources</a><br>
 <a>Scene Settings</a><br>
 <a>Frame Settings</a><br>
@@ -73,7 +73,7 @@
 <ul>
 <a>Tessellation / Vertex displacement</a><br>
 <a>Specular occlusion</a><br>
-<a>Rough refraction</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Reflection-and-Refraction>Reflection and Refraction"</a><br>
 <a>Distortion</a><br>          
 </ul>
 </details>
@@ -91,7 +91,7 @@
 <a>Planar Probes</a><br>
 <a>SSR</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/sky-and-fog">Sky and Fog</a><br>
-<a>Global Shadow Settings</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Global-Shadow-Settings">Global Shadow Settings</a><br>
 <a>Global Illumination</a><br>
 </ul>
 </details>
@@ -99,8 +99,11 @@
 <details>
 <summary>
 <a>Lighting Model Config</a>
+
+
 </summary>
 <ul>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physical-lighting-intensities">Physical Lighting Intensities</a><br>
 <a>Clear Coat</a><br>
 <a>Subsurface Scattering</a><br>
 <a>Iridescence</a><br>
