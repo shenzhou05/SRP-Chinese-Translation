@@ -83,7 +83,7 @@
 <a>Lighting</a>
 </summary>
 <ul>
-<a>HDRP Light Inpector</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component">HDRP Light Inpector</a><br>
 <a>Creating HDRP Lights</a><br>
 <a>Physical Light Units</a>
 <a>Image-based lighting</a><br>
