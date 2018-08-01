@@ -2,10 +2,37 @@
 
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/">Home</a>
 
+[//]: # "Core SRP"
+<details>
+<summary>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Core-SRP">SRP Core</a><br>
+</summary>
+
+<ul>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/What-is-a-Render-Pipeline">What is a Render Pipeline</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/What-is-a-Scriptable-Render-Pipeline">What is a Scriptable Render Pipeline</a><br>
+
+<details>
+<summary>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Overview">Rendering with SRP API</a>
+</summary>
+<ul>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Asset">The SRP Asset</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Instance">The SRP Instance</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Context">The Render Pipeline Context</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Culling">Culling</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Drawing">Drawing</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Editor">Editor Integration</a><br>
+</ul>
+</details>
+
+</ul>
+</details>
+
 [//]: # "HDRP"
 <details>
 <summary>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/High-Definition-Render-Pipeline-overview">High-Definition Render Pipeline</a>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/High-Definition-Render-Pipeline-overview">High Definition Render Pipeline</a>
 </summary>
 
 <ul>
@@ -56,19 +83,10 @@
 <a>Lighting</a>
 </summary>
 <ul>
+<a>HDRP Light Inpector</a><br>
 <a>Creating HDRP Lights</a><br>
 <a>Physical Light Units</a>
-<details>
-<summary><a>Light Types</a></summary>
-<ul>
-<a>Spot</a><br>          
-<a>Directional</a><br>          
-<a>Point</a><br>          
-<a>Rectangle</a><br>          
-<a>Line</a><br>          
 <a>Image-based lighting</a><br>
-</ul>         
-</details>
 <a>Reflection Probes</a><br>
 <a>Planar Probes</a><br>
 <a>SSR</a><br>
@@ -126,73 +144,61 @@
 
 [//]: # "LWRP"
 
-<details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Lightweight-Render-PipelineOverview">Lightweight Render Pipeline</a>
+<details>
+    <summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Lightweight-Render-Pipeline Overview">Lightweight Render Pipeline</a>
 </summary>
-<ul>
-
-<details><summary><a>Getting Started</a></summary>
-<ul>
-<details><summary><a>Why should you use LWRP</a></summary>
-<ul>
-<a>Pipeline Features</a>
-<a>Platforms Supported</a>
-</ul>
-</details>
-<details><summary><a>How to get LWRP</a></summary>
-<ul>
-<a>LWRP Template</a><br>
-<details><summary><a>Updating to Latest Package via Packman</a><br></summary>
-<ul><a>How do I activate LWRP</a><br></ul></details>
-<details><summary><a>Getting Experimental version from Github</a><br></summary>
-<ul><a>How do I activate LWRP</a></ul></details>
-</ul></details>
-</details>
-<a>Upgrading to LWRP</a><br>
-<a>The Lightweight Render Pipeline Asset</a>
-<details><summary><a>Materials</a><br></summary>
-<ul>
-<a>Physically Based Shader</a><br>
-<a>Simple Lighting Shader</a><br>
-<a>Particle Shader</a><br>
-<a>Particles Simple Lit</a><br>
-<a>Particles Unlit</a><br>
-<a>Unlit</a><br>
-<a>Terrain</a>
-</ul>
-</details>
-
-<details><summary><a>Lighting</a><br></summary>
-<ul>
-<a>Light Types</a></ul></details>
-
-<a>Shader API</a><br>
-<a>SRP Shader Library</a><br>
-<a>Core LWRP Shader API</a><br>
-<a>Shader Built-in vars</a><br>
-<a>Light Classification and Abstraction</a><br>
-<a>Shader Stripping</a><br>
-<a>Integration with ShaderGraph</a>
-
-<details><summary><a>Cameras</a><br></summary>
-<ul>
-<a>Camera Overrides</a>
-</ul>
-</details>
-
-
-<details><summary><a>Debugging</a><br></summary>
-<ul>
-<a>Debug Window</a>
-</ul>
-</details>
-
-</ul>
-</details>
+    <ul><details>
+        <summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Getting-started-with-LWRP">Getting Started</a></summary>
+        <ul>
+        <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Using-LWRP-in-a-new-Project">Using LWRP in a new Project</a><br>
+        <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Installing-LWRP-into-an-existing-Project">Installing LWRP into an existing Project</a><br>
+        <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Configuring-LWRP-for-use">Configuring LWRP for use</a><br>
+        </ul>
+    </details>
+    <details>
+        <summary><a>What's inside the LWRP?</a></summary>
+        <ul>
+        <a>LWRP flowchart</a><br>
+        <a>The LWRP Asset</a><br>
+        <a>Lighting</a><br>
+        <a>Camera</a><br>
+        </ul>
+    </details>
+    <details>
+        <summary><a>Shader library</a></summary>
+        <ul>
+        <a>Shader Built-in vars</a><br>
+        <a>Core LWRP Shader API</a><br>
+        <a>Custom Shader Examples</a><br>
+        </ul>
+    </details>
+    <details>
+        <summary><a>Built-in shaders</a></summary>
+        <ul>
+        <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Standard-(Physically-Based)-shader">Standard (Physically based)</a><br>
+        <a>Standard (Simple lighting)</a><br>
+        <a>Standard Unlit</a><br> 
+        <a>Particles/Standard (Physically based)</a><br> 
+        <a>Particles/Standard (Simple lighting)</a><br>
+        <a>Particles/Standard Unlit</a><br>  
+        <a>Terrain/Standard terrain</a><br>           
+        <a>Shader Stripping</a><br>
+        </ul>
+    </details>
+    <details>
+        <summary><a>Integration with Shader Graph</a></summary>
+        <ul>
+        <a>How to Shader Graph 1-1 with LW</a>
+        </ul>
+    </details>
+    
+ </ul></details>
 
 
 [//]: # "SHADER GRAPH"
 
-<details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shader-Graph">Shader Graph</a>
+<details>
+<summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shader-Graph">Shader Graph</a>
 </summary>
 <ul>
 
@@ -487,4 +493,3 @@
 </details>
 </ul>
 </details>
-
