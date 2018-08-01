@@ -73,7 +73,7 @@
 <ul>
 <a>Tessellation / Vertex displacement</a><br>
 <a>Specular occlusion</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Reflection-and-Refraction>Reflection and Refraction"</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Reflection-and-Refraction">Reflection and Refraction</a><br>
 <a>Distortion</a><br>          
 </ul>
 </details>
@@ -139,7 +139,7 @@
 </ul>
 </details>
 
-<a>Frequently Asked Questions</a>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/High-Definition-Render-Pipeline-FAQ">Frequently Asked Questions</a>
 
 </ul>
 </details>
