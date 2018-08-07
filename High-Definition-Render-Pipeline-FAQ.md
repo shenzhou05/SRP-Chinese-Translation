@@ -14,7 +14,7 @@ Only unlit particles of Shuriken are supported, Lit particles aren’t. This is 
 
 ## Why is my Skybox material not doing anything?
 
-Sky and fog are handled differently in HDRP so the lighting panel skybox settings should not be used ([https://docs.google.com/document/d/1bH4UIEr-t1B18Tu5ZjVobtSei2f-epSJACoUMOc7M64](https://docs.google.com/document/d/1bH4UIEr-t1B18Tu5ZjVobtSei2f-epSJACoUMOc7M64))
+Sky and fog are handled differently in HDRP so the lighting panel skybox settings should not be used ([https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/sky-and-fog](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/sky-and-fog))
 
 ## How to do water?
 
