@@ -115,8 +115,6 @@ Reflection settings <do stuff>
 
 These settings control skybox reflections and skybox lighting. 
 
-Sky settings that <do a thing> 
-
  
 
 | Property                   | Function |
