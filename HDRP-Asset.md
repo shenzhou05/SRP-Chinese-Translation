@@ -101,12 +101,12 @@ Reflection settings <do stuff>
 
 | Property                               | Function                                                     |
 | -------------------------------------- | ------------------------------------------------------------ |
-| Compress Reflection Probe Cache        | Tick this checkbox to compress the Reflection Probe Cache. This does <things> |
+| Compress Reflection Probe Cache        | Tick this checkbox to compress the Reflection Probe Cache. |
 | Reflection Cubemap Size                | The maximum resolution of the Reflection [Cubemap](https://docs.unity3d.com/Manual/class-Cubemap.html) |
 | Probe Cache Size                       | The maximum resolution of the [Probe Cache](http://placeholder) |
-| Compress Planar Reflection Probe Cache | Tick this checkbox to compress the Planar Reflection Probe Cache. This does <things> |
+| Compress Planar Reflection Probe Cache | Tick this checkbox to compress the Planar Reflection Probe Cache. |
 | Planar Reflection Texture Size         | The maximum resolution of the Planar Reflection texture.     |
-| Planar Probe Cache Size                | Tick this checkbox to compress the Planar Probe Cache. This does <things> |
+| Planar Probe Cache Size                | Tick this checkbox to compress the Planar Probe Cache. |
 | Max Planar Probe Per Frame             | The amount of Planar Probes per frame.                       |
 
  
@@ -181,10 +181,6 @@ These settings can be enabled or disabled during run time.
 ## Rendering Settings
 
 ![img](https://lh4.googleusercontent.com/o4UxGd5zkgXty8ugYvw1pfHmORnTm_MddUvXOVlGeFlQhHs4O9KVrLf5z9dGCtXcRhJLRvcVlSbPjAvPmihTrjxk9mNpbjeIbOi5QGRblIHNno3_ZD-dtL0BhFY_C_e1nlFAnK5m)
-
- 
-
-Does a >thing<
 
  
 
