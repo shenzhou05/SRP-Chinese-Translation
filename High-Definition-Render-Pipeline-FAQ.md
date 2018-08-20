@@ -22,7 +22,7 @@ Use planar reflection component and a rough refraction transparent material.
 
 ## How to add volumetric fog?
 
-Sky and fog are handled differently in HDRP so the lighting panel skybox settings should not be used. Use volume settings to add a volumetric fog component and select volumetric fog on visual environment. More information: ([https://docs.google.com/document/d/1bH4UIEr-t1B18Tu5ZjVobtSei2f-epSJACoUMOc7M64](https://docs.google.com/document/d/1bH4UIEr-t1B18Tu5ZjVobtSei2f-epSJACoUMOc7M64))
+Sky and fog are handled differently in HDRP so the lighting panel skybox settings should not be used. Use volume settings to add a volumetric fog component and select volumetric fog on visual environment. More information: ([https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/sky-and-fog](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/sky-and-fog))
 
 ## How to do planar reflections?
 
