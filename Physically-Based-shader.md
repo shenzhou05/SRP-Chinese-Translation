@@ -1,12 +1,5 @@
 The Physically Based shader lets you render real-world surfaces like stone, wood, glass, plastic, and metals in photo-realistic quality. Your light levels and reflections look right and react properly across various lighting conditions, for example bright sunlight, or a dark cave.
 
-### The technology in this shader ###
-This shader follows standard rules for Physically Based Rendering (PBR). To read more about Physically Based Rendering, see [this walkthrough by Joe Wilson on Mamoset](https://marmoset.co/posts/physically-based-rendering-and-you-can-too/).  
-
-For specular reflections, the shader uses a [Bidirectional Reflectance Distribution Function (BRDF)](https://en.wikipedia.org/wiki/Bidirectional_reflectance_distribution_function) that uses [GGX](https://blogs.unity3d.com/2016/01/25/ggx-in-unity-5-3/) to control the shape of the specular highlight. 
-For diffuse reflections, it uses a [lambertian reflectance](https://en.wikipedia.org/wiki/Lambertian_reflectance) model.
-
-**Note:** With this shader, you can use [channel packing](http://wiki.polycount.com/wiki/ChannelPacking) in the Red, Green and Alpha channels. You cannot pack in the Blue channel.
 
 ## Using the Physically Based shader in the Editor ##
 You can either create a new material with the shader or select the shader from the Material inspector.
@@ -71,6 +64,22 @@ Property | Description
 ---|---
 __GPU Instancing__ | Allow meshes with the same geometry and material/shader to be rendered in one batch, if they can. This makes rendering faster.  Meshes cannot be rendered in one batch if they have different materials or if the hardware does not support GPU instancing. 
 __Double Sided Global Illumination__ | Make the surface act double-sided during lightmapping. When enabled, backfaces bounce light like frontfaces, but they are still not rendered. 
+
+## The technology in this shader ##
+This shader follows standard rules for Physically Based Rendering (PBR). To read more about Physically Based Rendering, see [this walkthrough by Joe Wilson on Mamoset](https://marmoset.co/posts/physically-based-rendering-and-you-can-too/).  
+
+For specular reflections, the shader uses a [Bidirectional Reflectance Distribution Function (BRDF)](https://en.wikipedia.org/wiki/Bidirectional_reflectance_distribution_function) that uses [GGX](https://blogs.unity3d.com/2016/01/25/ggx-in-unity-5-3/) to control the shape of the specular highlight. 
+For diffuse reflections, it uses a [lambertian reflectance](https://en.wikipedia.org/wiki/Lambertian_reflectance) model.
+
+This shader uses [channel packing](http://wiki.polycount.com/wiki/ChannelPacking), so you can use a single RGBA texture for the metallic, smoothness and occlusion properties. When you use texture packing, you only have to load one texture into memory instead of three separate ones. When you write your texture maps in a program like Substance or Photoshop, you can pack the maps like this:
+
+| Channel | Property |
+| --- | ---|
+| **Red** | Metallic |
+| **Green** | Occlusion |
+| **Blue** | None. |
+| **Alpha** | Smoothness |
+
 
 
 
