@@ -6,6 +6,9 @@ Use this shader for stylised games or apps that do not require direct lighting. 
  
 ### Selecting this shader ###
 
+To create a new material with the shader:
+1. In your Project window, click __Create__ > __Material__. Select the __Simple Lit__ shader.
+
 To select and use this shader:
 1. In your Project, create or find the Material you want to use the shader on.  Select the __Material__. A Material Inspector window opens. 
 2. Click __Shader__, and select __Lightweight Render Pipeline__ > __Unlit__.
