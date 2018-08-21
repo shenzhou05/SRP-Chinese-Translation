@@ -180,13 +180,22 @@
         <ul>
         <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physically-Based-shader">Physically Based</a><br>
         <a>Simple Lit</a><br>
-        <a>Unlit</a><br> 
-        <a>Particles/Standard (Physically based)</a><br> 
-        <a>Particles/Standard (Simple lighting)</a><br>
-        <a>Particles/Standard Unlit</a><br>  
-        <a>Terrain/Standard terrain</a><br>           
-        <a>Shader Stripping</a><br>
+        <a>Unlit</a><br>
         </ul>
+     </details>    
+     <details>
+        <summary><a>Built-in particles</a></summary>
+        <ul>
+        <a>Physically based</a><br> 
+        <a>Standard Lit</a><br>
+        <a>Unlit</a><br>
+        </ul>
+     </details>  
+     <details>
+        <summary><a>Terrain</a></summary>      
+     </details>
+     <details> 
+         <summary><a>Shader Stripping</a></summary>
     </details>
     <details>
         <summary><a>Integration with Shader Graph</a></summary>
