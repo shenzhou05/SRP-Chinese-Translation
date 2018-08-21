@@ -5,10 +5,11 @@ The Physically Based shader lets you render real-world surfaces like stone, wood
 You can either create a new material with the shader or select the shader from the Material inspector.
 
 To create a new material with the shader:
-In your Project window, click __Create__ > __Material__. Select the __Physically Based__ shader.
+1. In your Project window, click __Create__ > __Material__. Select the __Physically Based__ shader.
 
 To select the shader in the Material inspector:
-In your Project, select the __Material__ Inspector. Click __Shader__, and select __Lightweight Render Pipeline__ > __Physically Based__.
+1. In your Project, select the __Material__ Inspector. 
+2. Click __Shader__, and select __Lightweight Render Pipeline__ > __Physically Based__.
 
 ## UI overview ##
 The Inspector window contains these elements: 
