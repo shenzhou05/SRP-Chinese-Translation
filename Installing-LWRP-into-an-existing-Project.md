@@ -2,7 +2,7 @@ You can download and install the latest version of LWRP to your existing Project
 
 To install LWRP into an existing Project:
 
-1. In Unity, open your Project. In the top navigation bar, click __Window__ &gt __Package__ Manager to open the __Package Manager__ window. Select the __All__ tab. This tab displays the list of available packages for the version of Unity that you are currently running.
+1. In Unity, open your Project. In the top navigation bar, click __Window__ > __Package__ Manager to open the __Package Manager__ window. Select the __All__ tab. This tab displays the list of available packages for the version of Unity that you are currently running.
 2. Select Lightweight Render Pipeline from the list of packages. In the top right corner of the window, click __Install__. This installs LWRP directly into your Project.
 
 **Note:** Before you can start using LWRP, you must configure it by creating a Scriptable Render Pipeline Asset and changing your Graphics settings. To learn how, see [Configuring LWRP for use](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Configuring-LWRP-for-use).
