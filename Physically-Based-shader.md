@@ -67,7 +67,7 @@ __GPU Instancing__ | Allow meshes with the same geometry and material/shader to 
 __Double Sided Global Illumination__ | Make the surface act double-sided during lightmapping. When enabled, backfaces bounce light like frontfaces, but they are still not rendered. 
 
 ## The technology in this shader ##
-This shader follows standard rules for Physically Based Rendering (PBR).To read more about Physically Based Rendering, see [this walkthrough by Joe Wilson on Mamoset](https://marmoset.co/posts/physically-based-rendering-and-you-can-too/).  The shader is energy conserving, which means that reflections never emit more light than the original light source.
+This shader follows standard rules for Physically Based Rendering (PBR).To read more about Physically Based Rendering, see [this walkthrough by Joe Wilson on Mamoset](https://marmoset.co/posts/physically-based-rendering-and-you-can-too/).  The shader is energy conserving, which means that the surface never reflects more light than the original light source.
 
 For specular reflections, the shader uses a [Bidirectional Reflectance Distribution Function (BRDF)](https://en.wikipedia.org/wiki/Bidirectional_reflectance_distribution_function) that uses [GGX](https://blogs.unity3d.com/2016/01/25/ggx-in-unity-5-3/) to control the shape of the specular highlight. 
 For diffuse reflections, it uses a [lambertian reflectance](https://en.wikipedia.org/wiki/Lambertian_reflectance) model.
