@@ -1,4 +1,4 @@
-# Unlit #
+# Unlit shader#
 
 The Unlit shader does not react to lights in the scene. Instead, a Sample [Global Illumination](https://docs.unity3d.com/Manual/GIIntro.html) option uses data that is baked into [Light Probes](https://docs.unity3d.com/Manual/LightProbes.html). 
 Use this shader for stylised games or apps that do not require direct lighting. Because of the lack of light calculations, you can expect high performance from these games.
