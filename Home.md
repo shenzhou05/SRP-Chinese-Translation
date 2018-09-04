@@ -1,4 +1,4 @@
-# Scriptable Render
+# Scriptable Render Pipeline
 ![](https://blogs.unity3d.com/wp-content/uploads/2018/01/image5_rs.png)
 ## What is the Scriptable Render Pipeline (SRP)
 
