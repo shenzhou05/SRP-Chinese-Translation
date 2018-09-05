@@ -41,12 +41,33 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Getting-started-with-HDRP">Getting Started</a>
 </summary>
 <ul>
+<a>Using Templates</a><br>
+<a>Using Package Manager</a><br>
 <a>Upgrading to HDRP</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Asset">The HDRP Asset</a><br>
-<a>HD Render Pipeline Resources</a><br>
-<a>Scene Settings</a><br>
-<a>Frame Settings</a><br>
+<a>Forward and Deferred Rendering</a><br>
+</ul>
+</details>
+
+<details>
+<summary>
+<a>Scene Settings</a>
+</summary>
+<ul>
 <a>Volumes</a><br>
+<a>Sky</a><br>
+<a>Atmospheric Scattering</a>
+<a>Shadow Settings</a><br>
+<a>Visual Environment</a><br>
+</ul>
+</details>
+
+<details>
+<summary>
+<a>Render Pipeline Settings</a>
+</summary>
+<ul>
+<a>HDRP Asset</a><br>
+<a>Frame Settings</a><br>        
 </ul>
 </details>
 
@@ -55,95 +76,103 @@
 <a>Materials</a>
 </summary>
 <ul>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/lit-shader">Lit Shader</a><br>
-<a>Unlit Shader</a><br>
-<a>Roughness</a><br>
-<a>Normal maps</a><br>
-<a>GGX</a><br>
-<a>Detail maps</a><br>
-<a>Planar/ hypernormal map</a><br>
-<a>Alpha blending</a><br>                      
+	
+<details>
+<summary>
+<a>Mesh Renderer</a>
+</summary>
+<ul>
+<a>Render Priority</a><br>
+<a>Light Layers</a><br>        
 </ul>
 </details>
 
 <details>
 <summary>
-<a>Advanced Materials</a>
+<a>Shared Material Features</a><br>
 </summary>
 <ul>
-<a>Tessellation / Vertex displacement</a><br>
-<a>Specular occlusion</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Reflection-and-Refraction">Reflection and Refraction</a><br>
-<a>Distortion</a><br>          
+<a>Surface Type</a><br>
+<a>Double-Sided</a><br>
+<a>Vertex Displacement</a>
+<a>Tessellation</a><br>
+<a>Ambient Occlusion</a><br>
+<a>Specular Occlusion</a><br>
+<a>Geometric AA</a><br>
+<a>NormalMap AA</a><br>
+<a>Alpha Cutoff</a><br>
+</ul></details>
+
+<a>Unlit</a><br>
+<a>Lit</a><br>
+<a>Layered Lit</a><br>
+<a>StackLit</a><br>
+<a>Terrain Lit</a><br>
+<a>Fabric</a><br>
+<a>AXF</a>
+<details>
+<summary>
+<a>Decals</a>
+</summary>
+<ul>
+<a>Projector and Mesh Decal</a><br>
+<a>Decal material</a><br>        
 </ul>
 </details>
-
+<details>
+<summary>
+<a>Transparency</a><br>
+</summary>
+<ul>
+<a>Material Priority</a><br>
+<a>Blending Mode</a><br>
+<a>Transparent Pass</a><br>
+</ul>
+</details>
+<a>Subsurface Scattering</a><br>
+</ul></details>
 <details>
 <summary>
 <a>Lighting</a>
 </summary>
 <ul>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component">HDRP Lights</a><br>
-<a>Creating HDRP Lights</a><br>
-<a>Physical Light Units</a>
-<a>Image-based lighting</a><br>
-<a>Reflection Probes</a><br>
-<a>Planar Probes</a><br>
-<a>SSR</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/sky-and-fog">Sky and Fog</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Global-Shadow-Settings">Global Shadow Settings</a><br>
-<a>Global Illumination</a><br>
-</ul>
-</details>
-
+<a>HDRP Light</a><br>
+<a>Light Layers</a><br>     
+<a>Environment Lighting</a><br>  
+<a>Contact Shadow</a><br>     
+<a>Cube and Planar Reflection Probes</a><br> 
 <details>
 <summary>
-<a>Lighting Model Config</a>
-
-
+<a>Shadows</a><br>  
 </summary>
 <ul>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physical-lighting-intensities">Physical Lighting Intensities</a><br>
-<a>Clear Coat</a><br>
-<a>Subsurface Scattering</a><br>
-<a>Iridescence</a><br>
-<a>Anisotropy</a><br>          
+<a>Shadow Mask</a><br> 
+<a>Shadow Bias</a><br>   
+</ul>
+</details>  
+<a>Physical Light Units</a><br>  
+<a>Reflection and Refraction</a><br>  
 </ul>
 </details>
-
-<details>
-<summary>
-<a>Cameras</a>
-</summary>
+<a>Camera</a>
+<a>Post-Processing</a>
+<details><summary><a>Customising HDRP</a><br></summary>
 <ul>
-<a>Physically-based Camera</a><br>
-<a>Motion Vectors</a><br>     
-<a>Camera-relative Rendering</a><br>  
-<a>HD Camera Editor</a><br>   
+<a>Camera-Relative rendering</a><br>
+<a>RT Handle System</a><br>
+<a>Creating Materials</a><br>
+<a>Render Passes</a><br>
+<a>How To Add Sky</a><br>
+<a>How To Extend HDRP</a><br>
 </ul>
 </details>
-
-<details>
-<summary>
-<a>Advanced topics</a>
-</summary>
-<ul>
-<a>Layered Shader</a><br>
-<a>Photogrammetry</a><br>      
-</ul>
-</details>
-
-<details><summary><a>Debugging</a><br></summary>
-<ul>
-<a>Debug Window</a>
-</ul>
-</details>
-
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/High-Definition-Render-Pipeline-FAQ">Frequently Asked Questions</a>
+<a>Render Pipeline Debugging</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/High-Definition-Render-Pipeline-FAQ">Frequently Asked Questions</a><br>
+<a>Technical Publications</a><br>
 
 </ul>
 </details>
-
+</details>
 
 [//]: # "LWRP"
 
