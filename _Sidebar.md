@@ -110,10 +110,7 @@
 <a>Terrain Lit</a><br>
 <a>Fabric</a><br>
 <a>AXF</a>
-<details>
-<summary>
-<a>Decals</a>
-</summary>
+<details><summary><a>Decals</a></summary>
 <ul>
 <a>Projector and Mesh Decal</a><br>
 <a>Decal material</a><br>        
