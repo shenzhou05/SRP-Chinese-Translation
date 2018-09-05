@@ -9,7 +9,7 @@ The Unlit shader does not react to lights in the Scene. Instead, you can use the
 ## Using the Unlit shader in the Editor
 
 To create a new Material with the shader:
-1. In your Project window, click __Create__ > __Material__. Select the __Simple Lit__ shader.
+1. In your Project window, click __Create__ > __Material__. Select the __Unlit__ shader.
 
 To select and use this shader:
 1. In your Project, create or find the Material you want to use the shader on.  Select the __Material__. A Material Inspector window opens. 
