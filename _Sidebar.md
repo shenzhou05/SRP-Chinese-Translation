@@ -159,7 +159,7 @@
 <a>RT Handle System</a><br>
 <a>Creating Materials</a><br>
 <a>Render Passes</a><br>
-<a>Writing a Custom Sky Renderer</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Writing-A-Custom-Sky-Renderer">Writing a Custom Sky Renderer</a><br>
 <a>How To Extend HDRP</a><br>
 </ul>
 </details>
