@@ -136,7 +136,6 @@
 <a>HDRP Light</a><br>
 <a>Light Layers</a><br>     
 <a>Environment Lighting</a><br>  
-<a>Contact Shadow</a><br>     
 <a>Cube and Planar Reflection Probes</a><br> 
 <details>
 <summary>
@@ -144,7 +143,8 @@
 </summary>
 <ul>
 <a>Shadow Mask</a><br> 
-<a>Shadow Bias</a><br>   
+<a>Shadow Bias</a><br>  
+<a>Contact Shadow</a><br>      
 </ul>
 </details>  
 <a>Physical Light Units</a><br>  
