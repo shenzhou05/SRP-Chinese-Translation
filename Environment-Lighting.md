@@ -16,7 +16,7 @@ Once the **Sky type** and **Fog type** are chosen, you can **override their defa
 
 ## Baking environment
 
-Baking environment is a component called "**Baking sky**" that informs the Unity Editor which sky to use for **light baking**.
+The environment lighting used for light baking is controlled by a component called "**Baking sky**" that informs the Unity Editor which sky to use for **light baking**.
 
 This component references a **Volume profile** that just needs to include some sky settings. These sky settings will directly drive the sky used for light baking.
 
