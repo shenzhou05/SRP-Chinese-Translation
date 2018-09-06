@@ -153,7 +153,7 @@
 <a>Post-Processing</a>
 <details><summary><a>Customising HDRP</a><br></summary>
 <ul>
-<a>Camera-Relative rendering</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Camera-Relative-Rendering-in-HDRP">Camera-Relative rendering</a><br>
 <a>RT Handle System</a><br>
 <a>Creating Materials</a><br>
 <a>Render Passes</a><br>
