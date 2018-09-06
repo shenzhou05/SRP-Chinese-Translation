@@ -16,13 +16,11 @@ Once the **Sky type** and **Fog type** are chosen, you can **override their defa
 
 ## Baking environment
 
-The environment lighting used for light baking is controlled by a component called "**Baking sky**" that informs the Unity Editor which sky to use for **light baking**.
+The environment lighting used for light baking is controlled by a component called "**Baking sky**" that informs the Unity Editor which sky to use for **light baking**. This component references a **Volume profile** that just needs to include a **Sky** Volume component which will drive directly the sky used for light baking. This is necessary because the Volume workflow allows you to have different sky settings per area, but if you want to bake **static lighting** the editor needs to know what settings to use for the light baking.
 
-This component references a **Volume profile** that just needs to include some sky settings. These sky settings will directly drive the sky used for light baking.
+The Volume Profile you reference in the Baking sky component can be a profile assigned to a Volume in your scene (so it matches the sky that is visible at runtime ) or it can be a separate profile if you want to control your environment lighting for light baking separately.
 
-This volume profile can be a profile assigned to a Volume in your scene (so it matches the sky that is visible at runtime ) or it can be a different one if you want to control your light baking separately.
-
-**A typical use case** for using a different profile for the Baking Sky is a HDRI sky that includes the sunlight: You probably want to have a sunlight visible when you play your game, but you could want to use a different HDRI sky where the sun is erased for light baking because you have a directional light in your scene that contributes to the lighting as the Sunlight (and thus baking lighting with a HDRI that includes the sun would make the sun contribute to the lighting twice).
+**A typical use case** for using a different profile in the Baking Sky is a HDRI sky that includes the sunlight: You probably want to have a sunlight visible when you play your game so you want your runtime sky to show a HDRI that features a sunlight in it, but you could want to use a different HDRI sky where the sun is erased for light baking because you also have a directional light in your scene that contributes to the lighting as the Sunlight (and thus baking lighting with a HDRI that includes the sun would make the sun contribute to the lighting twice and would look unrealistic).
 
 ## Reflections
 
