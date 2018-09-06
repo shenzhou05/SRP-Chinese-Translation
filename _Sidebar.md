@@ -145,7 +145,7 @@
 <a>Contact Shadow</a><br>      
 </ul>
 </details>  
-<a>Physical Light Units</a><br>  
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physical-light-units-and-intensities">Physical Light Units and Intensities</a><br>
 <a>Reflection and Refraction</a><br>  
 </ul>
 </details>
