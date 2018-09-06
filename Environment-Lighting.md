@@ -26,10 +26,10 @@ The Volume Profile you reference in the Baking sky component can be a profile as
 
 Note on reflections :
 
-Baked reflection probes will render using the baking environment, as this is consistent with your baking settings.
+Baked reflection probes will render using the sky settings used in the Baking sky component, as this is consistent with your baking settings.
 
-Realtime reflection probes will render using the visual environment, as this is consistent with what you'll see with your game camera at runtime.
+Realtime reflection probes will render using the sky settings resulting from the Volumes, as this is consistent with what you'll see with your game camera at runtime.
 
 ## Adding your own Sky Type
 
-Please refer to the Advanced section for instructions on how to add your own Sky Type to HD render pipeline.
+Please refer to the [Customizing HDRP](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Writing-A-Custom-Sky-Renderer) section for instructions on how to add your own Sky Type to HD render pipeline.
