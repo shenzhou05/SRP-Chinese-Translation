@@ -34,6 +34,4 @@ Source : archtoolbox.com - [link](https://www.archtoolbox.com/materials-systems/
 
 ![img](https://lh5.googleusercontent.com/YTznsmBZuZVdVQsFj1eqCNvFr8sttPWOFuEIW-0SF_5v0xTCopduao8tReHeXgm2purDPXKzw7GrTagPm8eWN21G9gVCl0j_bkG0-iwWoVzKiOIpUm4pWq01E6eOyjKiJ2CqZuRu) 
 
-![img](https://lh5.googleusercontent.com/DQ5DTouHsj7ksVB4AinbQ76Vk34-NLrzlX4kWieeD1_mgBZDtG5Qw-1XykMiR1ncZIOLmnEwqeJeC6mLtwLmnJtfaNvg_W_DRTyrXEzCkaVpzgj4CzY-jzyqpW_THGcsR3QAhbdk) 
-
 Source : moving frostbite to PBR - [link](https://seblagarde.files.wordpress.com/2015/07/course_notes_moving_frostbite_to_pbr_v32.pdf)
