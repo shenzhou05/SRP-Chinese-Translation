@@ -133,7 +133,7 @@
 <a>Lighting</a>
 </summary>
 <ul>
-<a>HDRP Light</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component">HDRP Light</a><br>
 <a>Light Layers</a><br>     
 <a>Environment Lighting</a><br>  
 <a>Cube and Planar Reflection Probes</a><br> 
