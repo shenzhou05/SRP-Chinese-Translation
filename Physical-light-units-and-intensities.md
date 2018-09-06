@@ -1,4 +1,24 @@
-# __Physical lighting intensities__
+## Light units
+
+HD render pipeline allows you to set your lights intensities using physical light units. 
+
+Depending on the light type we offer different unit options in order to give you the most relevant options.
+
+### Candelas
+
+Candelas describe the luminous intensity of visible in a certain direction. It is based on the fact that a candle emits light with a luminous intensity of 1 candela in all directions.
+
+### Lumens
+
+Lumens are commonly used to describe the luminous flux of visible light emitted by omnidirectional light sources. It is very common to see a mention of the luminous power of a light bulb in lumens on the packaging in stores.
+
+### Luminance
+
+### EV
+
+### Lux
+
+
 
 ## __Natural light levels__
 
