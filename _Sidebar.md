@@ -102,7 +102,7 @@
 </ul></details>
 
 <a>Unlit</a><br>
-<a>Lit</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Lit-Shader">Lit</a><br>
 <a>Layered Lit</a><br>
 <a>StackLit</a><br>
 <a>Terrain Lit</a><br>
