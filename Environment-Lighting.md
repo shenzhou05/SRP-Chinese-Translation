@@ -1,5 +1,3 @@
-# Environment lighting
-
 What we refer to as environment lighting is the lighting produced by the environment surrounding our unity scene. Most commonly this represents the sky lighting, but it can also represent a different kind of background (light a lighting studio, or any kind of background).
 
 In HD render pipeline, environment lighting is setup through **Volumes** and **volume profiles**.
