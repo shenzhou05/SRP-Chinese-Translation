@@ -133,7 +133,7 @@
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component">HDRP Light</a><br>
 <a>Light Layers</a><br>     
-[Environment Lighting](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Environment-Lighting)
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Environment-Lighting">Environment Lighting</a><br>
 <a>Cube and Planar Reflection Probes</a><br> 
 <details>
 <summary>
