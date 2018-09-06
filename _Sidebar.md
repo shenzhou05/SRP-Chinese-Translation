@@ -52,8 +52,8 @@
 </summary>
 <ul>
 <a>Volumes</a><br>
-<a>Sky</a><br>
-<a>Atmospheric Scattering</a>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Sky">Sky</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Atmospheric-Scattering">Atmospheric Scattering</a>
 <a>Shadow Settings</a><br>
 <a>Visual Environment</a><br>
 </ul>
