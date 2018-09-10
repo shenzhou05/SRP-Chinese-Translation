@@ -137,7 +137,7 @@
 <a>Cube and Planar Reflection Probes</a><br> 
 <details>
 <summary>
-<a>Shadows</a><br>  
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shadows">Shadows</a><br>  
 </summary>
 <ul>
 <a>Shadow Mask</a><br> 
