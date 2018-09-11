@@ -77,16 +77,6 @@
 <a>Materials</a>
 </summary>
 <ul>
-	
-<details>
-<summary>
-<a>Mesh Renderer</a>
-</summary>
-<ul>
-<a>Render Priority</a><br>
-<a>Light Layers</a><br>        
-</ul>
-</details>
 
 <details>
 <summary>
@@ -111,12 +101,6 @@
 <a>Terrain Lit</a><br>
 <a>Fabric</a><br>
 <a>AXF</a>
-<details><summary><a>Decals</a></summary>
-<ul>
-<a>Projector and Mesh Decal</a><br>
-<a>Decal material</a><br>        
-</ul>
-</details>
 <details>
 <summary>
 <a>Transparency</a><br>
@@ -150,6 +134,21 @@
 </details>  
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physical-light-units-and-intensities">Physical Light Units and Intensities</a><br>
 <a>Reflection and Refraction</a><br>  
+</ul>
+</details>
+<details>
+<summary>
+<a>Mesh Renderer</a>
+</summary>
+<ul>
+<a>Render Priority</a><br>
+<a>Light Layers</a><br>        
+</ul>
+</details>
+<details><summary><a>Decals</a></summary>
+<ul>
+<a>Projector and Mesh Decal</a><br>
+<a>Decal material</a><br>        
 </ul>
 </details>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Camera">Camera</a><br>
