@@ -51,7 +51,7 @@
 <a>Scene Settings</a>
 </summary>
 <ul>
-<a>Volumes</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumes">Volumes</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Visual-Environment">Visual Environment</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Sky">Sky</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Atmospheric-Scattering">Atmospheric Scattering</a>
