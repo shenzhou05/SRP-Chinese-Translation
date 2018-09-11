@@ -1,5 +1,3 @@
-# HDRP Sky
-
 ## Setting up the Sky
 
 Setting up a sky has two goals: The first one is to define what will be displayed in the background of the scene for a given camera. The second one is to define environment lighting, namely sky reflection and sky ambient probe which is then later used to render lightmaps (real-time or baked).
@@ -12,11 +10,11 @@ Global settings for the sky are in the HDRenderPipeline configuration asset:
 
 ![img](https://lh5.googleusercontent.com/lsQ4lmXDAnlJwx96D4OZEHTGd3rF0CSlqK4t0WIEx6BgToV-uD2ecrFlCKB0_DDPpkSFgv8D-hIb_kUREZSj0_eelNXyDVOaILGCCpR11CM-eseyf5tfpUnblcvd68mvbwXUl3PO)
 
-Sky Reflection Size
+**Sky Reflection Size**
 
 This parameter drives the size of the cubemap generated from the sky and used for fallback reflection when no local reflection probes are present. It has no effect on the quality of the sky rendered in the background.
 
-Sky Lighting Override Mask
+**Sky Lighting Override Mask**
 
 In some cases, users may want to dissociate lighting environment from what is rendered in the background (a typical example is to have a very dark sky at night but have a brighter lighting so that the player can still see).
 
@@ -30,7 +28,7 @@ Note that lighting override does not affect baked lighting.
 
 Once global parameters are set, users need to setup volumes with the correct components to setup local parameters for the sky. Currently HDRP provides two different kind of skies.
 
-Procedural Sky
+### Procedural Sky
 
 This sky is similar to the procedural sky provided with the built-in Unity Render Pipelines. 
 
@@ -52,7 +50,7 @@ This sky is similar to the procedural sky provided with the built-in Unity Rende
 | Realtime              | Sky environment is updated regularly                         |
 | Update Period         | Period (in seconds) at which the realtime sky is updated (0 means every frame) |
 
-HDRI Sky
+### HDRI Sky
 
 Simple sky represented by a cubemap texture.
 
