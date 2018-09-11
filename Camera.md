@@ -6,6 +6,19 @@ This is the HD version of the camera used in **Hight Definition Render Pipeline*
 
 You can basically find same elements than in a [Standard Unity Camera](https://docs.unity3d.com/Manual/class-Camera.html) but they have been sorted by their purpose.
 
+(inspector picture here)
 
-
-## General
+|General&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||
+|:----------------------------|:--|
+|&nbsp; Clear Mode|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s ClearFlag except that have the clear depth option separated for more flexibility. Determine how to clear the currently rendered image.|
+|&nbsp; Background Color|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Background except the color is always HDR. Used when no Sky or when **Clear Mode** set to _Background Color_|
+|&nbsp; Clear Depth|When enable, depth buffer is cleared. Depth buffer is used to know what part should be rendered over which one.|
+|&nbsp; Culling Mask|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Culling Mask. It allows to hide element of scene in non selected layers.|
+|&nbsp; Volume Anchor Override|Used to override the application point for Volume. If None, camera position is used.|
+|&nbsp; Projection|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Projection. Toggles the camera’s capability to simulate perspective.|
+|&nbsp; Size (when Projection is Orthographique)|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Size. It is the projection box size.|
+|&nbsp; Field Of view (when Projection is Perspective)|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Field of view. It is the Camera view angle.|
+|&nbsp; Clipping Planes|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Clipping Planes. Distances from the camera to start and stop rendering.|
+|&nbsp; Rendering Path|Allows to use rendering parameter chosen in current High Definition Render Pipeline Asset or override them for this particular camera. _Custom_ value will add a lot of fields to this component. See  |
+|**CaptureSettings**||
+|**Output Settings**||
