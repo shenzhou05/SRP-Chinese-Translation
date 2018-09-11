@@ -19,6 +19,11 @@ You can basically find same elements than in a [Standard Unity Camera](https://d
 |&nbsp; Size (when Projection is Orthographique)|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Size. It is the projection box size.|
 |&nbsp; Field Of view (when Projection is Perspective)|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Field of view. It is the Camera view angle.|
 |&nbsp; Clipping Planes|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Clipping Planes. Distances from the camera to start and stop rendering.|
-|&nbsp; Rendering Path|Allows to use rendering parameter chosen in current High Definition Render Pipeline Asset or override them for this particular camera. _Custom_ value will add a lot of fields to this component. See  |
+|&nbsp; Rendering Path|Allows to use rendering parameter chosen in current High Definition Render Pipeline Asset or override them for this particular camera. _Custom_ value will add a lot of fields to this component. See [Frame Settings](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Frame-Settings) for more information. Note that the fomer **Allow MSAA** is inside them.|
 |**CaptureSettings**||
+|&nbsp; Occlusion Culling|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Occlusion Culling.|
+|&nbsp; ViewPort Rect|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Viewport Rect. Indicate where on the to write in the rendered image.|
 |**Output Settings**||
+|&nbsp; Target Display|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Target Display. Allow to choose on which screen display the acquired image.|
+|&nbsp; Depth|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Depth. The camera’s position in the draw order.|
+|&nbsp; Target Texture|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Target Texture. For storing the acquired image in a **RenderTexture**.|
