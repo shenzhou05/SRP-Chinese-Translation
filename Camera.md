@@ -14,7 +14,7 @@ You can basically find same elements than in a [Standard Unity Camera](https://d
 |&nbsp; Background Color|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Background except the color is always HDR. Used when no Sky or when **Clear Mode** set to _Background Color_|
 |&nbsp; Clear Depth|When enable, depth buffer is cleared. Depth buffer is used to know what part should be rendered over which one.|
 |&nbsp; Culling Mask|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Culling Mask. It allows to hide element of scene in non selected layers.|
-|&nbsp; Volume Anchor Override|Used to override the application point for Volume. If None, camera position is used.|
+|&nbsp; Volume Anchor Override|Used to override the application point for Volume. If None, camera position is used. See [Volumes](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumes) for additional information.|
 |&nbsp; Projection|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Projection. Toggles the camera’s capability to simulate perspective.|
 |&nbsp; Size (when Projection is Orthographique)|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Size. It is the projection box size.|
 |&nbsp; Field Of view (when Projection is Perspective)|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Field of view. It is the Camera view angle.|
@@ -27,3 +27,9 @@ You can basically find same elements than in a [Standard Unity Camera](https://d
 |&nbsp; Target Display|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Target Display. Allow to choose on which screen display the acquired image.|
 |&nbsp; Depth|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Depth. The camera’s position in the draw order.|
 |&nbsp; Target Texture|As standard [Camera](https://docs.unity3d.com/Manual/class-Camera.html)'s Target Texture. For storing the acquired image in a **RenderTexture**.|
+
+## Additional info regarding standard camera option
+* **Physical Camera**: not yet supported (work on it currently done).
+* **Allow MSAA**: could be found now in [Frame Settings](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Frame-Settings) use a _Custom_ **Rendering Path** to override it for this camera.
+* **Allow HDR**: this version of the camera always enable HDR.
+* **Allow Dynamic Resolution**: dynamic resolution is not supported at the moment.
