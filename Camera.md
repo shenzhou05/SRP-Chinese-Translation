@@ -4,4 +4,8 @@
 
 This is the HD version of the camera used in **Hight Definition Render Pipeline**. You can see it by the component HDAdditionalCameraData. Note that even if displayed here, some camera's elements will be in HDAdditionalCameraData when you use camera in scripts.
 
-(WIP)
+You can basically find same elements than in a [Standard Unity Camera](https://docs.unity3d.com/Manual/class-Camera.html) but they have been sorted by their purpose.
+
+
+
+## General
