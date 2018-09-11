@@ -6,7 +6,7 @@ Instead of using a constant color, both types of fog can choose to use the backg
 
 For both types of fog, density is computed from camera distance and world space height independently and then multiplied together to obtain the final result.
 
-Linear Fog
+# Linear Fog
 
 Density will increase linearly with view distance and world space height depending on the provided parameters.
 
@@ -27,7 +27,7 @@ Density will increase linearly with view distance and world space height dependi
 | Fog Height Start | Height at which fog density starts to decrease               |
 | Fog Height End   | Height at which fog density is zero                          |
 
-Exponential Fog
+# Exponential Fog
 
 Density will increase exponentially with view distance and world space height depending on the provided parameters.
 
