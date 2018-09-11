@@ -68,7 +68,7 @@
 </summary>
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Asset">HDRP Asset</a><br>
-<a>Frame Settings</a><br>        
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Frame-Settings">Frame Settings</a><br>        
 </ul>
 </details>
 
