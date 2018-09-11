@@ -52,10 +52,13 @@
 </summary>
 <ul>
 <a>Volumes</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Visual-Environment">Visual Environment</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Sky">Sky</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Atmospheric-Scattering">Atmospheric Scattering</a>
-<a>Shadow Settings</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Visual-Environment">Visual Environment</a><br>
+<a>HD Shadow Settings</a><br>
+<a>Contact Shadows</a><br>
+<a>Volumetric lighting controller</a><br>
+<a>Indirect lighting controller</a><br>
 </ul>
 </details>
 
