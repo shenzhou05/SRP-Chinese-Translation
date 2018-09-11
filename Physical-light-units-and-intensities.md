@@ -22,16 +22,52 @@ Lumens are commonly used to describe the luminous flux of visible light emitted 
 
 ## __Natural light levels__
 
-![img](https://lh4.googleusercontent.com/eQ2nKPW_GjzYlhVnjDk8ggrgnozxzjAQjh_fnP4O4rQB-J4-e_asqb2iADG1q-6JlvUAljLnZ-GIE2PadLuSuIplCr0NAU47ovP8GrpObcf_jl8dFKiyxhyR8GctTNs5ClNJmzVn) 
+| Illuminance       | Description                                 |
+| ----------------- | ------------------------------------------- |
+| 120 000 lux       | Very bright sunlight                        |
+| 110 000 lux       | Bright sunlight                             |
+| 20 000 lux        | Blue sky lighting at midday                 |
+| 1 000 - 2 000 lux | Overcast sky lighting at midday             |
+| < 1 lux           | Moonlight, clear night sky                  |
+| 0.002 lux         | Starry night without moon including airglow |
 
 Source : wikipedia - [link](https://en.wikipedia.org/wiki/Daylight)
 
-## __Indoors light levels (recommendations for architects)__
+## Artificial lights intensities (in lumens)
 
-![img](https://lh3.googleusercontent.com/lx-wDRP0YSmW7xabJ7TWpy7DRkgQ0l_bi0_Btd-MTYX7eZ9qZOm-xhRtbb_rzmXtOOSG6LWxbrqM06m0Vna6l-JSD6J706yEpbB099f1EBNB5MRgEkGNnMKSvVsdlJfD6sxu2LNK) 
+Rough orders of magnitude in usual day life light intensities.
 
-Source : archtoolbox.com - [link](https://www.archtoolbox.com/materials-systems/electrical/recommended-lighting-levels-in-buildings.html)
+| Luminous flux     | Description                                                  |
+| ----------------- | :----------------------------------------------------------- |
+| 12.57 lm          | Candle light                                                 |
+| < 100 lm          | Small decorative light (I.E. small LED lamp)                 |
+| 200 - 300 lm      | Decorative lamp ( does not provide main lighting for a bright room ) |
+| 400 - 800 lm      | Ceiling lamp for a regular room                              |
+| 800 - 1 200 lm    | Ceiling lamp for a large brightly lit room                   |
+| 1 000 - 40 000 lm | Street light                                                 |
 
-![img](https://lh5.googleusercontent.com/YTznsmBZuZVdVQsFj1eqCNvFr8sttPWOFuEIW-0SF_5v0xTCopduao8tReHeXgm2purDPXKzw7GrTagPm8eWN21G9gVCl0j_bkG0-iwWoVzKiOIpUm4pWq01E6eOyjKiJ2CqZuRu) 
+## __Indoors light levels (usual recommendations for architects)__
 
-Source : moving frostbite to PBR - [link](https://seblagarde.files.wordpress.com/2015/07/course_notes_moving_frostbite_to_pbr_v32.pdf)
+These are the light levels recommended in the areas where a person would be the most in certain rooms. For instance 
+
+| Illuminance         | Room type               |
+| ------------------- | :---------------------- |
+| 150 - 300 lux       | Bedroom                 |
+| 300 - 500 lux       | Classroom               |
+| 300 - 750 lux       | Kitchen                 |
+| 300 - 500 lux       | Counter or Office       |
+| 100 - 300 lux       | Bathroom                |
+| 750 lux - 1 000 lux | Supermarket interior    |
+| 30 lux              | City street at night    |
+| 750 lux             | Drawing board           |
+| 200 - 500 lux       | Football or Rugby field |
+
+**References** 
+
+[Archtoolbox](https://www.archtoolbox.com/materials-systems/electrical/recommended-lighting-levels-in-buildings.html)
+
+[Kellwood lighting](https://www.kellwoodlighting.co.uk/technical/cibse-recommended-lux-levels)
+
+# More references
+
+[Dice's : Moving frostbite to PBR](https://seblagarde.files.wordpress.com/2015/07/course_notes_moving_frostbite_to_pbr_v32.pdf)
