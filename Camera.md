@@ -30,6 +30,6 @@ You can basically find same elements than in a [Standard Unity Camera](https://d
 
 ## Additional info regarding standard camera option
 * **Physical Camera**: not yet supported (work on it currently done).
-* **Allow MSAA**: could be found now in [Frame Settings](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Frame-Settings) use a _Custom_ **Rendering Path** to override it for this camera.
+* **Allow MSAA**: could be found now in [Frame Settings](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Frame-Settings). Use a _Custom_ **Rendering Path** to override it for this camera.
 * **Allow HDR**: this version of the camera always enable HDR.
 * **Allow Dynamic Resolution**: dynamic resolution is not supported at the moment.
