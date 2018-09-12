@@ -58,7 +58,7 @@
 <a>HD Shadow Settings</a><br>
 <a>Contact Shadows</a><br>
 <a>Volumetric lighting controller</a><br>
-<a>Indirect lighting controller</a><br>
+<a> href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Indirect-lighting-controller">Indirect lighting controller</a><br>
 </ul>
 </details>
 
