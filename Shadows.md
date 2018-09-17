@@ -4,9 +4,11 @@ This page is wip and incomplete at the moment
 
 ## Shadow atlas
 
-In HD render pipeline, all the realtime shadows rendered for a frame are stored in a shadow map atlas.
+In HD render pipeline, all the realtime shadows rendered for a frame are stored in two different shadow map atlases. The first one is used for all punctual shadows (spot and point lights) and have the possibility to rescale his shadow maps if too many of them are rendered and would not fit in the atlas. The second is used for directional shadow cascade and don't rescale.
 
-The size of this atlas is set in the HDRenderPipeline asset and it determines the shadow budget for a frame.
+![Dynamic shadow atlas resize](https://i.gyazo.com/5c283360661fc006723fa1f759caeb98.gif)
+
+The size of these atlases are set in the HDRenderPipeline asset and it determines the maximum resolution you'll be able to have for a shadow.
 
 For instance the default size of the atlas is 4096 x 4096 and so it can fit 4 shadow maps of 1024 x 1024 pixels, or 2 shadow maps of 1024 x 1024 + 4 shadow maps of 512 x 512 + 16 shadow maps of 256 x 256.
 
@@ -15,6 +17,8 @@ For instance the default size of the atlas is 4096 x 4096 and so it can fit 4 sh
 The resolution of the shadow map determines how big will be the shadow map(s) rendered for a light. The bigger is a shadow map, the more precise it can be, and the best it can capture small details in the shadow casting geometry. A shadow map rendered at high resolution will also look sharper.
 
 The resolution of the shadow map(s) rendered for a light is set on the Light component under the Shadows section.
+
+Additionally, on punctual lights you can enable the option ```Use Dynamic Viewport Resize``` which allow the shadow resolution to scale based on the screen size of the light (the other words, the farthest you are from the light the smaller the resolution will be and so the faster it'll be rendered)
 
 The number of shadow maps rendered per light depends on the type of the light :
 
@@ -35,8 +39,13 @@ In HD Render Pipeline the shadow biasing is controlled by several parameters in 
 ## Shadow filtering
 
 Core Render Pipeline comes with several shadow map filtering algorithms. HD Render Pipeline allows users to use some of these algorithms in order to smooth the shadow maps.
+They are exposed in the HDRenderPipeline asset as shadow quality (low, medium and high) and can be choosed for directional and punctual lights.
 
-
+Quality     |   Current algorithm
+|-----------|------------------------|
+Low | PCF 3x3 (4 taps)
+Medium | PCF 5x5 (9 taps)
+High | PCSS (sample count can be set by light in the light component)
 
 # ShadowMasks
 
@@ -64,5 +73,7 @@ In order to enable contact shadows you need to :
 - Got to your HDRenderPipeline Asset and make sure under "Lighting Settings" that "Enable Contact Shadows" is ticked
 - In one of your loaded scenes you need to have a Contact Shadows Volume component on an active Volume with the "Enable" box ticked
 - On the light you choose for casting contact shadows, enable "Shadows" and "Show Additional Settings", and then under "Shadows" section tick "Enable Contact Shadows"
+
+:warning: Only one light can cast contact shadows at a time, it means that if you have more than one light that cast contact shadows visible on the screen, only the dominant light will render contact shadows. The dominant light is chosen using the screen space size of the bounding box of the light (note that if you enable contact shadows on the directional light, it'll always be the dominant light).
 
 For more details on the Contact shadow settings refer to the Contact Shadow volume component page.
