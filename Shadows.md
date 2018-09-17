@@ -48,6 +48,9 @@ High | PCSS (sample count can be set by light in the light component)
 # ShadowMasks
 
 ShadowMasks is one of the Mixed Lighting modes available in Unity.
+If you are not familiar with mixed lighting modes you can check out the [documentation](https://docs.unity3d.com/Manual/LightMode-Mixed.html).
+
+HD Render Pipeline only supports mixed mode **Baked indirect** and **Shadowmask**.
 
 ## Enabling shadow masks
 
@@ -56,9 +59,22 @@ In order to enable Shadow masks in HD Render Pipeline, one needs to enable Shado
 - In Render Pipeline Settings enable "Support Shadow Mask"
 - In Default Frame Settings under the Lighting Settings tick "Enable Shadow Masks"
 
+Also one should make sure that in the project's quality settings the **Shadowmask Mode** is set to **Distance Shadowmask**.
+
 ## Specific settings in HD Render Pipeline
 
-In HD Render Pipeline, in order to give more flexibility to the ShadowMasks mixed lighting mode, we disabled the Quality Setting "shadow masks mode" so that you can choose on each light how you want the ShadowMasks to behave.
+In HD Render Pipeline, in order to give more flexibility to the Shadowmask mixed lighting mode, we allow you to choose on each light how you want the ShadowMasks to behave.
+This behavior is mainly influenced by the checkbox : **Non Lightmapped Only** that is located on the **Light component**, under **Shadows** when the light **Mode** is set to **Mixed**.
+
+**Non Lightmapped Only** 
+- when this is **disabled**, the light will cast a **realtime shadow** for all objects **when the distance between the camera and the light is inferior to the Shadow fade distance**. When distance between the light and the camera is bigger than the **Shadow fade distance**, the light will stop calculating realtime shadows. It will use the shadowmask for static objects shadow and non static objects will not cast shadows anymore. 
+- when this is enabled, the light will cast a **realtime shadow** for non static objects only and combine it with the Shadowmask for static objects **when the distance between the camera and the light is inferior to the Shadow fade distance**. When distance between the light and the camera is bigger than the **Shadow fade distance**, the light will stop calculating realtime shadows. It will use the shadowmask for static objects shadow and non static objects will not cast shadows anymore.
+
+**For the directional light**, the **Shadow fade distance is replaced by the Max Distance** located on the **HD Shadow Settings** Volume component.
+
+**The first behavior requires more GPU power** but Shadowmask textures can have a low resolution because they will only be used at a certain distance.
+
+**The second behavior requires more memory** since Shadowmask textures will be used when the camera is nearby and the Shadowmask textures resolution will likely need to be bigger.
 
 # Contact shadow
 
