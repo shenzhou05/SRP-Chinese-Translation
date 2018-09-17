@@ -6,8 +6,6 @@ This page is wip and incomplete at the moment
 
 In HD render pipeline, all the realtime shadows rendered for a frame are stored in two different shadow map atlases. The first one is used for all punctual shadows (spot and point lights) and have the possibility to rescale his shadow maps if too many of them are rendered and would not fit in the atlas. The second is used for directional shadow cascade and don't rescale.
 
-![Dynamic shadow atlas resize](https://i.gyazo.com/5c283360661fc006723fa1f759caeb98.gif)
-
 The size of these atlases are set in the HDRenderPipeline asset and it determines the maximum resolution you'll be able to have for a shadow.
 
 For instance the default size of the atlas is 4096 x 4096 and so it can fit 4 shadow maps of 1024 x 1024 pixels, or 2 shadow maps of 1024 x 1024 + 4 shadow maps of 512 x 512 + 16 shadow maps of 256 x 256.
