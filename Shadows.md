@@ -1,5 +1,3 @@
-This page is wip and incomplete at the moment
-
 # Shadow quality
 
 ## Shadow atlas
