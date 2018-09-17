@@ -122,16 +122,9 @@
 <a>Light Layers</a><br>     
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Environment-Lighting">Environment Lighting</a><br>
 <a>Cube and Planar Reflection Probes</a><br> 
-<details>
 <summary>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shadows">Shadows</a><br>  
 </summary>
-<ul>
-<a>Shadow Mask</a><br> 
-<a>Shadow Bias</a><br>  
-<a>Contact Shadow</a><br>      
-</ul>
-</details>  
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physical-light-units-and-intensities">Physical Light Units and Intensities</a><br>
 <a>Reflection and Refraction</a><br>  
 </ul>
