@@ -138,7 +138,7 @@
 </details>
 <details>
 <summary>
-<a>Mesh Renderer</a>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Mesh-Renderer">Mesh Renderer</a>
 </summary>
 <ul>
 <a>Render Priority</a><br>
