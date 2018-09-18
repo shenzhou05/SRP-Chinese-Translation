@@ -8,6 +8,9 @@ The size of these atlases are set in the HDRenderPipeline asset and it determine
 
 For instance the default size of the atlas is 4096 x 4096 and so it can fit 4 shadow maps of 1024 x 1024 pixels, or 2 shadow maps of 1024 x 1024 + 4 shadow maps of 512 x 512 + 16 shadow maps of 256 x 256.
 
+## Shadow Requests
+In addition to the atlas, to manage the budget of your shadows, in the HDRenderPipeline asset you can set the "Max Shadow Requests" to limit the maximum shadow maps rendered in a frame. This number is directly used to allocate shadow data compute buffer so if the number of shadow maps on your screen is higher than this limit, they will not be rendered.
+
 ## Shadow map resolution
 
 The resolution of the shadow map determines how big will be the shadow map(s) rendered for a light. The bigger is a shadow map, the more precise it can be, and the best it can capture small details in the shadow casting geometry. A shadow map rendered at high resolution will also look sharper.
