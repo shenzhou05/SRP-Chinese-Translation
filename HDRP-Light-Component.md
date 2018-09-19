@@ -62,7 +62,6 @@ Use the Light section to adjust the way your Light Component emits light into yo
 * **Mode** : Specify the [Light Mode](https://docs.unity3d.com/Manual/LightModes.html) used to determine if and how a light is “baked”. Possible modes are Realtime, Mixed and Baked. See documentation on [Realtime Lighting](https://docs.unity3d.com/Manual/LightMode-Realtime.html), [Mixed Lighting](https://docs.unity3d.com/Manual/LightMode-Mixed.html), and [Baked Lighting](https://docs.unity3d.com/Manual/LightMode-Baked.html) for more detailed information.
 
 * **Cookie** : Specify a RGB Texture that the light will project (for example, to create silhouettes, or patterned illumination for the Light). Texture shapes should be Texture 2D for Spot Lights and Texture Cube for point lights. The rapping modes clamp, repeat, and per axis are supported, but only affect directional lights. 
-
 Caution: Cookie texture need to be imported as Default texture type. HDRP support RGB cookie unlike Buitin Unity which support only grey texture imported with Cookie Texture type
 
 * **Size X / Size Y** (Directional light only) : Use this to define the size of the cookie texture projection.
