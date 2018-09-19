@@ -63,6 +63,8 @@ Use the Light section to adjust the way your Light Component emits light into yo
 
 * **Cookie** : Specify a RGB Texture that the light will project (for example, to create silhouettes, or patterned illumination for the Light). Texture shapes should be Texture 2D for Spot Lights and Texture Cube for point lights. The rapping modes clamp, repeat, and per axis are supported, but only affect directional lights. 
 
+Caution: Cookie texture need to be imported as Default texture type. HDRP support RGB cookie unlike Buitin Unity which support only grey texture imported with Cookie Texture type
+
 * **Size X / Size Y** (Directional light only) : Use this to define the size of the cookie texture projection.
 
   **Additional settings :**
