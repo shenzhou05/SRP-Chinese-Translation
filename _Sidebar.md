@@ -148,6 +148,9 @@
 <a>Render Passes</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Writing-A-Custom-Sky-Renderer">Writing a Custom Sky Renderer</a><br>
 <a>How To Extend HDRP</a><br>
+
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/How-motion-vector-work">How motion vector work?</a><br>
+
 </ul>
 </details>
 <a>Render Pipeline Debugging</a><br>
