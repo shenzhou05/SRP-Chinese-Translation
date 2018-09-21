@@ -18,7 +18,7 @@ In order to turn off camera-relative rendering, modify ShaderConfig.cs and Shade
 MSAA is the go-to anti-aliasing solution for VR, since it is hardware accelerated and thus minimizes performance impact. If performance is not an issue, TAA may be enabled in PostProcessing instead.
 
 ## Currently Unsupported
-The following features are not currently supproted in HDRP for VR.
+The following features are not currently supported in HDRP for VR.
 
 **HDRP Features:**
 * Deferred lighting
@@ -26,6 +26,7 @@ The following features are not currently supproted in HDRP for VR.
 * Reflections (SSR)
 * Debug display
 * Decals
+* Distortion
 
 **VR Features:**
 * Viewport scale
