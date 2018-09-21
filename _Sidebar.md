@@ -25,7 +25,7 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Editor">Editor Integration</a><br>
 </ul>
 </details>
-
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/XR-for-SRP">XR Support in SRP</a><br>
 </ul>
 </details>
 
