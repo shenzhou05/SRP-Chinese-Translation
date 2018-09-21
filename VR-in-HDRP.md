@@ -1,5 +1,5 @@
 # VR Support in HDRP
-This page describes how to set up your HDRP project for VR, calls out currently-unsupported features, and shows how to write and add shaders that will work when rendering in stereo. 
+This page describes how to set up your HDRP project for VR and calls out currently unsupported features. 
 
 ## Configure HDRP for VR
 Most of the following settings can be configured in the [HDRenderPipeline Asset](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Asset). 
