@@ -41,7 +41,7 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Getting-started-with-HDRP">Getting Started</a>
 </summary>
 <ul>
-<a>Upgrading to HDRP</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Upgrading-to-HDRP">Upgrading to HDRP</a><br>
 <a>Forward and Deferred Rendering</a><br>
 </ul>
 </details>
