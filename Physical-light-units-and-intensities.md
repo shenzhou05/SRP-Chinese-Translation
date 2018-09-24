@@ -1,26 +1,26 @@
 ## Light units
 
-HD render pipeline allows you to set your lights intensities using physical light units. 
-
-Depending on the light type we offer different unit options in order to give you the most relevant options.
+Lighting in HDRP uses Physical Light Units (PLU). These units are based on real-life light measurements like those taken from a photographic light meter, or the measurements you see on light bulbs at the store. 
 
 ### Candelas
 
-Candelas describe the luminous intensity of visible in a certain direction. It is based on the fact that a candle emits light with a luminous intensity of 1 candela in all directions.
+A [Candela](https://en.wikipedia.org/wiki/Candela) is a unit of measurement used to describe the luminous intensity of visible light in a given direction. It is based on the fact that an average candle emits light with a luminous intensity of 1 candela in all directions.
 
 ### Lumens
 
-Lumens are commonly used to describe the luminous flux of visible light emitted by omnidirectional light sources. It is very common to see a mention of the luminous power of a light bulb in lumens on the packaging in stores.
+[Lumens](https://en.wikipedia.org/wiki/Lumen_(unit)) are commonly used to describe the luminous flux of visible light emitted by omnidirectional light sources. It is very common to see a mention of the luminous power of a light bulb in lumens on the packaging in stores.
 
 ### Luminance
 
-### EV
+[Luminance](https://en.wikipedia.org/wiki/Luminance) is a measurement of the luminous intensity per unit area of light travelling in a given direction. It describes the amount of light that passes through, is emitted or reflected from a particular area. 
 
 ### Lux
 
-
+Lux is the derived unit of [illuminance](https://en.wikipedia.org/wiki/Illuminance) and [luminous emittance](https://en.wikipedia.org/wiki/Luminous_emittance), measuring [luminous flux](https://en.wikipedia.org/wiki/Luminous_flux) per unit area. One lux is equal to one lumen per square metre.
 
 ## __Natural light levels__
+
+This table lists light measurements taken from natural sources in different conditions. 
 
 | Illuminance       | Description                                 |
 | ----------------- | ------------------------------------------- |
@@ -33,9 +33,9 @@ Lumens are commonly used to describe the luminous flux of visible light emitted 
 
 Source : wikipedia - [link](https://en.wikipedia.org/wiki/Daylight)
 
-## Artificial lights intensities (in lumens)
+## Artificial light intensities (in lumens)
 
-Rough orders of magnitude in usual day life light intensities.
+This table lists approximate light measurements taken from artificial sources.
 
 | Luminous flux     | Description                                                  |
 | ----------------- | :----------------------------------------------------------- |
@@ -48,7 +48,7 @@ Rough orders of magnitude in usual day life light intensities.
 
 ## __Indoors light levels (usual recommendations for architects)__
 
-These are the light levels recommended in the areas where a person would be the most in certain rooms. For instance 
+This table lists the values used by architects when designing rooms and buildings for human use. These values are used when designing areas for functional use.
 
 | Illuminance         | Room type               |
 | ------------------- | :---------------------- |
