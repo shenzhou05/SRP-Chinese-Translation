@@ -33,3 +33,8 @@ The following features are not currently supported in HDRP for VR.
 * Viewport scale
 * Render scale
 * Occlusion mesh ([PR in progress](https://github.com/Unity-Technologies/ScriptableRenderPipeline/pull/1943))
+
+## Troubleshooting
+**Constant warnings about viewport scale being 0**
+
+View the HDRP asset in inspector. Click the gear at the top right, then click reset. You will have to re-add the render pipeline resources asset afterwards. 
