@@ -31,7 +31,7 @@ These are light measurements from natural sources in different conditions:
 | < 1 lux           | Moonlight, clear night sky                  |
 | 0.002 lux         | Starry night without moon, including airglow |
 
-Source : wikipedia - [link](https://en.wikipedia.org/wiki/Daylight)
+Source : [wikipedia ](https://en.wikipedia.org/wiki/Daylight)
 
 ## Artificial light intensities (in lumens)
 
