@@ -16,7 +16,7 @@ Some settings may need to be set up under Default Frame Settings, in addition to
 
 In order to turn off camera-relative rendering, modify ShaderConfig.cs and ShaderConfig.cs.hlsl to change CameraRelativeRendering and SHADEROPTIONS_CAMERA_RELATIVE_RENDERING from 1 to 0.
 
-MSAA is the recommended anti-aliasing solution for VR because it is hardware-accelerated and anti-aliases scenes without blurring away too much detail. However, in scenes with many high-frequency details (like leaves or grass), the aggressive smoothing from PostProcessing's TAA may be preferred. 
+MSAA is the recommended anti-aliasing solution for VR because it is hardware-accelerated and anti-aliases scenes without blurring away too much detail. However, in scenes with many high-frequency details (like leaves or grass), the aggressive smoothing from PostProcessing's TAA may be preferred despite the hit to performance. 
 
 ## Currently Unsupported
 The following features are not currently supported in HDRP for VR.
