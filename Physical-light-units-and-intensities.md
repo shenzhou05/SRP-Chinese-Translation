@@ -64,6 +64,6 @@ These values are used by architects when they design rooms and buildings for fun
 
 **References**
 
-[Recommended light levels for architects from Archtoolbox]:(https://www.archtoolbox.com/materials-systems/electrical/recommended-lighting-levels-in-buildings.html)
+[Recommended light levels for architects from Archtoolbox](https://www.archtoolbox.com/materials-systems/electrical/recommended-lighting-levels-in-buildings.html)
 
 [Technical paper on “Dice's : Moving frostbite to PBR” by Sebastien Lagarde and Charles de Rousiers](https://seblagarde.files.wordpress.com/2015/07/course_notes_moving_frostbite_to_pbr_v32.pdf)
