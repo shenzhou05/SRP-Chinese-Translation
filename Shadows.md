@@ -17,8 +17,6 @@ The resolution of the shadow map determines how big will be the shadow map(s) re
 
 The resolution of the shadow map(s) rendered for a light is set on the Light component under the Shadows section.
 
-Additionally, on punctual lights you can enable the option ```Use Dynamic Viewport Resize``` which allow the shadow resolution to scale based on the screen size of the light (the other words, the farthest you are from the light the smaller the resolution will be and so the faster it'll be rendered)
-
 The number of shadow maps rendered per light depends on the type of the light :
 
 - A spotlight will render 1 shadow map
