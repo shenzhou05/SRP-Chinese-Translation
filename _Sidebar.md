@@ -130,9 +130,10 @@
 <a>Reflection and Refraction</a><br>  
 </ul>
 </details>
+<details>
 <summary>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Renderers-Extensions">Renderers Extensions</a>
-</summary>
+</details></summary>
 <details><summary><a>Decals</a></summary>
 <ul>
 <a>Projector and Mesh Decal</a><br>
