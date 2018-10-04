@@ -1,4 +1,4 @@
-To use the Lightweight Render Pipeline, you can either start a new Project or upgrade an existing one.
+To use the Lightweight Render Pipeline, you can either start a new Project or upgrade an existing one. 
 
 Once you have Project with LWRP, you must create a Scriptable Render Pipeline (SRP) Asset, and then configure the Graphics settings for your Project.
 
