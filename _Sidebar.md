@@ -201,7 +201,7 @@
     <details>
         <summary><a>Built-in shaders</a></summary>
         <ul>
-        <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physically-Based-shader">Physically Based</a><br>
+        <a>Lit</a><br>
         <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Simple-Lit-shader">Simple Lit</a><br>
         <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Unlit-shader">Unlit</a><br>
         </ul>
