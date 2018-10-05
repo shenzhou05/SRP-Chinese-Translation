@@ -2,7 +2,7 @@ This frequently asked question document (FAQ) aim at answering regular question 
 
 ## Is AR/VR supported?
 
-No.
+AR is not supported. See [VR in HDRP](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VR-in-HDRP) for info about VR support.
 
 ## Is Unity Terrain supported?
 

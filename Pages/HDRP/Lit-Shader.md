@@ -101,6 +101,7 @@ __Mask map:__
 __Normal map space:__
 
 By default the normal map space is in tangent space. The normal map space can be set to object space.
+Note: Object space normal map need to be imported as texture type default (RGB). Tangent space normal map need to be imported as texture type normal map (BC7/BC5/DXT5nm).
 
 __Normal map:__
 

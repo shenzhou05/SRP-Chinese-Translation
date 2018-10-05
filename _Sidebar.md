@@ -25,7 +25,7 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Editor">Editor Integration</a><br>
 </ul>
 </details>
-
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/XR-for-SRP">XR Support in SRP</a><br>
 </ul>
 </details>
 
@@ -36,12 +36,13 @@
 </summary>
 
 <ul>
+<a href="https://blogs.unity3d.com/2018/09/24/the-high-definition-render-pipeline-getting-started-guide-for-artists/">HDRP Getting started for artists (Blog post)</a>
 <details>
 <summary>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Getting-started-with-HDRP">Getting Started</a>
 </summary>
 <ul>
-<a>Upgrading to HDRP</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Upgrading-to-HDRP">Upgrading to HDRP</a><br>
 <a>Forward and Deferred Rendering</a><br>
 </ul>
 </details>
@@ -58,7 +59,7 @@
 <a>HD Shadow Settings</a><br>
 <a>Contact Shadows</a><br>
 <a>Volumetric lighting controller</a><br>
-<a>Indirect lighting controller</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Indirect-lighting-controller">Indirect lighting controller</a><br>
 </ul>
 </details>
 
@@ -98,7 +99,7 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Lit-Shader">Lit</a><br>
 <a>Layered Lit</a><br>
 <a>StackLit</a><br>
-<a>Terrain Lit</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Terrain-Lit-Shader">Terrain Lit</a><br>
 <a>Fabric</a><br>
 <a>AXF</a>
 <details>
@@ -122,29 +123,21 @@
 <a>Light Layers</a><br>     
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Environment-Lighting">Environment Lighting</a><br>
 <a>Cube and Planar Reflection Probes</a><br> 
-<details>
-<summary>
+<details><summary>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shadows">Shadows</a><br>  
 </summary>
 <ul>
-<a>Shadow Mask</a><br> 
-<a>Shadow Bias</a><br>  
-<a>Contact Shadow</a><br>      
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Global-Shadow-Settings">Global Shadow Settings</a>
 </ul>
-</details>  
+</details>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physical-light-units-and-intensities">Physical Light Units and Intensities</a><br>
 <a>Reflection and Refraction</a><br>  
 </ul>
 </details>
 <details>
 <summary>
-<a>Mesh Renderer</a>
-</summary>
-<ul>
-<a>Render Priority</a><br>
-<a>Light Layers</a><br>        
-</ul>
-</details>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Renderers-Extensions">Renderers Extensions</a>
+</details></summary>
 <details><summary><a>Decals</a></summary>
 <ul>
 <a>Projector and Mesh Decal</a><br>
@@ -161,9 +154,13 @@
 <a>Render Passes</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Writing-A-Custom-Sky-Renderer">Writing a Custom Sky Renderer</a><br>
 <a>How To Extend HDRP</a><br>
+
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/How-motion-vector-work">How motion vector work?</a><br>
+
 </ul>
 </details>
 <a>Render Pipeline Debugging</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VR-in-HDRP">VR in HDRP</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/High-Definition-Render-Pipeline-FAQ">Frequently Asked Questions</a><br>
 <a>Technical Publications</a><br>
 
@@ -204,7 +201,7 @@
     <details>
         <summary><a>Built-in shaders</a></summary>
         <ul>
-        <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physically-Based-shader">Physically Based</a><br>
+        <a>Lit</a><br>
         <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Simple-Lit-shader">Simple Lit</a><br>
         <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Unlit-shader">Unlit</a><br>
         </ul>
