@@ -1,18 +1,18 @@
-## Light units
+# Physical Light units
 
-Lighting in HDRP uses Physical Light Units (PLU). These units are based on real-life light measurements like those taken from a photographic light meter, or the measurements you see on light bulbs at the store. 
+Lighting in HDRP uses Physical Light Units (PLU). These units are based on real-life light measurements like those taken from a photographic light meter, or the measurements you see on light bulbs at the store.
 
 ### Candelas
 
-A [Candela](https://en.wikipedia.org/wiki/Candela) is a unit of measurement used to describe the luminous intensity of visible light in a given direction. It is based on the fact that an average candle emits light with a luminous intensity of 1 candela in all directions.
+A [Candela](https://en.wikipedia.org/wiki/Candela) is a unit of measurement used to describe the luminous intensity of visible light in a given direction. For example, an average candle emits light with a luminous intensity of 1 candela in all directions.
 
 ### Lumens
 
-[Lumens](https://en.wikipedia.org/wiki/Lumen_(unit)) are commonly used to describe the luminous flux of visible light emitted by omnidirectional light sources. It is very common to see a mention of the luminous power of a light bulb in lumens on the packaging in stores.
+[Lumens](https://en.wikipedia.org/wiki/Lumen_(unit)) are commonly used to describe the luminous flux of visible light emitted by omnidirectional light sources. You can often see references to the luminous power of light bulbs in lumens on the packaging.
 
 ### Luminance
 
-[Luminance](https://en.wikipedia.org/wiki/Luminance) is a measurement of the luminous intensity per unit area of light travelling in a given direction. It describes the amount of light that passes through, is emitted or reflected from a particular area. 
+[Luminance](https://en.wikipedia.org/wiki/Luminance) is a measurement of the luminous intensity per unit area of light travelling in a given direction. It describes the amount of light that passes through, is emitted, or reflected from a particular area.
 
 ### Lux
 
@@ -20,7 +20,7 @@ Lux is the derived unit of [illuminance](https://en.wikipedia.org/wiki/Illuminan
 
 ## __Natural light levels__
 
-This table lists light measurements taken from natural sources in different conditions. 
+These are light measurements from natural sources in different conditions:
 
 | Illuminance       | Description                                 |
 | ----------------- | ------------------------------------------- |
@@ -29,13 +29,13 @@ This table lists light measurements taken from natural sources in different cond
 | 20 000 lux        | Blue sky lighting at midday                 |
 | 1 000 - 2 000 lux | Overcast sky lighting at midday             |
 | < 1 lux           | Moonlight, clear night sky                  |
-| 0.002 lux         | Starry night without moon including airglow |
+| 0.002 lux         | Starry night without moon, including airglow |
 
 Source : wikipedia - [link](https://en.wikipedia.org/wiki/Daylight)
 
 ## Artificial light intensities (in lumens)
 
-This table lists approximate light measurements taken from artificial sources.
+These are approximate light measurements from artificial sources:
 
 | Luminous flux     | Description                                                  |
 | ----------------- | :----------------------------------------------------------- |
@@ -48,7 +48,7 @@ This table lists approximate light measurements taken from artificial sources.
 
 ## __Indoors light levels (usual recommendations for architects)__
 
-This table lists the values used by architects when designing rooms and buildings for human use. These values are used when designing areas for functional use.
+These values are used by architects when they design rooms and buildings for functional use:
 
 | Illuminance         | Room type               |
 | ------------------- | :---------------------- |
@@ -62,12 +62,8 @@ This table lists the values used by architects when designing rooms and building
 | 750 lux             | Drawing board           |
 | 200 - 500 lux       | Football or Rugby field |
 
-**References** 
+**References**
 
-[Archtoolbox](https://www.archtoolbox.com/materials-systems/electrical/recommended-lighting-levels-in-buildings.html)
+[Recommended light levels for architects from Archtoolbox]:(https://www.archtoolbox.com/materials-systems/electrical/recommended-lighting-levels-in-buildings.html)
 
-[Kellwood lighting](https://www.kellwoodlighting.co.uk/technical/cibse-recommended-lux-levels)
-
-# More references
-
-[Dice's : Moving frostbite to PBR](https://seblagarde.files.wordpress.com/2015/07/course_notes_moving_frostbite_to_pbr_v32.pdf)
+[Technical paper on “Dice's : Moving frostbite to PBR” by Sebastien Lagarde and Charles de Rousiers](https://seblagarde.files.wordpress.com/2015/07/course_notes_moving_frostbite_to_pbr_v32.pdf)
