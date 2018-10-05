@@ -38,7 +38,7 @@ Enable this to render on both sides of your geometry. When disabled, Unity [cull
 
 __Material type:__
 
-The Material Type dropdown displays different settings depending on the Material Type selected. Each Material Type has a different workflow and and you should use the Material Type that is most suitable for the Shader you are creating (SSS for skin and foliage, )
+The Material Type dropdown displays different settings depending on the Material Type selected. Each Material Type has a different workflow and and you should use the Material Type that is most suitable for the Shader you are creating.
 
 * **Standard**: Uses the basic parameters and is the default Material type. Standard uses a basic metallic shader workflow
 
@@ -63,13 +63,15 @@ The Material Type dropdown displays different settings depending on the Material
 
 __Enable Decal:__
 
-Allow the material to receive decals.
+Allow the material to receive decals. // Needs more info
 
 __Enable MotionVector For Vertex Animation:__
 
-Use it to remove ghosting coming from vertex animation.
+Use it to remove ghosting coming from vertex animation. // What is a motion vector pass? Needs moe info
 
 __Displacement mode:__
+
+
 
 * None: no change.
 
@@ -77,16 +79,21 @@ __Displacement mode:__
 
 * Pixel displacement: Use a height map to displace the pixels. Use it only on plane surface. The surface can be only digged.
 
-## Vertex animation / Enable wind
-
-
-Prototype feature, don’t use it.
-
 ## Inputs
 
-__Base color + opacity__: RGB channels are used as base color and alpha channel is used for opacity.
+__Base Color + Opacity__: The Base Color field controls the color of your material and the opacity. To assign a texture to this field, click the radio button and select your texture in the Select Texture window. 
 
-__Smoothness__ handle: This handle modulate (0 to 1) the smoothness value coming from the Mask map alpha channel.
+![1538740108118](C:\Users\robsh\AppData\Roaming\Typora\typora-user-images\1538740108118.png)
+
+To change the colour of your material, click the box to the right of the Base Color + Opacity option and use the colour picker to select the colour you want. You can also enter RGB values, or use the eyedropper tool to select a colour from anywhere on your screen. 
+
+The alpha value of the Base colour controls the transparency level for the material. This only has an effect if the Surface Type for the material is set to  **Transparent**, and not **Opaque**.
+
+**Metallic, Smoothness and Mask Map**.
+
+**Metallic:** Use this slider to adjust the Metallic parameter of your Material (between 0 and 1). The metallic parameter of a material determines how “metal-like” the surface is. When a surface is more metallic, it reflects the environment more and its albedo colour becomes less visible. At full metallic level, the surface colour is entirely driven by reflections from the environment. When a surface is less metallic, its albedo colour clearer and any surface reflections are visible on top of the surface colour, rather than obscuring it.
+
+__Smoothness__: Use this slider to adjust the Smoothness parameter of your Material. With a smooth surface, all light rays tend to bounce off at predictable and consistent angles. Taken to its extreme, a perfectly smooth surface (smoothness value 1) reflects light like a mirror. Less smooth surfaces reflect light over a wider range of angles (as the light hits the bumps in the microsurface),and therefore the reflections have less detail and are spread across the surface in a more diffuse way.
 
 __Mask map:__
 
