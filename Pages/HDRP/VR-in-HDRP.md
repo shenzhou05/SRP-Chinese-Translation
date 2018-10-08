@@ -13,6 +13,7 @@ Some settings may need to be set up under Default Frame Settings, in addition to
 
 **Recommended:**
 * Enable MSAA
+* Enable occlusion mesh with a scale of 1.0
 
 In order to turn off camera-relative rendering, modify ShaderConfig.cs and ShaderConfig.cs.hlsl to change CameraRelativeRendering and SHADEROPTIONS_CAMERA_RELATIVE_RENDERING from 1 to 0.
 
@@ -32,7 +33,6 @@ The following features are not currently supported in HDRP for VR.
 **VR Features:**
 * Viewport scale
 * Render scale
-* Occlusion mesh ([PR in progress](https://github.com/Unity-Technologies/ScriptableRenderPipeline/pull/1943))
 
 ## Troubleshooting
 **Constant warnings about viewport scale being 0**
