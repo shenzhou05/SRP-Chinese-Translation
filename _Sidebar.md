@@ -120,11 +120,15 @@
 </summary>
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component">HDRP Light</a><br>
-<a>Light Layers</a><br>     
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Environment-Lighting">Environment Lighting</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shadows">Shadows</a><br>
+<a>Reflection and refraction</a><br>
+<a>Cube and Planar Reflection Probes</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumetric-lighting">Volumetric lighting</a><br>
+<a>Light Layers</a><br>     
 <a>Cube and Planar Reflection Probes</a><br> 
 <details><summary>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shadows">Shadows</a><br>  
+  
 </summary>
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Global-Shadow-Settings">Global Shadow Settings</a>
