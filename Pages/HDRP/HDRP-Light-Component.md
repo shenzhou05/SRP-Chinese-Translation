@@ -1,5 +1,3 @@
-# HDRP Light Component
-
 Use the Light Component to create Light sources in your Scene. The Light Component controls the shape, color, and intensity of the Light. It also controls whether or not the Light casts shadows into your scene, as well as more advanced settings. 
 ​    
 ## Creating Lights
