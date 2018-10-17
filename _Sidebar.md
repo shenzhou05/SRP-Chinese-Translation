@@ -100,8 +100,9 @@
 <a>Layered Lit</a><br>
 <a>StackLit</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Terrain-Lit-Shader">Terrain Lit</a><br>
-<a>Fabric</a><br>
-<a>AXF</a>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Fabric">Fabric</a><br>
+<a>AXF</a><br>
+
 <details>
 <summary>
 <a>Transparency</a><br>
@@ -110,8 +111,7 @@
 <a>Material Priority</a><br>
 <a>Blending Mode</a><br>
 <a>Transparent Pass</a><br>
-</ul>
-</details>
+</ul></details>
 <a>Subsurface Scattering</a><br>
 </ul></details>
 <details>
