@@ -28,7 +28,7 @@ _The Light Inspector window for a Directional Light with Enable Shadows and Show
 Use the Features section to enable or disable shadows and additional settings for this Light. 
 ​    
 - **Shadows** : Check this box to make this Light cast Shadows into your scene. Checking this box makes the Shadows section appear in the Light Component Inspector window. To configure the Shadows cast by this light, use the settings in the Shadows section.
-  ​    - **Show Additional Settings** :  Check this box to display additional settings in the Light Component Inspector window.  The default settings are suitable for most use-cases, but you can use the additional settings to fine-tune your Light Component for a specific look or Light behaviour.  If you are writing your own Light system using SRP, then you can expose your own Light settings here. 
+- **Show Additional Settings** :  Check this box to display additional settings in the Light Component Inspector window.  The default settings are suitable for most use-cases, but you can use the additional settings to fine-tune your Light Component for a specific look or Light behaviour.  If you are writing your own Light system using SRP, then you can expose your own Light settings here. 
 ## Shape : 
 
 Use the Shape section to change the shape of your Light. 
