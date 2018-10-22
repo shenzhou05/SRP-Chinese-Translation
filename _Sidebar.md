@@ -134,7 +134,7 @@
 </details>
 <details>
 <summary>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Renderers-Extensions">Renderers Extensions</a>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Renderer-Extensions">Renderer Extensions</a>
 </details></summary>
 <details><summary><a>Decals</a></summary>
 <ul>
