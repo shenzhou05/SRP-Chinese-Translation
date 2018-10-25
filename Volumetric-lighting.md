@@ -26,8 +26,8 @@ At this point, Volumetric lighting is enabled but has **no visible effect becaus
 
 The Volumetric lighting settings can be tweaked through 2 Volume components :
 
-- **Volumetric fog :** this component allows you to control the settings used for the simulation of the light scattering through the volume
-- **Volumetric lighting controller :** this component allows you to control the space covered by the volumetric lighting simulation and how the precision of the simulation is distributed in that space.
+- **[Volumetric Fog](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Volumetric-Fog)** this component allows you to control the settings used for the simulation of the light scattering through the volume
+- **[Volumetric lighting controller](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Volumetric-lighting-controller)** this component allows you to control the space covered by the volumetric lighting simulation and how the precision of the simulation is distributed in that space.
 
 # Specific light parameters
 
