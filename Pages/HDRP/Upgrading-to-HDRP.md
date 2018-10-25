@@ -4,7 +4,7 @@ The HDRP uses a new set of [Shaders](https://docs.unity3d.com/Manual/class-Shade
 
 This tutorial explains the HDRP upgrade process using a sample [Scene](https://docs.unity3d.com/Manual/CreatingScenes.html) containing Assets from Unity’s [Viking Village Asset package](https://assetstore.unity.com/packages/essentials/tutorial-projects/viking-village-29140). To get the Scene used in this example, download this [LegacyScene package](https://drive.google.com/open?id=1TQN3XotIBI_xHlq-jdbBm09iDd2tHTam).
 
-![](\Images\UpgradingToHDRP1Main.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UpgradingToHDRP1Main.png)
 <a name="ImportingHDRP"></a>
 ## Setting up the High Definition Render Pipeline (HDRP)
 
@@ -25,7 +25,7 @@ Next, create and set up a High Definition Render Pipeline Asset.
 
 After installing the HDRP package and assigning the HDRP Asset, your Scene will not render correctly (see screenshot below). This is because the Scene still uses the built-in Shaders. The following section shows you how to upgrade these built-in Shaders to an HDRP-compatible shader . 
 
-![](Images/UpgradingToHDRP2.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UpgradingToHDRP2.png)
 
 <a name="MaterialConversion"></a>
 ### Upgrading Materials
