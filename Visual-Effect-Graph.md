@@ -1,8 +1,6 @@
-> # WARNING
+> # Disclaimer
 >
-> This documentation refers to features that are not currently available in unity, and that are under continuous development. This section is a early, incomplete, work-in progress and, as such, contents and features described here are highly likely subject to change.
-
-
+> This documentation refers to features that available as *preview* and that are under continuous development. This section is a early, incomplete, work-in progress and, as such, contents and features described here are highly likely subject to change.
 
 ![](Pages/VFXEditor/img/vfxeditor-title.png)
 
