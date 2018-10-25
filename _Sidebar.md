@@ -58,7 +58,8 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Atmospheric-Scattering">Atmospheric Scattering</a>
 <a>HD Shadow Settings</a><br>
 <a>Contact Shadows</a><br>
-<a>Volumetric lighting controller</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Volumetric-Fog">Volumetric fog</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Volumetric-lighting-controller">Volumetric lighting controller</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Indirect-lighting-controller">Indirect lighting controller</a><br>
 </ul>
 </details>
