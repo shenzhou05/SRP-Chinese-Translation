@@ -51,7 +51,7 @@ So, in the case of the example Scene, start by adding a Directional Light to rep
 
 Disable all other Lights in the Scene to exclusively see the effect of the Light representing the Moon. 
 
-![](Images/UpgradingToHDRP3.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UpgradingToHDRP3.png)
 
 HDRP handles the Sky in a differently to the built-in render pipeline, to allow you to alter Sky parameters dynamically at run time using the __Volume__ script.
 
@@ -69,11 +69,11 @@ Additionally, the [GameObject](https://docs.unity3d.com/Manual/class-GameObject.
 
 Below are the values used for this example’s Procedural Sky: 
 
-![](Images/UpgradingToHDRP4.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UpgradingToHDRP4.png)
 
 The Procedural Sky’s light intensity is expressed as __Exposure__ and __Multiplier__. To convert to Lux, set exposure to 0 Exposure Value (EV) and use the Multiplier as the Lux value. To create believable visuals in this example, set the Multiplier to 0.02 Lux. You can increase the value to 0.05 to make the Scene more visible, while still being low enough to be plausible.
 
-At this point, you can __Generate Lighting__ in this Scene to create light bounces and directional soft shadows. Go to __Window &gt; Rendering &gt; Lighting Settings__ and, near the bottom of the __Scene__ tab, click __Generate Lighting__.![](Images/UpgradingToHDRP5.png)
+At this point, you can __Generate Lighting__ in this Scene to create light bounces and directional soft shadows. Go to __Window &gt; Rendering &gt; Lighting Settings__ and, near the bottom of the __Scene__ tab, click __Generate Lighting__.![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UpgradingToHDRP5.png)
 
 Fire-lit torches are usually around 100 to 140 Lumen so set the __Intensity__ of the Point Lights in the Sene to somewhere between these two values, and make sure you set their __Mode__ to __Baked__. Baked lighting allows you to use smooth shadows baked into lightmaps.
 
@@ -95,15 +95,15 @@ You’ll also notice that the Light Cookie no longer works. That’s because HDR
 
 * __Wrap Mode__ to __Clamp__
 
-![](Images/UpgradingToHDRP6.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UpgradingToHDRP6.png)
 
 Click __Generate Lighting__ again. The Scene now looks like this:
 
-![](Images/UpgradingToHDRP7.png) 
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UpgradingToHDRP7.png) 
 
 Press the __Play__ button and you will see the following in your Game window:
 
-![](Images/UpgradingToHDRP8.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UpgradingToHDRP8.png)
 
 If you compare this to the legacy screenshot, the changes may not be obvious. This is because this example does not use any of the new HDRP-specific Material features such as anisotropy, subsurface scattering, or parallax occlusion mapping, and the original Materials were already PBR compliant.
 
@@ -111,7 +111,7 @@ If you compare this to the legacy screenshot, the changes may not be obvious. Th
 
 The __3D With Extras__ template Scene is another Scene that is interesting to test the conversion process on. You can get the Project by opening [Unity Hub](https://unity3d.com/get-unity/download), creating a new Project, and selecting __3D With Extras__ from the Template drop-down. After you create and open the Project, you will see the following Scene:
 
-![](Images/UpgradingToHDRP9.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UpgradingToHDRP9.png)
 
 Like with the previous conversion example, [import the HDRP package](#ImportingHDRP) (menu: __Window &gt; Package Manager__), and run the converter (__Edit &gt; Render Pipeline__).
 
@@ -120,7 +120,7 @@ You must modify some of the GameObjects in the Scene so they behave correctly:
 1. Add an __Auto Exposure__ effect to the Post Process Volume script attached to the __Post-process Volume__ GameObject (__Add effect &gt; Unity &gt; Auto Exposure__). 
 
 2. Enable the Minimum (EV), Maximum (EV) and Exposure Compensation settings and then set them to the following values: 
-![](Images/UpgradingToHDRP10.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UpgradingToHDRP10.png)
 This accommodates the high difference in light exposition values (Min and Max) and the overall high exposure.
 
 3. The conversion process may have altered the size of the Reflection Probes. If so, alter the __Box Size__ field for each Reflection Probe until they match the size of the area they are in.
@@ -143,7 +143,7 @@ This means that `x EV = 2 ^ x Lumen` and `y Lumen is ln( y EV ) / ln( 2 )`
 
 You should now have a Scene similar to this:
 
-![](Images/UpgradingToHDRP11.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UpgradingToHDRP11.png)
 
 Note how the lighting is different from the original screenshot, and from the original HDRP template. The HDRP template examples were made to look good but were not realistic, whereas this Scene uses physically correct light values: an afternoon direct sun with no clouds in the sky is much brighter than even the best professional construction spotlight. However, the spotlight is still casting light and shadows on the side of the wall.
 <a name="ManualConversion"></a>
@@ -163,7 +163,7 @@ The Legacy Standard to Lit conversion process combines the different Material ma
 
 * Smoothness goes in the Alpha channel
 
- ![](Images/UpgradingToHDRP12.png)
+ ![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UpgradingToHDRP12.png)
 
 ### The detail map
 
@@ -177,7 +177,7 @@ The Legacy Standard to Lit conversion process combines the different detail maps
 
 * Normal X goes in the Alpha channel
 
-![](Images/UpgradingToHDRP13.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UpgradingToHDRP13.png)
 
 The process blends detail albedo and smoothness with the base values using an overlay function, similar to the process you would use in image editing software, like Photoshop.
 
