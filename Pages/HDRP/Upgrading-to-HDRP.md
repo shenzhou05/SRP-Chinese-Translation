@@ -1,131 +1,183 @@
-Upgrading to HDRP
+# Unity Legacy to High Definition Render Pipeline conversion tutorial
 
-Conversion Example
+The HDRP uses a new set of [Shaders](https://docs.unity3d.com/Manual/class-Shader.html) and new lighting units, both of which are incompatible with the built-in Unity rendering pipeline. To upgrade a Unity Project to HDRP, you must first [convert](#MaterialConversion) all of the [Materials](https://docs.unity3d.com/Manual/class-Material.html) and Shaders in your Project, and then [edit](#LightAdjustment) your individual [Light](https://docs.unity3d.com/Manual/class-Light.html) settings accordingly. 
 
-The HDRP uses a set of shaders and new lighting units that are incompatible with the Built In Unity rendering pipeline. To upgrade a Project to HDRP you must first convert all of the Materials and Shaders in your project, then you must edit your Light settings accordingly. 
+This tutorial explains the HDRP upgrade process using a sample [Scene](https://docs.unity3d.com/Manual/CreatingScenes.html) containing Assets from Unity’s [Viking Village Asset package](https://assetstore.unity.com/packages/essentials/tutorial-projects/viking-village-29140). To get the Scene used in this example, download this [LegacyScene package](https://drive.google.com/open?id=1TQN3XotIBI_xHlq-jdbBm09iDd2tHTam).
 
-This page demonstrates the HDRP upgrade process using a sample scene containing assets from the Viking Village Asset pack. The scene used in this example can be found at the following Google Drive link.
+![](Images/UpgradingToHDRP1Main.png)
+<a name="ImportingHDRP"></a>
+## Setting up the High Definition Render Pipeline (HDRP)
 
 
+First, add the HDRP package to your existing Project: 
 
-Setup the High Definition Render Pipeline (HDRP)
+1. In the Unity Editor, open the Package Manager window (menu: __Window &gt; Package Manager__).
 
-First, you must add the HDRP package to your existing Project: 
+2. In the menu at the top of the window, change the package list, located in the top left, to __All packages__. Then, select __Advanced &gt; Show Preview Packages__. Now, find and select the __Render-Pipelines.High-Definition__ package, and click __Install__.
 
-1. Open the Package Manager window by navigating to Window > Package Manager.
-2. Navigate to the All tab and add the “Render-pipelines.high-definition” package.
+Next, create and set up a High Definition Render Pipeline Asset.
 
-Next,  create and set up a High Definition Render Pipeline Asset.
+1. Create an HDRP Asset by selecting __Assets &gt; Create &gt; Rendering &gt; High Definition Render Pipeline Asset__.
 
-1. Navigate to Assets > Create > Rendering > High Definition Render Pipeline Asset.
-2. Navigate to Edit > Project Settings > Graphics.
-3. Assign the High Definition Render Pipeline asset to the Scriptable Render Pipelines Settings field by clicking the radio button and selecting the asset, or by dragging the asset into the field. 
+2. Open the __Graphics Settings__ window (menu: __Edit &gt; Project Settings &gt; Graphics)__.
 
-After installing the HDRP package and assigning the HDRP Asset your scene will not render correctly (see screenshot below). This is because the scene is still using the Built-In Shaders. The below section details upgrading these Built-In Shaders to HDRP. 
+3. Assign the High Definition Render Pipeline Asset to the __Scriptable Render Pipelines Settings__ field, at the top of the window. To do this, click the radio button and select the Asset from the list, or drag the Asset into the field. 
 
+After installing the HDRP package and assigning the HDRP Asset, your Scene will not render correctly (see screenshot below). This is because the Scene still uses the built-in Shaders. The following section shows you how to upgrade these built-in Shaders to an HDRP-compatible shader . 
 
+![](Images/UpgradingToHDRP2.png)
 
-Upgrading materials
+<a name="MaterialConversion"></a>
+### Upgrading Materials
 
-To upgrade the materials in your scene to HDRP compatible materials, navigate to Edit > Render Pipeline, then select one of the following options: 
+To upgrade the Materials in your Scene to HDRP-compatible Materials, navigate to __Edit &gt; Render Pipeline__ and select one of the following options: 
 
+* __Upgrade Project Materials to High Definition Materials__: Converts all compatible Materials in your Project to HDRP Materials.
 
+* __Upgrade Selected Materials to High Definition Materials__: Converts Materials that are currently selected in the Project window. 
 
-- Upgrade Project Materials to High Definition Materials : This option converts all compatible materials in your project to HDRP Materials.
-- Upgrade Selected Materials to High Definition Materials : This option only converts Materials that are currently selected in the Project window. 
+If your Project contains any custom Materials or Shaders then this script will not automatically update them to HDRP. You must [convert these Materials and Shaders manually](#ManualConversion). 
 
-If your project contains any custom Materials or Shaders then this script will not automatically update them to HDRP. You must convert these Materials and Shaders manually. 
+<a name="LightAdjustment"></a>
+### Adjusting Lights
 
-HDRP Lights
+Firstly, you need to change your Color Space to __Linear__. Navigate to __Edit &gt; Settings &gt; Player__ and, in the __Other Settings__ section, set the __Color Space__ to __Linear__.
 
-The HDRP uses physical Light units to control the intensity of Lights. This means that the arbitrary units used in the Built-In render pipeline will not match the units used in HDRP. 
+The HDRP uses physical Light units to control the intensity of Lights. This means that these units will not match the arbitrary units that the built-in render pipeline uses.
 
-Directional Light intensities are expressed in Lux ( https://en.wikipedia.org/wiki/Lux ) and other Light intensities are expressed in Lumen ( https://en.wikipedia.org/wiki/Lumen_(unit) ).
+Directional Light intensities are expressed in [Lux]([https://en.wikipedia.org/wiki/Lux](https://en.wikipedia.org/wiki/Lux)) and other Light intensities are expressed in [Lumen]([https://en.wikipedia.org/wiki/Lumen_(unit)](https://en.wikipedia.org/wiki/Lumen_(unit))).
 
-So, in the case of our scene, let’s start with the main natural light : the moon. According to Wikipedia, a moonlight with clear night sky has a luminous flux of 1 Lux.
+So, in the case of the example Scene, start by adding a Directional Light to represent the main, natural light in this Scene: the Moon. A full Moon, on a clear night sky, has a luminous flux of around 0.25 Lux.
 
-After disabling all other lights (use the Light Explorer), this is what we have.
+Disable all other Lights in the Scene to exclusively see the effect of the Light representing the Moon. 
 
+![](Images/UpgradingToHDRP3.png)
 
+HDRP handles the Sky in a differently to the built-in render pipeline, to allow you to alter Sky parameters dynamically at run time using the __Volume__ script.
 
-Yes, we’ve lost the sky. Because HDRP handles the sky differently in volume settings, to allow for example to change sky parameters (among other things) dynamically.
+Select __GameObject &gt; Rendering &gt; Scene Settings__ and adjust the following settings for best effect:
 
-Click in GameObject -> Rendering -> Scene Settings.
+* __HD Shadow Settings__ : The maximum shadow distance and the directional shadow cascade settings.
 
-This new settings will contain the following components :
+* __Visual Environment__ : The Sky and Fog type of your Scene.
 
-- HD Shadow Settings : Stores the max shadow distance and the directional shadow cascade settings.
-- Visual Environment : Stores the Sky and Fog type of your scene.
-- Procedural Sky : This is a port of the legacy procedural sky and contains the same settings.
-- Exponential Fog : The default fog, that does distance and height fog.
+* __Procedural Sky__ : This is a port of the legacy procedural Sky and contains the same settings.
 
-Additionally, the gameobject also has a Baking Sky component, that references the Volume’s procedural sky. This component will pass the sky data to the lightmapper and only one should be in the scene at any time.
+* __Exponential Fog__ : The default Fog, that can handle fields such as __Density__, __Color Mode__, __Fog Distance__, and __Fog Height__.
 
-Here are the settings we will use for the procedural sky : 
+Additionally, the [GameObject](https://docs.unity3d.com/Manual/class-GameObject.html) also has a Baking Sky component, that references the Volume’s procedural Sky. This component passes the Sky data to the lightmapper and only one should ever be present in the Scene at any time. Otherwise, Unity will exclusively use the first loaded Baking Sky component, and a warning in shown in the console.
 
+Below are the values used for this example’s Procedural Sky: 
 
+![](Images/UpgradingToHDRP4.png)
 
-About the Exposure and Multiplier values: This sky’s light intensity is expressed as Exposure and Multiplier and to convert to Lux, the best way is to set exposure to 0ev and use the Multiplier as the Lux value. If you look at the wikipedia page, the sky should be at 0.002 Lux, but boosting the value to 0.05 will make it more visible, while still being low enough to be plausible.
+The Procedural Sky’s light intensity is expressed as __Exposure__ and __Multiplier__. To convert to Lux, set exposure to 0 Exposure Value (EV) and use the Multiplier as the Lux value. To create believable visuals in this example, set the Multiplier to 0.02 Lux. You can increase the value to 0.05 to make the Scene more visible, while still being low enough to be plausible.
 
-You can also enable the light baking at this stage to profit a bit from the light bounces and directional soft shadows.
+At this point, you can __Generate Lighting__ in this Scene to create light bounces and directional soft shadows. Go to __Window &gt; Rendering &gt; Lighting Settings__ and, near the bottom of the __Scene__ tab, click __Generate Lighting__.![](Images/UpgradingToHDRP5.png)
 
-For the torch lights, because it’s hard to find reference values for this, you can set them around 150 lumen.
+Fire-lit torches are usually around 100 to 140 Lumen so set the __Intensity__ of the Point Lights in the Sene to somewhere between these two values, and make sure you set their __Mode__ to __Baked__. Baked lighting allows you to use smooth shadows baked into lightmaps.
 
-You’ll also notice that the light cookie doesn’t work anymore, that’s because HDRP uses standard textures as light cookies, and handles colored cookies. Simply change the cookie texture (named “TorchCookie”) import settings to those :
+<a name="CookieCorrection"></a>
 
+You’ll also notice that the Light Cookie no longer works. That’s because HDRP uses standard textures as Light Cookies, and handles colored cookies. Simply change the cookie texture (named "TorchCookie") import settings to these:
 
+* __Texture Type__ to __default__
 
-After a quick light bake, the scene is now looking like this :
+* __Texture Shape__ to __Cube__
 
- 
+* __Mapping__ to __Latitude-Longitude Layout (Cylindrical)__
 
-Some subtle light color tweak later, and we have this in play mode :
+* Disable __sRGB (Color Texture)__
 
+* __Alpha Source__ to __None__
 
+* Disable __Border Mip Maps__
 
-The change may not be obvious compared to the legacy screenshot, but that’s because we didn’t use any of the new HDRP specific material features (anisotropy, subsurface scattering, parallax occlusion mapping …) and the original materials were already PBR compliant.
+* __Wrap Mode__ to __Clamp__
 
-Convert the template scene
+![](Images/UpgradingToHDRP6.png)
 
-An other scene that is interesting to test to convert is the template assets that ships in the “3D with Extra Template”.
-Simply create a new project and select this template. You will have this :
+Click __Generate Lighting__ again. The Scene now looks like this:
 
+![](Images/UpgradingToHDRP7.png) 
 
+Press the __Play__ button and you will see the following in your Game window:
 
-Like before, import the HDRP package, and run the converter.
+![](Images/UpgradingToHDRP8.png)
 
-Some of the objects in the scene will have to be modified to act properly:
+If you compare this to the legacy screenshot, the changes may not be obvious. This is because this example does not use any of the new HDRP-specific Material features such as anisotropy, subsurface scattering, or parallax occlusion mapping, and the original Materials were already PBR compliant.
 
-- Reflection probes will need to be rotated
-- The sun light intensity can be set to 100000
-- You will need to create a scene settings object and set the sky exposure to 0 and the multiplier to 20000
-- The work lamp intensity need to be set to 119000:
-- - This is for a 8500 lumen lamp
-  - Two lamps
-  - And multiply by 7 to compensate for the spot angle and it’s reflector1
-  - Correct the light cookie
-- Set the emissive intensity of the lightbulb material to 8500.
-- Add an Auto-Exposure component to the post processes, with the following settings : 
+## Converting the template Scene
 
-This will allow to accommodate the high difference in light exposition values (Min and Max), and compensate for the overall high exposure.
-- Re-bake the lighting
+The __3D With Extras__ template Scene is another Scene that is interesting to test the conversion process on. You can get the Project by opening [Unity Hub](https://unity3d.com/get-unity/download), creating a new Project, and selecting __3D With Extras__ from the Template drop-down. After you create and open the Project, you will see the following Scene:
 
-You should now have a scene similar to this:
+![](Images/UpgradingToHDRP9.png)
 
+Like with the previous conversion example, [import the HDRP package](#ImportingHDRP) (menu: __Window &gt; Package Manager__), and run the converter (__Edit &gt; Render Pipeline__).
 
+You must modify some of the GameObjects in the Scene so they behave correctly:
 
-Note how the lighting is different from the original one, and from the original HDRP template. Those were made to be good looking but are no realistic, whereas this one with physically correct light values is more plausible: an afternoon direct sun with no clouds in the sky is way brighter than even the best professional construction spotlight.
+1. Add an __Auto Exposure__ effect to the Post Process Volume script attached to the __Post-process Volume__ GameObject (__Add effect &gt; Unity &gt; Auto Exposure__). 
 
-But the spot is still casting light and shadows on the shadowed side of the wall.
+2. Enable the Minimum (EV), Maximum (EV) and Exposure Compensation settings and then set them to the following values: 
+![](Images/UpgradingToHDRP10.png)
+This accommodates the high difference in light exposition values (Min and Max) and the overall high exposure.
 
-Details
+3. The conversion process may have altered the size of the Reflection Probes. If so, alter the __Box Size__ field for each Reflection Probe until they match the size of the area they are in.
 
-1: On those kind of spot lights, the back of the spot is covered with a reflective surface to reflect all light in the spot direction. In this case we need to compensate the light intensity so the total amount of light inside the light’s cone is the amount of light emitted by the light bulb. The formula is the following:
+4. Set the __Intensity__ of the Light representing the Sun (the Light attached to the __Directional Light__ GameObject in the Scene) to 100000.
 
-    Spot Lumen = Bulb Lumen * 2 / ( 1 - cos( half angle ) ) 
+5. Create a Scene Settings GameObject (__GameObject &gt; Rendering &gt; Scene Settings__) and set the sky __Exposure__ to 0 and the __Multiplier__ to 20000.
 
-What happens when materials are converted
+6. Set the intensity of the Light attached to the __Spot Light__ GameObject to 119000. This is because there are two 8500 lumen lamps and, to compensate for the spot angle and its reflector, you multiply that value by 7. The reason why is as follows, on these kind of spotlights, the back of the spot is covered with a reflective surface to reflect all light in the spot direction. In this case, you need to compensate the light intensity so the total amount of light inside the light’s cone is the amount of light emitted by the light bulb. Here is the formula: `Spot Lumen = Bulb Lumen * 2 / ( 1 - cos( half angle ) ) `.
 
-The HDRP material converter will automatically convert Legacy Standards and Unlit materials to HDRP Lit and Unlit.
+7. Correct the Light cookie (Spotlight_Cookie), as shown in the [cookie correction section](#CookieCorrection) in the previous example.
 
-While the Unlit material conversion is pretty straightforward, converting from Standard to Lit is a bit more tricky. I’ll explain here what is happening behind the scenes, so if something seems wrong to you, you will still be able to do some conversion work manually.
+8. Set the emissive intensity of the light bulb Material (LightBulb_Mat) to 13.05. Click on the __Emissive Color__ picker and manually enter 13.05 into the __Intensity __field. This value is much lower than the others because the emission color intensity uses EV units and the other values use Lumen. To convert between the two, see the following formulas. Exposure Value is a scale of powers of 2. 
+This means that `x EV = 2 ^ x Lumen` and `y Lumen is ln( y EV ) / ln( 2 )`
+
+`13.05 EV is: 2 ^ 13.05 = 8480 Lumen`
+`8480 Lumen is: ln( 8480 ) / ln( 2 ) = 13.05 EV`
+
+9. Click  __Generate Lighting__ to re-bake the lighting.
+
+You should now have a Scene similar to this:
+
+![](Images/UpgradingToHDRP11.png)
+
+Note how the lighting is different from the original screenshot, and from the original HDRP template. The HDRP template examples were made to look good but were not realistic, whereas this Scene uses physically correct light values: an afternoon direct sun with no clouds in the sky is much brighter than even the best professional construction spotlight. However, the spotlight is still casting light and shadows on the side of the wall.
+<a name="ManualConversion"></a>
+## Converting Materials manually
+
+The HDRP Material converter automatically converts Legacy Standards and Unlit Materials to HDRP Lit and Unlit Materials respectively. This section describes the steps the converter takes, to help you convert custom Materials manually.
+
+### The mask map
+
+The Legacy Standard to Lit conversion process combines the different Material maps of the Legacy Standard into the separate RGBA channels of the mask map in the HDRP Lit Material.
+
+* Metallic goes in the Red channel
+
+* Occlusion goes in the Green channel
+
+* Detail Mask goes in the Blue channel 
+
+* Smoothness goes in the Alpha channel
+
+ ![](Images/UpgradingToHDRP12.png)
+
+### The detail map
+
+The Legacy Standard to Lit conversion process combines the different detail maps of the Legacy Standard into the separate RGBA channels of the detail map in the HDRP Lit Material. It also adds a smoothness detail too.
+
+* Albedo is desaturated and goes in the Red channel
+
+* Normal Y goes in the Green channel
+
+* Smoothness goes in the Blue channel
+
+* Normal X goes in the Alpha channel
+
+![](Images/UpgradingToHDRP13.png)
+
+The process blends detail albedo and smoothness with the base values using an overlay function, similar to the process you would use in image editing software, like Photoshop.
+
