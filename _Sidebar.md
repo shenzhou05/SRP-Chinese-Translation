@@ -55,9 +55,9 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumes">Volumes</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Visual-Environment">Visual Environment</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Sky">Sky</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Atmospheric-Scattering">Atmospheric Scattering</a>
-<a>HD Shadow Settings</a><br>
-<a>Contact Shadows</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Atmospheric-Scattering">Atmospheric Scattering</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HD-Shadow-Settings">HD Shadow Settings</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HD-Contact-Shadows">Contact Shadows</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Volumetric-Fog">Volumetric fog</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Volumetric-lighting-controller">Volumetric lighting controller</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Indirect-lighting-controller">Indirect lighting controller</a><br>
@@ -127,10 +127,7 @@
 <a>Cube and Planar Reflection Probes</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumetric-lighting">Volumetric lighting</a><br>
 <a>Light Layers</a><br>     
-<a>Cube and Planar Reflection Probes</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Global-Shadow-Settings">Global Shadow Settings</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physical-light-units-and-intensities">Physical Light Units and Intensities</a><br>
-<a>Reflection and Refraction</a><br>  
 </ul>
 </details>
 <details>
