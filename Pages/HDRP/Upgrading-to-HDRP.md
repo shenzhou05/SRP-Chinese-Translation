@@ -132,7 +132,7 @@ This accommodates the high difference in light exposition values (Min and Max) a
 
 5. Create a Scene Settings GameObject (__GameObject &gt; Rendering &gt; Scene Settings__) and set the sky __Exposure__ to 0 and the __Multiplier__ to 20000.
 
-6. Set the intensity of the Light attached to the __Spot Light__ GameObject to 119000. This is because there are two 8500 lumen lamps and, to compensate for the spot angle and its reflector, you multiply that value by 7. The reason why is as follows, on these kind of spotlights, the back of the spot is covered with a reflective surface to reflect all light in the spot direction. In this case, you need to compensate the light intensity so the total amount of light inside the light’s cone is the amount of light emitted by the light bulb. Here is the formula: `Spot Lumen = Bulb Lumen * 2 / ( 1 - cos( half angle ) ) `.
+6. Set the intensity of the Light attached to the __Spot Light__ GameObject to 17000. This is because there are two 8500 lumen lamps. Enable Angle Affect Intensity to compensate for the spot angle and its reflector.
 
 7. Correct the Light cookie (Spotlight_Cookie), as shown in the [cookie correction section](#CookieCorrection) in the previous example.
 
