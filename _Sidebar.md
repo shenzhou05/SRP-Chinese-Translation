@@ -130,10 +130,7 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physical-light-units-and-intensities">Physical Light Units and Intensities</a><br>
 </ul>
 </details>
-<details>
-<summary>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Renderer-Extensions">Renderer Extensions</a>
-</details></summary>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Renderer-Extensions">Renderer Extensions</a><br>
 <details><summary><a>Decals</a></summary>
 <ul>
 <a>Projector and Mesh Decal</a><br>
