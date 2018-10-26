@@ -2,7 +2,7 @@ One of HD Render Pipeline **[Atmosphere scattering](https://github.com/Unity-Tec
 
 Volumetric fog works as a **unified volumetric lighting system**. 
 
-When volumetric fog is selected, the renderer considers that **all light scatter in the air** and the user can specify some settings in order to tweak the simulation.
+When volumetric fog is selected, the renderer considers that **all light scatter in the air** and the user can specify some settings in order to tweak the simulation. _* Area lights scattering in volumetric fog is not supported yet._
 
 # Enabling volumetric lighting
 
