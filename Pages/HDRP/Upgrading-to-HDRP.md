@@ -121,7 +121,9 @@ You must modify some of the GameObjects in the Scene so they behave correctly:
 1. Add an __Auto Exposure__ effect to the Post Process Volume script attached to the __Post-process Volume__ GameObject (__Add effect &gt; Unity &gt; Auto Exposure__). 
 
 2. Enable the Minimum (EV), Maximum (EV) and Exposure Compensation settings and then set them to the following values: 
+
 ![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UpgradingToHDRP10.png)
+
 This accommodates the high difference in light exposition values (Min and Max) and the overall high exposure.
 
 3. The conversion process may have altered the size of the Reflection Probes. If so, alter the __Box Size__ field for each Reflection Probe until they match the size of the area they are in.
@@ -135,10 +137,9 @@ This accommodates the high difference in light exposition values (Min and Max) a
 7. Correct the Light cookie (Spotlight_Cookie), as shown in the [cookie correction section](#CookieCorrection) in the previous example.
 
 8. Set the emissive intensity of the light bulb Material (LightBulb_Mat) to 13.05. Click on the __Emissive Color__ picker and manually enter 13.05 into the __Intensity __field. This value is much lower than the others because the emission color intensity uses EV units and the other values use Lumen. To convert between the two, see the following formulas. Exposure Value is a scale of powers of 2. 
-This means that `x EV = 2 ^ x Lumen` and `y Lumen is ln( y EV ) / ln( 2 )`
+This means that `x EV = 2 ^ x Lumen` and `y Lumen is ln( y EV ) / ln( 2 )`.
 
-`13.05 EV is: 2 ^ 13.05 = 8480 Lumen`
-`8480 Lumen is: ln( 8480 ) / ln( 2 ) = 13.05 EV`
+For example, `13.05 EV is: 2 ^ 13.05 = 8480 Lumen` therefore `8480 Lumen is: ln( 8480 ) / ln( 2 ) = 13.05 EV`
 
 9. Click  __Generate Lighting__ to re-bake the lighting.
 
