@@ -123,10 +123,10 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component">HDRP Light</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Environment-Lighting">Environment Lighting</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Shadows">Shadows</a><br>
-<a>Reflection and refraction</a><br>
-<a>Cube and Planar Reflection Probes</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Reflection-and-refraction">Reflection and refraction</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Cube-and-Planar-Reflection-Probes">Cube and Planar Reflection Probes</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumetric-lighting">Volumetric lighting</a><br>
-<a>Light Layers</a><br>     
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Light-layers">Light Layers</a><br>     
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physical-light-units-and-intensities">Physical Light Units and Intensities</a><br>
 </ul>
 </details>
