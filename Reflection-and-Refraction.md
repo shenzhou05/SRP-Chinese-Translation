@@ -1,6 +1,6 @@
 # Reflection
 
-There are several techniques used to calculate reflections in HD Render Pipeline : **Sky reflection probe**, **Local Reflection probes**, **SSR **(or Screen Space Reflections), **Planar reflection probes**. These different techniques have variable **runtime cost**, **editing cost**, and **accuracy**. Depending on your target platform and the amount of time you can spend on the setup, you can decide to use all of these techniques, or only some of them.
+There are several techniques used to calculate reflections in HD Render Pipeline : **Sky reflection probe**, **Local Reflection probes**, **SSR** (or Screen Space Reflections), **Planar reflection probes**. These different techniques have variable **runtime cost**, **editing cost**, and **accuracy**. Depending on your target platform and the amount of time you can spend on the setup, you can decide to use all of these techniques, or only some of them.
 
 ## Reflection hierarchy
 
