@@ -39,4 +39,5 @@ The following features are not currently supported in HDRP for VR.
 
 ## Troubleshooting
 **Game view shows unexpected or indecipherable view of scene**
+
 Deselect the Main Camera in your scene. 
