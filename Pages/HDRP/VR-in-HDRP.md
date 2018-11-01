@@ -34,6 +34,8 @@ The following features are not currently supported in HDRP for VR.
 **VR Features:**
 * Viewport scale
 * Render scale
+* Multi-pass rendering
+* Single-pass instanced rendering
 
 ## Troubleshooting
 **Game view shows unexpected or indecipherable view of scene**
