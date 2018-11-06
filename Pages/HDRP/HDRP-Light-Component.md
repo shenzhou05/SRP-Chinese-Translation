@@ -108,10 +108,10 @@ Use the __Light__ section to adjust the way your Light component shines light in
 
 * __Intensity__ : Change the intensity of the Light. Intensity is expressed in the units specified below. The further the light travels from its source, the weaker it gets. Lower values cause light to diminish closer to the source. Higher values cause light to diminish further away from the source. 
 
-	* A Spot Light can use [Lumen](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Glossary.html#Lumen) and [Candela](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Glossary.html#Candela)
-	* A Directional Light can only use [Lux](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Glossary.html#Lux)
+	* A Spot Light can use [Lumen](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Glossary#Lumen) and [Candela](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Glossary#Candela)
+	* A Directional Light can only use [Lux](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Glossary#Lux)
 	* A Point Light can use __Lumen__ and __Candela__
-	* A Rectangle Light can use __Lumen__, [Luminance](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Glossary.html#Luminance), and [Ev 100](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Glossary.html)
+	* A Rectangle Light can use __Lumen__, [Luminance](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Glossary#Luminance), and [Ev 100](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Glossary#EV)
 	* A Line Light can use __Lumen__, __Luminance__, and __Ev 100__
 
 * __Indirect Multiplier__ : Change the intensity of [indirect](https://docs.unity3d.com/Manual/LightModes-TechnicalInformation.html) light in your Scene. A value of 1 mimics realistic light behavior. A value of 0 disables indirect lighting for this Light. If both __Realtime__ and __Baked__ Global Illumination are disabled in Lighting Settings (menu: __Window &gt; Rendering &gt; Lighting Settings__), the Indirect Multiplier has no effect. 
