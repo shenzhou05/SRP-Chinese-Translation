@@ -156,6 +156,7 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VR-in-HDRP">VR in HDRP</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/High-Definition-Render-Pipeline-FAQ">Frequently Asked Questions</a><br>
 <a>Technical Publications</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Glossary">Glossary</a><br>
 
 </ul>
 </details>
