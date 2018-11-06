@@ -8,14 +8,15 @@ Some settings may need to be set up under Default Frame Settings, in addition to
 **Required:**
 * Camera relative rendering off
 * Support only forward rendering
-* Enable Stereo under FrameSettings
 * Enable VR under Player Settings
+* Enable FPTL for forward off
 
 **Recommended:**
 * Enable MSAA
-* Enable occlusion mesh with a scale of 1.0
 
 In order to turn off camera-relative rendering, modify ShaderConfig.cs and ShaderConfig.cs.hlsl to change CameraRelativeRendering and SHADEROPTIONS_CAMERA_RELATIVE_RENDERING from 1 to 0.
+
+To support only forward rendering, Forward must be selected in the Lit shader mode drop-down in both Rendering Settings and Default Frame Settings. 
 
 MSAA is the recommended anti-aliasing solution for VR because it is hardware-accelerated and anti-aliases scenes without blurring away too much detail. However, in scenes with many high-frequency details (like leaves or grass), the aggressive smoothing from PostProcessing's TAA may be preferred despite the hit to performance. 
 
@@ -33,8 +34,10 @@ The following features are not currently supported in HDRP for VR.
 **VR Features:**
 * Viewport scale
 * Render scale
+* Multi-pass rendering
+* Single-pass instanced rendering
 
 ## Troubleshooting
-**Constant warnings about viewport scale being 0**
+**Game view shows unexpected or indecipherable view of scene**
 
-View the HDRP asset in inspector. Click the gear at the top right, then click reset. You will have to re-add the render pipeline resources asset afterwards. 
+Deselect the Main Camera in your scene. 

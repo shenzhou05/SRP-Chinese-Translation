@@ -89,4 +89,4 @@ In order to enable contact shadows you need to :
 
 :warning: Only one light can cast contact shadows at a time, it means that if you have more than one light that cast contact shadows visible on the screen, only the dominant light will render contact shadows. The dominant light is chosen using the screen space size of the bounding box of the light (note that if you enable contact shadows on the directional light, it'll always be the dominant light).
 
-For more details on the Contact shadow settings refer to the Contact Shadow volume component page.
+More details : [Contact shadows](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HD-Contact-Shadows)

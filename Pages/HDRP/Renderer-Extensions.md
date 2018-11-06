@@ -1,5 +1,3 @@
-# Extensions to Renderers
-
 Renderers are well known to Unity users. in HDRP, a few addition were made to extend their capabilities.
 
 ## Renderer Priority
