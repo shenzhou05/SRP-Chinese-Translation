@@ -137,7 +137,7 @@
 <a>Decal material</a><br>        
 </ul>
 </details>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Camera">Camera</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRPCamera">Camera</a><br>
 <a>Post-Processing</a>
 <details><summary><a>Customising HDRP</a><br></summary>
 <ul>
