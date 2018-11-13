@@ -1,6 +1,6 @@
 Screen space contact shadows can be enabled if a shadow casting punctual light (Directional, Spot, Point) is present in the scene. Contact shadows are shadows ray-marched in screen space inside the depth buffer. The goal of contact shadows is to capture small details that cannot be seen in regular shadow mapping algorithm. Note: The "No cast shadow" option on renderers don't apply to contact shadow.
 
-Contact shadow have a variable cost between 0.5 and 1.3 ms on PS4 @ 1080p.
+Contact shadow have a variable cost between 0.5 and 1.3 ms on base PS4 @ 1080p.
 
 ![](../uploads/Main/Copyof Global Shadow Settings_image_2.png)
 
