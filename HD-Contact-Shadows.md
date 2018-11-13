@@ -1,4 +1,4 @@
-Screen space contact shadows can be enabled if a shadow casting directional light is present in the scene. Contact shadows are shadows ray-marched in screen space inside the depth buffer. The goal of contact shadows is to capture small details that cannot be seen in regular shadow mapping algorithm.
+Screen space contact shadows can be enabled if a shadow casting punctual light (Directional, Spot, Point) is present in the scene. Contact shadows are shadows ray-marched in screen space inside the depth buffer. The goal of contact shadows is to capture small details that cannot be seen in regular shadow mapping algorithm. Note: The "No cast shadow" option on renderers don't apply to contact shadow.
 
 Note that this feature is in early development and has not be extensively tested or optimized.
 
