@@ -137,7 +137,7 @@
 <a>Decal material</a><br>        
 </ul>
 </details>
-<details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRPCamera">Camera</a></summry>
+<details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRPCamera">Camera</a></summary>
 <ul>
 <a>MSAA</a>
 </ul>
