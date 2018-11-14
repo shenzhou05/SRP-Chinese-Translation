@@ -1,10 +1,10 @@
-One of HD Render Pipeline **[Atmosphere scattering](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Atmospheric-Scattering)** modes is called **Volumetric fog**.
+**[Atmospheric Scattering](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Atmospheric-Scattering)** in the HD Render Pipeline (HDRP) is composed of several components. One of them is the **Volumetric Fog**.
 
-Volumetric fog works as a **unified volumetric lighting system**. 
+The Volumetric Fog is rendered by the Volumetric Lighting system. The HDRP implements a **unified lighting system**, which means that all scene components (lights, as well as opaque and transparent objects) interact with the fog.
 
-When volumetric fog is selected, the renderer considers that **all light scatter in the air** and the user can specify some settings in order to tweak the simulation. _* Area lights scattering in volumetric fog is not supported yet._
+Please note that the Volumetric Lighting system does not yet support area lights.
 
-# Enabling volumetric lighting
+# Enabling Volumetric Lighting
 
 - In your HD Render Pipeline Asset under **Supported Features** check that **Volumetrics** is enabled.
 
