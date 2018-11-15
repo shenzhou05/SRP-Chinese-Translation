@@ -27,7 +27,7 @@ Please note that the Volumetric Lighting system does not yet support area lights
 
 At this point, the scene contains global volumetric fog. However, the effect is **not visible** because the default fog density is very low. This is expected. You need to tweak fog settings as explained in next section.
 
-# Customizing the Appearance of the Volumetric Fog
+# Customizing the Volumetric Fog
 
 The Volumetric lighting settings can be tweaked through 2 Volume components :
 
