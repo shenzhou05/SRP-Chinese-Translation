@@ -24,7 +24,7 @@ The **Visual Environment** part of your **Scene Settings** should be configured 
 In your scene or multi-scene setup (if several scenes are loaded):
 
 - If you have a **GameObject** with a **Volume** component containing a **Visual Environment** override, make sure the **Fog Type** is set to **Volumetric**. 
-- If you don't have a **Volume** component in your scene, navigate to the **Hierarchy** view and click **Create** -> **Rendering** -> **Scene Settings**. This will create a **GameObject** called "Scene Settings" containing a **Volume** component with a **Visual Environment** override. Inspect the new **GameObject** and set the **Fog Type** to **Volumetric**.
+- If you don't have a **Volume** component in your scene, navigate to the **Hierarchy** view and click **Create -> Rendering -> Scene Settings**. This will create a **GameObject** called "Scene Settings" containing a **Volume** component with a **Visual Environment** override. Inspect the new **GameObject** and set the **Fog Type** to **Volumetric**.
 
 | Volumes and Visual Environment                               |
 | :----------------------------------------------------------- |
@@ -69,7 +69,7 @@ For performance reasons, **Density Volumes** are voxelized. This results in two 
 - **Density Volumes** do not support **volumetric shadowing**. If you place a **Density Volume** between a light and a surface, this volume will not attenuate lighting reaching the surface.
 - **Density Volumes** are voxelized at a very coarse rate, with (typically) only 64 or 128 slices along the camera's focal axis. This can result in noticeable aliasing at sharp boundary of the volume. In order to hide the problem, you should always have some global fog (if possible). Using a **Density Mask** and a non-zero **Blend Distance** can also make the edge less visually distracting.
 
-To create a **Density Volume**, navigate to the **Hierarchy** view and click **Create** -> **Rendering** -> **Density Volume**.
+To create a **Density Volume**, navigate to the **Hierarchy** view and click **Create -> Rendering -> Density Volume**.
 
 ![Density Volume UI](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/d0ced3d2c7974d3306745cc0e97a66e7e992edff/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_density_volume.png)
 
@@ -83,6 +83,17 @@ A **Density Volume** has several parameters:
 - **Density Mask Texture** specifies a 3D texture mapped to the interior of the volume. Note that only the alpha channel of the texture is used. The value of the texture acts as a density multiplier. The texture value of 0 would result in a volume of 0 density, and the texture value of 1 would result in the original constant (homogeneous) volume.
 - **Scroll Speed** specifies the speed (per-axis) at which the texture should be scrolled.
 - **Tiling** specifies the tiling rate (per-axis) of the texture. For example, the rate of 2 means that the texture will be repeated 2 times within the interior of the volume.
+
+# Creating a Density Mask Texture
+
+1. Prepare a 2D texture of size 1024x32 with 32 slices laid out one after another.
+2. Set **Texture Import Settings**:  
+  2.1. Set the **Texture Type** to **Single Channel**.
+  2.2. Set the **Channel** to **Alpha**.
+  2.3. Check **Read/Write Enabled**.
+3. Navigate to **Window -> Rendering -> Density Volume Texture Tool**.
+4. Set your texture, and the tool will generate another texture with a different format.
+5. Assign the generated texture as the **Density Mask**.
 
 # Specific Light Parameters
 
