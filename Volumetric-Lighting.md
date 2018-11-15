@@ -86,7 +86,7 @@ A **Density Volume** has several parameters:
 
 # Creating a Density Mask Texture
 
-1. Prepare a 2D texture of size 1024x32 with 32 slices laid out one after another.
+1. Prepare a 2D texture of size 1024x32 which is a 3D texture of size 32x32x32 with 32 slices laid out one after another.
 2. Set **Texture Import Settings**:  
   2.1. Set the **Texture Type** to **Single Channel**.  
   2.2. Set the **Channel** to **Alpha**.  
