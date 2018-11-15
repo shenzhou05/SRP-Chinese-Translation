@@ -66,7 +66,7 @@ A value that represents a combination of a camera's shutter speed and f-number. 
 
 ## General Rendering
 
-<a name="Texture atlas"></a>
+<a name="TextureAtlas"></a>
 #### Texture atlas
 
 A texture atlas is a large texture containing several smaller textures packed together. In HD Render Pipeline we use texture atlases for shadow maps and decals.
