@@ -125,7 +125,7 @@ Use the __Light__ section to adjust the way your Light component shines light in
 
 * __Additional settings__ :
 
-	* __Light Layer__ : Choose which rendering Layer this Light will affect. This Light will only light up Mesh renderers with a matching rendering Layer.
+	* __Light Layer__ : Choose which rendering Layer this Light will affect. This Light will only light up Mesh Renderers with a matching rendering Layer.
 	* __Affect Diffuse__ : Check this box to enable [diffuse](https://docs.unity3d.com/Manual/shader-NormalDiffuse.html) lighting for this Light. 
 	* __Affect Specular__ : Check this box to enable [specular](https://docs.unity3d.com/Manual/shader-NormalSpecular.html) lighting for this Light. 
 	* __Fade Distance__ : Set the distance between the Light source and the camera at which the Light begins to fade out. Measured in Unity units.

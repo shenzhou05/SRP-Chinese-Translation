@@ -54,7 +54,7 @@ Using filtering and culling determines what should be rendered, but then we need
 ```c#
 // Create the draw render settings
 // note that it takes a shader pass name
-var drs = new DrawRendererSettings(Camera.current, new ShaderPassName("Opaque"));
+var drs = new DrawRendererSettings(myCamera, new ShaderPassName("Opaque"));
  
 // enable instancing for the draw call
 drs.flags = DrawRendererFlags.EnableInstancing;

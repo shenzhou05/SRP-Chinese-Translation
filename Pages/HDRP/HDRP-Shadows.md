@@ -1,6 +1,6 @@
 # Shadow quality
 
-## Shadow atlas
+## Shadow [atlas](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Glossary#TextureAtlas)
 
 In HD render pipeline, all the realtime shadows rendered for a frame are stored in two different shadow map atlases. The first one is used for all punctual shadows (spot and point lights) and have the possibility to rescale his shadow maps if too many of them are rendered and would not fit in the atlas. The second is used for directional shadow cascade and don't rescale.
 
