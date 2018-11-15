@@ -83,7 +83,7 @@ Currently, contact shadows are rendered for one light at a time.
 
 In order to enable contact shadows you need to :
 
-- Got to your HDRenderPipeline Asset and make sure under "Lighting Settings" that "Enable Contact Shadows" is ticked
+- Go to your HDRenderPipeline Asset and make sure under "Lighting Settings" that "Enable Contact Shadows" is ticked
 - In one of your loaded scenes you need to have a Contact Shadows Volume component on an active Volume with the "Enable" box ticked
 - On the light you choose for casting contact shadows, enable "Shadows" and "Show Additional Settings", and then under "Shadows" section tick "Enable Contact Shadows"
 
