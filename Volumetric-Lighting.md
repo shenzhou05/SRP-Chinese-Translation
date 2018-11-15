@@ -17,7 +17,7 @@ Please note that the Volumetric Lighting system does not yet support area lights
 
 - In your scene or multi-scene setup (if several scenes are loaded): 
   - If you have a **GameObject** with a **Volume** component containing a **Visual Environment** override, make sure the **Fog Type** is set to **Volumetric**. 
-  - If you don't have a **Volume** component in your scene, navigate to the **Hierarchy** view and click **Create** -> **Rendering** -> **Scene Settings**. This will create a **GameObject** called "Scene Settings" containing a **Volume** component with a **Visual Environment** override. Select this new **GameObject** and set the **Fog Type** to **Volumetric**.
+  - If you don't have a **Volume** component in your scene, navigate to the **Hierarchy** view and click **Create** -> **Rendering** -> **Scene Settings**. This will create a **GameObject** called "Scene Settings" containing a **Volume** component with a **Visual Environment** override. Inspect the new **GameObject** and set the **Fog Type** to **Volumetric**.
 
 ![Volumetric Fog in the Visual Environment](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/e194c3217ca7989e04f27400f594531f12bf4085/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_visual_env.png)
 
