@@ -23,7 +23,7 @@ Please note that the Volumetric Lighting system does not yet support area lights
 
 | Volumes and Visual Environment                               |
 | :----------------------------------------------------------- |
-| There is usually only one **Volume** that contains a **Visual Environment** override that is set as **Global** in order to keep the same **Sky Type** and **Fog Type** everywhere in the scene (or multi-scene) setup. It is possible to use **Local Volumes** with different sky and fog types, but the transition between different sky and fog types will be abrupt (**no smooth transition**), so it is best used on camera cuts. |
+| There is usually only one **Volume** containing a **Visual Environment** override that is set as **Global** in order to keep the same **Sky Type** and **Fog Type** everywhere in the scene (or multi-scene) setup. It is possible to use **Local Volumes** with different sky and fog types, but the transition between different sky and fog types will be abrupt (**no smooth transition**), so it is best used on camera cuts. |
 
 At this point, the scene contains global volumetric fog. However, the effect is **not visible** because the default fog density is very low. This is expected. You need to tweak fog settings as explained in next section.
 
