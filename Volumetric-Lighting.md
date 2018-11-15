@@ -32,7 +32,7 @@ In your scene or multi-scene setup (if several scenes are loaded):
 
 At this point, the scene contains global volumetric fog. However, the effect is **not visible** because the default global fog density is very low. This is expected. You need to tweak fog settings as explained in next section.
 
-# Customizing the Global Volumetric Fog
+# Customizing Global Volumetric Fog
 
 You should start by setting up the global fog. It offers both the best performance and the best quality, so you should prefer to use it over the local fog whenever possible.
 
