@@ -9,21 +9,21 @@ Please note that the Volumetric Lighting system does not yet support area lights
 - In your HDRP Asset under **Supported Features** check the **Volumetrics** option.
 - Optionally, just below, you may choose to **Increase the Resolution of Volumetrics**. Volumetric lighting is an expensive effect, and this option can increase the cost of the feature by up to 8x, so make sure you can afford it.
 - Still in the HDRP Asset, locate the **Default Frame Settings**. Under **Lighting Settings**, make sure that both **Atmospheric Scattering** and **Volumetrics** are enabled.
-- Optionally, just below, you may choose to **Enable Reprojection for Volumetrics**. Similarly to the **Temporal Antialiasing**, this option improves the quality of lighting by taking previous frames into account. Currently, this option is not compatible with dynamic lights, so you may encounter ghosting artifacts behind moving lights. Additionally, you may encounter flickering shadows for high values of the **Anisotropy** parameter.
+- Optionally, just below, you may choose to **Enable Reprojection for Volumetrics**. Similarly to the Temporal Antialiasing, this option improves the quality of lighting by taking previous frames into account. Currently, this option is not compatible with dynamic lights, so you may encounter ghosting artifacts behind moving lights. Additionally, you may encounter flickering shadows for high values of the **Anisotropy** parameter.
 
 ![Volumetric Lighting in the HDRP Asset](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/abb57ca719b4bae4e0eb284f57c5cfc6b223f027/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_asset_settings.png)
 
 # Adding Fog to Your Scene
 
-- In your scene or multi-scene setup (several scenes are loaded) : 
+- In your scene or multi-scene setup (if several scenes are loaded): 
+  - If you have a **GameObject** with a **Volume** component containing a **Visual Environment** override, make sure the **Fog Type** is set to **Volumetric**. 
+  - If you don't have a **Volume** component in your scene, navigate to the **Hierarchy** view and click **Create** -> **Rendering** -> **Scene Settings**. This will create a **GameObject** called "Scene Settings" containing a **Volume** component with a **Visual Environment** override. Select this new **GameObject** and set the **Fog Type** to **Volumetric**.
 
-  - if you have a Gameobject with a **Volume component** on it containing a **Visual Environment**, make sure the **Fog Type** is set to **Volumetric Fog**. 
-  - if you don't have any **Volume** in your scene, in the **Hierarchy view**, click the **Create** button and then click **Rendering / Scene Settings**. This will create a Gameobject called **Scene Settings** containing a **Volume** with a **Visual Environment**. Select **Scene Settings** and in **Visual Environment** set the **Fog Type** to **Volumetric Fog**.
-
+![Volumetric Fog in the Visual Environment](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/e194c3217ca7989e04f27400f594531f12bf4085/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_visual_env.png)
 
 | Volumes and Visual Environment                               |
 | :----------------------------------------------------------- |
-| There is usually only one volume that contains **Visual Environment** and it is set as **Global** in order to keep the same **Sky Type** and **Fog Type** everywhere in the scene or multi-scene setup. It is possible to use **local Volumes** with **different Sky Type or Fog Type** but there will be **no transition** between the different sky types or fog types so this is best used on camera cuts. |
+| There is usually only one **Volume** that contains a **Visual Environment** override that is set as **Global** in order to keep the same **Sky Type** and **Fog Type** everywhere in the scene (or multi-scene) setup. It is possible to use **Local Volumes** with different sky and fog types, but the transition between different sky and fog types will be abrupt (**no smooth transition**), so it is best used on camera cuts. |
 
 At this point, Volumetric lighting is enabled but has **no visible effect because the default air density is very low**. This is expected, and you need to tweak the volumetric lighting settings as explained in next section.
 
