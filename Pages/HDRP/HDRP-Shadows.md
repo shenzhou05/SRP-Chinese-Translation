@@ -1,16 +1,5 @@
 # Shadow quality
 
-## Shadow [atlas](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Glossary#TextureAtlas)
-
-In HD render pipeline, all the realtime shadows rendered for a frame are stored in two different shadow map atlases. The first one is used for all punctual shadows (spot and point lights) and have the possibility to rescale his shadow maps if too many of them are rendered and would not fit in the atlas. The second is used for directional shadow cascade and don't rescale.
-
-The size of these atlases are set in the HDRenderPipeline asset and it determines the maximum resolution you'll be able to have for a shadow.
-
-For instance the default size of the atlas is 4096 x 4096 and so it can fit 4 shadow maps of 1024 x 1024 pixels, or 2 shadow maps of 1024 x 1024 + 4 shadow maps of 512 x 512 + 16 shadow maps of 256 x 256.
-
-## Shadow Requests
-In addition to the atlas, to manage the budget of your shadows, in the HDRenderPipeline asset you can set the "Max Shadow Requests" to limit the maximum shadow maps rendered in a frame. This number is directly used to allocate shadow data compute buffer so if the number of shadow maps on your screen is higher than this limit, they will not be rendered.
-
 ## Shadow map resolution
 
 The resolution of the shadow map determines how big will be the shadow map(s) rendered for a light. The bigger is a shadow map, the more precise it can be, and the best it can capture small details in the shadow casting geometry. A shadow map rendered at high resolution will also look sharper.
@@ -23,26 +12,37 @@ The number of shadow maps rendered per light depends on the type of the light :
 - A point light will render 6 shadow maps (like the number of faces in a cubemap)
 - A directional light will render one shadow map per Cascade. The cascade count is set in the Volume component HD Shadow Settings. The default value is 4 cascades. For more details on Cascaded shadow maps refer to the HD Shadow Settings Volume component page.
 
+## Shadow [atlas](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Glossary#TextureAtlas)
+
+In HD render pipeline, all the realtime shadows rendered for a frame are stored in two different shadow map atlases. The first one is used for all punctual lights shadows,  the second is used for directional light shadows.
+
+The size of these atlases are set in the HDRenderPipeline asset and it determines the maximum resolution you'll be able to get for a shadow.
+
+For instance the default size of the atlas is 4096 x 4096 and so it can fit 4 shadow maps of 1024 x 1024 pixels, or 2 shadow maps of 1024 x 1024 + 4 shadow maps of 512 x 512 + 16 shadow maps of 256 x 256.
+
+## Shadow Requests
+In addition to the atlas, to manage the budget of your shadows, in the HDRenderPipeline asset you can set the "Max Shadow Requests" to limit the maximum shadow maps rendered in a frame. If the number of shadow maps on your screen is higher than this limit, they will not be rendered.
+
 ## Shadow Bias
 
 Since shadow maps are like textures projected from the point of view of the light, we need to use a bias in the projection so that the shadow casting geometry does not get self shadowed in the end.
 
-In HD Render Pipeline the shadow biasing is controlled by several parameters in the Light component under the Shadow Section.
-
-**View Bias Scale :**
-
-**Normal Bias :**
+In HD Render Pipeline the shadow biasing is controlled by several parameters in the Light component under the Shadow Section. High shadow bias values can result in light "leaking" and imprecise looking shadows.
 
 ## Shadow filtering
 
-Core Render Pipeline comes with several shadow map filtering algorithms. HD Render Pipeline allows users to use some of these algorithms in order to smooth the shadow maps.
-They are exposed in the HDRenderPipeline asset as shadow quality (low, medium and high) and can be choosed for directional and punctual lights.
+After the shadow map gets captured, we apply filtering on it in order to soften it and make the aliasing of low resolution shadow maps less noticeable. Different filters will affect the perceived sharpness of the shadow.
+
+In the HDRenderPipeline asset, one can choose a filtering quality preset (low, medium and high) for directional and punctual lights.
 
 Quality     |   Current algorithm
 |-----------|------------------------|
 Low | PCF 3x3 (4 taps)
 Medium | PCF 5x5 (9 taps)
 High | PCSS (sample count can be set by light in the light component)
+
+PCF filter applies a fixed size blur. 
+PCSS filter applies a different size of blur depending on the distance between the shadowed pixel and the shadow caster. This looks more realistic but is also more costly to compute.
 
 # ShadowMasks
 
