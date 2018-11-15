@@ -64,5 +64,10 @@ Measures the apparent brightness of light either emitted from a light source, or
 
 A value that represents a combination of a camera's shutter speed and f-number. It is essentially a measurement of exposure such that all combinations of shutter speed and f-number that yield the same level of exposure have the same EV. HDRP Lights can use Ev 100, which is Ev with a 100 International Standards Organisation (ISO) film.
 
+## General Rendering
 
+<a name="Texture atlas"></a>
+#### Texture atlas
+
+A texture atlas is a large texture containing several smaller textures packed together. In HD Render Pipeline we use texture atlases for shadow maps and decals.
 
