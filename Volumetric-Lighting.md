@@ -25,9 +25,21 @@ Please note that the Volumetric Lighting system does not yet support area lights
 | :----------------------------------------------------------- |
 | There is usually only one **Volume** containing a **Visual Environment** override that is set as **Global** in order to keep the same **Sky Type** and **Fog Type** everywhere in the scene (or multi-scene) setup. It is possible to use **Local Volumes** with different sky and fog types, but the transition between different sky and fog types will be abrupt (**no smooth transition**), so it is best used on camera cuts. |
 
-At this point, the scene contains global volumetric fog. However, the effect is **not visible** because the default fog density is very low. This is expected. You need to tweak fog settings as explained in next section.
+At this point, the scene contains global volumetric fog. However, the effect is **not visible** because the default global fog density is very low. This is expected. You need to tweak fog settings as explained in next section.
 
-# Customizing the Volumetric Fog
+# Customizing the Global Volumetric Fog
+
+You should start by setting up the global fog. It offers both the best performance and the best quality, so you should prefer to use it over the local fog whenever possible.
+
+The global fog is a height fog. It has two logical components: the region below the **Base Height** is a constant fog, and the region above the **Base Height** is the exponential fog.
+
+![GLobal Fog Settings](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/2c968f3f3d4b9edb08114c849a0c5ff9d27967d9/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_global_fog.png)
+
+The **Volumetric Fog** component of the active **Volume** controls the appearance of the global fog.
+
+It has several parameters:
+
+- **Single Scattering Albedo** can be thought of as a fog color. It tints lighting scattered by the fog. Note that it will not tint lighting reflected by the objects behind (or within) the fog - reflected lighting only gets dimmer (fades to black) as fog density increases. Technically speaking, this parameter is defined as the ratio of the **Scattering** and **Extinction** coefficients.
 
 The Volumetric lighting settings can be tweaked through 2 Volume components :
 
