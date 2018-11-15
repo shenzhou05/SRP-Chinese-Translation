@@ -13,6 +13,8 @@ Please note that the Volumetric Lighting system does not yet support area lights
 
 ![Volumetric Lighting in the HDRP Asset](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/abb57ca719b4bae4e0eb284f57c5cfc6b223f027/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_asset_settings.png)
 
+# Adding Fog to Your Scene
+
 - In your scene or multi-scene setup (several scenes are loaded) : 
 
   - if you have a Gameobject with a **Volume component** on it containing a **Visual Environment**, make sure the **Fog Type** is set to **Volumetric Fog**. 
