@@ -17,7 +17,7 @@ Volumetric Lighting can be toggled in the **HDRP Asset**.
 
 # Adding Fog to Your Scene
 
-The **Visual Environment** part of your **Scene Settings** should be configured to use the *Volumetric Fog*.
+The **Visual Environment** part of your **Scene Settings** should be configured to use the **Volumetric Fog**.
 
 ![Volumetric Fog in the Visual Environment](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/e194c3217ca7989e04f27400f594531f12bf4085/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_visual_env.png)
 
