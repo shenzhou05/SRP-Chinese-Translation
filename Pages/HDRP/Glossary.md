@@ -5,7 +5,7 @@
 <a name="LuminousFlux"></a>
 
 #### luminous flux:
-A measure of the total amount of visible light a light source emits.
+A measure of the total amount of visible light a light source emits in all direction.
 
 ![Luminous flux](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/GlossaryLighting1.png)
 
@@ -39,7 +39,7 @@ A measure of the amount of light ([luminous flux](#LuminousFlux)) falling onto a
 <a name="Candela"></a>
 
 #### candela:
-The base unit of [luminous intensity](#LuminousIntensity) in the International System of Units. For reference, a common wax candle emits light with a luminous intensity of roughly 1 candela.
+The base unit of [luminous intensity](#LuminousIntensity) in the International System of Units. For reference, a common wax candle emits light with a luminous intensity of roughly 1 candela in all directions.
 
 <a name="Lumen"></a>
 
@@ -56,13 +56,13 @@ The unit of [illuminance](#Illuminance). A light source that emits 1 lumen of [l
 
 #### luminance (candela per square meter):
 
-Measures the apparent brightness of light either emitted from a light source, or reflected off a surface, to the human eye. A light source that emits 1 candela of [luminous intensity](#LuminousIntensity) onto an area of 1 square meter has a luminance of 1 candela per square meter.
+Measures the apparent brightness of light either emitted from a light source or reflected off a surface, to the human eye. A light source that emits 1 candela of [luminous intensity](#LuminousIntensity) onto an area of 1 square meter has a luminance of 1 candela per square meter.
 
 <a name="EV"></a>
 
 #### exposure value (EV):
 
-A value that represents a combination of a camera's shutter speed and f-number. It is essentially a measurement of exposure such that all combinations of shutter speed and f-number that yield the same level of exposure have the same EV. HDRP Lights can use Ev 100, which is Ev with a 100 International Standards Organisation (ISO) film.
+A value that represents a combination of a camera's shutter speed and f-number. It is essentially a measurement of exposure such that all combinations of shutter speed and f-number that yield the same level of exposure have the same EV. Some HDRP Lights can use Ev 100, which is Ev with a 100 International Standards Organisation (ISO) film.
 
 
 
