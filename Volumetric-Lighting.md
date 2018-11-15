@@ -88,9 +88,9 @@ A **Density Volume** has several parameters:
 
 1. Prepare a 2D texture of size 1024x32 with 32 slices laid out one after another.
 2. Set **Texture Import Settings**:  
-  2.1. Set the **Texture Type** to **Single Channel**.
-  2.2. Set the **Channel** to **Alpha**.
-  2.3. Check **Read/Write Enabled**.
+  2.1. Set the **Texture Type** to **Single Channel**.  
+  2.2. Set the **Channel** to **Alpha**.  
+  2.3. Check **Read/Write Enabled**.  
 3. Navigate to **Window -> Rendering -> Density Volume Texture Tool**.
 4. Set your texture, and the tool will generate another texture with a different format.
 5. Assign the generated texture as the **Density Mask**.
