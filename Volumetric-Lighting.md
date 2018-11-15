@@ -86,6 +86,9 @@ A **Density Volume** has several parameters:
 
 # Specific Light Parameters
 
-The light component contains some settings that are especially useful when Volumetric lighting is enabled and some that only affect Volumetric lighting.
+The [Light Component](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component) has several parameters which are particularly useful for volumetric lighting:
 
-See in the [Light component page](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component) : light size, volumetric dimmer, volumetric shadow dimmer.
+- **Light Radius** is useful to simulate fill lighting. It acts by virtually "pushing" the light away from the scene, which effectively performs a remapping of the quadratic falloff curve. As a result, it softens the core of punctual lights. It's a good idea to always use a non-zero value to reduce ghosting artifacts resulting from reprojection.
+
+- **Volumetric Light Dimmer** only affects the fog and replaces the **Light Dimmer** used for surfaces.
+- **Volumetric Shadow Dimmer** only affects the fog and replaces the **Shadow Dimmer** used for surfaces.
