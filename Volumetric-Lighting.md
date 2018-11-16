@@ -12,7 +12,7 @@ Volumetric Lighting can be toggled in the **HDRP Asset**.
 
 - In your **HDRP Asset** under **Supported Features** check the **Volumetrics** option.
 - Optionally, just below, you may choose to **Increase the Resolution of Volumetrics**. Volumetric lighting is an expensive effect, and this option can increase the cost of the feature by up to 8x, so make sure you can afford it.
-- Still in the **HDRP Asset**, locate the **Default Frame Settings**. Under **Lighting Settings**, make sure that both **Atmospheric Scattering** and **Volumetrics** are enabled.
+- Still in the **HDRP Asset**, locate the **Default Frame Settings**. Under the **Lighting Settings**, make sure that both **Atmospheric Scattering** and **Volumetrics** are enabled.
 - Optionally, just below, you may choose to **Enable Reprojection for Volumetrics**. Similarly to the Temporal Antialiasing, this option improves the quality of lighting by taking previous frames into account. Currently, this option is not compatible with dynamic lights, so you may encounter ghosting artifacts behind moving lights. Additionally, you may encounter flickering shadows for high values of the **Anisotropy** parameter.
 
 # Adding Fog to Your Scene
