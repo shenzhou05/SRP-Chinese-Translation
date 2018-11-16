@@ -44,5 +44,7 @@ These parameters are:
 
 # Configuring the Diffusion Profile
 
+Each diffusion profile contains several parameters.
+
 ![Diffusion Profile UI](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/7ea76e60156275331cb0f4bc17c63a2c2d5e1287/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_diffusion_profile.png)
 
