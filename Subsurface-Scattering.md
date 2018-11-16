@@ -16,6 +16,10 @@ The **HD Render Pipeline (HDRP)** implements the **SSS** effect using a screen-s
 - Optionally, just below, you may choose to **Increase the SSS Sample Count**. This can potentially reduce the amount of visual noise (due to undersampling) produced by the blur pass at roughly 2.5x the cost, so make sure you can afford it.
 - Still in the **HDRP Asset**, locate the **Default Frame Settings**. Under the **Lighting Settings**, make sure that both **Subsurface Scattering** and **Transmission** are enabled.
 
+Most **SSS**-related settings are stored in a **Diffusion Profile**. **Diffusion Profile Settings** is an asset which contains a collection of 15 diffusion profiles, which you can edit and assign to your materials.
+
+To create **Diffusion Profile Settings**, navigate to the **Project** tab and click **Create -> Rendering -> Diffusion Profile Settings**. Afterwards, make sure to assign it to the **HDRP Asset**.
+
 # Adding Subsurface Scattering to Your Material
 
 The first step is to change the type of your material. It can be done by simply changing the material type to **Subsurface Scattering** or **Translucent**.
