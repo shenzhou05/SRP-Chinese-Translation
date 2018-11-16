@@ -113,7 +113,7 @@
 <a>Blending Mode</a><br>
 <a>Transparent Pass</a><br>
 </ul></details>
-<a>Subsurface Scattering</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Subsurface-Scattering">Subsurface Scattering</a><br>
 </ul></details>
 <details>
 <summary>
