@@ -1,4 +1,4 @@
-**[Atmospheric Scattering](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Atmospheric-Scattering)** in the HD Render Pipeline (HDRP) is composed of several components. One of them is the **Volumetric Fog**.
+**[Atmospheric Scattering](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Atmospheric-Scattering)** in the **HD Render Pipeline (HDRP)** is composed of several components. One of them is the **Volumetric Fog**.
 
 The Volumetric Fog is rendered by the Volumetric Lighting system. The HDRP implements a **unified lighting system**, which means that all scene components (lights, as well as opaque and transparent objects) interact with the fog.
 
