@@ -36,10 +36,12 @@ Changing the material type to **Subsurface Scattering** or **Translucent** adds 
 
 These parameters are:
 
-- **Diffusion Profile** and its configuration is the primary factor diving the behavior of **SSS**. It will be discussed below in more detail.
 - **Subsurface Mask** controls the strength of the blur effect. Texels with the value of 1 correspond to full strength, while using the value of 0 disables the **SSS** effect. It also acts as a multiplier for the texels of the **Subsurface Mask Map** (discussed below).
 - **Subsurface Mask Map** is a greyscale texture with values in the [0, 1] range (using the red channel) controlling the strength of the blur effect. Texels with the value of 1 correspond to full strength, while using the value of 0 disables the **SSS** effect.
 - **Thickness Map** is a greyscale texture with values in the [0, 1] range (using the red channel) controlling the strength of the transmission effect. It corresponds to the average thickness of the mesh at the location of the texel. Thicker objects transmit less light.
+- **Diffusion Profile** and its configuration is the primary factor diving the behavior of **SSS**. You can select one of 15 profiles from the **Diffusion Profile Settings** asset, or select **None**, which will effectively disable the **SSS** effect. Clicking **GoTo** will take you to the editor of the currently selected **Diffusion Profile**.
+
+
 
 
 
