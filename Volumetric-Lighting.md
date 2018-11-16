@@ -106,7 +106,7 @@ The [Light Component](https://github.com/Unity-Technologies/ScriptableRenderPipe
 
 # Controlling the Range of the Volumetric Fog
 
-Volumetric Lighting is evaluated on a 3D grid mapped to the volumetric frustum. The resolution of the grid is quite low (240x135x64 using the default quality setting), so it's important to keep the dimensions of the frustum as small as necessary to maintain high quality. It's usually best to use **Distant Fog** for the less visually important background area.
+Volumetric Lighting is evaluated on a 3D grid mapped to the volumetric frustum. The resolution of the grid is quite low (240x135x64 using the default quality setting at 1080p), so it's important to keep the dimensions of the frustum as small as necessary to maintain high quality. It's usually best to use **Distant Fog** for the less visually important background area.
 
 The distance range of the sphere-capped volumetric frustum can be adjusted using the **Volumetric Lighting Controller**.
 
