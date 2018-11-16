@@ -10,7 +10,7 @@ The **HD Render Pipeline (HDRP)** implements the **SSS** effect using a screen-s
 
 **SSS** can be toggled in the **HDRP Asset**.
 
-![SSS Settings in the HDRP Asset](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/0bb926eeb876793dc58da1ce8048f4b5e6525424/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_hd_asset.png)
+![SSS Settings in the HDRP Asset](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/9f95453c7f7a178151c327becbd7f8b01ca6544e/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_hd_asset.png)
 
 - In your **HDRP Asset** under **Supported Features** check the **Subsurface Scattering** option.
 - Optionally, just below, you may choose to **Increase the SSS Sample Count**. This can potentially reduce the amount of visual noise (due to undersampling) produced by the blur pass at roughly 2.5x the cost, so make sure you can afford it.
