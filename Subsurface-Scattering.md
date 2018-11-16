@@ -14,5 +14,15 @@ The **HD Render Pipeline (HDRP)** implements the **SSS** effect using a screen-s
 
 - In your **HDRP Asset** under **Supported Features** check the **Subsurface Scattering** option.
 - Optionally, just below, you may choose to **Increase the SSS Sample Count**. This can potentially reduce the amount of visual noise (due to undersampling) produced by the blur pass at roughly 2.5x the cost, so make sure you can afford it.
-- Still in the **HDRP Asset**, locate the **Default Frame Settings**. Under **Lighting Settings**, make sure that both **Subsurface Scattering** and **Transmission** are enabled.
+- Still in the **HDRP Asset**, locate the **Default Frame Settings**. Under the **Lighting Settings**, make sure that both **Subsurface Scattering** and **Transmission** are enabled.
+
+# Adding Subsurface Scattering to Your Material
+
+The first step is to change the type of your material. It can be done by simply changing the material type to **Subsurface Scattering** or **Translucent**.
+
+![Material Type UI](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/40aec8b63eb17104819a17d0038af99ef56777cd/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_material_type.png)
+
+For the **Subsurface Scattering** material type, it's also possible to completely disable **Transmission** using the checkbox below.
+
+
 
