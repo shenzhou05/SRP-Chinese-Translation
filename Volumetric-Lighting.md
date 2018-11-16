@@ -8,7 +8,7 @@ Please note that the Volumetric Lighting system does not yet support area lights
 
 Volumetric Lighting can be toggled in the **HDRP Asset**.
 
-![Volumetric Lighting in the HDRP Asset](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/abb57ca719b4bae4e0eb284f57c5cfc6b223f027/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_asset_settings.png)
+![Volumetric Lighting in the HDRP Asset](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_asset_settings.png)
 
 - In your **HDRP Asset** under **Supported Features** check the **Volumetrics** option.
 - Optionally, just below, you may choose to **Increase the Resolution of Volumetrics**. Volumetric lighting is an expensive effect, and this option can increase the cost of the feature by up to 8x, so make sure you can afford it.
@@ -19,7 +19,7 @@ Volumetric Lighting can be toggled in the **HDRP Asset**.
 
 The **Visual Environment** part of your **Scene Settings** should be configured to use the **Volumetric Fog**.
 
-![Volumetric Fog in the Visual Environment](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/e194c3217ca7989e04f27400f594531f12bf4085/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_visual_env.png)
+![Volumetric Fog in the Visual Environment](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_visual_env.png)
 
 In order to activate volumetric fog in your scene or multi-scene setup (if several scenes are loaded):
 
@@ -40,7 +40,7 @@ The global fog is a height fog. It has two logical components: the region below 
 
 The **Volumetric Fog** component of the active **Volume** controls the appearance of the global fog.
 
-![GLobal Fog Settings](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/2c968f3f3d4b9edb08114c849a0c5ff9d27967d9/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_global_fog.png)
+![GLobal Fog UI](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_global_fog.png)
 
 It has several parameters:
 
@@ -71,7 +71,7 @@ For performance reasons, **Density Volumes** are voxelized. This results in two 
 
 To create a **Density Volume**, navigate to the **Hierarchy** view and click **Create -> Rendering -> Density Volume**.
 
-![Density Volume UI](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/d0ced3d2c7974d3306745cc0e97a66e7e992edff/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_density_volume.png)
+![Density Volume UI](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_density_volume.png)
 
 A **Density Volume** has several parameters:
 
@@ -113,6 +113,8 @@ The distance range of the sphere-capped volumetric frustum can be adjusted using
 In order to add the **Volumetric Lighting Controller** to your scene or multi-scene setup (if several scenes are loaded), find or create a **GameObject** with a **Volume** component, and add the **Volumetric Lighting Controller** override.
 
 The **Volumetric Lighting Controller** has several parameters.
+
+![Volumetric Lighting Controller UI](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/com.unity.render-pipelines.high-definition/Documentation~/Images/vl_controller.png)
 
 - **Distance Range** determines the distance (in meters) from the camera at which the volumetric frustum begins and ends.
 - **Depth Distribution Uniformity** controls how uniform the distribution of slices along the camera's focal axis is. The value of 0 makes the distribution exponential (with the spacing between the slices increasing with the distance from the camera), and the value of 1 results in a uniform distribution.
