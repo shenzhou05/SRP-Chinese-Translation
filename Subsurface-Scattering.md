@@ -24,5 +24,11 @@ The first step is to change the type of your material. It can be done by simply 
 
 For the **Subsurface Scattering** material type, it's also possible to completely disable **Transmission** using the checkbox below.
 
+# Customizing the Behavior of Subsurface Scattering
 
+Changing the material type to **Subsurface Scattering** or **Translucent** adds several new parameters to the material UI.
+
+![SSS Material Inputs](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/ae0788dcf87c1276967929def5343fa7bf7112e9/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_mat_inputs.png)
+
+The **Diffusion Profile** is the primary parameter diving the behavior of **SSS**.
 
