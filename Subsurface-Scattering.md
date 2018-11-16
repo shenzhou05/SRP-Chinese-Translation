@@ -42,7 +42,7 @@ These parameters are:
 - **Thickness Remap** allows you to remap the values in the **Thickness Map** from the [0, 1] to the smaller [Min, Max] range where (Min < Max) and both Min and Max are themselves in the [0, 1] range.
 - **Diffusion Profile** and its configuration is the primary factor diving the behavior of **SSS**. You can select one of 15 profiles from the **Diffusion Profile Settings** asset, or select **None**, which will effectively disable the **SSS** effect. Clicking **GoTo** will take you to the editor of the currently selected **Diffusion Profile**.
 
+# Configuring the Diffusion Profile
 
-
-
+![Diffusion Profile UI](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/7ea76e60156275331cb0f4bc17c63a2c2d5e1287/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_diffusion_profile.png)
 
