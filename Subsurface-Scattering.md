@@ -4,7 +4,7 @@ By definition, **Subsurface Scattering (SSS)** is light transport within the par
 In practice, it makes organic materials such as skin look smooth and natural rather than rough and plasticy.
 The **HD Render Pipeline (HDRP)** implements the **SSS** effect using a screen-space blur technique.
 
-**SSS** is also responsible for the translucent look of back-lit objects that allow a portion of light to penetrate (transmit through) them. For certain types of objects, performing the blur pass may not make a large visual difference. Therefore, the **HDRP** implements two material types: the **Subsurface Scattering** material type implements both the screen-space blur and transmission (the latter can be disabled), while the *Translucent* material type only models transmission.
+**SSS** is also responsible for the translucent look of back-lit objects that allow a portion of light to penetrate (transmit through) them. For certain types of objects, performing the blur pass may not make a large visual difference. Therefore, the **HDRP** implements two material types: the **Subsurface Scattering** material type implements both the screen-space blur and transmission (the latter can be disabled), while the **Translucent** material type only models transmission.
 
 # Enabling Subsurface Scattering
 
