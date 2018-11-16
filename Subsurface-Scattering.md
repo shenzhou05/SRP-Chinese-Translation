@@ -13,7 +13,7 @@ The **HD Render Pipeline (HDRP)** implements the **SSS** effect using a screen-s
 ![SSS Settings in the HDRP Asset](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/9f95453c7f7a178151c327becbd7f8b01ca6544e/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_hd_asset.png)
 
 - In your **HDRP Asset** under **Supported Features** check the **Subsurface Scattering** option.
-- Optionally, just below, you may choose to **Increase the SSS Sample Count**. This can potentially reduce the amount of visual noise (due to undersampling) produced by the blur pass at roughly 2.5x the cost, so make sure you can afford it.
+- Optionally, just below, you may choose to **Increase the SSS Sample Count**. This can potentially reduce the amount of visual noise (caused by undersampling) produced by the blur pass at roughly 2.5x the cost, so make sure you can afford it.
 - Still in the **HDRP Asset**, locate the **Default Frame Settings**. Under the **Lighting Settings**, make sure that both **Subsurface Scattering** and **Transmission** are enabled.
 
 Most **SSS**-related settings are stored in a **Diffusion Profile**. **Diffusion Profile Settings** is an asset which contains a collection of 15 diffusion profiles, which you can edit and assign to your materials.
@@ -34,5 +34,12 @@ Changing the material type to **Subsurface Scattering** or **Translucent** adds 
 
 ![SSS Material Inputs](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/ae0788dcf87c1276967929def5343fa7bf7112e9/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_mat_inputs.png)
 
-The **Diffusion Profile** is the primary parameter diving the behavior of **SSS**.
+These parameters are:
+
+- **Diffusion Profile** and its configuration is the primary factor diving the behavior of **SSS**. It will be discussed below in more detail.
+- **Subsurface Mask** controls the strength of the blur effect. Texels with the value of 1 correspond to full strength, while using the value of 0 disables the **SSS** effect. It also acts as a multiplier for the texels of the **Subsurface Mask Map** (discussed below).
+- **Subsurface Mask Map** is a greyscale texture with values in the [0, 1] range (using the red channel) controlling the strength of the blur effect. Texels with the value of 1 correspond to full strength, while using the value of 0 disables the **SSS** effect.
+- **Thickness Map** is a greyscale texture with values in the [0, 1] range (using the red channel) controlling the strength of the transmission effect. It corresponds to the average thickness of the mesh at the location of the texel. Thicker objects transmit less light.
+
+
 
