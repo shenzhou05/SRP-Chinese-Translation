@@ -12,7 +12,7 @@ You can learn more about our implementation from the slides of our [Siggraph 201
 
 **SSS** can be toggled in the **HDRP Asset**.
 
-![SSS Settings in the HDRP Asset](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/9f95453c7f7a178151c327becbd7f8b01ca6544e/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_hd_asset.png)
+![SSS Settings in the HDRP Asset](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_hd_asset.png)
 
 - In your **HDRP Asset** under **Supported Features** check the **Subsurface Scattering** option.
 - Optionally, just below, you may choose to **Increase the SSS Sample Count**. This can potentially reduce the amount of visual noise (caused by undersampling) produced by the blur pass at roughly 2.5x the cost, so make sure you can afford it.
@@ -26,7 +26,7 @@ To create **Diffusion Profile Settings**, navigate to the **Project** tab and cl
 
 The first step is to change the type of your material. It can be done by simply changing the material type to **Subsurface Scattering** or **Translucent**.
 
-![Material Type UI](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/40aec8b63eb17104819a17d0038af99ef56777cd/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_material_type.png)
+![Material Type UI](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_material_type.png)
 
 For the **Subsurface Scattering** material type, it's also possible to completely disable **Transmission** using the checkbox below.
 
@@ -34,7 +34,7 @@ For the **Subsurface Scattering** material type, it's also possible to completel
 
 Changing the material type to **Subsurface Scattering** or **Translucent** adds several new parameters to the material UI.
 
-![SSS Material Inputs](https://github.com/EvgeniiG/ScriptableRenderLoop/blob/ae0788dcf87c1276967929def5343fa7bf7112e9/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_mat_inputs.png)
+![SSS Material Inputs](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_mat_inputs.png)
 
 These parameters are:
 
@@ -48,7 +48,7 @@ These parameters are:
 
 Each diffusion profile contains several parameters.
 
-![Diffusion Profile UI](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/5270e4750e994e3bd9bdd26c89d6a748bd5ce39e/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_diffusion_profile.png)
+![Diffusion Profile UI](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_diffusion_profile.png)
 
 - **Name** - the name of the parameter allows you to easily identify the profile when assigning it to the material.
 - **Scattering Distance** - this is a set of three unitless distances (one per color channel) which specify how far light travels under the surface. The effective maximum radius of the effect (in millimeters) is displayed as **Max Radius** just below. It affects the color bleeding/blurring behavior of **SSS** as well as the color tint of **Transmission**.
