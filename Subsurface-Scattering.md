@@ -6,6 +6,8 @@ The **HD Render Pipeline (HDRP)** implements the **SSS** effect using a screen-s
 
 **SSS** is also responsible for the translucent look of back-lit objects that allow a portion of light to penetrate (transmit through) them. For certain types of objects, performing the blur pass may not make a large visual difference. Therefore, the **HDRP** implements two material types: the **Subsurface Scattering** material type implements both the screen-space blur and transmission (the latter can be disabled), while the **Translucent** material type only models transmission.
 
+You can learn more about our implementation from the slides of our [Siggraph 2018 presentation](http://advances.realtimerendering.com/s2018/Efficient%20screen%20space%20subsurface%20scattering%20Siggraph%202018.pdf).
+
 # Enabling Subsurface Scattering
 
 **SSS** can be toggled in the **HDRP Asset**.
@@ -56,3 +58,11 @@ Each diffusion profile contains several parameters.
 - **Transmission Mode** selects a particular implementation of transmission. **Thick Object** should be used for geometrically thick meshes, and **Thin Object** should be used for thin double-sided geometry (cards).
 - **Transmission Tint** is a multiplier for the color of transmitted/translucent lighting. Unlike the **Scattering Distance**, its effect does not change depending on the distance (or the thickness).
 - **Thickness Remap** is the second thickness remap from the [0, 1] range to the specified range in millimeters. The actual values are displayed by the **Min-Max Thickness** fields just above.
+
+# Working with Different Thickness Modes
+
+The primary difference between the two thickness modes is the use of shadows.
+If your light is unshadowed (or you disable shadows), both modes will look exactly the same, and derive the appearance from the **Thickness Map** and the **Diffusion Profile**.
+Once you enable shadows, you are likely to see a difference if your object uses thick geometry. The **Thin Object** mode is likely to self-shadow, which can cause it to appear completely black. The **Thick Object** mode will derive the thickness from the shadow map, take the largest value between the "baked" thickness and the "shadow" thickness, and use this to evaluate transmittance.
+
+Since you cannot control the distance derived from the shadow map, one way to approach the **Thick Object** mode would be to enable shadows, adjust the **Scattering Distance** until the overall transmission intensity is in the desired range, and then use the **Thickness Map** to mask any shadow mapping artifacts.
