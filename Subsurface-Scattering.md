@@ -59,6 +59,8 @@ Each diffusion profile contains several parameters.
 - **Transmission Tint** is a multiplier for the color of transmitted/translucent lighting. Unlike the **Scattering Distance**, its effect does not change depending on the distance (or the thickness).
 - **Thickness Remap** is the second thickness remap from the [0, 1] range to the specified range in millimeters. The actual values are displayed by the **Min-Max Thickness** fields just above.
 
+**Warning**: do not move **Diffusion Profiles** within **Diffusion Profile Settings**. It will **not** trigger an update of material instances using these profiles, and they will remain broken until you reassign them manually.
+
 # Working with Different Thickness Modes
 
 The primary difference between the two thickness modes is the use of shadows.
