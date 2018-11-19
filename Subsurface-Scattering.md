@@ -16,7 +16,7 @@ The **HD Render Pipeline (HDRP)** implements the **SSS** effect using a screen-s
 - Optionally, just below, you may choose to **Increase the SSS Sample Count**. This can potentially reduce the amount of visual noise (caused by undersampling) produced by the blur pass at roughly 2.5x the cost, so make sure you can afford it.
 - Still in the **HDRP Asset**, locate the **Default Frame Settings**. Under the **Lighting Settings**, make sure that both **Subsurface Scattering** and **Transmission** are enabled.
 
-Most **SSS**-related settings are stored in a **Diffusion Profile**. **Diffusion Profile Settings** is an asset which contains a collection of 15 diffusion profiles, which you can edit and assign to your materials.
+Most **SSS**-related settings are stored in a **Diffusion Profile**. **Diffusion Profile Settings** is an asset which contains a set of 15 diffusion profiles, which you can edit and assign to your materials.
 
 To create **Diffusion Profile Settings**, navigate to the **Project** tab and click **Create -> Rendering -> Diffusion Profile Settings**. Afterwards, make sure to assign it to the **HDRP Asset**.
 
@@ -48,3 +48,8 @@ Each diffusion profile contains several parameters.
 
 ![Diffusion Profile UI](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/7ea76e60156275331cb0f4bc17c63a2c2d5e1287/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_diffusion_profile.png)
 
+- **Name** - the name of the parameter allows you to easily identify the profile when assigning it to the material.
+- **Scattering Distance** - this is a set of three unitless distances (one per color channel) which specify how far light travels under the surface. The effective maximum radius of the effect (in millimeters) is displayed as **Max Radius** just below.
+- **Index of Refraction (IOR)** specifies the reflective behavior of material. Larger values increase the intensity of specular reflection at the normal angle of incidence (looking in the direction perpendicular to the surface). The IOR of skin is typically around 1.4. A list of IOR values of common materials can be found [here](https://pixelandpoly.com/ior.html).
+- **World Scale** allows you set the size of the world unit in meters. By default, the **HDRP** assumes that 1 unit = 1 meter. Note that this property only affects the **SSS** pass.
+- **Texturing Mode** controls when the albedo (diffuse color) texture is applied. Selecting the **Post-Scatter** texturing mode tells the renderer to apply the albedo after the **SSS** pass, which means that the contents of the texture are not blurred. This mode should be used for scanned data and photographs that already contain some blur due to **SSS**. **Pre- and Post-Scatter** texturing mode effectively blurs the albedo, which can result in a softer, more natural look, which is desirable in certain cases.
