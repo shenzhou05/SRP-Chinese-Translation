@@ -62,7 +62,7 @@ Each diffusion profile contains several parameters.
 # Working with Different Thickness Modes
 
 The primary difference between the two thickness modes is the use of shadows.
-If your light is unshadowed (or you disable shadows), both modes will look exactly the same, and derive the appearance from the **Thickness Map** and the **Diffusion Profile**.
+If your light is unshadowed (or you disable shadows), both modes look exactly the same, and derive the appearance from the **Thickness Map** and the **Diffusion Profile**.
 Once you enable shadows, you are likely to see a difference if your object uses thick geometry. The **Thin Object** mode is likely to self-shadow, which can cause it to appear completely black. The **Thick Object** mode will derive the thickness from the shadow map, take the largest value between the "baked" thickness and the "shadow" thickness, and use this to evaluate transmittance.
 
 Since you cannot control the distance derived from the shadow map, one way to approach the **Thick Object** mode would be to enable shadows, adjust the **Scattering Distance** until the overall transmission intensity is in the desired range, and then use the **Thickness Map** to mask any shadow mapping artifacts.
