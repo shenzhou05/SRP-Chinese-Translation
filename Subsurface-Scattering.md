@@ -46,7 +46,7 @@ These parameters are:
 
 Each diffusion profile contains several parameters.
 
-![Diffusion Profile UI](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/7ea76e60156275331cb0f4bc17c63a2c2d5e1287/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_diffusion_profile.png)
+![Diffusion Profile UI](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/5270e4750e994e3bd9bdd26c89d6a748bd5ce39e/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_diffusion_profile.png)
 
 - **Name** - the name of the parameter allows you to easily identify the profile when assigning it to the material.
 - **Scattering Distance** - this is a set of three unitless distances (one per color channel) which specify how far light travels under the surface. The effective maximum radius of the effect (in millimeters) is displayed as **Max Radius** just below.
