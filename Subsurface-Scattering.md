@@ -24,6 +24,8 @@ To create **Diffusion Profile Settings**, navigate to the **Project** tab and cl
 
 # Adding Subsurface Scattering to Your Material
 
+*TODO: add links to material pages.*
+
 The first step is to change the type of your material. It can be done by simply changing the material type to **Subsurface Scattering** or **Translucent**.
 
 ![Material Type UI](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/com.unity.render-pipelines.high-definition/Documentation~/Images/sss_material_type.png)
