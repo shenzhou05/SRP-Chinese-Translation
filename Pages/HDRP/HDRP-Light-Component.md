@@ -82,7 +82,7 @@ __Type__: Use this dropdown to select the type of Light.
 
 * __Point Light__ : Projects light out equally in all directions from at a point in space. The direction of light hitting a surface is the line from the point of contact back to the center of the Light GameObject. The light intensity diminishes with increased distance from the Light, and it reaches zero at the range specified in the __Range__ field. Light intensity is inversely proportional to the square of the distance from the source. This is known as the [Inverse-square law](https://en.wikipedia.org/wiki/Inverse-square_law), and is similar to how light behaves in the real world. A Point Light has the following Shape properties:
 
-	* __Range__ : Controls the maximum distance the light can reach from its origin. 
+	* __Emission Radius__ : Controls the maximum distance the light can reach from its origin. 
 	* __Max Smoothness__ : Change the specular highlight in order to mimic a Rectangle Light. This allows you to avoid very sharp specular highlights that do not match the shape of the Light source.
 
 * __Rectangle__ : Projects light defined by a rectangle in space. From the surface of the rectangle, Light shines in all directions uniformly. A Rectangle Light has the following Shape properties:
