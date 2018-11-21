@@ -1,5 +1,3 @@
-# Exponential Fog
-
 Volume Component used to setup Exponential Fog
 
 Exponential Fog Density will increase exponentially with view distance and world space height depending on the provided parameters.
