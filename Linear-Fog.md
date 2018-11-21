@@ -1,4 +1,6 @@
-Fog density will increase linearly with view distance and world space height depending on the provided parameters.
+Volume Component used to setup Linear Fog
+
+Linear Fog density will increase linearly with view distance and world space height depending on the provided parameters.
 
 | Property         | Function                                                     |
 | ---------------- | ------------------------------------------------------------ |
