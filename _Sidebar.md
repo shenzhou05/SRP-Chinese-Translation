@@ -57,6 +57,7 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Sky">Sky</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Atmospheric-Scattering">Atmospheric Scattering</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Linear-Fog">Linear Fog</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Exponential-Fog">Exponential Fog</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HD-Shadow-Settings">HD Shadow Settings</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HD-Contact-Shadows">Contact Shadows</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Volumetric-Fog">Volumetric fog</a><br>
