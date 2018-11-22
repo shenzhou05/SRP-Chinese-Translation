@@ -1,6 +1,6 @@
 What we refer to as **environment lighting** is the lighting produced by the environment surrounding our unity scene. Most commonly this represents the sky lighting, but it can also represent a different kind of background (light a lighting studio, or any kind of background).
 
-In HD render pipeline, environment lighting is setup through **Volumes** and **volume profiles**.
+In HD render pipeline, environment lighting is setup through [Volumes](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumes) and **volume profiles**.
 
 The **Environment lighting** section in the Light settings window is replaced in HD render pipeline by this setup per Volume so that you can smoothly interpolate between different sets of settings for your sky and fog per game area.
 
