@@ -1,6 +1,6 @@
 What we refer to as **environment lighting** is the lighting produced by the environment surrounding our unity scene. Most commonly this represents the sky lighting, but it can also represent a different kind of background (light a lighting studio, or any kind of background).
 
-In HD render pipeline, environment lighting is setup through [Volumes](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumes) and **volume profiles**.
+In HD render pipeline, environment lighting is setup through [the Volume framework](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumes).
 
 The **Environment lighting** section in the Light settings window is replaced in HD render pipeline by this setup per Volume so that you can smoothly interpolate between different sets of settings for your sky and fog per game area.
 
@@ -8,11 +8,21 @@ The two key concepts for environment lighting are the **visual environment**, an
 
 ## Visual environment
 
-**Visual environment** is a Volume component that informs the render pipeline about what type of sky and fog you want to see through your game camera. 
+[Visual Environment](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Visual-Environment) is a Volume component that informs the render pipeline about what type of sky and fog you want to see through your game camera.
 
-For more information on **Sky type** and **Fog type** please refer to the visual environment page in the Scene settings section.
+Visual Environment is affected by sky global parameters found in the [HDRP asset](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Asset#sky).
 
-Once the **Sky type** and **Fog type** are chosen, you can **override their default values** by adding some a **Sky** Volume component and a **Fog** Volume component.
+**Sky Reflection Size**
+
+This parameter drives the size of the cubemap generated from the sky and used for fallback reflection when no local reflection probes are present. It has no effect on the quality of the sky rendered in the background.
+
+**Sky Lighting Override Mask**
+
+In some cases, users may want to dissociate lighting environment from what is rendered in the background (a typical example is to have a very dark sky at night but have a brighter lighting so that the player can still see).
+
+In order to achieve this, users can define the sky lighting override mask which is a Layer mask. If any volumes are present in this layer then environment lighting will use these volumes instead of those from the main camera. If this mask is set to Nothing or if there are no volume in this mask then lighting will come from volumes setup in the main camera volume layer mask.
+
+HDRP comes with builtin sky types: [HDRI Sky](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRI-Sky), [Gradient Sky](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Gradient-Sky) and [Procedural Sky](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Procedural-Sky). New Sky types can be implemented. For details please refer to the [Customizing HDRP](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Writing-A-Custom-Sky-Renderer) section for instructions on how to add your own Sky Type to HD render pipeline.
 
 ## Baking environment
 
