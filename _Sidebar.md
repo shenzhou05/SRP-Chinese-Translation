@@ -142,7 +142,16 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physical-light-units-and-intensities">Physical Light Units and Intensities</a><br>
 </ul>
 </details>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Renderer-Extensions">Renderer Extensions</a><br>
+<details>
+<summary>
+<a>Object Sorting</a>
+</summary>
+<ul>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Material-Priority">Material Priority</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Renderer-Priority">Renderer Priority</a><br>
+</ul>
+</details>
+<br>
 <details><summary><a>Decals</a></summary>
 <ul>
 <a>Projector and Mesh Decal</a><br>
@@ -179,6 +188,7 @@
 </summary>
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Sky">Sky</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Renderer-Extensions">Renderer Extensions</a>
 </ul>
 </details>
 </ul>
