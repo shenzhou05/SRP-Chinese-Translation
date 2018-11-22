@@ -49,7 +49,7 @@
 
 <details>
 <summary>
-<a>Scene Settings</a>
+<a>HDRP builtin Volume Components</a>
 </summary>
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumes">Volumes</a><br>
