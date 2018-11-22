@@ -2,11 +2,9 @@
 
 Fog is the effect of overlaying a color onto objects dependant on the distance from the camera. This is used to simulate fog or mist in outdoor environments and is also typically used to hide clipping of objects when a camera’s far clip plane has been moved forward for performance.
 
-In HDRP, users can choose between two different kind of fogs, linear and exponential fog. All types of materials (lit or unlit) will react correctly to the fog. Depending on the type of fog, density will evolve differently with respect to distance from camera and world space height.
+In HDRP, users can choose between different kind of fogs, [Linear](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Linear-Fog), [Exponential](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Exponential-Fog) and [Volumetric](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Volumetric-Fog) fog. All types of materials (lit or unlit) will react correctly to the fog. Depending on the type of fog, density will evolve differently with respect to distance from camera and world space height.
 
-Instead of using a constant color, both types of fog can choose to use the background sky as a source for color. In this case, the color will be sampled from different mip maps of the cubemap generated from the current sky settings. Chosen mip will vary linearly between the blurriest one to the highest resolution one depending on the distance from camera and the “Mip Fog” parameters. Users can also choose to limit the resolution of the higher mip used.
-
-For both types of fog, density is computed from camera distance and world space height independently and then multiplied together to obtain the final result.
+Instead of using a constant color, Linear and Exponential fog can choose to use the background sky as a source for color. In this case, the color will be sampled from different mip maps of the cubemap generated from the current sky settings. Chosen mip will vary linearly between the blurriest one to the highest resolution one depending on the distance from camera and the “Mip Fog” parameters. Users can also choose to limit the resolution of the higher mip used. This adds a sort of "volumetric" effect to the fog for much cheaper than actual volumetric fog.
 
 ## Creating Volumetric Fog
 
