@@ -8,6 +8,7 @@ Exponential Fog Density will increase exponentially with view distance and world
 | Fog Distance           | Distance from camera at will reach maximum                   |
 | Fog Base Height        | World space height at which fog density starts to decrease from 1.0 |
 | Fog Height Attenuation | Fall off of height fog attenuation (bigger values will make attenuation sharper) |
+| Max Fog Distance       | Controls the fog distance when shading the skybox or the far plane of the camera |
 | Color Mode             | Source of the fog color                                      |
 | Constant Color         | Fog is a constant color                                      |
 | Color                  | Color of the fog                                             |
