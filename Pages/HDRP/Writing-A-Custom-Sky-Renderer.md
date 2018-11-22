@@ -1,6 +1,6 @@
 # Writing A Custom Sky Renderer
 
-The sky system is setup in a way that allows users to develop their own kind of sky with their own parameters and shaders.
+The sky system is setup in a way that allows users to develop their own kind of sky with their own parameters and shaders while still keeping it consistent with the lighting pipeline.
 
 Three things are needed in order to write your own sky.
 
@@ -63,7 +63,8 @@ It must implement this interface:
         // SkyRenderer is responsible for setting up render targets provided in builtinParams
         public abstract void SetRenderTargets(BuiltinSkyParameters builtinParams);
         // renderForCubemap: When rendering into a cube map, no depth buffer is available so user has to make sure not to use depth testing or the depth texture.
-        public abstract void RenderSky(BuiltinSkyParameters builtinParams, bool renderForCubemap);
+        // renderSunDisk: If the sky renderer supports it, it should not render the sun disk when this value is set to false (it is used to get consistent baking)
+        public abstract void RenderSky(BuiltinSkyParameters builtinParams, bool renderForCubemap, bool renderSunDisk);
         // Returns true if provided sky setting parameters are valid.
         public abstract bool IsValid();
     }
@@ -110,7 +111,7 @@ Exemple: HDRISkyRenderer:
         }
     }
     
-    public override void RenderSky(BuiltinSkyParameters builtinParams, bool renderForCubemap)
+    public override void RenderSky(BuiltinSkyParameters builtinParams, bool renderForCubemap, bool renderSunDisk)
     {
         m_PropertyBlock.SetTexture(HDShaderIDs._Cubemap, m_HdriSkyParams.hdriSky);
         m_PropertyBlock.SetVector(HDShaderIDs._SkyParam, new Vector4(m_HdriSkyParams.exposure, m_HdriSkyParams.multiplier, -m_HdriSkyParams.rotation, 0.0f)); // -rotation to match Legacy...
