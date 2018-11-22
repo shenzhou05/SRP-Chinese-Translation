@@ -49,7 +49,7 @@
 
 <details>
 <summary>
-<a>HDRP Volume Components</a>
+<a>Volume Components</a>
 </summary>
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumes">Volumes</a><br>
@@ -58,7 +58,6 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRI-Sky">HDRI Sky</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Procedural-Sky">Procedural Sky</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Gradient-Sky">Gradient Sky</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Atmospheric-Scattering">Atmospheric Scattering</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Linear-Fog">Linear Fog</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Exponential-Fog">Exponential Fog</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Volumetric-Fog">Volumetric Fog</a><br>
