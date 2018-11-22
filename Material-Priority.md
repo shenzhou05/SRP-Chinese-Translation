@@ -1,1 +1,3 @@
-Material Priority
+Material Priority is used to sort transparent objects in HDRP
+
+In Unity, objects are usually sorted according to their render queue (among other parameters). As HDRP uses render queue in some specific way, HDRP materials do not expose it directly. Instead materials have a **Transparent Sort Priority** parameter. This parameter is a signed integer that will be used to offset sorting inside a particular object group (opaques, transparency, etc.). Smaller values will be rendered first.
