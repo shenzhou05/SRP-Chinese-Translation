@@ -1,4 +1,4 @@
-Volume Component used to setup Procedural Sky
+Volume Component used to setup a Procedural Sky
 
 This sky is similar to the procedural sky provided with the built-in Unity Render Pipelines. 
 
