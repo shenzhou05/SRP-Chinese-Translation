@@ -62,7 +62,6 @@
 </summary>
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Visual-Environment">Visual Environment</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Sky">Sky</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRI-Sky">HDRI Sky</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Procedural-Sky">Procedural Sky</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Gradient-Sky">Gradient Sky</a><br>
@@ -174,7 +173,14 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/High-Definition-Render-Pipeline-FAQ">Frequently Asked Questions</a><br>
 <a>Technical Publications</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Glossary">Glossary</a><br>
-
+<details>
+<summary>
+<a>Obsolete</a>
+</summary>
+<ul>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Sky">Sky</a><br>
+</ul>
+</details>
 </ul>
 </details>
 </details>
