@@ -186,7 +186,7 @@
 <a>Obsolete</a>
 </summary>
 <ul>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Sky">Sky</a>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Sky">Sky</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Renderer-Extensions">Renderer Extensions</a>
 </ul>
 </details>
