@@ -47,12 +47,13 @@
 </ul>
 </details>
 
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumes">Volumes</a><br>
+
 <details>
 <summary>
 <a>Volume Components</a>
 </summary>
 <ul>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumes">Volumes</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Visual-Environment">Visual Environment</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Sky">Sky</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRI-Sky">HDRI Sky</a><br>
