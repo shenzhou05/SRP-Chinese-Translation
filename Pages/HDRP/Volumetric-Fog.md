@@ -94,7 +94,7 @@ To create a Density Volume, right click in the Hierarchy and select __Rendering 
 
 ## Light-specific Properties
 
-The [Light ](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component)[component](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component) has several properties that are useful for volumetric lighting:
+The [Light component](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component) has several properties that are useful for volumetric lighting:
 
 - __Emission Radius__ is useful to simulate fill lighting. It acts by virtually "pushing" the light away from the Scene. As a result, it softens the core of punctual lights. Always use a non-zero value to reduce ghosting artifacts resulting from reprojection.
 - __Volumetric Dimmer__ only affects the fog and replaces the Light Dimmer that HDRP uses for surfaces.
