@@ -11,6 +11,7 @@ Adjust the **Distance Range** on the Volumetric Lighting Controller component to
 ![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/VolumetricLightingController1.png)
 
 The Volumetric Lighting Controller has two properties:
+
 |**Property**| **Description**|
 | :--------- | :------------- |
 |**Distance Range**| Determines the distance (in Unity Units) from the Camera that the volumetric fog section of the frustum begins and ends. |
