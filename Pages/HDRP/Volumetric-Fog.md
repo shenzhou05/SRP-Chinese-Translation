@@ -14,9 +14,7 @@ Now add a __Volumetric Fog__ override to the Volume. Click __Add component overr
 
 Within the Scene, there is usually a single Volume set to __IsGlobal__ that contains a Visual Environment override. Having a single global Visual Environment means that Unity uses the same __Sky Type__ and __Fog Type__ everywhere in the Scene. You can still use local Volumes with different __Sky Types__ and __Fog Types__, but the transition between them is obvious and instantaneous. If you want to use multiple Visual Environments in different Volumes in your Scene, it is best to make the transition on Camera cuts.
 
-At this point, the Scene contains global volumetric fog. However, the effect is not visible because the default global fog density is very low. To override the default property with your own chosen values, follow the steps in the [Customizing Global Volumetric Fog](#CustomizingFog) section.
-
-<a name="CustomizingFog”></a>
+At this point, the Scene contains global volumetric fog. However, the effect is not visible because the default global fog density is very low. To override the default property with your own chosen values, follow the steps in the Customizing Global Volumetric Fog section.
 
 ## Customizing Global Volumetric Fog
 
@@ -39,7 +37,7 @@ __Volumetric Fog__ properties:
 | **Global Anisotropy** | Controls the angular distribution of scattered light. 0 is isotropic, 1 is forward scattering, and -1 is backward scattering. Note that non-zero values have a moderate performance impact. High values may have compatibility issues with the Enable Reprojection for Volumetrics Frame Setting. This is an experimental property that HDRP applies to both global and local fog. |
 | **Global Light Probe Dimmer** | Reduces the intensity of the global Light Probe that the sky generates. |
 | **Max Fog Distance** | Controls the distance (in Unity units) when applying fog to the skybox or background. Also determines the range of the Distant Fog. For optimal results, set this to be larger than the Camera’s Far value for its Clipping Plane. Otherwise, a discrepancy occurs between the fog on the Scene’s GameObjects and on the skybox. Note that the Camera’s Far Clipping Plane is flat whereas HDRP applies fog within a sphere surrounding the Camera. |
-| <a name="DistantFog”></a> **Distant Fog** | Activates the fog with precomputed lighting behind the volumetric section of the Camera’s frustum. The fog stretches from the maximum Distance Range in the Volumetric Lighting Controller to the Max Fog Distance. |
+|**Distant Fog** | Activates the fog with precomputed lighting behind the volumetric section of the Camera’s frustum. The fog stretches from the maximum Distance Range in the Volumetric Lighting Controller to the Max Fog Distance. |
 | **Color Mode**              | Provides two methods HDRP can use to set the lighting intensity of the distant fog. This property is only visible when Enable Distant Fog is checked. |
 | **- Constant Color**    | HDRP illuminates distant fog uniformly using the provided Color property. |
 | **- - Color**           | The color that HDRP uses to illuminate the distant fog.      |
@@ -96,9 +94,9 @@ To create a Density Volume, right click in the Hierarchy and select __Rendering 
 
 ## Light-specific Properties
 
-The [Light ](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component)[component](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component) has several properties that are useful for volumetric lighting:
+The [Light component](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component) has several properties that are useful for volumetric lighting:
 
 - __Emission Radius__ is useful to simulate fill lighting. It acts by virtually "pushing" the light away from the Scene. As a result, it softens the core of punctual lights. Always use a non-zero value to reduce ghosting artifacts resulting from reprojection.
-- __Volumetric Dimmer __only affects the fog and replaces the Light Dimmer that HDRP uses for surfaces.
+- __Volumetric Dimmer__ only affects the fog and replaces the Light Dimmer that HDRP uses for surfaces.
 - __Shadow Dimmer__ only affects the fog and replaces the Shadow Dimmer that HDRP uses for surfaces.
 
