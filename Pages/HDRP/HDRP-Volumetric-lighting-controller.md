@@ -12,7 +12,7 @@ Adjust the **Distance Range** on the Volumetric Lighting Controller component to
 
 The Volumetric Lighting Controller has two properties:
 |**Property**| **Description**|
-| :----------------------------- |:------------------------------------------------------------ |
-| **Distance Range**            | Determines the distance (in Unity Units) from the Camera that the volumetric fog section of the frustum begins and ends. |
+| :--------- | :------------- |
+|**Distance Range**| Determines the distance (in Unity Units) from the Camera that the volumetric fog section of the frustum begins and ends. |
 | **Depth Distribution Uniformity** | Controls the uniformity of the distribution of slices along the Camera's focal axis. A value of 0 makes the distribution exponential (the spacing between the slices increases with the distance from the Camera), and the value of 1 results in a uniform distribution. |
 
