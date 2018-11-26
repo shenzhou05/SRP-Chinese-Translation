@@ -1,9 +1,29 @@
 # High Definition Render Pipeline Glossary
 
 
-## Lighting
-<a name="LuminousFlux"></a>
+## General Rendering
 
+<a name="RayMarching"></a>
+#### ray marching:
+An iterative ray intersection test where your ray marches back and forth until it finds the intersection or, in a more general case, solves the problem you define for it.
+
+<a name="TextureAtlas"></a>
+#### texture atlas:
+
+A texture atlas is a large texture containing several smaller textures packed together. HDRP uses texture atlases for shadow maps and decals.
+
+
+## Lighting
+
+<a name="Illuminance"></a>
+
+#### illuminance:
+
+A measure of the amount of light ([luminous flux](#LuminousFlux)) falling onto a given area. Differs from luminance because illuminance is a specific measurement of light whereas luminance describes visual perceptions of light.
+
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/GlossaryLighting3.png)
+
+<a name="LuminousFlux"></a>
 #### luminous flux:
 A measure of the total amount of visible light a light source emits in all direction.
 
@@ -22,19 +42,20 @@ A measure of visible light as perceived by human eyes. It describes the brightne
 
 A function that describes a wave that represents the human eye’s relative sensitivity to light of different wavelengths. This wave corresponds weight values, between 0 and 1 on the vertical axis, to different wavelengths, on the horizontal axis. For example, the standard luminosity function peaks, with a weight of 1, at a wavelength of 555 nanometers and decreases symmetrically with distance from this value.
 
-<a name="Illuminance"></a>
-
-#### illuminance
-
-A measure of the amount of light ([luminous flux](#LuminousFlux)) falling onto a given area. Differs from luminance because illuminance is a specific measurement of light whereas luminance describes visual perceptions of light.
-
-![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/GlossaryLighting3.png)
 
 
 
 
+<a name="PunctualLight"></a>
+#### punctual lights: 
+A light is considered to be punctual if it emits light from a single point. HDRPs Spot and Point Lights are punctual.
 
-## Light intensity units
+
+
+
+
+
+### Light intensity units
 
 <a name="Candela"></a>
 
@@ -63,11 +84,3 @@ Measures the apparent brightness of light either emitted from a light source or 
 #### exposure value (EV):
 
 A value that represents a combination of a camera's shutter speed and f-number. It is essentially a measurement of exposure such that all combinations of shutter speed and f-number that yield the same level of exposure have the same EV. Some HDRP Lights can use Ev 100, which is Ev with a 100 International Standards Organisation (ISO) film.
-
-## General Rendering
-
-<a name="TextureAtlas"></a>
-#### Texture atlas
-
-A texture atlas is a large texture containing several smaller textures packed together. In HD Render Pipeline we use texture atlases for shadow maps and decals.
-
