@@ -4,10 +4,10 @@ The Visual Environment Volume component override specifies the **Sky Type** and 
 
 ![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/SceneSettingsVisualEnvironment1.png)
 
-| Property | Function                                                     |
+| __Property__ | __Description__                                                     |
 | -------- | ------------------------------------------------------------ |
-| Sky Type | The type of sky that HDRP renders when the Camera is inside the Volume. This list automatically updates when you write a new custom Sky. The default value is **Procedural Sky**. |
-| Fog Type | The type of fog that HDRP renders when the Camera is inside the Volume. The default value is **Exponential Fog**. |
+| __Sky Type__ | The type of sky that HDRP renders when the Camera is inside the Volume. This list automatically updates when you write a new custom Sky. The default value is **Procedural Sky**. |
+| __Fog Type__ | The type of fog that HDRP renders when the Camera is inside the Volume. The default value is **Exponential Fog**. |
 
 This Visual Environment override comes as default when you create a **Scene Setting** GameObject (Menu: **GameObject > Rendering > Scene Settings**).
 
