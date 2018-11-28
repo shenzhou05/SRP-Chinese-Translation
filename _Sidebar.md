@@ -199,64 +199,7 @@
 <details>
     <summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Lightweight-Render-Pipeline Overview">Lightweight Render Pipeline</a>
 </summary>
-    <ul><details>
-        <summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Getting-started-with-LWRP">Getting Started</a></summary>
-        <ul>
-        <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Using-LWRP-in-a-new-Project">Using LWRP in a new Project</a><br>
-        <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Installing-LWRP-into-an-existing-Project">Installing LWRP into an existing Project</a><br>
-        <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Configuring-LWRP-for-use">Configuring LWRP for use</a><br>
-        </ul>
-    </details>
-    <details>
-        <summary><a>What's inside the LWRP?</a></summary>
-        <ul>
-        <a>LWRP flowchart</a><br>
-        <a>The LWRP Asset</a><br>
-        <a>Lighting</a><br>
-        <a>Camera</a><br>
-        </ul>
-    </details>
-    <details>
-        <summary><a>Shader library</a></summary>
-        <ul>
-        <a>Shader Built-in vars</a><br>
-        <a>Core LWRP Shader API</a><br>
-        <a>Custom Shader Examples</a><br>
-        </ul>
-    </details>
-    <details>
-        <summary><a>Built-in shaders</a></summary>
-        <ul>
-        <a>Lit</a><br>
-        <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Simple-Lit-shader">Simple Lit</a><br>
-        <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Unlit-shader">Unlit</a><br>
-        </ul>
-     </details>    
-     <details>
-        <summary><a>Built-in particles</a></summary>
-        <ul>
-        <a>Physically based</a><br> 
-        <a>Standard Lit</a><br>
-        <a>Unlit</a><br>
-        </ul>
-     </details>  
-     <details>
-        <summary><a>Terrain</a></summary>      
-     </details>
-     <details> 
-         <summary><a>Shader Stripping</a></summary>
-    </details>
-    <details>
-        <summary><a>Integration with Shader Graph</a></summary>
-        <ul>
-        <a>How to Shader Graph 1-1 with LW</a>
-        </ul>
-    </details>
-    <details>
-        <summary><a>Integration with Post-Processing</a></summary>
-    </details>
- </ul></details>
-
+</details>   
 
 [//]: # "SHADER GRAPH"
 
