@@ -1,6 +1,10 @@
 ***
 
-**Important:** We're not updating this Wiki anymore. For versions after Lightweight Render Pipeline version 4.0.0 (Preview), we're publishing our documentation directly in the LWRP project on GitHub. We're making this migration in order to create a documentation site specifically for LWRP.
+**Important:** We're not updating this Wiki anymore. 
+
+To see documentation for LWRP:
+1) open Package Manager in Unity, and navigate to the LWRP package.
+2) Click **View Documentation**. This takes you to the LWRP-specific documentation site.
 
 ***
 
