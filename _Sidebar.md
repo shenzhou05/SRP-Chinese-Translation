@@ -114,7 +114,6 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Terrain-Lit-Shader">Terrain Lit</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Fabric">Fabric</a><br>
 <a>AXF</a><br>
-
 <details>
 <summary>
 <a>Transparency</a><br>
