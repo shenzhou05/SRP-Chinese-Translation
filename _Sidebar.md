@@ -96,7 +96,7 @@
 <a>Shared Material Features</a><br>
 </summary>
 <ul>
-<a>Surface Type</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Surface-Type">Surface Type</a><br>
 <a>Double-Sided</a><br>
 <a>Vertex Displacement</a>
 <a>Tessellation</a><br>
