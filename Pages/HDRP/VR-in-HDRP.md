@@ -14,7 +14,7 @@ Some settings may need to be set up under Default Frame Settings, in addition to
 **Recommended:**
 * Enable MSAA
 
-In order to turn off camera-relative rendering, modify ShaderConfig.cs and ShaderConfig.cs.hlsl to change CameraRelativeRendering and SHADEROPTIONS_CAMERA_RELATIVE_RENDERING from 1 to 0.
+In order to turn off camera-relative rendering, modify ShaderConfig.cs and ShaderConfig.cs.hlsl to change CameraRelativeRendering and SHADEROPTIONS_CAMERA_RELATIVE_RENDERING from 1 to 0. You may also need to regenerate shader includes (Edit > Render Pipeline > Generate Shader Includes) after making this change. 
 
 To support only forward rendering, Forward must be selected in the Lit shader mode drop-down in both Rendering Settings and Default Frame Settings. 
 
