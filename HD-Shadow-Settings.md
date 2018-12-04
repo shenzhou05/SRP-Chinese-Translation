@@ -1,15 +1,15 @@
-![](../uploads/Main/Copyof Global Shadow Settings_image_0.png)
+# HD Shadow Settings
 
-| Property          | Function                                                     |
-| :---------------- | :----------------------------------------------------------- |
-| __Max Distance__  | Maximum shadow distance. This is used for both the last directional cascade boundary and for punctual lights. |
-| __Cascade Count__ | Number of cascades for the shadow casting directional light  |
-| __Split 1__       | Limit between first and second split (expressed as ratio of max shadow distance) |
-| __Solit 2__       | Limit between second and third split (expressed as ratio of max shadow distance) |
-| __Split 3__       | Limit between third and last split (expressed as ratio of max shadow distance) |
+The HD Shadow Settings Volume component override control the maximum distance at which HDRP renders shadow cascades and shadows from [punctual lights](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Glossary#PunctualLight). It uses cascade splits to control the quality of shadows cast by Directional Lights over distance from the Camera.
 
+This HD Shadow Settings override comes as default when you create a __Scene Settings__ GameObject (Menu: __GameObject > Rendering > Scene Settings__).
 
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/SceneSettingsHDShadowSettings1.png)
 
-To help setting things up more easily, users can use the contextual menu to directly create a game object named "Scene Settings" and go from there. This game object is already setup with a default HD Shadow Setting inside a global Volume (it also contains fog and sky default settings).
-
-![](../uploads/Main/Copyof Global Shadow Settings_image_1.png)
+| Property          | Description                                                  |
+| ----------------- | ------------------------------------------------------------ |
+| **Max Distance**  | The maximum distance at which HDRP renders shadows. HDRP uses this for punctual Lights and as the last boundary for the final cascade. |
+| **Cascade Count** | The number of cascades for Direction Lights that can cast shadows. Cascades work as a shadow levels of detail (LOD). The quality loss in the cascades further from the Camera occur because each cascade has its own shadow map and the cascades get progressively larger. This means that HDRP spread the same resolution shadow map over a larger area. |
+| **Split 1**       | The limit between the first and second cascade split (expressed as a percentage of Max Distance). |
+| **Split 2**       | The limit between the second and third cascade split (expressed as a percentage of Max Distance). |
+| **Split 3**       | The limit between the third and final split (expressed as a percentage of Max Distance). |
