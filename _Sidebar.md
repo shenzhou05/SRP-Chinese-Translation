@@ -165,7 +165,7 @@
 </details>
 <details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRPCamera">Camera</a></summary>
 <ul>
-<a>MSAA</a>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/MSAA">MSAA</a><br>
 </ul>
 </details>
 <a>Post-Processing</a>
