@@ -1,7 +1,3 @@
-# Volumetric Lighting
-
- 
-
 The Volumetric Lighting system renders Volumetric Fog and High Definition Render Pipeline (HDRP) implements a unified lighting system, which means that all Scene components (such as Lights, as well as opaque and transparent GameObjects) interact with the fog. This component is one of the several components that comprise [Atmospheric Scattering](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Atmospheric-Scattering) in HDRP is Volumetric Fog.
 
 Please note that the Volumetric Lighting system does not yet support area lights.
