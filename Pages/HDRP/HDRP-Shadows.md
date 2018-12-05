@@ -1,5 +1,3 @@
-# Shadow quality
-
 ## Shadow map resolution
 
 The resolution of the shadow map determines how big will be the shadow map(s) rendered for a light. The bigger is a shadow map, the more precise it can be, and the best it can capture small details in the shadow casting geometry. A shadow map rendered at high resolution will also look sharper.
