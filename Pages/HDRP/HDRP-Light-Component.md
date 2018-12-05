@@ -1,5 +1,3 @@
-# HDRP Light component
-
 Use the Light component to create light sources in your [Scene](https://docs.unity3d.com/Manual/CreatingScenes.html). The Light component controls the shape, color, and intensity of the light. It also controls whether or not the Light casts shadows in your Scene, as well as more advanced settings. 
 
 ## Creating Lights
