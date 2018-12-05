@@ -1,5 +1,3 @@
-# Volumetric Fog
-
 Volumetric fog is the most advanced implementation of fog available in the High Definition Render Pipeline (HDRP). It realistically simulates the interaction of lights with fog, which allows for physically-plausible rendering of glow and crepuscular rays, which are beams of light that stream through gaps in objects like clouds and trees from a central point, like a God ray from the Sun..
 
 ## Adding Fog to your Scene
