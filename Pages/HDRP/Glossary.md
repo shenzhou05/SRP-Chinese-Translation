@@ -8,7 +8,7 @@
 Atmospheric scattering is the phenomena that occurs when particles suspended in the atmosphere diffuse (or scatter) a portion of the light, passing through them, in all directions.
 
 
-<a name=”NyquistRate”></a>
+<a name="NyquistRate"></a>
 
 #### Nyquist rate:
 The minimum rate at which you can sample a real-world signal without introducing errors. This is equal to double the highest frequency of the real-world signal.
@@ -28,17 +28,17 @@ A texture atlas is a large texture containing several smaller textures packed to
 
 ### Aliasing and anti-aliasing terms
 
-<a name=”Aliasing”></a>
+<a name="Aliasing"></a>
 
 #### aliasing:
 Describes a distortion between a real-world signal and a digital reconstruction of a sample of a signal and the original signal itself.
 
-<a name=”FastApproximateAntiAliasing”></a>
+<a name="FastApproximateAntiAliasing"></a>
 
 #### fast approximate anti-aliasing (FXAA):
 An anti-aliasing technique that smooths edges on a per-pixel level. It is not as resource intensive as other techniques.
 
-<a name=”SpatialAliasing”></a>
+<a name="SpatialAliasing"></a>
 
 #### spatial aliasing
 Refers to aliasing in digital samples of visual signals.
