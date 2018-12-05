@@ -1,5 +1,3 @@
-# Visual Environment
-
 The Visual Environment Volume component override specifies the **Sky Type** and **Fog Type** that HDRP renders in the Volume.
 
 ![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/SceneSettingsVisualEnvironment1.png)
