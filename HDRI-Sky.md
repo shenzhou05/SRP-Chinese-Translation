@@ -1,5 +1,7 @@
 The **HDRI Sky Volume** component override controls settings you can use to set up an HDRI Sky. An HDRI Sky is a simple sky representation that uses a cubemap texture. This component also enables you to define how HDRP updates the indirect lighting the sky generates in the Scene.
 
+Tip: [Unity HDRI Pack](https://assetstore.unity.com/packages/essentials/beta-projects/unity-hdri-pack-72511) is available on the Unity Asset Store and provides 7 pre-converted (1024×2014 resolution) HDR Cubemaps ready for use within your Project.
+
 To use this type of sky. You must first add it to a Volume and set that Volume’s **Visual Environment** component override’s **Sky Type** to **HDRI Sky.** For details on how to do this, see the [Visual Environment](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Visual-Environment) documentation.
 
 ![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/SceneSettingsHDRISky1.png)
