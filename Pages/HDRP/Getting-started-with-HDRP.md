@@ -1,5 +1,3 @@
-# Getting Started with High Definition Render Pipeline
-
 This page details the initial setup of a project using the High Definition Render Pipeline (HDRP) and notes on upgrading existing projects to HDRP. 
 ## Setting up a new Project
 
