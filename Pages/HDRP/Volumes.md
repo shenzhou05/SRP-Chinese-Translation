@@ -9,7 +9,7 @@ The **Volume** component can be added to any game object, the camera itself incl
 | Property           | Description                                                  |
 | ------------------ | ------------------------------------------------------------ |
 | **Is Global**      | The Volume has no boundaries and will be applied to the whole scene. |
-| **Blend Distance** | Outer distance to start blending from. A value of 0 means no blending and the volume overrides will be applied immediately upon entry.. |
+| **Blend Distance** | Outer distance to start blending from. A value of 0 means no blending and the volume overrides will be applied immediately upon entry. |
 | **Weight**         | Multiplier applied to the contribution of the volume computed from its position and blend distance. Allows user to give more or less importance to specific volumes |
 | **Priority**       | Value used to determine which volume to use when volumes have the same contribution. Higher priorities will be used firsts. |
 | **Profile**        | Asset containing the Volume Components holding parameters to interpolate. |
