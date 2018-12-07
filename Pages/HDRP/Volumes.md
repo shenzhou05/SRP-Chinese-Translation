@@ -1,1 +1,29 @@
-This section of the documentation is still in progress. For more information, or to ask questions about this topic, please visit the [High Definition Render Pipeline forum](https://forum.unity.com/forums/graphics-experimental-previews.110/).
+The Volume framework is a generic localized parameter interpolation framework. It allows users to define sets of global parameters that can be interpolated depending on the camera position. For example, users can change the mood of the scene by altering the fog color and density depending on the player position.
+
+The **Volume** component can be added to any game object, the camera itself included. But it's generally a good idea to create a dedicated object for each volume. The Volume component itself does not contains values to interpolate. Instead users will add **VolumeComponents**. VolumeComponents are user defined structures containing the actual values to interpolate. The **Volume** has a few parameters allowing to control how it interacts with other volumes. In practice, a scene will contain many Volumes and based on these parameters, the system will determine the final interpolated values for each VolumeComponent.
+
+<p align="center">
+[[/images/quickstart-2.png|Quickstart 2]]
+</p>
+
+| Property           | Description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| **Is Global**      | The Volume has no boundaries and will be applied to the whole scene. |
+| **Blend Distance** | Outer distance to start blending from. A value of 0 means no blending and the volume overrides will be applied immediately upon entry.. |
+| **Weight**         | Multiplier applied to the contribution of the volume computed from its position and blend distance. Allows user to give more or less importance to specific volumes |
+| **Priority**       | Value used to determine which volume to use when volumes have the same contribution. Higher priorities will be used firsts. |
+| **Profile**        | Asset containing the Volume Components holding parameters to interpolate. |
+
+When a volume is local, it needs a collider or trigger component attached to it to define its boundaries. Any type of 3D collider will work, from cubes to complex convex meshes but we recommend you use simple colliders as much as possible, as meshes can be quite expensive to traverse. Local volumes can also have a `Blend Distance` that represents the outer distance from the volume surface where blending will start.
+
+The profile is an asset that contains all the VolumeComponents. It can be assigned like any other asset or a new one can be created or cloned using the provided buttons.
+
+At runtime, the system will traverse all Volumes enabled in the scene, and determine based  on position and the above parameters, a contribution for each volume. All volumes with a non zero contribution will then be used to interpolate the parameters from their VolumeComponents. In practice, not all Volumes will contain the same VolumeComponents. For example, only one may hold the Sky VolumeComponent but several can have the Fog VolumeComponent. In this case, only the existing VolumeComponent will contribute for a given VolumeComponent type.
+
+The anatomy of an effect is as follow:
+
+Each field has an override checkbox on its left, you'll need to toggle the settings you want to override for this volume before you can edit them. You can quickly toggle them all on or off by using the small `All` and `None` shortcuts at the top left.
+
+The top-right `On/Off` toggle is used to override the active state of the effect itself in the stack (if you want, for instance, to force-disable an effect in a higher priority volume) whereas the toggle in the title bar is used to disable the set of overrides for this effect in this particular volume.
+
+Finally, you can right-click and effect title to show a quick-action menu to copy/paste/remove/reset settings.
