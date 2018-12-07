@@ -11,7 +11,7 @@ The **Volume** component can be added to any game object, the camera itself incl
 | **Is Global**      | The Volume has no boundaries and will be applied to the whole scene. |
 | **Blend Distance** | Outer distance to start blending from. A value of 0 means no blending and the volume overrides will be applied immediately upon entry. |
 | **Weight**         | Multiplier applied to the contribution of the volume computed from its position and blend distance. Allows user to give more or less importance to specific volumes |
-| **Priority**       | Value used to determine which volume to use when volumes have the same contribution. Higher priorities will be used firsts. |
+| **Priority**       | Value used to determine which volume to use when volumes have the same contribution. Higher priorities will be used first. |
 | **Profile**        | Asset containing the Volume Components holding parameters to interpolate. |
 
 When a volume is local, it needs a collider or trigger component attached to it to define its boundaries. Any type of 3D collider will work, from cubes to complex convex meshes but we recommend you use simple colliders as much as possible, as meshes can be quite expensive to traverse. Local volumes can also have a `Blend Distance` that represents the outer distance from the volume surface where blending will start.
