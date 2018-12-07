@@ -18,12 +18,4 @@ When a volume is local, it needs a collider or trigger component attached to it 
 
 The profile is an asset that contains all the VolumeComponents. It can be assigned like any other asset or a new one can be created or cloned using the provided buttons.
 
-At runtime, the system will traverse all Volumes enabled in the scene, and determine based  on position and the above parameters, a contribution for each volume. All volumes with a non zero contribution will then be used to interpolate the parameters from their VolumeComponents. In practice, not all Volumes will contain the same VolumeComponents. For example, only one may hold the Sky VolumeComponent but several can have the Fog VolumeComponent. In this case, only the existing VolumeComponent will contribute for a given VolumeComponent type.
-
-The anatomy of an effect is as follow:
-
-Each field has an override checkbox on its left, you'll need to toggle the settings you want to override for this volume before you can edit them. You can quickly toggle them all on or off by using the small `All` and `None` shortcuts at the top left.
-
-The top-right `On/Off` toggle is used to override the active state of the effect itself in the stack (if you want, for instance, to force-disable an effect in a higher priority volume) whereas the toggle in the title bar is used to disable the set of overrides for this effect in this particular volume.
-
-Finally, you can right-click and effect title to show a quick-action menu to copy/paste/remove/reset settings.
+At runtime, the system will traverse all Volumes enabled in the scene, and determine based  on position and the above parameters, a contribution for each volume. All volumes with a non zero contribution will then be used to interpolate the values from their VolumeComponents. In practice, not all Volumes will contain the same VolumeComponents. For example, only one may hold the Sky VolumeComponent but several can have the Fog VolumeComponent. In this case, only the existing VolumeComponent will contribute for a given VolumeComponent type.
