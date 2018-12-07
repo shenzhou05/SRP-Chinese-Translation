@@ -54,6 +54,9 @@
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumes">Volumes</a><br>
 </ul>
+<ul>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volume Components">VolumeComponent</a><br>
+</ul>
 </details>
 
 <details>
