@@ -2,9 +2,7 @@ The Volume framework is a generic localized parameter interpolation framework. I
 
 The **Volume** component can be added to any game object, the camera itself included. But it's generally a good idea to create a dedicated object for each volume. The Volume component itself does not contains values to interpolate. Instead users will add [VolumeComponents](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VolumeComponent). **VolumeComponents** are user defined structures containing the actual values to interpolate. The **Volume** has a few parameters allowing to control how it interacts with other volumes. In practice, a scene will contain many Volumes and based on these parameters, the system will determine the final interpolated values for each VolumeComponent.
 
-<p align="center">
-[[/images/quickstart-2.png|Quickstart 2]]
-</p>
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/Volume.png)
 
 | Property           | Description                                                  |
 | ------------------ | ------------------------------------------------------------ |
