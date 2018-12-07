@@ -1,1 +1,1 @@
-toto
+**VolumeComponents** are user defined structures containing values that will be interpolated using the [Volume](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumes) system.
