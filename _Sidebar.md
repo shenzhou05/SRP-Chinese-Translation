@@ -186,6 +186,7 @@
 </ul>
 </details>
 <a>Render Pipeline Debugging</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Render-Pipeline-Wizard">Render Pipeline Wizard</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VR-in-HDRP">VR in HDRP</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/High-Definition-Render-Pipeline-FAQ">Frequently Asked Questions</a><br>
 <a>Technical Publications</a><br>
