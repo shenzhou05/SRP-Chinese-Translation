@@ -1,4 +1,4 @@
-This little wizard will help you checking your configuration set in editor is compatible with HD render pipeline.
+This little wizard will help you checking your configuration set in editor is compatible with HD render pipeline. You can find it in **Window > Analysis > Render Pipeline Wizard**.
 
 ![[Wizard screen shot]](https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/0421c562e95867c39078a09b59475bfe33bbba53/com.unity.render-pipelines.high-definition/Documentation~/Images/Wizard.png?raw=true)
 
