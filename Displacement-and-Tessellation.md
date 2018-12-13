@@ -1,6 +1,8 @@
 The HDRP Lit shaders (Lit, LitTessellation, Layered Lit, Layered Lit Tessellation) allow you to use displacement. 
 
-**Displacement** is the action of pushing a vertex or a pixel by a certain distance in the direction of the vertex or pixel's normal.
+**Displacement** is a technique that pushes a vertex or a pixel by a certain distance in the direction of the vertex or pixel's normal.
+
+**Tessellation** is a technique that subdivides a mesh by adding triangles to it. This can be used to smooth the mesh (phong displacement) or to add details to the mesh (height map displacement).
 
 | Displacement mode                                        |                                                              |
 | -------------------------------------------------------- | ------------------------------------------------------------ |
