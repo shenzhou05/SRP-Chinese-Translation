@@ -25,13 +25,11 @@ The HDRP Lit shaders (Lit, LitTessellation, Layered Lit, Layered Lit Tessellatio
 
 | Tessellation options                        | (Tessellation shaders only)                                  |
 | ------------------------------------------- | ------------------------------------------------------------ |
-| Tessellation mode                           |                                                              |
-| None                                        | The vertices are only displaced if a Height map is used.     |
-| Phong                                       | The vertices created by tessellation are displaced along their normals according to the **Shape factor** whether a Height map is used or not. This is useful when tessellation is used on an organic object in order to smooth the original polygons of the mesh. |
+| Tessellation mode : None                    | The vertices are only displaced if a Height map is used.     |
+| Tessellation mode : Phong                   | The vertices created by tessellation are displaced along their normals according to the **Shape factor** whether a Height map is used or not. This is useful when tessellation is used on an organic object in order to smooth the original polygons of the mesh. |
 | Tessellation factor                         | Number of iterations of subdivisions applied to the mesh.    |
 | Start fade distance                         | Distance at which tessellation starts disappearing.          |
 | End fade distance                           | Distance at which tessellation is no longer visible and the initial mesh is rendered. |
 | Triangle size                               | Minimum size in pixel that a triangle can have. When this size is reached on a triangle, increasing the tessellation factor won't subdivide this triangle anymore. |
 | Shape factor (phong tessellation mode only) | Strength of the phong displacement. 0 is the same as phong displacement disabled. Increasing the value towards one displaces more and more the vertices added by tessellation along their normals. |
 | Triangle culling epsilon                    | Threshold used for backface culling of tessellated polygons. -1 means backface culling is disabled. Higher values mean more aggressive backface culling and better performance. Too high values can discard too many polygons on the silhouette of tessellated meshes. |
-
