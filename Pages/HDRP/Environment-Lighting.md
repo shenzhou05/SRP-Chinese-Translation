@@ -36,9 +36,7 @@ The Volume Profile you reference in the Baking sky component can be a profile as
 
 Note on reflections :
 
-Baked reflection probes will render using the sky settings used in the Baking sky component, as this is consistent with your baking settings.
-
-Realtime reflection probes will render using the sky settings resulting from the Volumes, as this is consistent with what you'll see with your game camera at runtime.
+Reflection probes will render using the sky set through volumes and selected in the Visual Environment, as this is consistent with what you'll see with your game camera at runtime.
 
 ## Adding your own Sky Type
 
