@@ -1,5 +1,3 @@
-# Surface Type
-
 The Surface Type option controls whether your Shader supports transparency or not. 
 
 | **Property**    | **Description**                                              |

@@ -1,5 +1,3 @@
-# Diffusion Profile
-
 HDRP stores most [subsurface scattering](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Subsurface-Scattering) settings in a __Diffusion Profile List__ Asset. A __Diffusion Profile List__ contains a set of 15 __Diffusion Profiles__ that you can edit and assign to your Materials.
 
 To create a Diffusion Profile List, navigate to __Assets > Create > Rendering > Diffusion Profile List__. To use it, open your HDRP Asset and assign it to the __Diffusion Profile List__ property.
