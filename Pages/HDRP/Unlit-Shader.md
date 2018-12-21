@@ -1,4 +1,3 @@
-# Unlit Shader
 
 The Unlit Shader lets you create Materials that are not affected by lighting. It includes options for the Surface Type, Emissive Color, and GPU Instancing. For more information about Materials, Shaders and Textures, see the [Unity User Manual](https://docs.unity3d.com/Manual/Shaders.html).
 
