@@ -1,5 +1,3 @@
-# Lit Shader
-
 The Lit Shader lets you easily create realistic materials with minimal configuration. It includes options for effects including subsurface scattering, iridescence, vertex or pixel displacement, and decal compatibility. For more information about Materials, Shaders and Textures, see the [Unity User Manual](https://docs.unity3d.com/Manual/Shaders.html).
 
 When you create new Materials in HDRP, they use the Lit Shader by default.
