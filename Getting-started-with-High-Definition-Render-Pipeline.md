@@ -43,7 +43,7 @@ The HDRP Visual Environment component enables you to change the type of sky and 
 
 ![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/GettingStarted3.png)
 
-For more information, see [Visual Environment](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Visual-Environment), [Sky overview](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Sky-Overview) and [Fog overview](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Fog-Overview).
+For more information, see [Visual Environment](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Visual-Environment), [Sky overview](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Sky-Overview) and [Fog overview](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Fog-Overview).
 
 ## Materials and Shaders
 
