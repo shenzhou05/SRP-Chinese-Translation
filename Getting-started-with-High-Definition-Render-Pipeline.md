@@ -53,7 +53,7 @@ HDRP enables you to create materials like glass that refracts light based on def
 
 To apply realistic lighting to your Scenes, HDRP uses Physical Light Units (PLU), which are based on real-life measurable values, just like you would see when looking for light bulbs at a store or measuring light with a photographic light meter. For more information, see [Physical Light Units](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physical-Light-Units).
 
-For advice on adding lights to your Scene, see [Light](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Light-Component)
+For advice on adding lights to your Scene, see [Light](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component)
 
 ### Light Explorer
 
