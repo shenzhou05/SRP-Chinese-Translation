@@ -67,7 +67,7 @@ The HD shadow settings allow you to determine the overall quality of the Shadows
 
 ![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/GettingStarted5.gif)
 
-For more information, see [HD Shadow Settings](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/HD-Shadow-Settings).
+For more information, see [HD Shadow Settings](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HD-Shadow-Settings).
 
 ## Related information
 
