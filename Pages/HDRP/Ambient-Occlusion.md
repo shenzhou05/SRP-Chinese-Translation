@@ -1,5 +1,3 @@
-# Ambient occlusion
-
 HDRP uses ambient occlusion to approximate the intensity and position of ambient light on a GameObject’s surface, based on the light in the Scene and the environment around the GameObject. In HDRP, ambient occlusion only affects indirect diffuse lighting (lighting from Lightsmaps, Light Probes, and Light Probe Proxy Volumes).
 
 Note: Ambient occlusion in a Lit Shader using deferred rendering affects emission due to a technical constraint. Lit Shaders that use forward rendering do not have this constraint and do not affect emission.
