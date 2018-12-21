@@ -10,7 +10,7 @@ Subsurface scattering also handles the light that penetrates GameObjects from be
 
 ## Enabling Subsurface Scattering
 
-To enable subsurface scattering in your [HDRP Asset](HDRP-Asset.html):
+To enable subsurface scattering in your [HDRP Asset](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Asset):
 
 * In the HDRP Asset’s Inspector window, in the __Render Pipeline Supported Features__ section, enable the __Subsurface Scattering__ checkbox .
 
@@ -18,7 +18,7 @@ To enable subsurface scattering in your [HDRP Asset](HDRP-Asset.html):
 
 * Within __HDRP Asset__, locate the __Default Frame Settings__. Under the __Lighting Settings__, enable __Subsurface Scattering__ and __Transmission__.
 
-HDRP stores most subsurface scattering settings in a [Diffusion Profile Settings](Diffusion-Profile.html) Asset. The __Diffusion Profile List Asset__ contains a set of 15 Diffusion Profiles you can edit and later assign to your Materials.
+HDRP stores most subsurface scattering settings in a [Diffusion Profile Settings](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Diffusion-Profile) Asset. The __Diffusion Profile List Asset__ contains a set of 15 Diffusion Profiles you can edit and later assign to your Materials.
 
 To create a Diffusion Profile List Asset, navigate to __Assets > Create > Rendering > Diffusion Profile Settings__. To use it, open your HDRP Asset and assign the new Diffusion Profile List Asset to the __Diffusion Profile List__ property.
 
