@@ -1,8 +1,8 @@
-__Volume Overrides__ are structures containing values that HDRP uses within the [Volume](Volumes.html) framework. A Volume Override replaces the default behaviour of a Volume. For example, you could use a Volume Override in your Unity Project to render a different fog color in a certain area of your Scene. 
+__Volume Overrides__ are structures containing values that HDRP uses within the [Volume](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumes) framework. A Volume Override replaces the default behaviour of a Volume. For example, you could use a Volume Override in your Unity Project to render a different fog color in a certain area of your Scene. 
 
 __Exponential Fog__ is an example of a Volume Override:
 
-![](Images/VolumeComponents1.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRPImages/VolumeComponents1.png)
 
 Each Volume Override property has a checkbox on its left. Enable the checkbox to make that property editable. This also tells HDRP to use that property for this Volume component rather than the default value. If you  disable the checkbox, HDRP ignores the property and uses the Volume’s default value for that property instead.
 
