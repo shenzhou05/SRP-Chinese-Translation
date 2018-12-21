@@ -4,7 +4,7 @@ The Unlit Shader lets you create Materials that are not affected by lighting. It
 
 ## Creating an Unlit Material
 
-New Materials in HDRP use the [Lit Shader](Lit-Shader.html) by default. To create an Unlit Shader, you need to create a Material and then make it use the Unlit Shader. To do this:
+New Materials in HDRP use the [Lit Shader](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Lit-Shader) by default. To create an Unlit Shader, you need to create a Material and then make it use the Unlit Shader. To do this:
 
 1. In the Unity Editor, navigate to your Project's Asset window.
 
@@ -12,7 +12,7 @@ New Materials in HDRP use the [Lit Shader](Lit-Shader.html) by default. To creat
 
 3. To use the Unlit Shader with your Material, click the __Shader__ drop-down at the top of the Material Inspector, and select to __HDRenderPipeline > Unlit__.
 
-![](Images/UnlitShader1.png)
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UnlitShader1.png)
 
 ## Unlit Shader Parameters
 
@@ -22,9 +22,9 @@ Surface options control the overall look of your Material's surface and how Unit
 
 | Property| Description |
 |:---|:---|
-| **Surface type** | Controls whether your Shader supports transparency or not. HDRP exposes more properties depending on the Surface Type you select. See the [Surface Type](Surface-Type.html) documentation for more information. |
-| **Alpha Cutoff Enable** | Controls whether your Material acts like a [Cutout Shader](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html) or not. Enabling this feature exposes more properties. See the [Alpha Clipping](Alpha-Clipping.html) documentation for more information. |
-| **Double Sided** | Controls whether HDRP renders both faces of the polygons in your geometry, or just the side defined by the normal. See the [Double Sided](Double-Sided.html) documentation for more information. |
+| **Surface type** | Controls whether your Shader supports transparency or not. HDRP exposes more properties depending on the Surface Type you select. See the [Surface Type](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Surface-Type) documentation for more information. |
+| **Alpha Cutoff Enable** | Controls whether your Material acts like a [Cutout Shader](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html) or not. Enabling this feature exposes more properties. See the [Alpha Clipping](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Alpha-Clipping) documentation for more information. |
+| **Double Sided** | Controls whether HDRP renders both faces of the polygons in your geometry, or just the side defined by the normal. See the [Double Sided](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Double-Sided) documentation for more information. |
 
 
 ### Inputs
