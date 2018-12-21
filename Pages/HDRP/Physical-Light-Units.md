@@ -1,5 +1,3 @@
-# Physical Light units
-
 HDRP uses Physical Light Units (PLU) for its lighting. These units are based on real-life light measurements, like those you see on light bulb packaging or a photographic light meter.
 
 ### Candelas
