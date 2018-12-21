@@ -116,7 +116,7 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Double-Sided">Double-Sided</a><br>
 <a>Vertex Displacement</a>
 <a>Tessellation</a><br>
-<a>Ambient Occlusion</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Ambient-Occlusion">Ambient Occlusion</a><br>
 <a>Specular Occlusion</a><br>
 <a>Geometric AA</a><br>
 <a>NormalMap AA</a><br>
