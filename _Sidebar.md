@@ -100,14 +100,15 @@
 </summary>
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Surface-Type">Surface Type</a><br>
-<a>Double-Sided</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Double-Sided">Double-Sided</a><br>
 <a>Vertex Displacement</a>
 <a>Tessellation</a><br>
 <a>Ambient Occlusion</a><br>
 <a>Specular Occlusion</a><br>
 <a>Geometric AA</a><br>
 <a>NormalMap AA</a><br>
-<a>Alpha Cutoff</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Material-Type">Material Type</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Alpha-Clipping">Alpha Clipping</a><br>
 </ul></details>
 
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Unlit-Shader">Unlit</a><br>
@@ -148,7 +149,7 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Cube-and-Planar-Reflection-Probes">Cube and Planar Reflection Probes</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumetric-lighting">Volumetric lighting</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Light-layers">Light Layers</a><br>     
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physical-light-units-and-intensities">Physical Light Units and Intensities</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physical-Light-Units">Physical Light Units and Intensities</a><br>
 </ul>
 </details>
 <details>
