@@ -1,6 +1,6 @@
 HDRP’s Volume framework uses local boundaries, that contain parameters HDRP interpolates between to calculate a final value. It allows you to define sets of local and global parameters that HDRP interpolates between depending on the position of the Camera. For example, you can use local Volumes to change environment settings, such as fog color and density, to alter the mood of different areas of your Scene. 
 
-You can add a __Volume__ component to any GameObject, including a Camera, although it is good practice to create a dedicated GameObject for each Volume. The Volume component itself contains hidden default values to interpolate between. To alter them, you must add [Volume Components](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volume-Components) which are structures containing overrides for the defaults. 
+You can add a __Volume__ component to any GameObject, including a Camera, although it is good practice to create a dedicated GameObject for each Volume. The Volume component itself contains hidden default values to interpolate between. To alter them, you must add [Volume Components](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volume-Overrides) which are structures containing overrides for the defaults. 
 
 Volumes also contain parameters that control how they interact with other volumes. A Scene can contain many Volumes. Volumes affect the Camera if they have __IsGlobal __enabled or they encapsulate the Camera within the bounds of their Collider.
 
