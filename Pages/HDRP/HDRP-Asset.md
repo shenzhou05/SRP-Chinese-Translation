@@ -1,171 +1,183 @@
-The **HD Render Pipeline Asset** controls the global rendering settings of your project and creates the rendering pipeline instance. The rendering pipeline instance contains intermediate resources and the render loop implementation. For more information about the rendering pipeline instance, see documentation on [Rendering Pipelines](http://placeholder).
+# The High Definition Render Pipeline Asset
 
-# Creating a HDRP Asset
+The High Definition Render Pipeline (HDRP) Asset controls the global rendering settings of your Project and creates an instance of the rendering pipeline. A rendering pipeline instance contains intermediate resources and an implementation of the render pipeline. For more information, see documentation on Rendering Pipelines.
 
-A HDRP Asset file is included with the HDRP package and the High Definition Template. 
+## Creating an HDRP Asset
 
-If you are creating a new project, create your own HDRP asset by following the steps below. Creating a custom HDRP Asset will stop your changes being overwritten by HDRP package updates. 
+A new Project using the HDRP template includes an HDRP Asset file named HDRenderPipelineAsset in the Assets/Settings folder.
 
- 
+If you upgrade a Project to HDRP and therefore do not use the HDRP template, follow the steps below to create and customize your own HDRP Asset.
 
-Create a new Render Pipeline Asset in your Unity Project browser at the location you want to create the asset (Caution: You can’t create the asset in Package folder, you need to create in Asset folder).
+1. In the Unity Editor, go to the Project window and navigate to the folder you want to create your HDRP Asset in. This folder must be inside the Assets folder; you can not create Assets in the Packages folder.
 
-![img](https://lh6.googleusercontent.com/2bU-kpsMCH0uBM7DrCVKKBYEOAlE7wiUVjdj90Pohz2m162zQacH5OjhcoDAyrTFUib8P8_uLa8SUBoaQATHZa3HUfMYH0xpVe2RVUzz9T18vOaFp2TTiyqPjrpkHXlxO2FfseW6)
+2. In the menu, navigate to __Assets > Create > Rendering__ and click __High Definition Render Pipeline Asset__ to create your HDRP Asset.
 
- 
+3. Name the __HDRP Asset__ and press the Return key to confirm it.
 
- 
+When you have created a HDRP Asset, you must assign it it to pipeline:. 
 
-Then in Graphic Settings, setup the HDRenderPipeline Asset
+1. Select __Edit > Project Settings > Graphics__ and locate the __Scriptable Render Pipeline Settings__ property at the top. 
 
-![img](https://lh6.googleusercontent.com/Hq_b6LmrG6Fc9sopHC-AsBqdwnsp0_ZjdttGb7ASalVIL80m9aaEZ8IhkjlIXr6KIwN1lmXuhmrnWXwrViCJ3Q8czNg3AXlFpcwWRO25NaP6olRlPxXAuQ2gqvIBfBXvanX4wTCm)
+2. Either drag and drop the HDRP Asset into the property field, or use the object picker (located on the right of the field) to select it from a list of all HDRP Assets in your Unity Project.
 
-![img](https://lh5.googleusercontent.com/ve5zgde3jFadz2AaGkvQL5Lhw_ktYd9zYe0cfncAyFG20Qp684LuRqBmx_9k3GKtuSmfhUyU57eqDYW7Y_pV6JExBgZRHKEnSclQrvvJGrg4YvEjhWhGDkBxituYPXkRdMA9sII-)
+You can create multiple HDRP Assets containing different settings. You can change the HDRP Asset your render pipeline uses by either manually selecting an HDRP Asset in the Graphics Settings window (as shown above), or by using the `GraphicsSettings.renderPipelineAsset` property via script.
 
- 
-
- 
-
- 
-
-You can create multiple HDRenderPipeline Assets containing different settings. Assets can be set by either manually selecting a Pipeline Asset in the Graphics Settings window, or by using the [GraphicsSettings.renderPipelineAsset](API Link) property via script. 
-
- 
-
-You must create a new asset for each platform your project will support (PC, Xbox One, Playstation 4, etc) and then assign the relevant Asset when you build your project for each platform. 
-
-![img](https://lh3.googleusercontent.com/AaJXJerlJyziXT7UYqeeHltn40fmpND0ZjsU4uxv9FvevFb4V2hwBJ2yRksOKVB7x9tGFCLiDGc-xXgVGoTws_rUHkG3CY6vIyMd5qF_5oRENJ3vwbdTqTlNm0cc-wVbCZiiLwVd)
+Creating multiple HDRP Assets is useful when developing a Project that supports multiple platforms,for example, PC, Xbox One and PlayStation 4. In each HDRP Asset, you can change settings to suite the hardware of each platform and then assign the relevant one when building your Project for each platform.
 
 ## Render Pipeline Resources
 
-The **HD Render Pipeline Resources Asset** stores references to shaders and materials used by HDRP. When a player is build, it will embed all these referenced resources. This is a replacement of the Resources folder mechanism of Unity as multiple render pipeline could be setup in a project and the player must not embed all these resources. 
+The HDRP Resources Asset stores references to Shaders and Materials used by HDRP.  When you build your Unity Project, HDRP embeds all of the resources that the HDRP Resources Asset references. This is the Scriptable Render Pipeline equivalent of the Legacy Resources folder mechanism of Unity. It is useful because it allows you to set up multiple render pipelines in a Unity Project and, when you build the Project, Unity only embeds Shaders and Materials relevant for that pipeline.
 
- 
+Unity creates a HDRP Resources Asset when you create a HDRP Asset and references it automatically.
 
-There is always a rende pipeline resource available. The HDRP Asset will reference it automatically on creation. It is possible but not recommended to create a HDRP resource asset with the same command than for HDRP Asset. This asset shouldn’t be modify unless a shader needs to be replaced by a custom version.
+## Render Pipeline Editor Resources
 
-## Diffusion Profile Settings
+## Diffusion Profile List
 
-The **Diffusion Profile Settings Asset** stores Subsurface Scattering and Transmission Control profiles for your project. For further information about the Diffusion Profile Settings asset, refer to documentation on [Subsurface Scattering](http://placeholder).
+The [Diffusion Profile List](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Diffusion-Profile) Asset stores Subsurface Scattering and Transmission Control profiles for your Project. Create a Diffusion Profile Settings Asset by navigating to __Assets > Create > Rendering__ and clicking __Diffusion Profile List__.
 
-## Render Pipeline Supported features
+## Render Pipeline Features
 
-This list allows you to enable or disable features in your project. Disabled features will not be included in your built game and cannot be enabled at run time.
+These settings enable or disable HDRP features in your Unity Project. Unity does not allocate memory or build Shader variants for disabled features, so disable settings that you are not using to save memory. You can not enable disabled features at run time.
 
-Use these settings to save memory by disabling features you are not using.  
+![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/HDRPAsset1.png)
 
-| Property                                    | Function                                                     |
-| ------------------------------------------- | ------------------------------------------------------------ |
-| Shadow Mask                                 | Tick this checkbox to enable [Shadowmask](https://docs.unity3d.com/Manual/LightMode-Mixed-Shadowmask.html) in your project. |
-| SSR (Screen space reflection)               | Tick this checkbox to enable [SSR](https://docs.unity3d.com/Manual/PostProcessing-ScreenSpaceReflection.html). |
-| SSAO (Screen space ambient occlusion)       | Tick this checkbox to enable [SSAO](http://placeholder).     |
-| Subsurface Scattering                       | Tick this checkbox to enable Subsurface Scattering.          |
-| Increase SSS Sample Count                   | Tick this box to enable ultra quality Subsurface Scattering. |
-| Volumetrics                                 | Tick this checkbox to enable Volumetric lighting.            |
-| Increase Volumetrics resolution             | Tick this box to enable ultra quality Volumetric lighting.   |
-| LightLayers                                 | Tick this checkbox to enable Light Layers.                   |
-| Supported Lit Shader Mode                   | Both will render Lit shader using deferred rending for opaque and using forward rendering for transparent. You can use Forward and Deferred modes to force a rendering path. |
-| Support Multi Sampling Anti-Aliasing (MSAA) | Tick this checkbox to enable MSAA.                           |
-| MSAA Sample count                           | Specifies the MSAA sample count. Options are MSAA x2 MSAA x4 and MSAA x8. |
-| Decals                                      | Tick this checkbox to enable Decal Buffer.                   |
-| Motion Vectors                              | Tick this checkbox to enable motion vectors.                 |
-| Runtime debug display                       | Tick this to include debug shaders in the build.             |
-| Dithering cross fade                        | Tick this checkbox to support Dithering cross fade for LOD transitions. |
-| Stereo Rendering                            | Tick this box to enable [stereo rendering](https://docs.unity3d.com/Manual/SinglePassStereoRendering.html) for VR projects. |
-
- 
-
-## Default frame Settings
-
-Allows you to choose which rendering passes, rendering settings, lighting settings, and light loop settings are used **by default** in :
-
-- **Cameras**
-- **Baked or custom reflection probes**
-- **Realtime reflections**
-
-**For instance :** this allows you to enable Postprocess pass by default for cameras but disable it by default for realtime reflections. The default settings can then be overriden on a camera or on a reflection probe.
-
-See the [frame settings page](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Frame-Settings) for more details.
+| Property| Description |
+|:---|:---|
+| **Shadow Mask** | Enables support for [Shadowmask](https://docs.unity3d.com/Manual/LightMode-Mixed-Shadowmask.html) in your Project. |
+| **SSR (screen space reflection)** | Enables support for [SSR](https://docs.unity3d.com/Manual/PostProcessing-ScreenSpaceReflection.html). SSR is a technique for calculating reflections by reusing screen space data. |
+| **SSAO (screen space ambient occlusion)** | Enables support for SSAO. SSAO is a technique for approximating ambient occlusion efficiently in realtime. |
+| **Subsurface Scattering** | Enables Subsurface Scattering (SSS). SSS describes light penetration of the surface of a translucent object. |
+| **Subsurface Scattering - High quality** | Increase the SSS Sample Count and enable ultra quality Subsurface Scattering. Be aware that increasing the sample count greatly increases the cost of the Subsurface Scattering effect. |
+| **Volumetrics** | Enables support for volumetrics. This allows you to use **Volumetric Fog** for the **Fog Type** in the [Visual Environment](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Visual-Environment). |
+| **Volumetrics - high quality** | Increases the resolution of volumetrics. This increases the quality of fog effects, but increases the cost of the effect greatly. |
+| **LightLayers** | Enables support for Light Layers. You can assign a Layer to a Light which then only lights up Mesh Renderers with a matching rendering Layer. |
+| **Support Lit Shader Mode** | Choose which mode HDRP uses for the [Lit Shader](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Lit-Shader). Select **Forward Only** to force the HDRP renderer to only use forward rendering. Select **Deferred Only** to force the HDRP renderer to use deferred rendering for Lit Shaders (HDRP still renders advanced Materials using forward rendering). Select **Both** to allow the Camera to use deferred and forward rendering. Selecting **Both** allows you to switch between forward and deferred rendering for Lit Shaders at run time or per Camera. Selecting a specific mode reduces build time and Shader memory because HDRP requires less Shader variants, but it is not possible to switch from one mode to the other at run time. |
+| **Support Multi Sampling Anti-Aliasing** | Enables support for Multi Sampling Anti-Aliasing (MSAA). This is only available when **Support Lit Shader Mode** is set to **Forward Only**. |
+| **MSAA Sample Count** | Sets the number of samples HDRP uses for with MSAA. |
+| **Decals** | Enable support for Decals. |
+| **Motion Vectors** | Enables support for Motion Vectors. HDRP uses Motion Vectors for effects like screen space reflection (SSR) and motion blur. When disabled, motion blur has no effect and HDRP calculates SSR with lower quality. |
+| **Runtime debug display** | Displays Material and Lighting properties at run time to help debugging. Disable this to reduce build time and Shader memory. Disables support for HDRP’s runtime debug display. This disables the following debug modes: All Material debug modes except GBuffer debug. The Lux meter, diffuse lighting only, and specular lighting only lighting debug modes. The overriding option for overriding albedo. |
+| **Dithering cross fade** | Enables support for dithering cross fade. This allows HDRP to implement smooth transitions between a GameObject’s LOD levels. When disabled, this reduces build time if you are not using LOD fade. |
+| **Distortion** | Enables support for distortion. If your Unity Project does not use distortion, disable this checkbox to reduce build time . |
+| **Transparent Backface** | Enables support for transparent back-face render passes. If your Unity Project does not need to make a transparent back-face pass, disable this checkbox to reduce build time. |
+| **Transparent Depth Prepass** | Enables support for transparent depth render prepasses. If your Unity Project does not need to make a transparent depth prepass, disable this checkbox to reduce build time . |
+| **Transparent Depth Postpass** | Enables support for transparent depth render postpasses. If your Unity Project does not make use of a transparent depth postpass. Uncheck this checkbox to reduce build time . |
 
 
+
+## HDRP Asset Default Frame Settings
+
+Frame Settings control the rendering passes made by the main Camera at run time. For more information about Frame Setting, and how to use them, see the [HDRP Frame Settings documentation](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Frame-Settings).
 
 ## Cookies
 
-Use the Cookies settings to configure the maximum resolution of cookies and texture arrays. Larger sizes use more memory, but result in higher quality images. 
+Use the Cookie settings to configure the maximum resolution of individual cookies and the maximum resolution of cookie texture arrays that define the number of cookies on screen at one time. Larger sizes use more memory, but result in higher quality images.
 
-| Property           | Function                                                     |
-| ------------------ | ------------------------------------------------------------ |
-| Cookie Size        | The Maximum Cookie size.                                     |
-| Texture Array Size | The maximum Texture Array size                               |
-| Point Cookie Size  | The maximum [Point Cookie](https://docs.unity3d.com/Manual/Cookies.html) size |
-| Cubemap Array Size | The maximum [Spot Cookie](https://docs.unity3d.com/Manual/Cookies.html) size |
+| Property| Description |
+|:---|:---|
+| **Cookie Size** | The maximum individual cookie size for the 2D cookies that HDRP uses for Directional and Spot Lights.  |
+| **Texture Array Size** | The maximum Texture Array size for the 2D cookies that HDRP uses for Directional and Spot Lights. Increase this to increase the amount of 2D cookies HDRP can use concurrently on screen. |
+| **Point Cookie Size** | The maximum [Point Cookie](https://docs.unity3d.com/Manual/Cookies.html) size for the Cube cookies that HDRP uses for Point Lights. |
+| **Cubemap Array Size** | The maximum Cubemap Array size for the Cube cookies that HDRP uses for Point Lights. Increase this to increase the amount of cubemap cookies HDRP can use concurrently on screen.  |
 
- 
 
-## Reflections
 
-| Property                               | Function                                                     |
-| -------------------------------------- | ------------------------------------------------------------ |
-| Compress Reflection Probe Cache        | Tick this checkbox to compress the Reflection Probe Cache.   |
-| Reflection Cubemap Size                | The maximum resolution of the Reflection [Cubemap](https://docs.unity3d.com/Manual/class-Cubemap.html) |
-| Probe Cache Size                       | The maximum resolution of the [Probe Cache](http://placeholder) |
-| Compress Planar Reflection Probe Cache | Tick this checkbox to compress the Planar Reflection Probe Cache. |
-| Planar Reflection Texture Size         | The maximum resolution of the Planar Reflection texture.     |
-| Planar Probe Cache Size                | Tick this checkbox to compress the Planar Probe Cache.       |
-| Max Planar Probe Per Frame             | The amount of Planar Probes per frame.                       |
+## Reflection
 
- 
+Use the Reflection settings to configure the resolution of your reflections and whether Unity should compress the Reflection Probe caches or not.
+
+| Property| Description |
+|:---|:---|
+| **Compress Reflection Probe Cache** | Compresses the Reflection Probe Cache to save space on disk. |
+| **Reflection Cubemap Size** | The maximum resolution of the individual Reflection Probe [Cubemaps](https://docs.unity3d.com/Manual/class-Cubemap.html). |
+| **Probe Cache Size** | The maximum resolution of the Probe Cache. Defines how many Probe Caches HDRP can save in cache. |
+| **Compress Planar Reflection Probe Cache** | Compresses the Planar Reflection Probe Cache. |
+| **Planar Reflection Texture Size** | The maximum resolution of the Planar Reflection texture. |
+| **Planar Probe Cache Size** | The maximum size of the Planer Reflection Probe cache. |
+| **Support Fabric BSDF Convolution** | By default, Fabric Materials reuse Reflection Probes HDRP calculates for the Lit Shader (GGX BRDF). If you enable this option, HDRP calculates another version of each Reflection Probe for the Fabric Shader, creating more accurate lighting effects. This increases the cost as HDRP must condition two Reflection Probes instead of one. It also reduces the number of visible Reflection Probes in the current view by half as the size of the cache storing Reflection Probe data does not change and now must store both versions of each Reflection Probe. |
+
+
 
 ## Sky
 
-These settings control skybox reflections and skybox lighting. 
+These settings control skybox reflections and skybox lighting.
 
-| Property                   | Function                                                    |
-| -------------------------- | ----------------------------------------------------------- |
-| Sky Reflection Size        | Sets the resolution of the sky reflection cubemap.          |
-| Sky Lighting Override Mask | Sets the layer mask used in order to override sky lighting. |
+| Property| Description |
+|:---|:---|
+| **Reflection Size** | The maximum resolution of the cubemap HDRP uses to represent the sky. |
+| **Lighting Override Mask** | The [Volume](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumes) layer mask HDRP uses to override sky lighting. Use this to decouple the display sky and lighting. |
 
- 
 
-## Shadows 
+
+## LightLoop
+
+Use these settings to enable or disable settings relating to lighting in HDRP. 
+
+| Property| Description |
+|:---|:---|
+| **Max Directional Lights On Screen** | The maximum number of Directional Lights HDRP can handle on screen at once. |
+| **Max Punctual Lights On Screen** | The maximum number of [Point and Spot Lights](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Glossary#PunctualLight) HDRP can handle on screen at once. |
+| **Max Area Lights On Screen** | The maximum number of area Lights HDRP can handle on screen at once. |
+| **Max Env Lights On Screen** | The maximum number of environment Lights HDRP can handle on screen at once.  |
+| **Max Decals On Screen** | The maximum number of Decals HDRP can handle on screen at once. |
+
+
+
+## Shadows
+
+These settings adjust the size of the shadow mask. Smaller values causes Unity to discard more distant shadows, while higher values lead to Unity displaying more shadows at longer distances from the camera.
+
+Higher values use more memory.
 
 ### Atlas
 
-These settings adjust the size of the atlases where shadow maps are packed. 
-
-The first atlas is used for all punctual lights shadows (spot and point lights) and has the possibility to rescale its shadow maps if too many of them are rendered and would not fit in the atlas. The second atlas is used for directional shadow cascade and doesn't rescale.
-
-| Property        | Function                                                     |
-| --------------- | ------------------------------------------------------------ |
-| Resolution      | The Shadow Atlas resolution (higher values will use more memory) |
-| 16-bit          | Tick this checkbox to use 16-bit format for the shadow map atlas. This is an optimization. |
-| Dynamic rescale | Tick this checkbox to enable rescaling for the punctual lights shadow atlas. Punctual lights will see the resolution of their shadow maps scale down with distance to the camera. |
-
-### Max requests
-
-This value restricts the maximum number of shadows that can be computed per frame. 
-
-### Filtering qualities
-
-| Property    | Function                                                     |
-| ----------- | ------------------------------------------------------------ |
-| Punctual    | Allows you to choose a preset for punctual light filtering quality |
-| Directional | Allows you to choose a preset for Directional light filtering quality |
-
-|Preset     |   Algorithm|
-|-----------|------------------------|
-|Low | PCF 3x3 (4 taps)|
-|Medium | PCF 5x5 (9 taps)|
-|High | PCSS |
-
-When using **PCSS filtering**, some additional high quality filtering settings become available in the light component.
+| Property| Description |
+|:---|:---|
+| **Resolution** | The resolution of the shadow atlas. |
+| **16-bit** | Forces HDRP to use 16-bit shadow maps. |
+| **Dynamic Rescale** | Allows HDRP to rescale the shadow atlas if all the shadows on the screen don’t fit onto the shadow atlas.  |
 
 
+
+### Max Requests
+
+| Property| Description |
+|:---|:---|
+| **Max Shadow on Screen** | The maximum number of shadows you can have in view. A  Spot Light casts a single shadow, a Point Light casts six shadows, and a Directional Light casts shadows equal to the number of cascades defined in the [HD Shadow Settings](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HD-Shadow-Settings) override. |
+
+
+
+### Filtering Qualities
+
+| Property| Description |
+|:---|:---|
+| **Shadow Quality** | The filtering quality for Punctual Lights. Higher values increase the shadow quality in HDRP as better filtering near the edges of shadows reduce aliasing effects. HDRP 2018.3: Shadow quality only works when you set **Lit Shader Mode** to **Forward** in frame settings. **Deferred** mode uses Low. |
+
+
+
+#### Filtering Quality Presets
+
+| Preset| Algorithm |
+|:---|:---|
+| **Low** | Point/Spot: PCF 3x3 (4 taps). Directional: PCF Tent  5x5  (9 taps). |
+| **Medium** | Point/Spot: PCF 5x5 (9 taps). Directional: PCF Tent  7x7  (16 taps). |
+| **High** | Point/Spot: PCSS. Directional: PCSS. |
+
+
+
+Select __PCSS__ filtering to enable additional high quality filtering settings in the Light component.
 
 ## Decals
 
-| Property                       | Function                                                     |
-| ------------------------------ | ------------------------------------------------------------ |
-| Draw Distance                  | Distance at which decals stop being rendered.                |
-| Atlas Size                     | Resolution of the decals texture atlas                       |
-| Enable Metal and AO properties | Allows Decals to affect Metal and AO material properties. Enabling this option has a performance impact. |
+These settings control the draw distance and resolution of the decals atlas HDRP uses when it renders decals projected on transparent objects.
+
+| Property| Description |
+|:---|:---|
+| **Draw Distance** | The maximum distance from the Camera at which Unity draws Decals. |
+| **Atlas Width** | The Decal Atlas width. |
+| **Atlas Height** | The Decal Atlas height. |
+| **Enable Metal and AO properties** | Allows Decals to affect Metal and AO material properties. Enabling this option has a performance impact. |
+
+
+
