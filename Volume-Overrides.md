@@ -1,5 +1,3 @@
-# Volume Overrides
-
 __Volume Overrides__ are structures containing values that HDRP uses within the [Volume](Volumes.html) framework. A Volume Override replaces the default behaviour of a Volume. For example, you could use a Volume Override in your Unity Project to render a different fog color in a certain area of your Scene. 
 
 __Exponential Fog__ is an example of a Volume Override:
