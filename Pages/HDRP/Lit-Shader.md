@@ -16,10 +16,10 @@ Surface options control the overall look of your Material's surface and how Unit
 
 | Property| Description |
 |:---|:---|
-| **Surface type** | Controls whether your Shader supports transparency or not. HDRP exposes more properties depending on the Surface Type you select. See the [Surface Type](Surface-Type.html) documentation for more information. |
-| **Alpha Cutoff Enable** | Controls whether your Material acts like a Cutout Shader or not. Enabling this feature exposes more properties. See the [Alpha Clipping](Alpha-Clipping.html) documentation for more information. |
-| **Double Sided** | Controls whether HDRP renders both faces of the polygons in your geometry, or just the side defined by the normal. See the [Double Sided](Double-Sided.html) documentation for more information. |
-| **Material Type** | Allows you to give your Material a type, which allows you to customize it with different settings depending on the Material Type you select. See the [Material Type](Material-Type.html) documentation for more information. |
+| **Surface type** | Controls whether your Shader supports transparency or not. HDRP exposes more properties depending on the Surface Type you select. See the [Surface Type](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Surface-Type) documentation for more information. |
+| **Alpha Cutoff Enable** | Controls whether your Material acts like a Cutout Shader or not. Enabling this feature exposes more properties. See the [Alpha Clipping](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Alpha-Clipping) documentation for more information. |
+| **Double Sided** | Controls whether HDRP renders both faces of the polygons in your geometry, or just the side defined by the normal. See the [Double Sided](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Double-Sided) documentation for more information. |
+| **Material Type** | Allows you to give your Material a type, which allows you to customize it with different settings depending on the Material Type you select. See the [Material Type](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Material-Type) documentation for more information. |
 | **Enable Decal** | Enable to allow this Material to receive decals that the Decal Project Component casts into the Scene. |
 | **Enable geometric specular AA** | Tick this checkbox to tell HDRP to perform geometric anti-aliasing on this Material. This removes specular artifacts that occur on high density Meshes with a high smoothness. |
 | **- Offset multiplier** | Modules the geometric specular anti-aliasing effect between 0 and 1. |
