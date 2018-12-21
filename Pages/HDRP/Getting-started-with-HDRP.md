@@ -1,66 +1,77 @@
-This page details the initial setup of a project using the High Definition Render Pipeline (HDRP) and notes on upgrading existing projects to HDRP. 
-## Setting up a new Project
+# Getting started with High Definition Render Pipeline
 
-### Using Unity Hub
-Follow the steps below to set up a new HDRP project using Unity Hub.
+[High Definition Render Pipeline (HDRP)](index.html) uses [Shaders](https://docs.unity3d.com/Manual/class-Shader.html) and lighting units that are different with the built-in Unity rendering pipeline. As such, it’s best to create a new Project for HDRP rendering. This page shows you how to create a Scene that uses HDRP, and introduces you to key features to help you produce high fidelity visuals.
 
-1. On the Projects screen click the New button
-2. Select High Definition - Preview from the Template drop-down box
-3. Click Create Project
+To upgrade a Project that doesn’t use HDRP, you need to convert the Materials to make them compatible with HDRP. For more information, see [Upgrading to HDRP](Upgrading-to-HDRP). 
 
-After clicking Create Project, Unity will automatically create a Project with the High Definition Render Pipeline package installed. 
+## Creating an HDRP Project
 
-## Upgrading an Existing Project
-To upgrade an existing Project, you must first download the High Definition Render Pipeline using the Package Manager UI. 
+To set up and manage your Unity Projects, install the [Unity Hub](https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html)
 
-1. Navigate to **Window > Package Manager** to open the Package Manager UI. Then click the All button to open the packages list. 
-2. Left click on Render-pipelines.high-definition  to select it, then click the Install button to add HDRP to your project. 
+To create an HDRP Project:
 
-After you have installed HDRP from the Package Manager UI you must add the HDRP  Asset to the Scriptable Render Pipeline Graphics settings field. 
+1. Open the Unity Hub and click the __New__ button in the top-right corner.
 
-3. Navigate to Edit > Settings > Graphics Settings, then Assign the HDRP Asset to the Scriptable Render Pipeline field by dragging in the HDRP Asset, or using the radio button to select the Asset from the popup window. 
+2. Enter a __Project Name__ and, in the __Template__ drop-down list, select __High Definition RP (Preview)__.
 
-## Building from source code
+3. Click __Create Project__.
 
-The latest version of the Scriptable Render Pipeline (SRP) repo can be found at the following link: https://github.com/Unity-Technologies/ScriptableRenderPipeline
+![](Images/GettingStarted1.png)
 
-### Github Desktop or Git command line tools
+Unity creates a Project with the HDRP package installed.
 
-#### Cloning the repo using the GitHub Desktop App: 
-Open the GitHub Desktop App and click Clone a Repository. 
+## Pipeline setup
 
-Click the URL tab in the Clone a Repository window
-Enter the following URL: https://github.com/Unity-Technologies/ScriptableRenderPipeline
-Click the Choose… button to navigate to your project’s Asset folder. 
-Click the Clone button. 
+Before you can use HDRP, you need an HDRP Asset, which controls the global rendering settings and creates an instance of the pipeline. The __High Definition RP (Preview)__ Template creates an HDRP Asset for you, but you can create different HDRP Assets to suit your rendering needs, such as one HDRP Asset for every target platform. An HDRP Asset allows you to enable features for your entire Project in the Editor. It allocates memory for the different features, so you cannot edit them at run time. For more information, see [HDRP Asset](HDRP-Asset.html).
 
-After the repo has been cloned you must run the following console commands from the ScriptableRenderPipeline folder:
+To find the right balance between rendering quality and run time performance, adjust the HDRP [Frame Settings](Frame-Settings.html). These settings depend on which settings you enable in the HDRP Asset. You can enable or disable Frame Settings at run time.
 
-`git checkout Unity-2018.1.0b2 (or the latest tag)`
+## Volumes
 
-`git submodule update --init --recursive --remote`
+Volumes enable you to partition your Scene into areas so that you can control lighting and effects at a finer level rather than tuning an entire Scene. Add as many volumes to your Scene as you want, to create different spaces, and then light them all individually for realistic effect. Each volume has an environment, so you can adjust its sky and shadow settings. You can also create custom volume profiles and switch between them.
 
-#### Cloning the repo using Git console commands:
-Enter the following commands in your console application of choice:  
-`cd <Path to your Unity project>/Assets`
+To add a Volume to your Scene:
 
-`git clone https://github.com/Unity-Technologies/ScriptableRenderPipeline`
+1. Create a GameObject, such as a cube (menu: __GameObject__ > __3D Object__ > __Cube__).
+2. In the Inspector, click __Add Component__, enter ‘vol’ and click __Volume__.
+3. In the __Volume__ section of the Inspector, open the __Profile__ settings by clicking the cog button:
+![](Images/GettingStarted2.png)
 
-`cd ScriptableRenderPipeline`
+4. Double click the __VolumeSettings__ profile. 
 
-`git checkout Unity-2018.1.0b2 (or the latest tag)`
+### Visual Environment
 
-`git submodule update --init --recursive --remote`
+The HDRP Visual Environment component enables you to change the type of sky and fog you want in a Scene. For example, use volumetric fog to create atmospheric light rays, like this:
 
-Once you have cloned the repo, re-open your project and follow the below instructions: 
+![](Images/GettingStarted3.png)
 
-Navigate to **Edit > Project Settings > Graphics** and add the HDRenderPipelineAsset Asset to the Render Pipeline Settings field. 
+For more information, see [Visual Environment](Visual-Environment.html), [Sky overview](Sky-Overview.html) and [Fog overview](Fog-Overview.html).
 
-Create a copy of the HDRenderPipelineAsset and store it outside of the Scriptable Render Pipeline folder. This ensures that your HDRP settings are not lost when merging new changes from the SRP repo. 
-HDRP will be ready to use in your project after following the above instructions.
+## Materials and Shaders
 
-## Upgrading Shaders
+HDRP enables you to create materials like glass that refracts light based on definable options. The options for a Material depend on which Shader the Material is using. HDRP shares Material properties across Shaders. For more information, see [Materials and Shaders overview](Materials-Shaders-Overview.html).
 
-The built-in Unity shaders are incompatible with Scriptable Render Pipelines, as such, any preexisting Shaders in your project must be updated to work with the HDRP.
+## Lighting
 
-Navigate to **Edit > Render Pipelines > Upgrade Project Materials to High Definition Materials** to run the automatic upgrade script. This script with automatically update all preexisting shaders in your project to the new HDRP shaders. 
+To apply realistic lighting to your Scenes, HDRP uses Physical Light Units (PLU), which are based on real-life measurable values, just like you would see when looking for light bulbs at a store or measuring light with a photographic light meter. For more information, see [Physical Light Units](Physical-Light-Units.html).
+
+For advice on adding lights to your Scene, see [Light](Light-Component.html)
+
+### Light Explorer
+
+HDRP adds settings to the [Light Explorer](https://docs.unity3d.com/Manual/LightingExplorer.html) (menu: __Window > General > Light Explorer__) so that you can adjust the HDRP features and lighting units. ![](Images/GettingStarted4.png)
+
+Use the Light Explorer to change the settings of any type of Light within your Project without having to locate the Lights in the Scene. You can also manage Reflection Probes and Light Probes in this window.
+
+## Shadows
+
+The HD shadow settings allow you to determine the overall quality of the Shadows in a Volume. For example, the __Max Distance__ field calculates the quality of the Shadows based on the distance of the Camera from the Shadow.
+
+![](Images/GettingStarted5.gif)
+
+For more information, see [HD Shadow Settings](HD-Shadow-Settings.html).
+
+## Related information
+
+Explore an HDRP Scene in this [Getting Started Guide for Artists](https://blogs.unity3d.com/2018/09/24/the-high-definition-render-pipeline-getting-started-guide-for-artists/) blog post, but be aware that the blog post uses a pre-release of HDRP, so some properties are different in this release.
+

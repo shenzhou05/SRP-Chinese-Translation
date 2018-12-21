@@ -1,19 +1,28 @@
-The Volume framework is a generic localized parameter interpolation framework. It allows users to define sets of global parameters that can be interpolated depending on the camera position. For example, users can change the mood of the scene by altering the fog color and density depending on the player position.
+# Volumes
 
-The **Volume** component can be added to any game object, the camera itself included. But it's generally a good idea to create a dedicated object for each volume. The Volume component itself does not contains values to interpolate. Instead users will add [VolumeComponents](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VolumeComponent). **VolumeComponents** are user defined structures containing the actual values to interpolate. The **Volume** has a few parameters allowing to control how it interacts with other volumes. In practice, a scene will contain many Volumes and based on these parameters, the system will determine the final interpolated values for each VolumeComponent.
+HDRP’s Volume framework uses local boundaries, that contain parameters HDRP interpolates between to calculate a final value. It allows you to define sets of local and global parameters that HDRP interpolates between depending on the position of the Camera. For example, you can use local Volumes to change environment settings, such as fog color and density, to alter the mood of different areas of your Scene. 
 
-![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/Volume.png)
+You can add a __Volume__ component to any GameObject, including a Camera, although it is good practice to create a dedicated GameObject for each Volume. The Volume component itself contains hidden default values to interpolate between. To alter them, you must add [Volume Components](Volume-Components.html) which are structures containing overrides for the defaults. 
 
-| Property           | Description                                                  |
-| ------------------ | ------------------------------------------------------------ |
-| **Is Global**      | The Volume has no boundaries and will be applied to the whole scene. |
-| **Blend Distance** | Outer distance to start blending from. A value of 0 means no blending and the volume overrides will be applied immediately upon entry. |
-| **Weight**         | Multiplier applied to the contribution of the volume computed from its position and blend distance. Allows user to give more or less importance to specific volumes |
-| **Priority**       | Value used to determine which volume to use when volumes have the same contribution. Higher priorities will be used first. |
-| **Profile**        | Asset containing the Volume Components holding parameters to interpolate. |
+Volumes also contain parameters that control how they interact with other volumes. A Scene can contain many Volumes. Volumes affect the Camera if they have __IsGlobal __enabled or they encapsulate the Camera within the bounds of their Collider.
 
-When a volume is local, it needs a collider or trigger component attached to it to define its boundaries. Any type of 3D collider will work, from cubes to complex convex meshes but we recommend you use simple colliders as much as possible, as meshes can be quite expensive to traverse. Local volumes can also have a `Blend Distance` that represents the outer distance from the volume surface where blending will start.
+![image alt text](Images/Volumes1.png)
 
-The profile is an asset that contains all the VolumeComponents. It can be assigned like any other asset or a new one can be created or cloned using the provided buttons.
+| Property| Description |
+|:---|:---|
+| **Is Global** | Enable this checkbox to apply this Volume to the entire Scene, so the Volume has no boundaries.  |
+| **Blend Distance** | The furthest distance from the Volume’s Collider that HDRP starts blending from. A value of 0 means HDRP applies this Volume’s overrides immediately upon entry. |
+| **Weight** | The amount of influence the Volume has on the Scene. HDRP applies this multiplier to the value it calculates using the Camera position and Blend Distance.  |
+| **Priority** | HDRP uses this value to determine which Volume it uses when Volumes have an equal amount of influence on the Scene. HDRP uses Volumes with higher priorities first. |
+| **Profile** | A Volume Profile Asset that contains the Volume Components that store the properties HDRP uses to handle this Volume. |
 
-At runtime, the system will traverse all Volumes enabled in the scene, and determine based  on position and the above parameters, a contribution for each volume. All volumes with a non zero contribution will then be used to interpolate the values from their VolumeComponents. In practice, not all Volumes will contain the same VolumeComponents. For example, only one may hold the Sky VolumeComponent but several can have the Fog VolumeComponent. In this case, only the existing VolumeComponent will contribute for a given VolumeComponent type.
+
+
+If your Volume has __IsGlobal__ disabled, you must attach a Trigger Collider to it to define its boundaries. Click the Volume to open it in the Inspector and then select __Add Component > Physics > Box Collider__. On the new __Box Collider__, component, enable __Is Trigger__. To define the boundary of the Volume, adjust the __Size__ field of the Box Collider, and the __Scale__ field of the Transform.  You can use any type of 3D collider, from simple Box Colliders to more complex convex Mesh Colliders. However, for performance reasons, you should use simple colliders because traversing Mesh Colliders with many vertices is resource intensive. Local volumes also have a __Blend Distance__ that represents the outer distance from the Collider surface where HDRP begins to blend the settings for that Volume with the others affecting the Camera.
+
+The __Profile__ field stores a Volume Profile, which is an Asset that contains Volume Components. HDRP creates a Volume Profile with every new __Scene Settings__ GameObject you create. You can change this field by assigning a different Volume Profile. You can also create a Volume Profile or clone the current one by clicking the __New__ and __Clone__ buttons respectively.
+
+At run time, HDRP looks at  all of the enabled Volumes attached to active GameObjects in the Scene and determines each Volume’s contribution to the final Scene settings. HDRP uses the Camera position and the Volume properties described above to calculate this contribution. It then uses all Volumes with a non-zero contribution to calculate interpolated final values for every property in all Volume Components.
+
+Volumes can contain different combinations of Volume Components. For example, one Volume may hold a Procedural Sky Volume Component while other Volumes hold an Exponential Fog Volume Component.
+
