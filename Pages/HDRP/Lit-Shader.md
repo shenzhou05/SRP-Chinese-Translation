@@ -1,427 +1,106 @@
-# HDRP Lit Shader
+# Lit Shader
 
-The Lit Shader includes options for subsurface scattering, iridescence, vertex or pixel displacement and many other parameters. This Shader lets you easily create realistic materials with minimal configuration. For more information about Materials, Shaders and Textures, see the [Unity User Manual](https://docs.unity3d.com/Manual/Shaders.html). 
+The Lit Shader lets you easily create realistic materials with minimal configuration. It includes options for effects including subsurface scattering, iridescence, vertex or pixel displacement, and decal compatibility. For more information about Materials, Shaders and Textures, see the [Unity User Manual](https://docs.unity3d.com/Manual/Shaders.html).
 
-By default, new materials created in HDRP are assigned the Lit Shader, with all properties empty as shown in the image below: 
+When you create new Materials in HDRP, they use the Lit Shader by default.
 
-![1538142195818](C:\Users\robsh\AppData\Roaming\Typora\typora-user-images\1538142195818.png)
+## Creating a Lit Material
 
-## Creating a Lit Shader
-
-To create a new Lit Shader Material, navigate to your Project's Asset window, right-click the Asset Window and select **Create > Material.** The newly created Material will then be added to your Project's Asset folder. 
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader1.png)
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader2.png)
+To create a new Lit Shader Material, navigate to your Project's Asset window, right-click the Asset Window and select __Create > Material__. This adds a new Material to your Unity Project’s Asset folder.
 
 ## Lit Shader Parameters
 
-##Surface options
+### Surface options
 
-Surface options control the overall look of your Material's surface and how Unity renders the Material on screen.  
+Surface options control the overall look of your Material's surface and how Unity renders the Material on screen. 
 
-* **Surface type**: The Surface Type options control the transparency of your Shader. 
-     * **Opaque**: Opaque simulates a completely solid Material, with no light penetration. 
-     * **Transparent**: Transparent simulates a translucent material that light can penetrate, such as clear plastic or glass. The Transparent surface option uses alpha blending and is more costly to render than an opaque Shader. 
+| Property| Description |
+|:---|:---|
+| **Surface type** | Controls whether your Shader supports transparency or not. HDRP exposes more properties depending on the Surface Type you select. See the [Surface Type](Surface-Type.html) documentation for more information. |
+| **Alpha Cutoff Enable** | Controls whether your Material acts like a Cutout Shader or not. Enabling this feature exposes more properties. See the [Alpha Clipping](Alpha-Clipping.html) documentation for more information. |
+| **Double Sided** | Controls whether HDRP renders both faces of the polygons in your geometry, or just the side defined by the normal. See the [Double Sided](Double-Sided.html) documentation for more information. |
+| **Material Type** | Allows you to give your Material a type, which allows you to customize it with different settings depending on the Material Type you select. See the [Material Type](Material-Type.html) documentation for more information. |
+| **Enable Decal** | Enable to allow this Material to receive decals that the Decal Project Component casts into the Scene. |
+| **Enable geometric specular AA** | Tick this checkbox to tell HDRP to perform geometric anti-aliasing on this Material. This removes specular artifacts that occur on high density Meshes with a high smoothness. |
+| **- Offset multiplier** | Modules the geometric specular anti-aliasing effect between 0 and 1. |
+| **- Offset threshold** | Clamps the maximum of the offset effect. |
+| **Receives SSR** | Enable to allow this Material to receive screen space reflection. |
+| **Displacement Mode** | Controls the method HDRP uses to displace the Material. |
 
-* __Alpha Cutoff:__
 
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader4.png)
 
-Enable this to make your Material act like a [Cutout](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html) Shader. With this, you can create a transparent effect with hard edges between the opaque and transparent areas. Unity achieves this effect by not rendering Alpha values below the value specified in Alpha Cutoff field.
+### Vertex Animation
 
-__Double sided:__
+| Property| Description |
+|:---|:---|
+| **Enable Motion Vector For Vertex Animation** | Removes ghosting coming from vertex animation.  |
 
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader5.png)
 
-Enable this to render on both sides of your geometry. When disabled, Unity [culls](https://docs.unity3d.com/Manual/SL-CullAndDepth.html) the backface of your geometry and only renders the frontface. For example, **Double Sided** rendering is good for small, flat objects, like leaves, where you might want both sides visible. By default, this setting is disabled, so that Unity culls backfaces.
 
-__Material type:__
+### Inputs
 
-The Material Type dropdown displays different settings depending on the Material Type selected. Each Material Type has a different workflow and and you should use the Material Type that is most suitable for the Shader you are creating.
+| Property| Description |
+|:---|:---|
+| **Base Color +** | Controls both the color and opacity of your Material. To assign a texture to this field, click the radio button and select your texture in the Select Texture window. To change the color of your Material, click the box to the right of the Base Color + option and use the color picker to select the color you want. You can also enter RGB values, or use the color picker tool to select a color from anywhere on your screen. The alpha value of the Base color controls the transparency level for the Material. This only has an effect if the Surface Type for the Material is set to Transparent, and not Opaque. |
+| **Metallic** | Use this slider to adjust how "metal-like" the surface of your Material is (between 0 and 1). When a surface is more metallic, it reflects the environment more and its albedo color becomes less visible. At full metallic level, the surface color is entirely driven by reflections from the environment. When a surface is less metallic, its albedo color is clearer and any surface reflections are visible on top of the surface color, rather than obscuring it. This property is only available if you set your Material Type to Standard.  |
+| **Smoothness** | Use this slider to adjust the smoothness of your Material. All light rays hitting a smooth surface bounce off at predictable and consistent angles. A perfectly smooth surface (smoothness value 1) reflects light like a mirror. Less smooth surfaces reflect light over a wider range of angles (as the light hits the bumps in the microsurface), and therefore the reflections have less detail and are spread across the surface in a more diffused pattern. |
+| **Mask map** | Defines a map that packs different Material maps into each of its RGBA channels. <br/>Red channel: Metallic mask. 0 = not metallic, 1 = metallic. <br/>Green channel: Ambient occlusion. <br/>Blue channel: Detail map mask. <br/>Alpha channel: Smoothness. |
+| **Normal Map space** | Sets the type of Normal Map space, which can be either. **TangentSpace** normal maps, which must be a normal map texture type (BC7/BC5/DXT5nm), or **ObjectSpace** normal maps, which must be a texture default of default type (RGB).  |
+| **Normal Map/Normal Map OS** | Assigns the normal map for this Material. If Normal Map space is set to TangentSpace, use the handle to modulate the normal intensity between 0 and 8. |
+| **Bent normal map/Bent normal map OS** | Assigns the bent normal map for this Material. HDRP uses bent normal maps to simulate more accurate ambient occlusion. Note: This only works with diffuse lighting. |
+| **Coat Mask** | Assigns the coat mask for this Material. HDRP uses this mask to simulate a clear coat effect on the Material. The Coat Mask value is 0 by default, but you can use the handle to modulate the clear Coat Mask effect using a value between 0 and 1. Use the Coat Mask to mimic Materials like car paint or plastics.  |
+| **Base UV mapping** | Sets the type of base UV mapping, which can be UV0, UV1 (used by the lightmap), UV2, UV3, planar or triplanar. Planar and triplanar use a world scale. This ratio depends on the size of the textures and the texel ratio wanted. By default it is 1, which means the Material is applied on 1 meter. A value of 0.5 applies the material on 2 meters. |
+| **Tiling** | Sets the X/Y values to tile the Material. |
+| **Offset** | Sets on X/Y offset for the UV. |
 
-* **Standard**: Uses the basic parameters and is the default Material type. Standard uses a basic metallic shader workflow
 
-* **Subsurface scattering (SSS)**: SSS simulates the way light interacts with and penetrates translucent objects, such as skin or plants. When light penetrates the surface of a SSS Material it is scattered and blurred by interacting with the material before exiting the surface at a different point. 
 
-  * **Enable Transmission** (SSS only) : This parameter simulates the translucency of an object and it is managed by a thickness map. 
-    SSS and transmission settings are configured using a [Diffusion Profile](#SSS), which is explained below. .
+### __Detail Inputs__
 
-  See documentation on [Subsurface Scattering]() and [Transmission]() for more information. 
+| Property| Description |
+|:---|:---|
+| **Detail Map** | Select the type of composited map that HDRP uses to add micro details into the Material. The blue channel of the Mask Map manages the visibility of the Detail Map. <br/>The Detail Map uses the following channel settings: <br/>**A(R)**:  Red channel stores the grey scale as albedo. <br/>**Ny(G)**: Green channel stores the detail normal map.<br/>**S(B)**: Blue channel stores the detail smoothness.<br/>**Nx(A)**: Alpha channel stores the red channel of the detail normal map.<br/><br/>HDRP organises channels like this because each channel uses a different compression qualities. |
+| **Detail UV mapping** | Select the type of UV map to use, which can be UV0, UV1, UV2 or UV3. If the Material’s UV Set property is set to planar or triplanar, the Detail UV Mapping is also set to planar or triplanar. By default, a detail texture is linked to the Material to be able to add a micro detail to the Material. To remove this link, uncheck the Lock to base Tiling/Offset checkbox. |
+| **Tiling** | Set the tiling of the detail texture inside a tile of the Material. For example, if the Material is tiled by 2 on a plane and the detail is tiled by 2 on the Material, then the detail texture is tiled by 4 on the plane. In this case, you can change the tiling of the Material without having to set the detail UV. |
+| **Offset** | Set an X and Y offset for the detail UV. |
+| **Detail AlbedoScale** | Use this slider to modulate the detail albedo (red channel) between 0 and 2, like an overlay effect. The default value is 1 and has no scale. |
+| **Detail NormalScale** | Use this slider to modulate the intensity of the detail normal map, between 0 and 2. The default value is 1 and has no scale. |
+| **Detail SmoothnessScale** | Use this slider modulate the detail smoothness (blue channel) between 0 and 2, like an overlay effect. The default value is 1 and has no scale. |
 
-* **Anisotropy**: The highlights of Anisotropic surfaces change in appearance as the Material is rotated relative to the camera. Use the Anisotropy Material Type to create Materials that require anisotropic highlights, for example: brushed metal or velvet. 
+### Transparency Inputs
 
-  See the below section on [Anisotropy](link) for more information. 
+Set the __Surface Type__ to __Transparent__ to expose the __Transparency Inputs__ section in the Material Inspector.
 
-* **Iridescence**: Iridescent surfaces appear to gradually change colour as the angle of view or angle of illumination changes. Use the Iridescence Material Type to create materials like soap bubbles, iridescent metal or insect wings. 
+| Property| Description |
+|:---|:---|
+| **Distortion** | Check this box to distort the light passing through this transparent Material. Checking this box exposes the following properties. |
+| **- Distortion Blend Mode** | Set the mode HDRP uses to blend overlayed distortion surfaces. |
+| **- Distortion Only** | Check this box to only show the distortion effect and set all inputs to have no effect. |
+| **- Distortion Depth Test** | Check this box to have closer GameObjects hide the distortion effect, otherwise you can always see the effect. If you do no enable this feature then the distortion appears on top of the rendering. |
+| **- Distortion Vector Map** | HDRP uses the red and green channels of this texture to calculate distortion. It also uses the blue channel to manage the blur intensity between 0 and 1. By default, a texture has values between 0 and 1. To be able to produce distortion in either direction, you must remap the distortion texture between -1 and 1. HDRP provides two values you can use to remap this distortion texture. It takes the original value from the map and multiplies it by the value on the left then adds the value on the right. For example, to remap the original values, from 0 to 1, to -1 to 1, enter 2 for the first value and -1 for the second value. |
+| **- Distortion Scale** | A multiplier for the distortion effect. Set this to a value higher than 1 to amplify the effect. |
+| **- Distortion Blur Scale** | A multiplier for the distortion blur. Set this to a value higher than 1 to amplify the blur. |
+| **- Distortion Blur Remapping** | This handle clamps the values of the blue channel of the Distortion Vector Map. Use this to refine the blur setting this handle clamps the values of the blue channel of the distortion vector map. |
 
-   See the below section on [Iridescense](link) for more information. 
 
-* **Specular Color**: Use The Specular Colour Material Type to create Materials with a coloured specular highlight. This Material Type is similar to the [built-in Specular Shader](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterSpecular.html), but you can disable energy conservation by unticking the **Energy Conserving Specular** checkbox.
 
-* **Translucent**: Use The Translucent Material Type to simulate a translucent material using a thickness map. In contrast to SSS Materials, Translucent Materials only transmit light through the Material, without blurring the light.
+### Emissive inputs
 
-__Enable Decal:__
+| Property| Description |
+|:---|:---|
+| **Emissive Color** | The emission texture and HDR color this Material uses for emission. If you set an emission texture in this field then HDRP multiplies the emission texture by the HDR color. If you do not set an emission texture then HDRP only uses the HDR color to calculate the final emissive color of the Material. You can set the intensity of the HDR color within the HDR color picker. |
+| **- Tiling** | HDRP uses the X and Y values of this property to tile the emissive texture from the Emissive Color property on the object space x-axis and y-axis respectively. |
+| **- Offset** | HDRP uses the X and Y values of this property to offset the emissive texture from the Emissive Color property on the object space x-axis and y-axis respectively. |
+| **Albedo Affect Emissive** | Allows the albedo to produce color for the emissive texture. To produce the final emissive color, HDRP multiplies the albedo by emissive color and color picker. By default, this setting is enabled. As an example, you can use the emissive color map as an emissive mask, the albedo to do the color and the color picker to modulate mask. |
 
-Allow the material to receive decals. // Needs more info
 
-__Enable MotionVector For Vertex Animation:__
 
-Use it to remove ghosting coming from vertex animation. // What is a motion vector pass? Needs moe info
+### Advanced options
 
-__Displacement mode:__
+| Property| Description |
+|:---|:---|
+| **Enable GPU instancing** | Tick this checkbox to tell HDRP to render meshes with the same geometry and Material/Shader in one batch when possible. This makes rendering faster. HDRP can not render Meshes in one batch if they have different Materials, or if the hardware does not support GPU instancing. For example, GameObjects with an animation base on the object pivot can’t be static batched (unique pivot for all) but they can be instanced by GPU. |
+| **Enable Specular Occlusion from Bent normal** | This option uses the Bent Normal Map to do specular occlusion for the reflection probe. |
 
 
-
-* None: no change.
-
-* Vertex displacement: Use a height map to displace the vertices.
-
-* Pixel displacement: Use a height map to displace the pixels. Use it only on plane surface. The surface can be only digged.
-
-## Inputs
-
-__Base Color + Opacity__: The Base Color field controls the color of your material and the opacity. To assign a texture to this field, click the radio button and select your texture in the Select Texture window. 
-
-![1538740108118](C:\Users\robsh\AppData\Roaming\Typora\typora-user-images\1538740108118.png)
-
-To change the colour of your material, click the box to the right of the Base Color + Opacity option and use the colour picker to select the colour you want. You can also enter RGB values, or use the eyedropper tool to select a colour from anywhere on your screen. 
-
-The alpha value of the Base colour controls the transparency level for the material. This only has an effect if the Surface Type for the material is set to  **Transparent**, and not **Opaque**.
-
-**Metallic, Smoothness and Mask Map**.
-
-**Metallic:** Use this slider to adjust the Metallic parameter of your Material (between 0 and 1). The metallic parameter of a material determines how “metal-like” the surface is. When a surface is more metallic, it reflects the environment more and its albedo colour becomes less visible. At full metallic level, the surface colour is entirely driven by reflections from the environment. When a surface is less metallic, its albedo colour clearer and any surface reflections are visible on top of the surface colour, rather than obscuring it.
-
-__Smoothness__: Use this slider to adjust the Smoothness parameter of your Material. With a smooth surface, all light rays tend to bounce off at predictable and consistent angles. Taken to its extreme, a perfectly smooth surface (smoothness value 1) reflects light like a mirror. Less smooth surfaces reflect light over a wider range of angles (as the light hits the bumps in the microsurface),and therefore the reflections have less detail and are spread across the surface in a more diffuse way.
-
-__Mask map:__
-
-* Red channel: Metallic mask. 0 = not metallic, 1 = metallic.
-
-* Green channel: Ambient occlusion.
-
-* Blue channel: Detail map mask.
-
-* Alpha channel: Smoothness.
-
-__Normal map space:__
-
-By default the normal map space is in tangent space. The normal map space can be set to object space.
-Note: Object space normal map need to be imported as texture type default (RGB). Tangent space normal map need to be imported as texture type normal map (BC7/BC5/DXT5nm).
-
-__Normal map:__
-
-Use to assign the normal map. The handle modulate the normal intensity between 0 and 2.
-
-__Bent normal map:__
-
-The bent normal is used to have a better ambient occlusion. It works only with diffuse lighting like lightmap or light probe.
-
-__Coat Mask:__
-
-By default the value is 0. The mask is used to modulate the clear coat effect base on the handle value (0 to 1).
-
-__Base UV mapping:__
-
-UV can be set to UV0, UV1 (used by the lightmap), UV2, UV3, planar or triplanar.
-
-Planar and triplanar use a world scale. This ratio depends about the size of the textures and the texel ratio wanted. By default it is 1, that means the material is applied on 1 meter. A value of 0.5 applies the material on 2 meters. 
-
-__Tiling:__
-
-Set the X/Y values to tile the material.
-
-__Offset:__
-
-Set on X/Y offset for the UV.
-
-## Detail inputs
-
-The detail map is a composited map used to add micro details into the material. The detail map visibility is managed by the blue channel of the Mask map.
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader6.png)
-
-__Detail map:__
-
-* Red channel: Grey scale used as albedo.
-
-* Green channel: Green channel of the detail normal map.
-
-* Blue channel: Detail smoothness.
-
-* Alpha channel: Red channel  of the detail normal map.
-
-Channels are organised like this due the different compressions quality of each channels.
-
-__Detail UV mapping:__
-
-UV0, UV1, UV2 or UV3 can be set. If the material UV are set to planar or triplanar, the detail UV are also set to planar or triplanar.
-
-__Lock to base Tiling/Offset:__
-
-By default a detail texture is linked to the material aspect because it is done to add a micro detail in it. If for any reason the link have to be removed, just uncheck this checkbox.
-
-__Tiling:__
-
-Set the tiling of the detail texture inside a tile of the material. 
-For example if the material is tiled by 2 on a plane and the detail texture is also tile by 2, the detail will appears tile by 4 on the plane.
-In this condition the tile of the material can be changed without set another time the detail UV to keep the good appearance.
-
-__Offset:__
-
-Set on X/Y offset for the detail UV.
-
-__Detail AlbedoScale:__
-
-This handle modulate (0 to 2) the detail albedo (red channel) like an overlay effect. The default value is 1 and has no scale.
-
-__Detail NormalScale:__
-
-This handle modulate (0 to 2)  the intensity of the detail normal map. The default value is 1 and has no scale.
-
-__Detail SmoothnessScale:__
-
-This handle modulate (0 to 2)  the detail smoothness (blue channel) like an overlay effect. The default value is 1 and has no scale.
-
-## Emissive inputs
-
-__Emissive color:__
-
-The emissive color can be managed by a map or a single color. If both are used they are multiplied.
-
-__Emissive intensity:__
-
-Set the power of the emissive effect. By default the value is 0 and doesn’t produce any emissive effect.
-
-__Albedo Affect Emissive:__
-
-By default it is on and allows the albedo to produce color for the emissive. In this case the albedo is multiplied by emissive color and color picker to produce the emissive final color.
-
-For example the emissive color map can be used as an emissive mask, the albedo used to do the color and  the color picker to modulate it.
-
-## Advanced options:
-
-__Enable GPU instancing:__
-
-If objects are not static batched and identical, all objects with this material become instanced.
-
-
-For example, objects with an animation base on the object pivot can’t be static batched (unique pivot for all) but they can be instanced by GPU.
-
-__Enable Specular Occlusion from Bent normal:__
-
-This option used the bent normal assign in the bent normal slot to do a specular occlusion for the reflection probe.
-
-## Specific setting from material type
-
-<a name="SSS"></a>
-
-### Subsurface scattering
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader7.png)
-
-__Enable transmission: __
-
-On/off the transmission effect. The transmission is managed by a profile and a thickness map. More the object is set thin more lighting cross it.
-
-__Specific subsurface settings:__
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader8.png)
-
-Diffusion profile:
-
-Rollout menu to choose the profile. Profiles are set in the SSSSettings.asset file. Goto button select the the SSSSettings file.
-
-Subsurface mask map:
-
-This map uses the red channel to manage the visibility (0 = not visible, 1= totally visible) of the SSS effect. This map is modulated by the handle value (0 to 1, 1 is the default).
-
-Thickness map:
-
-This map uses the red channel to set the thickness inside the range set in the profile. 0 is the min range value and 1 is the max range value.
-
-__The profile:__
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader9.png)
-
-* Name: Name of the profile
-
-* Scattering value: It is a HDR value to manage the color and the scatter of the SSS.
-
-* Max radius: It is an information value and linked to the scattering value. It is the effective radius in millimeters. The blur is energy-preserving, so a wide result in a large area provides a small contribution of individual samples. A short distance increases the sharpness of the result.
-
-* Index of Refraction: To set the real index of refraction. It is 1.4 for skin and between 1.3 and 1.5 for most other material.
-
-* World scale: Set the size of the world unit in meters. Default it is 1 and shouldn’t be modified except if the world unit used is customized.
-
-__Subsurface scattering only:__
-
-Texturing mode: Specifies when the diffuse texture should be applied.
-
-__Transmission only:__
-
-Transmission mode: Regular or Thin object. Really thin object need a specific use.
-
-Transmission tint: Set a HDR value to color the transmission.
-
-Min/Max thickness (mm): Set the range of the thickness. This range is modulate by the thickness map (0 = min, 1 = max).
-
-Thickness remap: This setting allows to remap the thickness without to change the min/max values. The range can be moved without losing the thickness values.
-
-Profile preview: Shows the fraction of lights scattered from the source located in the center.The distance to the boundary of the image corresponds to the max radius. Display is not HDR, so the intensity of pixels around the center may be clipped.
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader10.png)
-
-Transmission preview: Shows the fraction of light passing through the object for thickness values from the remap. Can be viewed as a cross section of a slab of material illuminated by white light from the left.
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader11.png)
-
-### Anisotropy
-
-Anisotropic materials don’t have an uniform specular shape.
-
-Real anisotropy example:
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader12.png)
-
- Anisotropy is used to deform the specular shape on an axe.
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader13.png)
-
-__Tangent map: __
-
-It is a vector map. Red and Green channel orient the specular shape.
-
-__Anisotropy:__
-
-This handle modulate the intensity of the anisotropic effect and modify the shape orientation, horizontally or vertically, coming from the tangent map.
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader14.png)
-
-__Anisotropy map:__
-
-This map uses the red channel to modulate the anisotropic effect intensity.
-
-### Iridescence
-
-The iridescence (Thin-film interference) is a natural phenomenon in which lightwaves reflected by the upper and lower boundaries of a thin film interfere with one another, either enhancing or reducing the reflected[ ](https://en.wikipedia.org/wiki/Reflected_light)light. 
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader15.png)
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader16.png)
-
-__Iridescence Mask:__
-
-This map uses the red channel to manage the visibility of the iridescence effect. The handle can modulate the mask or the visibility if no mask is assigned.
-
-__Iridescence Layer thickness map:__
-
-If no map is assigned, by default the value is 1. The iridescence gradient color is linked to the thickness. When the thickness change the gradient color change too. The handle modulate the thickness also and it is multiplied when a map is assigned.
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader17.png)
-
-FYI: If the base color is white no iridescence can be visible. For a white base color no lighting enter the matter. All the lighting is reflected to produce a pure white color, so no iridescence can be produce.
-
-### Specular color
-
-When the specular color shader type is chosen, the specular color is defined by a dedicated map not anymore by the albedo value.
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader18.png)
-
-__Specular color:__
-
-RGB map to set the specular color. When no map is assigned the default value is 1.
-
-__Picker color:__
-
-Uniform color used for the specular. It is multiply by the Specular color map.
-
-## Translucent
-
-The translucency is the transmission of a part of light across the matter.
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader19.png)
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader20.png)
-
-The translucency is manage by a profile and a thickness map like for the subsurface scattering.
-
-## How to set a Lit Shader Tessellation?
-
-From a lit shader, use the shader rollout menu to choose the LayeredLitTessellation shader.
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader21.png)
-
-In case of lit shader tessellation only standard, subsurface scattering and translucent types are available.
-
-__Displacement mode:__
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader22.png)
-
-None: No displacement is applied. The tessellation is used only to smooth the surface.
-
-Tessellation displacement: A height map (red channel) is used in the inputs to displace the mesh vertices.
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader23.png)
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader24.png)
-
-* Lock with object scale: the height map appearance doesn’t change when the object is scaled.
-
-* Lock with height map tiling rate: the height map appearance doesn’t change when the material is tiled.
-
-__Tessellations options:__
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader25.png)
-
-Tessellation mode:
-
-* None: no smooth is aplied.
-
-* Phong: the tessellation applied a smooth effect.
-
-Tessellation factor:
-
-Between 0 and 64 this factor modulate the tessellation quantity. Higher value mean a surface more tessellated. Above 15 is costly. For XBox one and Playstation4 the maximum is set to 15.
-
-Start fade distance:
-
-It is the distance (in Unity unit) to the camera where the tessellation start to fade out.
-
-End fade distance:
-
-It is the maximum distance (in Unity unit) to the camera where triangle are tessellated.
-
-Triangle size:
-
-Desired screen space size of triangle (in pixel). A smaller value mean smaller triangle.
-
-__Height map parameterization:__
-
-Two parametrizations are available.
-
-Min/Max:
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader26.png)
-
-In this mode the base of the height map is linked to the base of the mesh. It is used if the height map has uniform values on the map.
-
-Min: Set the height value for the 0 value on the map.
-
-Max: Set the height value for the 1 (255) value on the map.
-
-Offset: Can up and down the height map without modify the min/max values.
-
-Amplitude:
-
-![](C:\Users\robsh\Documents\GitHub\ScriptableRenderPipeline.wiki\Images\HDRP\LitShader27.png)
-
-Amplitude mode is more used in case of height map with a dedicated center. In this case the height map uses often none uniform values. In case of non uniform values a range of the map is not used to store values, it is clamped in positive or negative.
-
-Amplitude: The amplitude is the double value of the maximum value in negative or in positive.
-
-Base: It is the reference of the base mesh into the height map. By default the base is at 0.5.
-
-Offset: Can up and down the height map without modify the other values.
 
