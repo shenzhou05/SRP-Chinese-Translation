@@ -91,7 +91,7 @@ Use the Reflection settings to configure the resolution of your reflections and 
 |:---|:---|
 | **Compress Reflection Probe Cache** | Compresses the Reflection Probe Cache to save space on disk. |
 | **Reflection Cubemap Size** | The maximum resolution of the individual Reflection Probe [Cubemaps](https://docs.unity3d.com/Manual/class-Cubemap.html). |
-| **Probe Cache Size** | The maximum resolution of the Probe Cache. Defines how many Probe Caches HDRP can save in cache. |
+| **Probe Cache Size** | The maximum resolution of the Probe Cache. Defines how many Reflection Probe Cubemaps HDRP can save in cache. |
 | **Compress Planar Reflection Probe Cache** | Compresses the Planar Reflection Probe Cache. |
 | **Planar Reflection Texture Size** | The maximum resolution of the Planar Reflection texture. |
 | **Planar Probe Cache Size** | The maximum size of the Planer Reflection Probe cache. |
