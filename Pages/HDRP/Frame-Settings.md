@@ -91,7 +91,7 @@ Note: These settings are for debugging purposes only so do not alter these value
 
 | Property| Description |
 |:---|:---|
-| **FPTL For Forward Opaque** | Tick this checkbox to enable FPTL For Forward Opaque.  |
+| **FPTL For Forward Opaque** | Tick this checkbox to enable Fine Pruned Tiled Lighting for Forward rendered opaque GameObjects.  |
 | **Big Tile Prepass** | Tick this checkbox to enable Big Tile Prepass. |
 | **Compute Light Evaluation** | Tick this checkbox to enable Compute Light Evaluation. |
 | **Compute Light Variants** | Enable **Compute Light Evaluation** to access this property. Tick this checkbox to enable Compute Light Variants. |
