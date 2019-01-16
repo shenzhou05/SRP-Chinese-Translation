@@ -138,7 +138,7 @@ Use the Shadows section to adjust the Shadows cast by this Light. This section o
 - __Additional Settings__ : 
   - __Fade Distance__ : Set the distance, in Unity units, between the camera and the Light where shadows fade out.
   - __Dimmer__ : Dim the shadows cast by this Light so they become more faded. You can also modify this parameter through Timeline, scripting or animation. 
-  - __View Bias__ : Set the minimum [View Bias](https://docs.unity3d.com/Manual/ShadowOverview.html#LightBias) for this Light. For more information about View Bias in HDRP, see documentation on [Shadows](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Shadows). 
+  - __View Bias__ : Set the minimum [View Bias](https://docs.unity3d.com/Manual/ShadowOverview.html#LightBias) for this Light. For more information about View Bias in HDRP, see documentation on [Shadows](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Shadows). 
   - __Normal Bias__ : Control the amount of normal [bias](https://docs.unity3d.com/Manual/ShadowOverview.html#LightBias) applied along the [normal](https://docs.unity3d.com/Manual/AnatomyofaMesh.html) of the illuminated surface. 
   - __Edge leak fixup__ : Check this box to prevent light leaking at the edge of shadows cast by this Light.
     - __Edge Tolerance normal__ : Check this box to use the edge leak fix in normal mode. Uncheck this box to use the edge leak fix in view mode.
