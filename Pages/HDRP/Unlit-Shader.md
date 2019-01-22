@@ -13,7 +13,7 @@ New Materials in HDRP use the [Lit Shader](https://github.com/Unity-Technologies
 
 ![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/UnlitShader1.png)
 
-## Unlit Shader Parameters
+## Properties
 
 ### Surface Options
 
