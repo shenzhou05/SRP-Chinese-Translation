@@ -36,7 +36,8 @@
 </summary>
 
 <ul>
-<a href="https://blogs.unity3d.com/2018/09/24/the-high-definition-render-pipeline-getting-started-guide-for-artists/">HDRP Getting started for artists (Blog post)</a>
+<a href="https://blogs.unity3d.com/2019/02/05/create-high-quality-light-fixtures-in-unity/">Create high-quality light fixtures in Unity (Blog post)</a>
+<a href="https://blogs.unity3d.com/2018/09/24/the-high-definition-render-pipeline-getting-started-guide-for-artists/">Getting started for artists (Blog post)</a>
 <details>
 <summary>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Getting-started-with-HDRP">Getting Started</a>
