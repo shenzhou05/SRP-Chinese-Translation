@@ -69,7 +69,10 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumes">Volumes</a><br>
 </ul>
 <ul>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volume-Components">Volume Overrides</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volume-Profile">Volume Profiles</a><br>
+</ul>
+<ul>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volume-Overrides">Volume Overrides</a><br>
 </ul>
 </details>
 
