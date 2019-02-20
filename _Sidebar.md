@@ -185,8 +185,7 @@
 <a>Object Sorting</a>
 </summary>
 <ul>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Material-Priority">Material Priority</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Renderer-Priority">Renderer Priority</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Renderer-and-Material-Priority">Renderer and Material Priority</a><br>
 </ul>
 </details>
 <details><summary><a>Decals</a></summary>
