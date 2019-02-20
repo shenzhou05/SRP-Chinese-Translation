@@ -1,5 +1,3 @@
-# Frame Settings
-
 Frame Settings are settings HDRP uses to render Cameras, real-time, baked, and custom reflections. You can set the default Frame Settings for each of these three individually from within a [HDRP Asset](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Asset). Open a HDRP Asset in the Inspector and navigate to the Default Frame Settings For section.
 
 ![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/FrameSettings1.png)
