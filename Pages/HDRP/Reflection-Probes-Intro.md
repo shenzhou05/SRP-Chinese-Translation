@@ -1,5 +1,3 @@
-# Reflection Probes
-
 A Reflection Probe acts in a similar way to a **Camera**. Each Reflection Probe captures a view of its surroundings and stores the results. Materials with reflective surfaces can use these results to produce accurate reflections of their surroundings that change as the Camera’s viewing angle changes. The view the Reflection Probe takes and the format of the result depends on the type of Reflection Probe.
 
 The High Definition Render Pipeline (HDRP) allows you to use two different Reflection Probes:
