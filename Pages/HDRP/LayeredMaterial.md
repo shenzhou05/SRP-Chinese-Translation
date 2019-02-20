@@ -329,7 +329,7 @@ It is the same setting than the main layer except for Layering options
 
 __Use Opacity map as Density map:__ Base color alpha channel is used as opacity threshold instead of standard opacity.
 
-The vertex color modulates the threshold. The effect depends if the vertex color mode is set to multiply or to add (See: [2-4 Inputs - Vertex color mode](#heading=h.vjd3knt382ta)).
+The vertex color modulates the threshold. The effect depends if the vertex color mode is set to multiply or to add..
 
 0= full opacity, 1= full density.
 
