@@ -86,7 +86,7 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Exponential-Fog">Exponential Fog</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumetric-Fog">Volumetric Fog</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HD-Shadow-Settings">HD Shadow Settings</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HD-Contact-Shadows">Contact Shadows</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Contact-Shadows">Contact Shadows</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Volumetric-lighting-controller">Volumetric lighting controller</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Indirect-lighting-controller">Indirect lighting controller</a><br>
 </ul>
