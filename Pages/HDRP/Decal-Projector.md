@@ -1,5 +1,3 @@
-# Decal Projector
-
 The High Definition Render Pipeline (HDRP) includes the Decal Projector component, which allows you to project specific Materials (decals) into the Scene. Decals are Materials that use the [HDRP/Decal Shader](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Decal-Shader). When the Decal Projector component projects decals into the Scene, they interact with the Scene’s lighting and wrap around Meshes. You can use thousands of decals in your Scene simultaneously because HDRP instances them. This means that the rendering process is not resource intensive as long as the decals use the same Material.
 
 ![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/DecalProjector1.png)
