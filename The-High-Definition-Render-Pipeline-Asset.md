@@ -1,5 +1,3 @@
-# The High Definition Render Pipeline Asset
-
 The High Definition Render Pipeline (HDRP) Asset controls the global rendering settings of your Project and creates an instance of the rendering pipeline. A rendering pipeline instance contains intermediate resources and an implementation of the render pipeline. 
 
 Unity does not allocate memory or build Shader variants for disabled features in your HDRP Asset. This means that you can disable settings that you are not using to save memory, but you can not enable disabled features at run time. You can toggle enabled features at run time on a per-Camera basis using [Frame-Settings](Frame-Settings.html).
