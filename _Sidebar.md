@@ -158,15 +158,17 @@
 <a>Lighting</a>
 </summary>
 <ul>
+<details>
 <summary>
-<a>Lighting</a>
+<a>Reflection Probes</a>
 </summary>
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Reflection-Probes-Intro">Reflection Probes Introduction</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Reflection-Probes">Reflection Probe</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Planar-Reflection-Probes">Planar Reflection Probes</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Reflection-Probe">Reflection Probe</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Planar-Reflection-Probe">Planar Reflection Probes</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Reflection-Proxy-Volume">Reflection Proxy Volume</a><br>
 </ul>
+</details>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Light-Component">HDRP Light</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Environment-Lighting">Environment Lighting</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Atmospheric-Scattering">Atmospheric Scattering</a><br>
