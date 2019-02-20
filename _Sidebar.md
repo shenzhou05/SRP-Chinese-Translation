@@ -180,8 +180,8 @@
 </details>
 <details><summary><a>Decals</a></summary>
 <ul>
-<a>Projector and Mesh Decal</a><br>
-<a>Decal material</a><br>        
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Decal-Projector">Decal Projector</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Decal-Shader">Decal Shader</a><br>     
 </ul>
 </details>
 <details><summary><a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRPCamera">Camera</a></summary>
