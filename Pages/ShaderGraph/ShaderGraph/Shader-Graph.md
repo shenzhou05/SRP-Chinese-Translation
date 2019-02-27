@@ -1,10 +1,11 @@
-## Description
+***
 
-This section outlines the user interface and interactions of the **Shader Graph** system. For an introduction to **Shader Graph** see [Getting Started](https://github.com/Unity-Technologies/ShaderGraph/wiki/Getting-Started/).
+**Important:** We're not updating this Wiki anymore.
 
-## Contents
-* [Shader Graph Window](https://github.com/Unity-Technologies/ShaderGraph/wiki/Shader-Graph-Window)
-* [Blackboard](https://github.com/Unity-Technologies/ShaderGraph/wiki/Blackboard)
-* [Master Preview](https://github.com/Unity-Technologies/ShaderGraph/wiki/Master-Preview)
-* [Create Node Menu](https://github.com/Unity-Technologies/ShaderGraph/wiki/Create-Node-Menu)
-* [Shader Graph Asset](https://github.com/Unity-Technologies/ShaderGraph/wiki/Shader-Graph-Asset)
+For information about Shader Graph, see the [Shader Graph documentation website](https://docs.unity3d.com/Packages/com.unity.shadergraph@latest/index.html).
+
+Alternatively, there is a link in Package Manager that takes you to the documentation.
+1) Open Package Manager in Unity, and select the Shader Graph package.
+2) Click **View Documentation**. This takes you to the Shader Graph documentation website.
+
+***
