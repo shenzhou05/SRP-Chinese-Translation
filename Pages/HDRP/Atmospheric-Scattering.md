@@ -2,7 +2,7 @@ Atmospheric scattering is the phenomena that occurs when particles suspended in 
 
 Examples of natural effects that cause atmospheric scattering include fog, clouds, or mist. 
 
-HDRP simulates a fog effect by overlaying a color onto objects, depending on their distance from the Camera. This is good for simulating fog or mist in outdoor environments. You can use it to hide the clipping of far away GameObjects, which is handy if you reduce a GameObject’s distance to a Camera’s far clip plane to enhance performance.
+The High Definition Render Pipeline (HDRP) simulates a [fog](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wikiFog-Overview) effect by overlaying a color onto objects, depending on their distance from the Camera. This is good for simulating fog or mist in outdoor environments. You can use it to hide the clipping of far away GameObjects, which is useful if you reduce a Camera’s far clip plane to enhance performance.
 
 In HDRP, you can choose between different types of fog; [Linear](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Linear-Fog), [Exponential](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Exponential-Fog), or [Volumetric](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumetric-Fog). All Material types (Lit or Unlit) react correctly to the fog. HDRP calculates density differently, depending on the type of fog, the distance from the Camera, and the world space height.
 
