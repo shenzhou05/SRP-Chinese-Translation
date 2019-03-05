@@ -81,7 +81,7 @@
 <a>Volume Components</a>
 </summary>
 <ul>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Visual-Environment">Visual Environment</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Visual-Environment">Visual Environment</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRI-Sky">HDRI Sky</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Procedural-Sky">Procedural Sky</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Gradient-Sky">Gradient Sky</a><br>
