@@ -177,7 +177,7 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Reflection-and-refraction">Reflection and refraction</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Cube-and-Planar-Reflection-Probes">Cube and Planar Reflection Probes</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumetric-lighting">Volumetric lighting</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Light-layers">Light Layers</a><br>     
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Light-Layers">Light Layers</a><br>     
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Physical-Light-Units">Physical Light Units and Intensities</a><br>
 </ul>
 </details>
