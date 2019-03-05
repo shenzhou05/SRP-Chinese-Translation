@@ -1,5 +1,3 @@
-# Forward and Deferred rendering
-
 When using a Lit Shader In HDRP, you can set each Material to use Forward or Deferred rendering. To do this, enable them in the HDRP Asset using the __Lit Shader Mode__ property. 
 
 ![](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Pages/HDRP/Images/ForwardAndDeferred1.png)
