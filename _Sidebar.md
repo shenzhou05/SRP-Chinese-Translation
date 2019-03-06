@@ -118,8 +118,7 @@
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Surface-Type">Surface Type</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Double-Sided">Double-Sided</a><br>
-<a>Vertex Displacement</a>
-<a>Tessellation</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Displacement-and-Tessellation">Displacement-and-Tessellation</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Ambient-Occlusion">Ambient Occlusion</a><br>
 <a>Specular Occlusion</a><br>
 <a>Geometric AA</a><br>
