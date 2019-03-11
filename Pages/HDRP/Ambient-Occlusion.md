@@ -6,5 +6,5 @@ HDRP calculates the ambient occlusion effect using a map. You create and apply t
 
 | Property                        | Description                                                  |
 | ------------------------------- | ------------------------------------------------------------ |
-| **Mask Map - Green channel **   | Assign the ambient occlusion map in the green channel of the **Mask Map**. HDRP uses the green channel of this map to calculate ambient occlusion. |
+| **Mask Map - Green channel**   | Assign the ambient occlusion map in the green channel of the **Mask Map**. HDRP uses the green channel of this map to calculate ambient occlusion. |
 | **Ambient Occlusion Remapping** | Remaps the ambient occlusion map in the green channel of the **Mask Map** between the minimum and maximum values you define on the slider. These values are between 0 and 1. Assign a texture to the **Mask Map** exposes this value. |
