@@ -78,20 +78,53 @@
 
 <details>
 <summary>
-<a>Volume Components</a>
+<a>Volume Overrides</a>
 </summary>
 <ul>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Visual-Environment">Visual Environment</a><br>
+<details>
+<summary>
+<a>Fog</a><br>
+</summary>
+<ul>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Exponential-Fog">Exponential Fog</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Linear-Fog">Linear Fog</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumetric-Fog">Volumetric Fog</a><br>
+</ul>
+</details>
+
+<details>
+<summary>
+<a>Lighting</a><br>
+</summary>
+<ul>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Indirect-lighting-controller">Indirect lighting controller</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumetric-lighting-controller">Volumetric lighting quality</a><br>
+</ul>
+</details>
+
+<details>
+<summary>
+<a>Shadowing</a><br>
+</summary>
+<ul>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Contact-Shadows">Contact Shadows</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HD-Shadow-Settings">Shadows</a><br>
+</ul>
+</details>
+
+<details>
+<summary>
+<a>Sky</a><br>
+</summary>
+<ul>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Gradient-Sky">Gradient Sky</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRI-Sky">HDRI Sky</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Procedural-Sky">Procedural Sky</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Gradient-Sky">Gradient Sky</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Linear-Fog">Linear Fog</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Exponential-Fog">Exponential Fog</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumetric-Fog">Volumetric Fog</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HD-Shadow-Settings">HD Shadow Settings</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Contact-Shadows">Contact Shadows</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumetric-lighting-controller">Volumetric lighting controller</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Indirect-lighting-controller">Indirect lighting controller</a><br>
+</ul>
+</details>
+
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Visual-Environment">Visual Environment</a><br>
+
 </ul>
 </details>
 
