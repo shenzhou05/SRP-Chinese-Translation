@@ -205,7 +205,7 @@
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Environment-Lighting">Environment Lighting</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Static-Lighting-Sky">Static Lighting Sky</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Atmospheric-Scattering">Atmospheric Scattering</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Shadows">Shadows</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HDRP-Shadows-in-HDRP">Shadows</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Reflection-and-refraction">Reflection and refraction</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Cube-and-Planar-Reflection-Probes">Cube and Planar Reflection Probes</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumetric-lighting">Volumetric lighting</a><br>
