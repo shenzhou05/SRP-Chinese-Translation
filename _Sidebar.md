@@ -81,7 +81,7 @@
 <a>Volume Overrides</a>
 </summary>
 <ul>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Override-Diffusion-Profile">Diffusion Profile Override</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Diffusion-Profile-Override">Diffusion Profile Override</a><br>
 <details>
 <summary>
 <a>Fog</a><br>
@@ -98,7 +98,7 @@
 <a>Lighting</a><br>
 </summary>
 <ul>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Override-Ambient-Occlusion">Ambient Occlusion</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Ambient-Occlusion-Override">Ambient Occlusion</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Indirect-lighting-controller">Indirect lighting controller</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Volumetric-lighting-controller">Volumetric lighting quality</a><br>
 </ul>
@@ -110,7 +110,7 @@
 </summary>
 <ul>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Contact-Shadows">Contact Shadows</a><br>
-<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Override-Micro-Shadows">Micro Shadows</a><br>
+<a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/Micro-Shadows">Micro Shadows</a><br>
 <a href="https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/HD-Shadow-Settings">Shadows</a><br>
 </ul>
 </details>
