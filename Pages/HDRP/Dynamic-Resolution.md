@@ -1,5 +1,3 @@
-# Dynamic resolution
-
 Dynamic resolution reduces the workload on the GPU, which helps maintain a stable target frame rate. The High Definition Render Pipeline (HDRP) uses software dynamic resolution to lower the resolution of the render targets that the main rendering passes use.
 
 To use dynamic resolution in your Project, you must enable dynamic resolution in your [HDRP Asset)(HDRP-Asset.html). In the Inspector for your HDRP Asset, navigate to **Rendering** **> Dynamic Resolution** and enable the **Enable** checkbox. For information on how to customize the rest of the HDRP Asset’s global dynamic resolution properties, see the dynamic resolution section of the [HDRP Asset documentation](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/The-High-Definition-Render-Pipeline-Asset#DynamicResolution).
