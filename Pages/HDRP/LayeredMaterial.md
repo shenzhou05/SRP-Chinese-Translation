@@ -365,3 +365,6 @@ __Enable GPU instancing:__ Enable it to create instance of similar objects with 
 
 __Enable Specular Occlusion from Bent normal:__ Enable it to use the Bent normal instead of the Ambient Occlusion map to manage the specular occlusion.
 
+# References
+
+You can check out the dedicated guide [HDRP Layered Shader workflow for photogrammetry](https://unity3d.com/files/solutions/photogrammetry/Unity-Photogrammetry-Workflow-Layered-Shader_v2.pdf)
