@@ -1,13 +1,13 @@
-The asset contains the interface that users use when configuring a pipeline, when Unity performs rendering for the first time it will call `InternalCreatePipeline` on the asset and the asset is required to return a usable instance. 
+SRP资源包含用户在配置管道时使用的接口，当Unity第一次执行渲染时，它将调用资源的`InternalCreatePipeline` ，并且这个资源需要返回可用的SRP实例。
 
-The render pipeline asset is a ScriptableObject which means that it can be a project asset and saved to version control and similar. I you wish to save a configuration for others to use then you need to create one in your project. Pipeline assets can be created just like any other ScriptableObject via script and then saved via the asset database API. 
+渲染管线资源是一个ScriptableObject，这意味着它可以是一个项目资源，并可保存到一些类似版本控制的插件中。如果您希望保存一个配置供其他人使用，那么您需要在项目中创建一个相应的配置资源。可以像其他任何ScriptableObject一样通过脚本创建管线资源，然后通过资源数据库(AssetDatabase)API保存。
 
-To set an SRP asset as enabled in your project you need to set the asset via the GraphicsSettings. Setting the asset reference here will 'enable' SRP rendering in your project and rendering will be diverted from standard Unity rendering to the configuration you have scripted.
+要在项目中设置启用的SRP资源，您需要通过图形设置来设置该资源。设置资源引用后，将在项目中“启用”SRP渲染，并且渲染方式将从标准的Unity渲染转换到已编辑的配置中。
 
-## An Simple Asset Example
-The responsibility of the asset is to contain configuration and to return an instance of a pipeline that can be used for performing rendering. If a setting on the asset is changed all instances that have been created are destroyed and a new instance is created with the new settings for the next frame of rendering.
+## 一个简单的资源示例
+资源的职责是包涵配置并返回可用于执行渲染的管线实例。如果更改了资源上的设置，则已创建的所有实例都将被销毁，并使用下一帧渲染的新设置创建新实例。
 
-The example below shows a simple pipeline asset class. It contains a color that will be used by the created instance to clear the screen. There is also some editor only code that assists a user in creating an asset that can live in the project, this is important as you need to be able to set this asset in the graphics settings window.
+下面的示例显示了一个简单的管线资源类。它包含一种颜色配置，创建的实例将使用该颜色清除屏幕。还有一些仅限编辑器使用的代码可以帮助用户创建一种可在项目中使用的资源，这一点很重要，因为您需要能够在“图形设置”窗口中设置此资源。
 
 ```C#
 [ExecuteInEditMode]
@@ -16,7 +16,7 @@ public class BasicAssetPipe : RenderPipelineAsset
     public Color clearColor = Color.green;
 
 #if UNITY_EDITOR
-    // Call to create a simple pipeline
+    // 创建一个简单的管线
     [UnityEditor.MenuItem("SRP-Demo/01 - Create Basic Asset Pipeline")]
     static void CreateBasicAssetPipeline()
     {
@@ -25,7 +25,7 @@ public class BasicAssetPipe : RenderPipelineAsset
     }
 #endif
 
-    // Function to return an instance of this pipeline
+    // 函数返回一个管线的实例
     protected override IRenderPipeline InternalCreatePipeline()
     {
         return new BasicPipeInstance(clearColor);
@@ -33,14 +33,14 @@ public class BasicAssetPipe : RenderPipelineAsset
 }
 ```
 
-## A complete asset example
-In addition to returning and instance and holding configuration data the asset is used for a number of helper functions, things like:
-* Default material to use when creating 3d objects
-* Default material to use when creating 2d objects
-* Default material to use when creating particle systems
-* Default material to use when creating terrain systems
+## 一个复杂的资源示例
+除了返回和实例以及保存配置数据外，资源还可用于许多辅助函数使用，例如：
+* 创建三维对象时使用的默认材质
+* 创建二维对象时使用的默认材质
+* 创建粒子系统时使用的默认材质
+* 创建地形系统时使用的默认材质
 
-Essentially providing a hook points to ensure that the end to end editor experience feels right. If you construct a pipeline and would like it to feel integrated and 'real' like the existing Unity pipelines these steps area  requirement.
+它本质上提供了一个Hook点，确保从头到尾编辑器体验是无误的。如果您构建了一个管线，并且希望它像原有的Unity管道一样集成和“真实”，那么这些步骤是必须的。
 
 ```
 Example

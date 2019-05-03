@@ -1,9 +1,9 @@
-The core or SRP is a collection of API's that push many of the rendering internals and configuration out into user land. This give you the power to configure exactly how you want rendering to work in your project.
+SRP核心是API的集合，它将许多内部渲染过程和配置呈现给用户使用。这使您能够在项目中准确地配置你想要的渲染方式。
 
-The SRP API offers a new interface to many familiar Unity constructs. You will still be using:
-* Lights
-* Materials
-* Cameras
+SRP API为许多熟悉的Unity结构提供了一个新的接口。你仍然会使用:
+* 灯光
+* 材质
+* 相机
 * Command Buffers
 
-But the _way_ you interact with Unity is different. For performance reasons when writing a custom SRP you generally work with groups of renderers, not individual items.
+但与Unity交互的方式是不同的。出于性能原因，在编写自定义SRP时，通常使用的是一组渲染器，而不是单个。

@@ -1,11 +1,11 @@
-“Render Pipeline” is an umbrella term for a number of techniques used to get objects onto the screen. It encompasses, at a very high level:
-* Culling
-* Rendering Objects
-* Post processing
+“渲染管线”是一个概括的术语，用于描述将物体渲染到屏幕上的一些技术。它在非常高的层面上包括:
+* 剔除
+* 渲染对象
+* 后处理
 
-In addition to these high level concepts each responsibility can be broken down further depending on how you want to execute them. For example rendering objects could be performed using:
-* Multi-pass rendering - one pass per object per light
-* Single-pass - one pass per object
-* Deferred - Render surface properties to a g-buffer, perform screen space lighting
+除了这些高级概念之外，每个渲染任务还可以进一步分解，这取决于您希望如何执行它们。例如，渲染对象可以使用:
+* 多pass渲染 - 每一盏灯每个物体使用一个pass
+* 单pass渲染 - 每个物体一个pass
+* 延迟渲染 - 渲染表面属性到G-buffer中，执行屏幕空间照明
 
-When writing a custom SRP, these are the kind of decisions that you need to make. Each technique has a number of trade offs that you should consider and no one technique is perfect for a given project. 
+在编写自定义SRP时，您需要在这些方案中做出选择。每种方法都有一些您应该考虑的权衡，而且对于给定的项目，没有一种方法是绝对完美的。

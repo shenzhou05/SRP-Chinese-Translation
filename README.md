@@ -5,7 +5,7 @@ Unity_SRP官方文档中文翻译 <br>
 * [主页](https://github.com/shenzhou05/SRP-Chinese-Translation/blob/master/Home.md)
   * 前言
 * [SRP核心](https://github.com/shenzhou05/SRP-Chinese-Translation/blob/master/Core-SRP.md)
-  * [什么是渲染管线](https://github.com/shenzhou05/SRP-Chinese-Translation/blob/master/High-Definition-Render-Pipeline-overview.md)
+  * [什么是渲染管线](https://github.com/shenzhou05/SRP-Chinese-Translation/blob/master/What-is-a-Render-Pipeline.md)
   * [什么是可编辑渲染管线](https://github.com/shenzhou05/SRP-Chinese-Translation/blob/master/What-is-a-Scriptable-Render-Pipeline.md)
   * [使用SRP的API进行渲染](https://github.com/shenzhou05/SRP-Chinese-Translation/blob/master/SRP-Overview.md)
     * [SPR资源(Asset)](https://github.com/shenzhou05/SRP-Chinese-Translation/blob/master/SRP-Asset.md)

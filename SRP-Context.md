@@ -1,9 +1,9 @@
-# The Render Pipeline Context
-SRP renders using the concept of delayed execution. As a user you build up a list of commands and then execute them. The object that you use to build up these commands is called the `ScriptableRenderContext` and is passed as an argument to the Render function.
+# 渲染管线上下文
+SRP使用延迟执行的概念进行渲染。作为一个使用者，您可构建一个命令列表，然后执行它们。用于构建这些命令的对象称为`scriptablerenderContext`，并作为参数传递给Render函数。
 
-When you have populated the context with operations, then you can call ‘Submit’ to submit all the queued up rendering calls. These calls will generally be a combination of `CommandBuffer` executions as well as SRP specific draw commands.
+使用一些操作填充上下文后，可以调用“submit”提交所有排序过的Rendering call。这些调用通常是`CommandBuffer`执行指令与srp特定的绘制命令的组合。
 
-An example of this is clearing a render target using a command buffer that is executed by the render context:
+例如，使用CommandBuffer清除渲染目标的操作，可由渲染上下午执行：
 
 ```C#
 public class BasicPipeInstance : RenderPipeline
@@ -20,7 +20,7 @@ public class BasicPipeInstance : RenderPipeline
         // does not so much yet :(
         base.Render(context, cameras);
 
-        // clear buffers to the configured color
+        // 使用配置颜色情况渲染目标
         var cmd = new CommandBuffer();
         cmd.ClearRenderTarget(true, true, m_ClearColor);
         context.ExecuteCommandBuffer(cmd);
@@ -30,4 +30,4 @@ public class BasicPipeInstance : RenderPipeline
 }
 ```
 
-More details about what can be achieved via the context can be found here: https://docs.unity3d.com/ScriptReference/Experimental.Rendering.ScriptableRenderContext.html
+渲染上下文可实现效果的更多详细信息，请参见：https://docs.unity3d.com/scriptReference/experimental.rendering.scriptablerendercontext.html

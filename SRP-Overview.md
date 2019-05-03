@@ -1,23 +1,23 @@
-From a high level user side SRP can be divided into two parts, the SRP asset, and the SRP instance. Both have an important role to play when crafting a custom render pipeline and when you write a custom pipeline you will need to implement both. 
+从高级使用方面SRP可以分为两部分：SRP资源和SRP实例。在制作自定义渲染管线和编写自定义管线时，两者都具有重要的作用，需要同时实现这两者。
 
-## SRP Asset
-The Asset is a project asset that represents a specific configuration for the pipeline, take for example things like:
-* Should shadows be cast
-* What shader quality level should be used
-* What is the shadow distance
-* The default material configuration
+## SRP 资源
+资源Asset是表示管线特定配置的项目资源，例如：
+* 否投射阴影
+* 应该使用什么样的着色质量级别
+* 阴影距离是多少
+* 默认材质配置
 
-Things that users want to have control of be able to save as part of their configuration; basically anything that needs to be serialised. The SRP Asset represents the _type_ of SRP and the settings that are configured.
+用户想要控制的东西能够作为配置的一部分保存：基本上任何想要序列化的东西都可以。SRP资源表示SRP的_种类_和配置的设置。
 
-## SRP Instance
-The instance is the class that actually performs the rendering. When unity sees that SRP is enabled it looks at the currently selected asset and asks it to provide a 'rendering instance'. What the asset is required to do in this case is return an instance that contains a 'Render' function. Normally the instance will cache a number of the settings that live in the asset.
+## SRP 实例
+实例是实际执行渲染的类。当Unity启用了SRP时，Unity会查看当前选定的资源并要求它提供“渲染实例”。在这种情况下，资源需要执行的操作是返回包含“Render”函数的实例。通常，实例将存储资源中的一些设置。
 
-The instance represents a know pipeline configuration. From the render call actions can be performed like:
-* Clearing the framebuffer
-* Performing scene culling
-* Rendering sets of objects
-* Doing blits from one frame buffer to another
-* Rendering shadows
-* Applying post process effects
+该实例表示已知管线配置。从渲染调用的行为中，可以执行如下操作：
+* 清除帧缓冲区
+* 执行场景剔除
+* 渲染对象集
+* 从一个帧缓冲区到另一个帧缓冲区执行Blit操作
+* 渲染阴影
+* 应用后处理效果
 
-The instance represents the _actual_ rendering that will be performed.
+这个实例代表着将要执行_实际_渲染的过程。
