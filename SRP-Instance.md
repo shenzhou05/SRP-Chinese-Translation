@@ -7,7 +7,7 @@ SRP资源控制配置，但渲染过程是由SRP渲染管线实例处理。当�
 * 一组 `Camera`被认为已启用并应用于渲染。
 
 ## 一个基本的管线
-[这里](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Asset#an-simple-asset-example)的资源示例返回了一个管线实例，该管线实例类可能如下所示。
+[这里](https://github.com/shenzhou05/SRP-Chinese-Translation/blob/master/SRP-Asset.md#%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E8%B5%84%E6%BA%90%E7%A4%BA%E4%BE%8B)的资源示例返回了一个管线实例，该管线实例类可能如下所示。
 
 ```C#
 public class BasicPipeInstance : RenderPipeline
