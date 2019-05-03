@@ -1,12 +1,12 @@
-# XR Support in SRP
+# SRP中的XR支持
 ## VR
-Single-pass double-wide stereo rendering is fully supported in LWRP and mostly supported in [HDRP](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VR-in-HDRP). In addition, LWRP also supports single-pass instanced and multi-pass stereo rendering.
+单通道双边立体渲染在LWRP中得到了充分的支持，在[HDRP](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/VR-in-HDRP)中得到了广泛的支持。此外，LWRP还支持单通道实例和多通道立体渲染。
 
-VR must still be enabled and a VR SDK chosen in Player Settings. Aside from that, VR settings are configured using the XRGraphicsConfig class provided in CoreRP. Currently, XRGraphicsConfig provides an interface to [XRSettings](https://docs.unity3d.com/2018.3/Documentation/ScriptReference/XR.XRSettings.html), and will be expanded to cover all knobs exposed by various XRSDK Subsystems as they become available. 
+VR模式仍然必须启用，并在Player Settings中选择相应的VR设备SDK。除此之外，VR的配置使用核心渲染管线（CoreRP）中提供的XR图形配置类进行设置。目前，XR图形配置类提供了一个[XRSettings](https://docs.unity3d.com/2018.3/Documentation/ScriptReference/XR.XRSettings.html)的接口，并将在各种XR SDK子系统可用时，扩展并覆盖它们暴露出的全部knob。
 
-**VRGraphicsConfig**
+**VR图形设置**
 
-[SECTION WIP]
+[WIP]
 
 ## AR
-AR is set up for SRP the same way it is set up for any other project. [SECTION WIP]
+SRP设置AR的方法与为其他项目设置AR的方法相同。[WIP]

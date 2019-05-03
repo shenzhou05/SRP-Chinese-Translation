@@ -1,15 +1,15 @@
-If a Render Pipeline is a number of steps that are performed to perform rendering onto the screen, a Scriptable Render Pipeline is a pipeline that can be controlled from Unity scripting code to perform rendering in a user defined way.
+如果渲染管线是由许多需要在屏幕上执行的渲染步骤组成，那么可编程渲染管线就是一种可以用Unity脚本控制的渲染管线，以用户定义的方式执行渲染。
 
-## The Problem
-Traditionally with Unity we have provided a number of built in pipelines that can be used, some better for mobile / vr (the forward renderer), and some fore more high end games (the deferred renderer). These out of the box rendering solutions have been designed to be very general and black box, but that comes with a downsides
+## 问题
+在传统的Unity渲染中，我们提供了许多可以使用的内置管线，一些更适合Mobile/VR（前向渲染），还有一些是为了更高端的游戏（延迟渲染）。这些开箱即用的渲染解决方案被设计成非常通用的并且黑盒的方式，但也有缺点。
 
-* They only do what they are designed to do
-* They are designed to be general, which means that because they need to do everything they are masters at nothing
-* They are not very configurable (black box with injection points)
-* Extension and modification is prone to error (small internal changes can have big outward ramifications)
-* Many bugs can't be fixed (as this changes behaviour which can break projects).
+* 它们只做它们被设计做的事
+* 它们被设计成通用的，这意味着它们需要做每件事，所以它们并不能专精。
+* 它们不是完全可配置的（是一种含有注入点的黑盒）
+* 扩展和修改容易出错（细小的内部修改可能产生很大的外部问题）
+* 许多错误无法修复（因为这可能会导致破坏工程的问题）
 
-## The Solution
-The SRP API is designed to resolve the problems described above. What it does it change rendering from being a black-box inbuilt concept to being a user controlled per project scriptable concept. Using the SRP api it's possible to have fine grain customisable control of how rendering is performed, form the low level to the high level. 
+## 解决方案
+SRP API旨在解决上述问题。它所做的是将渲染从一个内置的黑盒概念改为一个用户控制的独立于每个工程的可编辑的概念。使用SRP API，可以对渲染的执行方式进行从低级到高级的细粒度自定义控制。
 
-So how does it work? [Click here](https://github.com/Unity-Technologies/ScriptableRenderPipeline/wiki/SRP-Asset) to find out!
+那么它是如何工作的呢？请单击[此处](https://github.com/shenzhou05/SRP-Chinese-Translation/blob/master/SRP-Asset.md)！

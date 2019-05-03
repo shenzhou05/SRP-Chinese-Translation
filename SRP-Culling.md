@@ -1,32 +1,32 @@
-# Culling
-Culling is the process of figuring out what to render on the the screen.
+# 剔除
+剔除是搞清楚渲染什么对象到屏幕上的过程。
 
-In Unity Culling encompasses:
+在Unity中剔除包括：
 
-* Frustum culling: Calculating the objects that exist between the camera near and far plane.
-* Occlusion culling: Calculating which objects are hidden behind other objects and excluding them from rendering. For more information see the Occlusion Culling docs.
+* 视锥剔除: 计算相机近、远平面之间存在的物体。
+* 遮挡剔除: 计算隐藏在其他对象后面的对象，并从渲染中排除这些对象。相关详细信息，请参见遮挡剔除文档。
 
-When rendering starts, the first thing that needs to be calculated is what to render. This involves taking the camera and performing a cull operation from the perspective of the camera. The cull operation returns a list of objects and lights that are valid to render for the camera. These object are then used later in the render pipeline.
+当渲染开始时，首先需要计算的是要渲染的内容。这涉及到透视像机的拍摄方式与剔除操作。剔除操作返回一个对摄影机渲染有效的列表，列表由对象和灯光组成。这些对象随后将在渲染管线中使用。
 
-## Culling in SRP
-In SRP, you generally perform object rendering from the perspective of a Camera. This is the same camera object that Unity uses for built-in rendering. SRP provides a number of API’s to begin culling with. Generally the flow looks as follows:
+## SRP中的剔除
+在SRP中，通常在透视相机中执行物体渲染。这与Unity内建渲染管线的相机对象相同。SRP提供了许多与剔除相关的API。通常流程如下：
 
 ```C#
-// Create an structure to hold the culling paramaters
+// 创建一个结构体来保存剔除参数
 ScriptableCullingParameters cullingParams;
 
-//Populate the culling paramaters from the camera
+// 在相机中填充剔除参数
 if (!CullResults.GetCullingParameters(camera, stereoEnabled, out cullingParams))
     continue;
 
-// if you like you can modify the culling paramaters here
+// 如果您想要修改剔除参数
 cullingParams.isOrthographic = true;
 
-// Create a structure to hold the cull results
+// 创建一个结构体来保存剔除结果
 CullResults cullResults = new CullResults();
 
-// Perform the culling operation
+// 执行剔除操作
 CullResults.Cull(ref cullingParams, context, ref cullResults);
 ```
 
-The cull results that get populated can now be used to perform rendering.
+被填充后的剔除结果现在可用于执行渲染。
